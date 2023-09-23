@@ -1,0 +1,43 @@
+.header {
+  background-color: #f7f0e8;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+
+    &--call {
+      display: block;
+      height: 24px;
+      width: 24px;
+      background-image: url('/images/header/header-phone--mobile.png');
+    }
+
+    &--burger-menu {
+      display: block;
+      height: 24px;
+      width: 24px;
+      background-image: url('/images/header/header-burger--mobile.png');
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  height: 24px;
+  
+
+  & img {
+    display: flex;
+
+    height: 24px;
+    width: 100%;
+  }
+}

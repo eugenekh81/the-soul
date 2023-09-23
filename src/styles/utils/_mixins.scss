@@ -1,0 +1,17 @@
+@mixin hero--mobile-big {
+  @media (min-width: 410px) {
+    @content;
+  }
+}
+
+@mixin onTablet--s {
+  @media (min-width: 630px) {
+    @content;
+  }
+}
+
+@mixin onTablet--m {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

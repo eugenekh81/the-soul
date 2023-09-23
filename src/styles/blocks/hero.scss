@@ -1,0 +1,140 @@
+.hero {
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+      180deg,
+      rgba(203, 159, 91, 0.39) 39.06%,
+      rgba(203,  159, 91, 0) 89.58%
+    );
+
+    @include onTablet--s {
+      flex-direction: row;
+    }
+  }
+
+  &__banner {
+    height: 290px;
+
+    background: no-repeat scroll right / cover url('/images/hero/main-banner--mobile-full.png'), linear-gradient(90deg, rgba(217, 217, 217, 0.00) 0%, #BA8A49 100%);
+
+    @include hero--mobile-big {
+      height: 290px;
+      background-size: contain;
+    }
+
+    @include onTablet--s {
+      height: 360px;
+      width: 100%;
+      order: 1;
+      background-size: contain;
+    }
+  }
+
+  &__title-container {
+    @include onTablet--s {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      right: 55%;
+      // width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include onTablet--m {
+      right: 50%;
+    }
+  }
+
+  &__title {
+    padding: 8px 0 0;
+    margin: 0 0 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    background: linear-gradient(
+      180deg,
+      rgba(23, 70, 54, 0.72) 0%,
+      #174636 100%
+    );
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include onTablet--s {
+      padding: 0;
+    }
+
+    &--top {
+      font-size: 38px;
+      line-height: 38px;
+      letter-spacing: -0.95px;
+
+      @include onTablet--m {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+
+    &--bottom {
+      font-size: 56px;
+      line-height: 56px;
+      font-weight: 700;
+
+      @include onTablet--m {
+        font-size: 72px;
+        line-height: 72px;
+      }
+    }
+  }
+
+  &__decor-element {
+    margin: 0 auto 12px;
+    width: 106px;
+    height: 30px;
+    background-image: url('/images/hero/hero--decor-element.png');
+
+    @include onTablet--s {
+      display: none;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+
+    &--top {
+      margin: 0 0 4px;
+
+      @include onTablet--m {
+        font-size: 16px;
+      }
+    }
+
+    &--bottom {
+      margin: 0 0 16px;
+      font-weight: 400;
+      line-height: 100%; /* 14px */
+      letter-spacing: 5.18px;
+
+      @include onTablet--s {
+        margin: 0;
+      }
+
+      @include onTablet--m {
+        font-size: 17px;
+      }
+    }
+  }
+}
