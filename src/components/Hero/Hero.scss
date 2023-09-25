@@ -1,3 +1,5 @@
+@import '../../styles/utils/mixins';
+
 .hero {
   &__content {
     position: relative;
@@ -5,11 +7,11 @@
     display: flex;
     flex-direction: column;
 
-    background: linear-gradient(
+    /* background: linear-gradient(
       180deg,
       rgba(203, 159, 91, 0.39) 39.06%,
       rgba(203,  159, 91, 0) 89.58%
-    );
+    ); */
 
     @include onTablet--s {
       flex-direction: row;
@@ -17,9 +19,12 @@
   }
 
   &__banner {
+    margin: 0 0 24px;
     height: 290px;
 
     background: no-repeat scroll right / cover url('/images/hero/main-banner--mobile-full.png'), linear-gradient(90deg, rgba(217, 217, 217, 0.00) 0%, #BA8A49 100%);
+
+
 
     @include hero--mobile-big {
       height: 290px;
@@ -59,11 +64,13 @@
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    background: linear-gradient(
+    /* background: linear-gradient(
       180deg,
       rgba(23, 70, 54, 0.72) 0%,
       #174636 100%
-    );
+    ); */
+
+    background: linear-gradient(180deg, rgba(23, 70, 54, 0.72) 0%, #174636 100%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
     background-clip: text;

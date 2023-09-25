@@ -1,0 +1,56 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.about {
+  &__title {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $colorGreen;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 24px;
+      width: 24px;
+      background-image: url('/images/decor/flower--green.png');
+      margin: 0 auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:  center;
+    }
+  }
+
+  &__description {
+    margin: 0 0 24px;
+    text-align: justify;
+  }
+
+  &__list {
+    margin: 0 0 24px;
+    list-style: disc;
+  }
+
+  &__list-item {
+    margin: 0 0 8px;
+  }
+
+  &__image {
+    margin: 0 0 24px;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    &--ukraine-map {
+      background-image: url('/images/about/about--ukraine-map.png');
+    }
+
+    &--europe-map {
+      background-image: url('/images/about/about--europe-map.png');
+    }
+  }
+}
