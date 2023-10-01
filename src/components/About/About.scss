@@ -24,6 +24,15 @@
     }
   }
 
+  &__subtitle {
+    margin: 0 0 24px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: $colorGreen
+  }
+
   &__description {
     margin: 0 0 24px;
     text-align: justify;
@@ -36,6 +45,7 @@
 
   &__list-item {
     margin: 0 0 8px;
+    text-align: justify;
   }
 
   &__image {
@@ -51,6 +61,21 @@
 
     &--europe-map {
       background-image: url('/images/about/about--europe-map.png');
+    }
+
+    &--age-graph {
+      background-image: url('/images/about/about--age-graph.png');
+    }
+
+    &--conditions-graph {
+      background-image: url('/images/about/about--conditions-graph.png');
+    }
+
+    &--girl-sad {
+      background-image: url('/images/about/about--girl-sad.png');
+    }
+    &--girl-happy {
+      background-image: url('/images/about/about--girl-happy.png');
     }
   }
 }
