@@ -1,0 +1,24 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.presentation {
+
+  &__title {
+    margin: 0 0 24px;
+
+    font-weight: 700;
+    text-align: center;
+
+    color: $colorGreen;
+  }
+
+  &__video-container {
+    margin: 0 0 24px;
+    & iframe {
+      border: 1px solid red;
+      width: 100%;
+      height: fit-content;
+      border-radius: 24px;
+    }
+  }
+}

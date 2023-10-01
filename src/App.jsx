@@ -2,6 +2,8 @@ import './App.scss';
 import { About } from './components/About/About';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero/Hero';
+import { ModulesList } from './components/ModulesList/ModulesList';
+import { Presentation } from './components/Presentation/Presentation';
 
 export const App = () => {
   return (
@@ -12,6 +14,10 @@ export const App = () => {
         <Hero />
 
         <About />
+
+        <Presentation />
+
+        <ModulesList />
       </main>
     </>
   );
