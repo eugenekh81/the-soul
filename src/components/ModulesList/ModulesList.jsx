@@ -1,4 +1,5 @@
 import './ModulesList.scss';
+import module1__image from '../../../public/images/modules/module-1/module1-main.png';
 
 export const ModulesList = () => {
   return (
@@ -15,7 +16,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="/images/modules/module-1/module1-main.png" alt="" />
+            <img className="module__image" src={module1__image} alt="" />
           </div>
 
           <p className="module__description">
