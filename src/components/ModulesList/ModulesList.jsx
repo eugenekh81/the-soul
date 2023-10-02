@@ -15,7 +15,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-1/module1-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-1/module1-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -32,7 +32,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -48,7 +48,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -64,7 +64,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -80,7 +80,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -97,7 +97,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -113,7 +113,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -131,7 +131,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
@@ -148,7 +148,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src="../../../public/images/modules/module-2/module2-main.png" alt="" />
+            <img className="module__image" src="/images/modules/module-2/module2-main.png" alt="" />
           </div>
 
           <p className="module__description">
