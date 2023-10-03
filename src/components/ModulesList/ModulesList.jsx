@@ -1,8 +1,15 @@
 import './ModulesList.scss';
 import module1__image from '../../../public/images/modules/module-1/module1-main.png';
 import module2__image from '../../../public/images/modules/module-2/module2-main.png';
+import module3__image from '../../../public/images/modules/module-3/module3-main.png';
+import module4__image from '../../../public/images/modules/module-4/module4-main.png';
+import module5__image from '../../../public/images/modules/module-5/module5-main.png';
+import module6__image from '../../../public/images/modules/module-6/module6-main.png';
+import module7__image from '../../../public/images/modules/module-7/module7-main.png';
+import module8__image from '../../../public/images/modules/module-8/module8-main.png';
+import module9__image from '../../../public/images/modules/module-9/module9-main.png';
 
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 
 export const ModulesList = () => {
   return (
@@ -18,36 +25,38 @@ export const ModulesList = () => {
             Module 1. Feelings and emotions
           </h3>
 
-          <div className="module__carousel">
-          {/* <div className="module__image-container">
+          <div className="module__image-container">
             <img className="module__image" src={module1__image} alt="" />
-          </div> */}
-          <Carousel>
+          </div>
+          {/* <div className="module__carousel">
+           <Carousel>
       <Carousel.Item interval={3000}>
         <img src={module1__image}  className="module__image" alt="module 1" />
-        {/* <Carousel.Caption>
+        <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption> */}
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img src={module1__image}  className="module__image" alt="module 1" />
         {/* <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption> */}
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img src={module1__image}  className="module__image" alt="module 1" />
-        {/* <Carousel.Caption>
+        <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-        </Carousel.Caption> */}
+        </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
-    </div>
+          </Carousel>
+          </div>
+          */}
+
 
           <p className="module__description">
             Objective: understand one&apos;s state and conditions, and not to direct your emotions at destroying yourself and others. Learn to deal with difficult feelings and process them like &quot;in a transformer booth&quot;. In fact, the Program became such a &quot;transformer booth&quot; to help people cope with their conditions and give them support.
@@ -79,7 +88,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module3__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -95,7 +104,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module4__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -111,7 +120,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module5__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -128,7 +137,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module6__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -144,7 +153,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module7__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -162,7 +171,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module8__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -179,7 +188,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
+            <img className="module__image" src={module9__image} alt="" />
           </div>
 
           <p className="module__description">

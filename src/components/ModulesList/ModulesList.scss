@@ -94,4 +94,23 @@
       border-color: $colorGreen;
     }
   }
+
+  &:nth-child(4) &__image {
+    object-position: 0 -70px;
+  }
+  &:nth-child(5) &__image {
+    object-position: 0 calc(100% + 70px);
+  }
+  &:nth-child(6) &__image {
+    object-position: 0 50%;
+  }
+  &:nth-child(7) &__image {
+    object-position: 0 70%;
+  }
+  &:nth-child(8) &__image {
+    object-position: 0 50%;
+  }
+  &:nth-child(9) {
+    margin-bottom: 0;
+  }
 }
