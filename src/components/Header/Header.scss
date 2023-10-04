@@ -1,5 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
   background-color: #f7f0e8;
+  z-index: 2;
 
   &__content {
     display: flex;
@@ -32,7 +35,7 @@
 .logo {
   display: flex;
   height: 24px;
-  
+
 
   & img {
     display: flex;
