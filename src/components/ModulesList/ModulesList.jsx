@@ -1,13 +1,4 @@
 import './ModulesList.scss';
-import module1__image from '/images/modules/module-1/module1-main.png';
-import module2__image from '/images/modules/module-2/module2-main.png';
-import module3__image from '/images/modules/module-3/module3-main.png';
-import module4__image from '/images/modules/module-4/module4-main.png';
-import module5__image from '/images/modules/module-5/module5-main.png';
-import module6__image from '/images/modules/module-6/module6-main.png';
-import module7__image from '/images/modules/module-7/module7-main.png';
-import module8__image from '/images/modules/module-8/module8-main.png';
-import module9__image from '/images/modules/module-9/module9-main.png';
 
 // import Carousel from 'react-bootstrap/Carousel';
 
@@ -21,12 +12,21 @@ export const ModulesList = () => {
 
       <ul className="modules__list">
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 1. Feelings and emotions
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
-            {/* <img className="module__image" src={module1__image} alt="" /> */}
+          <div className="module__content">
+              <p className="module__number">
+                Module 1
+              </p>
+              <p className="module__title">
+                Feelings
+                <br />
+                and
+                <br />
+                emotions
+              </p>
           </div>
           {/* <div className="module__carousel">
            <Carousel>
@@ -67,11 +67,17 @@ export const ModulesList = () => {
         </li>
 
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 2. Body
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
+          <div className="module__content">
+          <p className="module__number">
+                Module 2
+              </p>
+              <p className="module__title">
+                Body
+              </p>
           </div>
 
           <p className="module__description">
@@ -82,12 +88,21 @@ export const ModulesList = () => {
           </a>
         </li>
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 3. Strength and confidence
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
-
+          <div className="module__content">
+          <p className="module__number">
+                Module 3
+              </p>
+              <p className="module__title">
+                Strength
+                <br />
+                and
+                <br />
+                confidence
+              </p>
           </div>
 
           <p className="module__description">
@@ -98,11 +113,21 @@ export const ModulesList = () => {
           </a>
         </li>
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 4. Love and relationships
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
+          <div className="module__content">
+          <p className="module__number">
+                Module 4
+              </p>
+              <p className="module__title">
+                Love
+                <br />
+                and
+                <br />
+                relationships
+              </p>
           </div>
 
           <p className="module__description">
@@ -113,11 +138,21 @@ export const ModulesList = () => {
           </a>
         </li>
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 5. Freedom and responsibility
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
+          <div className="module__content">
+            <p className="module__number">
+              Module 5
+            </p>
+            <p className="module__title">
+              Freedom
+              <br />
+              and
+              <br />
+              responsibility
+            </p>
           </div>
 
           <p className="module__description">
@@ -129,26 +164,48 @@ export const ModulesList = () => {
         </li>
 
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 6. Home, safe space and belonging
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
+          <div className="module__content">
+          <p className="module__number">
+              Module 6
+            </p>
+            <p className="module__title">
+              Home,
+              <br />
+              safe space
+              <br />
+              and
+              <br />
+              belonging
+            </p>
           </div>
 
           <p className="module__description">
-            Objective: find, build your own shelter in the soul and find it in life, to walk the &quot;hero&apos;s path to oneself&quot;. In this module, participants can discover their safe space inside, think deeply about the meaning of home and what it means to them and how to re-create such sense and feeling of home regardless of their current location and circumstances.
+            Objective: find and build your own shelter in the soul and find it in life, to walk the &quot;hero&apos;s path to oneself&quot;. In this module, participants can discover their safe space inside, think deeply about the meaning of home and what it means to them and how to re-create such sense and feeling of home regardless of their current location and circumstances.
           </p>
           <a href="#" className="module__report-button">
             Detailed report: Module 6
           </a>
         </li>
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 7. Money and wellbeing
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
+          <div className="module__content">
+          <p className="module__number">
+              Module 7
+            </p>
+            <p className="module__title">
+              Money
+              <br />
+              and
+              <br />
+              wellbeing
+            </p>
           </div>
 
           <p className="module__description">
@@ -161,12 +218,21 @@ export const ModulesList = () => {
 
 
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 8. Unity and Integration
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
-
+          <div className="module__content">
+          <p className="module__number">
+              Module 8
+            </p>
+            <p className="module__title">
+              Unity
+              <br />
+              and
+              <br />
+              Integration
+            </p>
           </div>
 
           <p className="module__description">
@@ -178,12 +244,17 @@ export const ModulesList = () => {
         </li>
 
         <li className="modules__module module">
-          <h3 className="module__title">
+          {/* <h3 className="module__title">
             Module 9. The future
-          </h3>
+          </h3> */}
 
-          <div className="module__image-container">
-            
+          <div className="module__content">
+          <p className="module__number">
+              Module 9
+            </p>
+            <p className="module__title">
+              The future
+            </p>
           </div>
 
           <p className="module__description">
@@ -197,8 +268,6 @@ export const ModulesList = () => {
 
       </ul>
       </div>
-
-
     </section>
   );
 };

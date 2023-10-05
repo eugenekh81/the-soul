@@ -3,7 +3,7 @@
 
 .modules {
   &__module {
-    margin: 0 0 24px;
+    margin: 0 0 48px;
   }
 
   &__title {
@@ -20,10 +20,14 @@
 }
 
 .module {
-  &__title {
-    margin: 0 0 24px;
+  &__number {
+    font-size: 12px;
 
-    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    // margin: 0 0 24px;
     font-weight: 700;
 
     color: $colorGreen;
@@ -36,11 +40,14 @@
     overflow: hidden;
   }
 
-  &__image-container {
+  &__content {
     position: relative;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: space-between;
+
     margin: 0 0 24px;
+    padding: 14px;
     width: 280px;
     height: 160px;
 
@@ -117,14 +124,14 @@
 
     font-size: 16px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 48px;
 
     background-color: $colorGreen;
     color: #fff;
 
-    border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    transition: all 0.25s ease-in-out;
 
     &:hover {
       background-color: #fff;
@@ -133,55 +140,55 @@
     }
   }
 
-  &:nth-child(1) &__image-container::before {
+  &:nth-child(1) &__content::before {
     background-image: url('/images/modules/module-1/module1-main.png');
     background-size: 212px 163px;
     background-position: -24px 15px;
   }
 
-  &:nth-child(2) &__image-container::before {
+  &:nth-child(2) &__content::before {
     background-image: url('/images/modules/module-2/module2-main.png');
     background-size: 305px 160px;
     background-position: -85px 16px;
   }
 
-  &:nth-child(3) &__image-container::before {
+  &:nth-child(3) &__content::before {
     background-image: url('/images/modules/module-3/module3-main.png');
     background-size: 160px 160px;
     background-position: -5px 16px;
   }
 
-  &:nth-child(4) &__image-container::before {
+  &:nth-child(4) &__content::before {
     background-image: url('/images/modules/module-4/module4-main.png');
     background-size: 160px 160px;
     background-position: -5px 16px;
   }
 
-  &:nth-child(5) &__image-container::before {
+  &:nth-child(5) &__content::before {
     background-image: url('/images/modules/module-5/module5-main.png');
     background-size: 200px 360px;
     background-position: -25px -140px;
   }
 
-  &:nth-child(6) &__image-container::before {
+  &:nth-child(6) &__content::before {
     background-image: url('/images/modules/module-6/module6-main.png');
     background-size: 170px 165px;
     background-position: -20px 16px;
   }
 
-  &:nth-child(7) &__image-container::before {
+  &:nth-child(7) &__content::before {
     background-image: url('/images/modules/module-7/module7-main.png');
     background-size: 160px 285px;
     background-position: -10px -72px;
   }
 
-  &:nth-child(8) &__image-container::before {
+  &:nth-child(8) &__content::before {
     background-image: url('/images/modules/module-8/module8-main.png');
     background-size: 200px 165px;
     background-position: -23px 16px;
   }
 
-  &:nth-child(9) &__image-container::before {
+  &:nth-child(9) &__content::before {
     background-image: url('/images/modules/module-9/module9-main.png');
     background-size: 260px 160px;
     background-position: -75px 16px;
