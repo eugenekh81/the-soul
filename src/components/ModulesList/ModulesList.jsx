@@ -1,13 +1,13 @@
 import './ModulesList.scss';
-import module1__image from '../../../public/images/modules/module-1/module1-main.png';
-import module2__image from '../../../public/images/modules/module-2/module2-main.png';
-import module3__image from '../../../public/images/modules/module-3/module3-main.png';
-import module4__image from '../../../public/images/modules/module-4/module4-main.png';
-import module5__image from '../../../public/images/modules/module-5/module5-main.png';
-import module6__image from '../../../public/images/modules/module-6/module6-main.png';
-import module7__image from '../../../public/images/modules/module-7/module7-main.png';
-import module8__image from '../../../public/images/modules/module-8/module8-main.png';
-import module9__image from '../../../public/images/modules/module-9/module9-main.png';
+import module1__image from '/images/modules/module-1/module1-main.png';
+import module2__image from '/images/modules/module-2/module2-main.png';
+import module3__image from '/images/modules/module-3/module3-main.png';
+import module4__image from '/images/modules/module-4/module4-main.png';
+import module5__image from '/images/modules/module-5/module5-main.png';
+import module6__image from '/images/modules/module-6/module6-main.png';
+import module7__image from '/images/modules/module-7/module7-main.png';
+import module8__image from '/images/modules/module-8/module8-main.png';
+import module9__image from '/images/modules/module-9/module9-main.png';
 
 // import Carousel from 'react-bootstrap/Carousel';
 
@@ -26,7 +26,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module1__image} alt="" />
+            {/* <img className="module__image" src={module1__image} alt="" /> */}
           </div>
           {/* <div className="module__carousel">
            <Carousel>
@@ -72,7 +72,6 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module2__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -88,7 +87,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module3__image} alt="" />
+
           </div>
 
           <p className="module__description">
@@ -104,7 +103,6 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module4__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -120,7 +118,6 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module5__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -137,7 +134,6 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module6__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -153,7 +149,6 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module7__image} alt="" />
           </div>
 
           <p className="module__description">
@@ -171,7 +166,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module8__image} alt="" />
+
           </div>
 
           <p className="module__description">
@@ -188,7 +183,7 @@ export const ModulesList = () => {
           </h3>
 
           <div className="module__image-container">
-            <img className="module__image" src={module9__image} alt="" />
+            
           </div>
 
           <p className="module__description">
