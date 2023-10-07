@@ -5,6 +5,26 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+
+    &::before, &::after {
+      box-sizing: content-box;
+      padding-right: 20px;
+      content: '';
+      display: inline-block;
+      height: 24px;
+      width: 40px;
+      background-image: url('/images/decor/leaf-green.png');
+
+      background-size: contain;
+      background-position: center;
+
+      background-repeat:
+      no-repeat;
+    }
+
+    &::after {
+      transform: scaleX(-1);
+    }
   }
 
   &__item {
