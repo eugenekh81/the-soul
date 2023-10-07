@@ -7,7 +7,7 @@ export const ModulesList = () => {
     <section className="section modules">
       <div className="container">
       <h2 className="section__title">
-        Structure:
+        Structure
       </h2>
 
       <ul className="modules__list">
