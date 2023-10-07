@@ -71,7 +71,9 @@ export const About = () => {
           All the participants are people  affected by war. They have lost their mental health and are prone to serious conditions. We suggested that they indicate in the registration form what worries them the most. And here are the results:
         </p>
 
-        <div className="about__image about__image--conditions-graph"></div>
+        <div className="about__image">
+          <img className="about__image--conditions-graph" src="/images/about/about--diagram--mobile.png" alt="" />
+        </div>
 
         <ul className="about__list">
           <li className="about__list-item">

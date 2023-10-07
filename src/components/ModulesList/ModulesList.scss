@@ -12,6 +12,7 @@
     font-weight: 700;
 
     color: $colorGreen;
+
   }
 
   &__list {
@@ -29,6 +30,7 @@
   &__title {
     // margin: 0 0 24px;
     font-weight: 700;
+    text-shadow: #0d4f3a71 2px 2px 10px;
 
     color: $colorGreen;
   }
@@ -131,6 +133,10 @@
     color: #fff;
 
     border: 1px solid transparent;
+
+    box-shadow: 0px 6px 23px 0px #004e176d;
+
+
     transition: all 0.25s ease-in-out;
 
     &:hover {
@@ -193,6 +199,4 @@
     background-size: 260px 160px;
     background-position: -75px 16px;
   }
-
-
 }

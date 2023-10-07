@@ -1,3 +1,6 @@
+@import '../utils/vars';
+@import '../utils/mixins';
+
 .section {
   &__title {
     width: fit-content;
@@ -10,6 +13,8 @@
     text-align: center;
     text-transform: uppercase;
 
+    color: $colorGreen;
+
     &::before, &::after {
       position: absolute;
       box-sizing: content-box;
@@ -19,19 +24,21 @@
       width: 36px;
       background-image: url('/images/decor/leaf-green.png');
 
+      top: 2px;
       background-size: contain;
       background-position: center;
 
       background-repeat:
       no-repeat;
+
     }
 
     &::before {
-      transform: translate(-120%);
+      transform: translate(-120%) rotate(-15deg);
     }
 
     &::after {
-      transform: scaleX(-1) translateX(-20%);
+      transform: scaleX(-1) translateX(-20%) rotate(-15deg);
     }
   }
 }

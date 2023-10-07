@@ -2,27 +2,6 @@
 @import '../../styles/utils/mixins';
 
 .about {
-  /* &__title {
-    margin: 0 0 24px;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: $colorGreen;
-
-    &::after {
-      content: '';
-      display: block;
-      height: 24px;
-      width: 24px;
-      background-image: url('/images/decor/flower--green.png');
-      margin: 0 auto;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position:  center;
-    }
-  } */
 
   &__subtitle {
     margin: 0 0 24px;
@@ -49,10 +28,6 @@
 
   &__image {
     margin: 0 0 24px;
-    padding-top: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 
     &--ukraine-map {
       background-image: url('/images/about/about--ukraine-map.png');
@@ -67,7 +42,9 @@
     }
 
     &--conditions-graph {
-      background-image: url('/images/about/about--conditions-graph.png');
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
     }
 
     &--girl-sad {
