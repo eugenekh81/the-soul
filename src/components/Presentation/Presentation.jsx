@@ -9,7 +9,7 @@ export const Presentation = () => {
         </h2>
 
       <div className="presentation__video-container">
-        <iframe src="https://www.youtube.com/embed/kEemfcvEBq8?si=v00h1BEAijdpEaTa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/kEemfcvEBq8?si=v00h1BEAijdpEaTa" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
       </div>
     </section>
