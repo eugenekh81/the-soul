@@ -1,0 +1,37 @@
+.section {
+  &__title {
+    width: fit-content;
+
+    position: relative;
+    margin: 0 auto 24px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before, &::after {
+      position: absolute;
+      box-sizing: content-box;
+      content: '';
+      display: inline-block;
+      height: 24px;
+      width: 36px;
+      background-image: url('/images/decor/leaf-green.png');
+
+      background-size: contain;
+      background-position: center;
+
+      background-repeat:
+      no-repeat;
+    }
+
+    &::before {
+      left: -40px;
+    }
+
+    &::after {
+      right: -40px;
+      transform: scaleX(-1);
+    }
+  }
+}

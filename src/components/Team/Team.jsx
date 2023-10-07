@@ -6,9 +6,10 @@ import MarynaYakhno from '/images/team/photo-4.jpg';
 
 export const Team = () => {
   return (
-    <section className='team'>
-      <h2 className='team__title'>Our team </h2>
+    <section className='section team'>
       <div className='container'>
+        <h2 className='section__title'>Team </h2>
+
         <ul className='team__list'>
           <li className='team__person person'>
             <div className='person__image-container'>
@@ -55,9 +56,7 @@ export const Team = () => {
 
             <h3 className='person__name'>Iryna Roenko</h3>
 
-            <p className='person__role'>
-              Psychologist
-            </p>
+            <p className='person__role'>Psychologist</p>
           </li>
           <li className='team__person person'>
             <div className='person__image-container'>
@@ -70,9 +69,7 @@ export const Team = () => {
 
             <h3 className='person__name'>Maryna Yakhno</h3>
 
-            <p className='person__role'>
-              Psychologist
-            </p>
+            <p className='person__role'>Psychologist</p>
           </li>
         </ul>
       </div>

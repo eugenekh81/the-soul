@@ -2,7 +2,7 @@ import './About.scss';
 
 export const About = () => {
   return (
-    <section className='about'>
+    <section className='section about'>
       <div className='container'>
         <p className='about__description'>
           Ukrainian circle was created for Ukrainians who were affected by the
@@ -10,7 +10,7 @@ export const About = () => {
           their well-being and empower them with psychological self-help skills
         </p>
 
-        <h2 className='about__title'>Key concepts</h2>
+        <h2 className='section__title'>Key concepts</h2>
 
         <ul className='about__list'>
           <li className='about__list-item'>

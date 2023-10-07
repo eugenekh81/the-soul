@@ -2,15 +2,6 @@
 @import '../../styles/utils/mixins';
 
 .team {
-  &__title {
-    margin: 0 0 24px;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: $colorGreen;
-  }
-
   &__list {
 
   }

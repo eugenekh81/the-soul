@@ -4,10 +4,10 @@ import './ModulesList.scss';
 
 export const ModulesList = () => {
   return (
-    <section className="modules">
+    <section className="section modules">
       <div className="container">
-      <h2 className="modules__title">
-        The programme consists of 9 modules:
+      <h2 className="section__title">
+        Structure:
       </h2>
 
       <ul className="modules__list">
