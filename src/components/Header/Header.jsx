@@ -12,8 +12,8 @@ export const Header = () => {
           </a>
 
           <div className="header__buttons">
-            <a href="tel: +123456789" className="header__button header__button--call"></a>
-            <a href="" className="header__button header__button--burger-menu"></a>
+            <a href="tel:+123456789" className="header__button header__button--call"></a>
+            <a href="#menu" className="header__button header__button--burger-menu"></a>
           </div>
           </div>
         </div>
