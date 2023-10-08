@@ -180,21 +180,16 @@
     }
 
     &--fb:hover {
-      background-image: url('/images/icons/fb.svg');
-        fill: currentColor;
+      fill: #0866FF;
     }
 
-    &--ig {
+    &--ig:hover {
+      fill: #d6249f;
       border-radius: 50%;
-      &:hover {
-        fill: #d6249f;
-      }
     }
 
-    &--tg {
-      &:hover {
-        fill: #0088cc;
-      }
+    &--tg:hover {
+      fill: #0088cc;
     }
 
     &--yt {
