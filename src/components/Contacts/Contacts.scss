@@ -179,10 +179,9 @@
       width: 48px;
     }
 
-    &--fb {
-      &:hover {
-        fill: #3b5998;
-      }
+    &--fb:hover {
+      background-image: url('/images/icons/fb.svg');
+        fill: currentColor;
     }
 
     &--ig {
