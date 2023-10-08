@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   background-color: #f7f0e8;
-  z-index: 2;
+  z-index: 99;
 
   &__content {
     display: flex;
@@ -17,7 +17,7 @@
     gap: 12px;
 
   }
-  
+
   &__button {
     background-repeat: no-repeat;
     display: block;
@@ -36,13 +36,12 @@
 
 .logo {
   display: flex;
-  // height: 24px;
+
 
 
   & img {
     display: flex;
 
-    height: 32px;
-    width: 100%;
+    width: 150px;
   }
 }
