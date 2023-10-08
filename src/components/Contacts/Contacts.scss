@@ -182,7 +182,10 @@
     width: 48px;
     transition: fill 100ms linear, opacity 100ms linear;
 
-
+    & svg {
+      height: 48px;
+      width: 48px;
+    }
 
     &--fb {
       fill: #0866FF;
