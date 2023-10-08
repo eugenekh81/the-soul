@@ -164,36 +164,41 @@
   &__icons {
     display: flex;
     justify-content: space-between;
+
+    &:hover {
+      opacity: 1;
+     & .social__icon:not(:hover) {
+        opacity: 0.8;
+      }
+    }
+
   }
+
   &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 48px;
     width: 48px;
-    fill: #e2e2e2;
-    transition: fill 100ms linear;
+    transition: fill 100ms linear, opacity 100ms linear;
 
-    & svg {
-      height: 48px;
-      width: 48px;
-    }
 
-    &--fb:hover {
+
+    &--fb {
       fill: #0866FF;
     }
 
-    &--ig:hover {
+    &--ig {
       fill: #d6249f;
       border-radius: 50%;
     }
 
-    &--tg:hover {
+    &--tg {
       fill: #0088cc;
     }
 
     &--yt {
-      &:hover {
+      & {
         fill: #b2071d;
       }
     }
