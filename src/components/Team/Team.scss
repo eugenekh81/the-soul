@@ -23,19 +23,9 @@
 
   transition: box-shadow 0.3s ease-in-out;
 
-  &::before {
-    position: absolute;
-    left: calc((280px - 210px) / 2 - 5px);
-    top: calc(32px - 5px);
-    content:'';
-    display: block;
-    border-radius: 50%;
-    height: 220px;
-    width: 220px;
-    border: 2px solid $colorBeigeDark;
+  background-color: $colorBeigeDark;
 
-    // background-color: $colorGreen;
-  }
+
 
   &:hover {
     box-shadow: 1px 1px 4px $colorGreen;
@@ -49,12 +39,12 @@
     border-radius: 50%;
     overflow: hidden;
 
+    border: 3px solid #fff;
+
     transition: transform .3s ease-in-out;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
-
-
   }
 
   &__image {
@@ -86,5 +76,4 @@
     text-align: center;
     line-height: 1.5;
   }
-
 }

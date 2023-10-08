@@ -1,6 +1,8 @@
 @import '../../styles/utils/mixins';
 
 .hero {
+
+
   &__content {
     position: relative;
 
@@ -19,6 +21,10 @@
   }
 
   &__banner {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+
     margin: 0 0 24px;
     height: 290px;
 

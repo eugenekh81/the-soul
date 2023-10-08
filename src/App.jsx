@@ -7,6 +7,7 @@ import { ModulesList } from './components/ModulesList/ModulesList';
 import { Presentation } from './components/Presentation/Presentation';
 import { Team } from './components/Team/Team';
 import { VideoReviews } from './components/VideoReviews/VideoReviews';
+import { Contacts } from './components/Contacts/Contacts';
 
 export const App = () => {
   return (
@@ -25,6 +26,8 @@ export const App = () => {
         <VideoReviews />
 
         <Team />
+
+        <Contacts />
       </main>
     </>
   );

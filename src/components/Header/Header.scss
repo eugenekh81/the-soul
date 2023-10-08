@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 60px;
   }
 
 
@@ -16,17 +16,19 @@
     display: flex;
     gap: 12px;
 
+  }
+  
+  &__button {
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    width: 32px;
+
     &--call {
-      display: block;
-      height: 24px;
-      width: 24px;
       background-image: url('/images/header/header-phone--mobile.png');
     }
 
     &--burger-menu {
-      display: block;
-      height: 24px;
-      width: 24px;
       background-image: url('/images/header/header-burger--mobile.png');
     }
   }
@@ -34,13 +36,13 @@
 
 .logo {
   display: flex;
-  height: 24px;
+  // height: 24px;
 
 
   & img {
     display: flex;
 
-    height: 24px;
+    height: 32px;
     width: 100%;
   }
 }
