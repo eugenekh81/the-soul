@@ -1,0 +1,14 @@
+.partners {
+  &__list {
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__partner:nth-child(3) img {
+    height: 120px;
+    object-fit: cover;
+    width: 100%;
+  }
+}

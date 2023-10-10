@@ -2,7 +2,7 @@ import './VideoReviews.scss';
 
 export const VideoReviews = () => {
   return (
-    <section className='section video-reviews'>
+    <section className='page__section section video-reviews'>
       <div className='container'>
       <h2 className='section__title'>Video Reviews</h2>
         <div className='video-reviews__item'>

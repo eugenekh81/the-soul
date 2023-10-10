@@ -1,0 +1,8 @@
+@import '../utils/vars';
+@import '../utils/mixins';
+
+.page {
+  &__section {
+    margin: 0 0 48px;
+  }
+}

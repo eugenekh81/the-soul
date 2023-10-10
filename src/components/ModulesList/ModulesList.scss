@@ -4,7 +4,12 @@
 .modules {
   &__module {
     margin: 0 0 48px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
+
 
   &__title {
     margin: 0 0 24px;
@@ -28,7 +33,6 @@
   }
 
   &__title {
-    // margin: 0 0 24px;
     font-weight: 700;
     text-shadow: #0d4f3a71 2px 2px 10px;
 

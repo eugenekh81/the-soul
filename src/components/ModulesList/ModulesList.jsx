@@ -4,7 +4,7 @@ import './ModulesList.scss';
 
 export const ModulesList = () => {
   return (
-    <section className="section modules">
+    <section className="page__section section modules">
       <div className="container">
       <h2 className="section__title">
         Structure

@@ -2,7 +2,7 @@ import './Contacts.scss';
 
 export const Contacts = () => {
   return (
-    <section className='section contacts'>
+    <section className='page__section section contacts'>
       <div className='container'>
         <h2 className='section__title'>Contacts</h2>
 
@@ -52,7 +52,9 @@ export const Contacts = () => {
             type="tel"
             placeholder='Phone number'
           />
-          <button type='submit' className='subscribe__button'>Subscribe</button>
+          <button type='submit' className='subscribe__button'>
+            Subscribe
+          </button>
           </form>
         </div>
         <div className="contacts__social social">

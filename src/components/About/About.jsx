@@ -2,7 +2,7 @@ import './About.scss';
 
 export const About = () => {
   return (
-    <section className='section about'>
+    <section className='page__section section about'>
       <div className='container'>
         <p className='about__description'>
           Ukrainian circle was created for Ukrainians who were affected by the

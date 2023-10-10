@@ -8,6 +8,7 @@ import { Presentation } from './components/Presentation/Presentation';
 import { Team } from './components/Team/Team';
 import { VideoReviews } from './components/VideoReviews/VideoReviews';
 import { Contacts } from './components/Contacts/Contacts';
+import { Partners } from './components/Partners/Partners';
 
 export const App = () => {
   return (
@@ -26,6 +27,8 @@ export const App = () => {
         <VideoReviews />
 
         <Team />
+
+        <Partners />
 
         <Contacts />
       </main>

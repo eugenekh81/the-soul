@@ -6,7 +6,7 @@ import MarynaYakhno from '/images/team/photo-4.jpg';
 
 export const Team = () => {
   return (
-    <section className='section team'>
+    <section className='page__section section team'>
       <div className='container'>
         <h2 className='section__title'>Team </h2>
 

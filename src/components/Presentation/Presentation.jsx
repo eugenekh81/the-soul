@@ -2,7 +2,7 @@ import './Presentation.scss';
 
 export const Presentation = () => {
   return (
-    <section className="presentation">
+    <section className="section page__section presentation">
       <div className="container">
         <h2 className="presentation__title">
           Presentation of the Ukrainian Circle Project by the founders of the Centre - Maria Vynnytska and Oleksandra Shymanova
