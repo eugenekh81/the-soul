@@ -1,4 +1,9 @@
 import './Partners.scss';
+import consciousness from '/images/partners/consciousness1.png';
+import katieEastman from '/images/partners/Katie_Eastman.png';
+import renovare from '/images/partners/renovare.png';
+import EKR from '/images/partners/EKR.png';
+
 
 export const Partners = () => {
   return (
@@ -9,22 +14,22 @@ export const Partners = () => {
         <ul className="partners__list">
           <li className="partners__partner">
             <a href="#" className="partners__link">
-              <img src="/images/partners/consciousness1.png" alt="" />
+              <img src={consciousness} alt="Consciousness" />
             </a>
           </li>
           <li className="partners__partner">
             <a href="#" className="partners__link">
-              <img src="/images/partners/Katie_Eastman.png" alt="" />
+              <img src={katieEastman} alt="Katie Eastman" />
             </a>
           </li>
           <li className="partners__partner">
             <a href="#" className="partners__link">
-              <img src="/images/partners/renovare.png" alt="" />
+              <img src={renovare} alt="Renovare" />
             </a>
           </li>
           <li className="partners__partner">
             <a href="#" className="partners__link renovare">
-              <img src="/images/partners/EKR_Horizontal_Logo_Black-Rev2-1-removebg-preview 1.png" alt="" />
+              <img src={EKR} alt="" />
             </a>
           </li>
         </ul>
