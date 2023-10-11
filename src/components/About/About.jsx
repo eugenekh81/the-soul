@@ -89,21 +89,39 @@ export const About = () => {
 
         <ul className="about__list">
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              12.5%
+            </span>
             Severe physical conditions: insomnia, anxiety, panic attacks, loss of appetite, excessive appetite, palpitations, deterioration of health
           </li>
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              23.9%
+            </span>
             Distortion of mental balance: self-doubt, doubts about one&apos;s abilities, loss of inner support, feeling sad and helpless, self-criticism
           </li>
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              11.5%
+            </span>
             Problems in personal relationships: loneliness, worries, conflicts, divorce, betrayal, lack of relationships
           </li>
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              17%
+            </span>
             Problems with work and income: loss of confidence in one&apos;s skills and abilities, loss of business or job, lack of fulfillment, lack of motivation, no ability to earn, conflicts in the team or with management
           </li>
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              16.3%
+            </span>
             Self-identity problems: loss of self and meaning, re-evaluation of values and goals, loss of desires, confusion about &quot;Who am I?&quot;, feeling of isolation
           </li>
           <li className="about__list-item">
+            <span className='about__list-item--state'>
+              18.8%
+            </span>
             Mental conditions: apathy, powerlessness, depression, lack of interest in life, outbursts of anger, irritability, anxiety, excessive control
           </li>
         </ul>
