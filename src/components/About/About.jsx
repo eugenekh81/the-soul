@@ -1,4 +1,5 @@
 import './About.scss';
+import diagramMobile from '/images/about/about--diagram--mobile.png';
 
 export const About = () => {
   return (
@@ -72,7 +73,7 @@ export const About = () => {
         </p>
 
         <div className="about__image">
-          <img className="about__image--conditions-graph" src="/images/about/about--diagram--mobile.png" alt="" />
+          <img className="about__image--conditions-graph" src={diagramMobile} alt="" />
         </div>
 
         <ul className="about__list">
