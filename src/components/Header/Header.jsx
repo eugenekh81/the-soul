@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="header">
         <div className="container">
           <div className="header__content">
-          <a href="/" className="logo">
+          <a href="/the-soul/" className="logo">
             <img src={logo} alt="The Soul" />
           </a>
 
