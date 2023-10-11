@@ -4,7 +4,7 @@ export const VideoReviews = () => {
   return (
     <section className='page__section section video-reviews'>
       <div className='container'>
-      <h2 className='section__title'>Video Reviews</h2>
+        <h2 className='section__title'>Video Reviews</h2>
         <div className='video-reviews__item'>
           <iframe
             src='https://www.youtube.com/embed/fEuExMpBU_o?si=x6k3GVOaYExfrJSb'
@@ -22,7 +22,7 @@ export const VideoReviews = () => {
             title='YouTube video player'
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
