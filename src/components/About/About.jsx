@@ -1,5 +1,10 @@
 import './About.scss';
 import diagramMobile from '/images/about/about--diagram--mobile.png';
+import ageDiagram from '/images/about/about--age-graph.png';
+import ukraineMap from '/images/about/about--ukraine-map.png';
+import europeMap from '/images/about/about--europe-map.png';
+import womanSad from '/images/about/about--girl-sad.png';
+import womanHappy from '/images/about/about--girl-happy.png';
 
 export const About = () => {
   return (
@@ -43,8 +48,12 @@ export const About = () => {
           The war forced many people to leave their homes, so participants joined our programme from all over the world and Ukraine. In terms of the proportion, 29% are outside Ukraine and are distributed across Europe and the world, and 71% are in Ukraine
         </p>
 
-        <div className="about__image about__image--ukraine-map"></div>
-        <div className="about__image about__image--europe-map"></div>
+        <div className="about__image">
+            <img src={ukraineMap} alt="Ukraine demographics" className="about__image--ukraine-map" />
+        </div>
+        <div className="about__image">
+            <img src={europeMap} alt="Europe demographics" className=" about__image--europe-map" />
+        </div>
 
         <h3 className="about__subtitle">
           AGE STRUCTURE
@@ -62,7 +71,9 @@ export const About = () => {
           </li>
         </ul>
 
-        <div className="about__image about__image--age-graph"></div>
+        <div className="about__image">
+          <img src={ageDiagram} alt="Age chart" className="about__image--age-graph" />
+        </div>
 
         <h3 className="about__subtitle">
           PSYCHOLOGICAL STATE OF THE PARTICIPANTS
@@ -73,7 +84,7 @@ export const About = () => {
         </p>
 
         <div className="about__image">
-          <img className="about__image--conditions-graph" src={diagramMobile} alt="" />
+          <img className="about__image--conditions-graph" src={diagramMobile} alt="Conditions chart" />
         </div>
 
         <ul className="about__list">
@@ -101,7 +112,9 @@ export const About = () => {
         Participants described their well-being in their own words, in their own words about feelings, experiences, emotions and mental health
       </h2>
 
-      <div className="about__image about__image--girl-sad"></div>
+      <div className="about__image">
+        <img src={womanSad} alt="Psychological state before the program" className="about__image--girl-sad" />
+      </div>
 
       <h2 className="about__subtitle">
         It was important to determine what people want at this stage, so each participant answered the following question:
@@ -109,7 +122,9 @@ export const About = () => {
         What changes would you like to see in your life after completing the Psychological Recovery Programme?
       </h2>
 
-      <div className="about__image about__image--girl-happy"></div>
+      <div className="about__image">
+        <img src={womanHappy} alt="Psychological state after the program" className="about__image--girl-happy" />
+      </div>
 
       </div>
     </section>
