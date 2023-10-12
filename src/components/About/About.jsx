@@ -41,7 +41,7 @@ export const About = () => {
           </li>
         </ul>
 
-        <h2 className='about__title'>Demographics</h2>
+        <h2 className='section__title'>Demographics</h2>
 
         <p className='about__description'>
           Participants filled a registration form, which allowed us to get to know each person better.
