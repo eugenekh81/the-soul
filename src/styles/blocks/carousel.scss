@@ -1,5 +1,5 @@
 .carousel {
-  height: 600px;
+  height: 400px;
   &-inner {
     height: 100%;
     display: flex;
@@ -21,6 +21,39 @@
     &-prev-icon {
       height: 16px;
       width: 16px;
+    }
+  }
+
+  &-control {
+    &-prev {
+      top: 50%;
+      transform: translate(-70%, -50%);
+      &-icon {
+        color: $colorBeige;
+        filter: none;
+      }
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: $colorGreen;
+    }
+    &-next {
+      &-icon {
+        color: $colorBeige;
+        filter: none;
+      }
+
+      top: 50%;
+      transform: translate(70%, -50%);
+      &-icon {
+        color: $colorBeige;
+        filter: none;
+      }
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: $colorGreen;
+      color: #fff;
     }
   }
 }

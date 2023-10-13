@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './Reviews.scss';
 
-import reviews from '../../data/reviews.json';
+import { reviews } from '../../data/reviews';
 import { ReviewItem } from '../ReviewItem/';
 
 export const Reviews = () => {

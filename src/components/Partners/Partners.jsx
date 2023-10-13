@@ -1,6 +1,6 @@
 import './Partners.scss';
-import consciousness from '/images/partners/consciousness1.png';
-import katieEastman from '/images/partners/Katie_Eastman.png';
+import consciousness from '/images/partners/consciousness-centered.png';
+import katieEastman from '/images/partners/Katie_Eastman-centered.png';
 import renovare from '/images/partners/renovare.png';
 import EKR from '/images/partners/EKR.png';
 

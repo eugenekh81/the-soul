@@ -107,15 +107,13 @@
     object-position: 0px 0px;
 
     transition: all 0.3s ease-in-out;
-
-
   }
 
   &__description {
     margin: 0 0 24px;
+    font-size: 14px;
     text-align: justify;
     line-height: 1.5;
-
     b {
       font-weight: 700;
     }
