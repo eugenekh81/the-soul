@@ -29,8 +29,8 @@
       top: 50%;
       transform: translate(-70%, -50%);
       &-icon {
-        color: $colorBeige;
         filter: none;
+        color: #fff;
       }
       height: 30px;
       width: 30px;
@@ -48,12 +48,19 @@
       &-icon {
         color: $colorBeige;
         filter: none;
+        color: #fff;
       }
+
       height: 30px;
       width: 30px;
       border-radius: 50%;
       background-color: $colorGreen;
-      color: #fff;
+
     }
   }
+}
+
+.carousel .carousel-control-prev .carousel-control-prev-icon,
+.carousel .carousel-control-next .carousel-control-next-icon, {
+  filter: none;
 }
