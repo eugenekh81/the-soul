@@ -9,6 +9,7 @@
   &-indicators [data-bs-target] {
     height: 8px;
     width: 8px;
+    background-color: $colorGreen;
     border-radius: 50%;
   }
 
@@ -55,7 +56,6 @@
       width: 30px;
       border-radius: 50%;
       background-color: $colorGreen;
-
     }
   }
 }
