@@ -51,20 +51,6 @@
     width: 210px;
   }
 
-  &:nth-child(2) &__image {
-    transform: scale(2);
-  }
-
-  &:nth-child(3) &__image {
-    transform: scale(1.7);
-    object-position: 15px 0;
-  }
-
-  &:nth-child(4) &__image {
-    transform: scale(1.1);
-    object-position: 0 10px;
-  }
-
   &__name {
     margin: 0 0 12px;
     font-weight: bold;
