@@ -5,6 +5,12 @@ import ukraineMap from '/images/about/about--ukraine-map.png';
 import europeMap from '/images/about/about--europe-map.png';
 import womanSad from '/images/about/about--girl-sad.png';
 import womanHappy from '/images/about/about--girl-happy.png';
+/* import beacon from '/images/concepts/beacon.png';
+import candles from '/images/concepts/candles.png';
+import generations from '/images/concepts/generations.png';
+import ptGrowth from '/images/concepts/pt-growth.png';
+import ukrainian from '/images/concepts/ukrainian.png';
+import unity from '/images/concepts/unity.png'; */
 
 export const About = () => {
   return (
@@ -17,6 +23,24 @@ export const About = () => {
         </p>
 
         <h2 className='section__title'>Key concepts</h2>
+
+        <p className='about__description key-concepts'>
+          The &quot;Ukrainian Circle&quot; Program is based on these key concepts:
+        </p>
+
+        <article className='key-concept'>
+          <div className="key-concept__img-container">
+            <img src="" alt="ukrainian architectonics" />
+          </div>
+
+          <h3 className="key-concept__title">
+            Ukrainian Architectonics
+          </h3>
+
+          <p className="key-concept__description">
+            History, arts and culture, values and identity
+          </p>
+        </article>
 
         <ul className='about__list'>
           <li className='about__list-item'>

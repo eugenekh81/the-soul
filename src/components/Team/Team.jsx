@@ -1,8 +1,8 @@
 import './Team.scss';
-import AlexandraShymanova from './images/team/ashymanova-mobile.png';
-import MariyaVynnytska from './images/team/mvynnytska-mobile.png';
-import IrynaRoenko from './images/team/iroenko-mobile.png';
-import MarynaYakhno from './images/team/myakhno-mobile.png';
+import AlexandraShymanova from '/images/team/ashymanova-mobile.png';
+import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
+import IrynaRoenko from '/images/team/iroenko-mobile.png';
+import MarynaYakhno from '/images/team/myakhno-mobile.png';
 
 export const Team = () => {
   return (
