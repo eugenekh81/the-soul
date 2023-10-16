@@ -28,7 +28,7 @@ export const About = () => {
           The &quot;Ukrainian Circle&quot; Program is based on these key concepts:
         </p>
 
-        <article className='key-concept'>
+{/*         <article className='key-concept'>
           <div className="key-concept__img-container">
             <img src="" alt="ukrainian architectonics" />
           </div>
@@ -40,7 +40,7 @@ export const About = () => {
           <p className="key-concept__description">
             History, arts and culture, values and identity
           </p>
-        </article>
+        </article> */}
 
         <ul className='about__list'>
           <li className='about__list-item'>
