@@ -1,20 +1,19 @@
 import './ReviewItem.scss';
 import PropTypes from 'prop-types';
 
-
-import personPlaceholderImg from '/images/reviews/review_person_placeholder.png';
-
 export const ReviewItem = ({
   name,
+  imgSrc,
   location,
   review_text
 }) => {
+  console.log(name);
     return (
     <div className='reviews__item review'>
       <div className='review__image-container'>
         <img
           className='review__image'
-          src={personPlaceholderImg}
+          src={imgSrc}
           alt='person'
         />
       </div>
@@ -30,6 +29,7 @@ export const ReviewItem = ({
 
 ReviewItem.propTypes = {
   name: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   review_text: PropTypes.string.isRequired,
 }

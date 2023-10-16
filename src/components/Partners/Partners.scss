@@ -1,14 +1,15 @@
-.partners {
-  &__list {
-    margin: 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+.partners-list {
+  .carousel {
+    height: 400px;
 
-  &__partner:nth-child(3) img {
-    height: 120px;
-    object-fit: cover;
-    width: 100%;
+    &-control {
+      &-prev {
+        transform: translateX(-120%);
+      }
+
+      &-next {
+        transform: translateX(120%);
+      }
+    }
   }
 }

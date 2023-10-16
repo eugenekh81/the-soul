@@ -16,8 +16,6 @@ export const VideoReviews = () => {
         </div>
         <div className='video-reviews__item'>
           <iframe
-            width='560'
-            height='315'
             src='https://www.youtube.com/embed/Go9A6_EpRn8?si=Lux-SfoVLVAoq_Np'
             title='YouTube video player'
             frameBorder='0'

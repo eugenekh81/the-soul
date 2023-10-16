@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './Reviews.scss';
 
-import reviews from '../../data/reviews.json';
+import { reviews } from '../../data/reviews';
 import { ReviewItem } from '../ReviewItem/';
 
 export const Reviews = () => {
@@ -11,7 +11,7 @@ export const Reviews = () => {
         <h2 className='section__title'>Reviews</h2>
 
         <div className='reviews__list'>
-        <Carousel data-bs-theme="dark">
+        <Carousel>
          {reviews.map(r => {
           return (
           <Carousel.Item interval={3000} key={r.id}>
