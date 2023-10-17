@@ -5,6 +5,8 @@ import ukraineMap from '/images/about/about--ukraine-map.png';
 import europeMap from '/images/about/about--europe-map.png';
 import womanSad from '/images/about/about--girl-sad.png';
 import womanHappy from '/images/about/about--girl-happy.png';
+import { Concepts } from '../Concepts/Concepts';
+import { Infographics } from '../Infographics/Infographics';
 /* import beacon from '/images/concepts/beacon.png';
 import candles from '/images/concepts/candles.png';
 import generations from '/images/concepts/generations.png';
@@ -28,43 +30,10 @@ export const About = () => {
           The &quot;Ukrainian Circle&quot; Program is based on these key concepts:
         </p>
 
-{/*         <article className='key-concept'>
-          <div className="key-concept__img-container">
-            <img src="" alt="ukrainian architectonics" />
-          </div>
 
-          <h3 className="key-concept__title">
-            Ukrainian Architectonics
-          </h3>
+        <Concepts />
 
-          <p className="key-concept__description">
-            History, arts and culture, values and identity
-          </p>
-        </article> */}
-
-        <ul className='about__list'>
-          <li className='about__list-item'>
-            Ukrainian Architectonics
-            <br/>
-            History, arts and culture, values and identity
-          </li>
-          <li className='about__list-item'>
-            Post-traumatic growth
-            <br/>
-            Theory and best practices
-          </li>
-          <li className='about__list-item'>
-            Cross-generational trauma prevention
-            <br/>
-            Possibilities of new wars in the future
-          </li>
-          <li className='about__list-item'>
-            Fostering unity
-            <br/>
-            Overcoming the schism in Ukrainian society
-          </li>
-        </ul>
-
+    <Infographics />
         <h2 className='section__title'>Demographics</h2>
 
         <p className='about__description'>
