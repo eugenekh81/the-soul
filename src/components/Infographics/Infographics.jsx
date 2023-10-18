@@ -1,37 +1,31 @@
 import './Infographics.scss';
+import { infographics } from '../../data/infographics';
+import { InfographicsItem } from '../InfographicsItem/InfographicsItem';
+import Carousel from 'react-bootstrap/Carousel';
 
 export const Infographics = () => {
   return (
-    <section className="page__section infographics">
-      <div className="container">
-        <svg>
-          <use href="/images/infographics/infographics.svg#info1" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info2" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info3" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info4" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info5" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info6" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info7" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info8" />
-        </svg>
-        <svg>
-          <use href="/images/infographics/infographics.svg#info9" />
-        </svg>
-
+    <section className='page__section infographics'>
+      <div className='container'>
+        <ul className='infographics__list'>
+          <Carousel>
+            <Carousel.Item>
+              {infographics.slice(0, 3).map((i) => (
+                <InfographicsItem {...i} key={i.id} />
+              ))}
+            </Carousel.Item>
+            <Carousel.Item>
+              {infographics.slice(3, 6).map((i) => (
+                <InfographicsItem {...i} key={i.id} />
+              ))}
+            </Carousel.Item>
+            <Carousel.Item>
+              {infographics.slice(6, 9).map((i) => (
+                <InfographicsItem {...i} key={i.id} />
+              ))}
+            </Carousel.Item>
+          </Carousel>
+        </ul>
       </div>
     </section>
   );
