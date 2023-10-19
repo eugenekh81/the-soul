@@ -11,7 +11,7 @@ export const Team = () => {
         <h2 className='section__title'>Team </h2>
 
         <div className='team__list'>
-          <Carousel>
+          <Carousel variant='dark'>
             <Carousel.Item interval={3000}>
               <div className='team__person person'>
                 <div className='person__image-container'>

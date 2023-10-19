@@ -1,1 +1,1 @@
-export * from './About.scss';
+export * from './About.jsx';

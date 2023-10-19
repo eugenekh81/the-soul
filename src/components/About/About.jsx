@@ -1,18 +1,6 @@
 import './About.scss';
-import diagramMobile from '/images/about/about--diagram--mobile.png';
-import ageDiagram from '/images/about/about--age-graph.png';
-import ukraineMap from '/images/about/about--ukraine-map.png';
-import europeMap from '/images/about/about--europe-map.png';
-import womanSad from '/images/about/about--girl-sad.png';
-import womanHappy from '/images/about/about--girl-happy.png';
-import { Concepts } from '../Concepts/Concepts';
-import { Infographics } from '../Infographics/Infographics';
-/* import beacon from '/images/concepts/beacon.png';
-import candles from '/images/concepts/candles.png';
-import generations from '/images/concepts/generations.png';
-import ptGrowth from '/images/concepts/pt-growth.png';
-import ukrainian from '/images/concepts/ukrainian.png';
-import unity from '/images/concepts/unity.png'; */
+
+
 
 export const About = () => {
   return (
@@ -23,121 +11,7 @@ export const About = () => {
           war to help them recover and restore their mental health, improve
           their well-being and empower them with psychological self-help skills
         </p>
-
-        <h2 className='section__title'>Key concepts</h2>
-
-        <p className='about__description key-concepts'>
-          The &quot;Ukrainian Circle&quot; Program is based on these key concepts:
-        </p>
-
-
-        <Concepts />
-
-    <Infographics />
-        <h2 className='section__title'>Demographics</h2>
-
-        <p className='about__description'>
-          Participants filled a registration form, which allowed us to get to know each person better.
-          The war forced many people to leave their homes, so participants joined our programme from all over the world and Ukraine. In terms of the proportion, 29% are outside Ukraine and are distributed across Europe and the world, and 71% are in Ukraine
-        </p>
-
-        <div className="about__image">
-            <img src={ukraineMap} alt="Ukraine demographics" className="about__image--ukraine-map" />
         </div>
-        <div className="about__image">
-            <img src={europeMap} alt="Europe demographics" className=" about__image--europe-map" />
-        </div>
-
-        <h3 className="about__subtitle">
-          AGE STRUCTURE
-        </h3>
-
-        <ul className="about__list">
-          <li className="about__list-item">
-            47% - women aged 36 - 50 y.o.
-          </li>
-          <li className="about__list-item">
-            up to 20% - women under 35 y.o.
-          </li>
-          <li className="about__list-item">
-            13% - women aged 50+
-          </li>
-        </ul>
-
-        <div className="about__image">
-          <img src={ageDiagram} alt="Age chart" className="about__image--age-graph" />
-        </div>
-
-        <h3 className="about__subtitle">
-          PSYCHOLOGICAL STATE OF THE PARTICIPANTS
-        </h3>
-
-        <p className="about__description">
-          All the participants are people  affected by war. They have lost their mental health and are prone to serious conditions. We suggested that they indicate in the registration form what worries them the most. And here are the results:
-        </p>
-
-        <div className="about__image">
-          <img className="about__image--conditions-graph" src={diagramMobile} alt="Conditions chart" />
-        </div>
-
-        <ul className="about__list">
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              13%
-            </span>
-            Severe physical conditions: insomnia, anxiety, panic attacks, loss of appetite, excessive appetite, palpitations, deterioration of health
-          </li>
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              24%
-            </span>
-            Distortion of mental balance: self-doubt, doubts about one&apos;s abilities, loss of inner support, feeling sad and helpless, self-criticism
-          </li>
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              12%
-            </span>
-            Problems in personal relationships: loneliness, worries, conflicts, divorce, betrayal, lack of relationships
-          </li>
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              17%
-            </span>
-            Problems with work and income: loss of confidence in one&apos;s skills and abilities, loss of business or job, lack of fulfillment, lack of motivation, no ability to earn, conflicts in the team or with management
-          </li>
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              16%
-            </span>
-            Self-identity problems: loss of self and meaning, re-evaluation of values and goals, loss of desires, confusion about &quot;Who am I?&quot;, feeling of isolation
-          </li>
-          <li className="about__list-item">
-            <span className='about__list-item--state'>
-              19%
-            </span>
-            Mental conditions: apathy, powerlessness, depression, lack of interest in life, outbursts of anger, irritability, anxiety, excessive control
-          </li>
-        </ul>
-
-      <h2 className="about__subtitle">
-        Participants described their well-being in their own words, in their own words about feelings, experiences, emotions and mental health
-      </h2>
-
-      <div className="about__image">
-        <img src={womanSad} alt="Psychological state before the program" className="about__image--girl-sad" />
-      </div>
-
-      <h2 className="about__subtitle">
-        It was important to determine what people want at this stage, so each participant answered the following question:
-        <br /><br />
-        What changes would you like to see in your life after completing the Psychological Recovery Programme?
-      </h2>
-
-      <div className="about__image">
-        <img src={womanHappy} alt="Psychological state after the program" className="about__image--girl-happy" />
-      </div>
-
-      </div>
-    </section>
+      </section>
   );
 };

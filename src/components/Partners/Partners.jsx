@@ -11,7 +11,7 @@ export const Partners = () => {
       <div className='container'>
         <h2 className='section__title'>Partners</h2>
         <div className='partners-list'>
-          <Carousel>
+          <Carousel variant='dark'>
             <Carousel.Item interval={3000}>
               <a
                 href='https://www.wca.earth/'

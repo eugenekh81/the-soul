@@ -6,6 +6,12 @@ export const Concepts = () => {
   return (
     <section className='page__section concepts'>
       <div className='container'>
+      <h2 className='section__title'>Key concepts</h2>
+
+      <p className='about__description'>
+          The &quot;Ukrainian Circle&quot; Program is based on these key concepts:
+        </p>
+
         <ul className='concept__list'>
           {concepts.map((c) => (
             <li className='concept__item' key={c.id}>

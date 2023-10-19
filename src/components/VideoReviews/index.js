@@ -1,1 +1,1 @@
-export * from './VideoReviews.scss';
+export * from './VideoReviews.jsx';

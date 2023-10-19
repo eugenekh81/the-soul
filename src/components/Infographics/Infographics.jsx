@@ -8,7 +8,7 @@ export const Infographics = () => {
     <section className='page__section infographics'>
       <div className='container'>
         <ul className='infographics__list'>
-          <Carousel>
+          <Carousel variant="dark">
             <Carousel.Item>
               {infographics.slice(0, 3).map((i) => (
                 <InfographicsItem {...i} key={i.id} />

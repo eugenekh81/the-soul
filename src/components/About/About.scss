@@ -81,16 +81,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 280px;
 
-    &--ukraine-map {
-
-    }
-
-    &--europe-map {
-
-    }
-
-    &--age-graph {
+    & img {
+      width: 100%;
+      object-fit: cover;
     }
 
     &--conditions-graph {
@@ -98,6 +93,7 @@
       object-fit: cover;
       object-position: left;
     }
+
 
     &--girl-sad {
       background-image: url('/images/about/about--girl-sad.png');

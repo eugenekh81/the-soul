@@ -6,7 +6,7 @@
     align-items: center;
   }
 
-  &-indicators [data-bs-target] {
+  &-dark &-indicators [data-bs-target] {
     height: 8px;
     width: 8px;
     background-color: $colorGreen;
@@ -14,53 +14,38 @@
   }
 
   &-control {
-    &-next-icon {
-      height: 16px;
-      width: 16px;
-    }
-
-    &-prev-icon {
-      height: 16px;
-      width: 16px;
-    }
-  }
-
-  &-control {
     &-prev {
       top: 50%;
-      transform: translate(-70%, -50%);
+      transform: translate(-120%, -50%);
       &-icon {
-        filter: none;
+        // filter: none;
         color: #fff;
       }
+
       height: 30px;
       width: 30px;
       border-radius: 50%;
-      background-color: $colorGreen;
+      background-color: $colorBeigeDark;
     }
-    &-next {
-      &-icon {
-        color: $colorBeige;
-        filter: none;
-      }
 
+    &-next {
       top: 50%;
-      transform: translate(70%, -50%);
-      &-icon {
-        color: $colorBeige;
-        filter: none;
-        color: #fff;
-      }
+      transform: translate(120%, -50%);
 
       height: 30px;
       width: 30px;
       border-radius: 50%;
-      background-color: $colorGreen;
+      background-color: $colorBeigeDark;
     }
   }
 }
 
 .carousel .carousel-control-prev .carousel-control-prev-icon,
 .carousel .carousel-control-next .carousel-control-next-icon {
-  filter: none;
+  // filter: none;
+    height: 16px;
+    width: 16px;
+
+    color: $colorBeige;
+        // filter: none;
 }

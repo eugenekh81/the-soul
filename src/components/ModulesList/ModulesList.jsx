@@ -1,4 +1,13 @@
 import './ModulesList.scss';
+import module1report from '/pdf/module-reports/module-1__summary.pdf';
+import module2report from '/pdf/module-reports/module-2__summary.pdf';
+import module3report from '/pdf/module-reports/module-3__summary.pdf';
+import module4report from '/pdf/module-reports/module-4__summary.pdf';
+import module5report from '/pdf/module-reports/module-5__summary.pdf';
+import module6report from '/pdf/module-reports/module-6__summary.pdf';
+import module7report from '/pdf/module-reports/module-7__summary.pdf';
+import module8report from '/pdf/module-reports/module-8__summary.pdf';
+import module9report from '/pdf/module-reports/module-9__summary.pdf';
 
 // import Carousel from 'react-bootstrap/Carousel';
 
@@ -20,34 +29,6 @@ export const ModulesList = () => {
                 emotions
               </p>
             </div>
-            {/* <div className="module__carousel">
-           <Carousel>
-      <Carousel.Item interval={3000}>
-        <img src={module1__image}  className="module__image" alt="module 1" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
-        <img src={module1__image}  className="module__image" alt="module 1" />
-        {/* <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
-        <img src={module1__image}  className="module__image" alt="module 1" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-          </Carousel>
-          </div>
-          */}
 
             <p className='module__description'>
               Objective: understand one&apos;s state and conditions, and not to
@@ -57,7 +38,7 @@ export const ModulesList = () => {
               &quot;transformer booth&quot; to help people cope with their
               conditions and give them support.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module1report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 1
             </a>
           </li>
@@ -74,7 +55,7 @@ export const ModulesList = () => {
               everything that we are going through, and we are need to learn how
               to support our body.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module2report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 2
             </a>
           </li>
@@ -96,7 +77,7 @@ export const ModulesList = () => {
               effective actions or work. This was the most popular question
               among participants.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module3report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 3
             </a>
           </li>
@@ -119,7 +100,7 @@ export const ModulesList = () => {
               about separation, look for new ways to be together and support
               each other.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module4report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 4
             </a>
           </li>
@@ -144,7 +125,7 @@ export const ModulesList = () => {
               parents and obsolete ideas about yourself that no longer serve
               you.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module5report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 5
             </a>
           </li>
@@ -171,7 +152,7 @@ export const ModulesList = () => {
               and how to re-create such sense and feeling of home regardless of
               their current location and circumstances.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module6report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 6
             </a>
           </li>
@@ -194,7 +175,7 @@ export const ModulesList = () => {
               amount for today and set the target income, activate your
               confidence and start taking real steps.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module7report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 7
             </a>
           </li>
@@ -220,7 +201,7 @@ export const ModulesList = () => {
               accepting others, being more tolerant and caring no matter the
               differences.
             </p>
-            <a href='#' className='module__report-button'>
+            <a href={module8report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 8
             </a>
           </li>
@@ -240,7 +221,7 @@ export const ModulesList = () => {
               with life.
             </p>
 
-            <a href='#' className='module__report-button'>
+            <a href={module9report} className='module__report-button' target='_blank' rel="noreferrer">
               Detailed report: Module 9
             </a>
           </li>

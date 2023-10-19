@@ -1,0 +1,97 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.psychological-state {
+
+  &__subtitle {
+    margin: 0 0 24px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: $colorGreen
+  }
+
+  &__description {
+    margin: 0 0 24px;
+    text-align: justify;
+  }
+
+  &__list {
+    margin: 0 0 24px;
+  }
+
+  &__list-item {
+    margin: 0 0 16px;
+    text-align: justify;
+    font-size: 14px;
+
+    &--state {
+      margin-right: 12px;
+      padding: 8px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+
+
+      border-radius: 8px;
+      float: left;
+      box-shadow: 2px 2px 4px #333;
+
+      transition: transform 200ms linear;
+    }
+
+    &:hover &--state {
+      transform: scale(1.1);
+    }
+
+    &:nth-child(1) &--state {
+      background-color: #A05E02;
+    }
+
+    &:nth-child(2) &--state {
+      background-color: #074030;
+    }
+
+    &:nth-child(3) &--state {
+      background-color: #ECC064;
+      color: #074030;
+    }
+
+    &:nth-child(4) &--state {
+      background-color: #15694F;
+    }
+
+    &:nth-child(5) &--state {
+      background-color: #B88744;
+    }
+
+    &:nth-child(6) &--state {
+      background-color: #F7F0E8;
+      color: #2B2B2A;
+    }
+  }
+
+  &__image {
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &--conditions-graph {
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+}
