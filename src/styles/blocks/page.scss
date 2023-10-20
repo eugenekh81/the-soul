@@ -2,6 +2,8 @@
 @import '../utils/mixins';
 
 .page {
+    font-family: 'Montserrat', sans-serif;
+
   &__section {
     margin: 0 0 48px;
   }

@@ -5,13 +5,13 @@ import womanSad from '/images/about/about--girl-sad.png';
 import womanHappy from '/images/about/about--girl-happy.png';
 
 export const PsychologicalState = () => (
-  <section className='page__section psychological-state'>
+  <section className='page__section section psychological-state'>
     <div className='container'>
-      <h3 className='about__subtitle'>
+      <h3 className='section__subtitle'>
         PSYCHOLOGICAL STATE OF THE PARTICIPANTS
       </h3>
 
-      <p className='psychological-state__description'>
+      <p className='section__description'>
         All the participants are people affected by war. They have lost their
         mental health and are prone to serious conditions. We suggested that
         they indicate in the registration form what worries them the most. And
@@ -63,7 +63,7 @@ export const PsychologicalState = () => (
         </li>
       </ul>
 
-      <h2 className='psychological-state__subtitle'>
+      <h2 className='section__subtitle'>
         Participants described their well-being in their own words, in their own
         words psychological-state feelings, experiences, emotions and mental
         health
@@ -77,7 +77,7 @@ export const PsychologicalState = () => (
         />
       </div>
 
-      <h2 className='psychological-state__subtitle'>
+      <h2 className='section__subtitle'>
         It was important to determine what people want at this stage, so each
         participant answered the following question:
         <br />

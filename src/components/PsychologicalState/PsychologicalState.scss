@@ -3,20 +3,6 @@
 
 .psychological-state {
 
-  &__subtitle {
-    margin: 0 0 24px;
-    font-weight: 700;
-
-    text-align: center;
-
-    color: $colorGreen
-  }
-
-  &__description {
-    margin: 0 0 24px;
-    text-align: justify;
-  }
-
   &__list {
     margin: 0 0 24px;
   }
@@ -81,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
+    width: 100%;
 
     & img {
       width: 100%;

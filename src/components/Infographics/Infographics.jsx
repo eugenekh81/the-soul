@@ -5,8 +5,12 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export const Infographics = () => {
   return (
-    <section className='page__section infographics'>
+    <section className='page__section section infographics'>
       <div className='container'>
+        <h2 className='section__title'>Infographics</h2>
+        <p className='section__description' style={{ textAlign: 'center' }}>
+          Ukrainian Circle features
+        </p>
         <ul className='infographics__list'>
           <Carousel variant="dark">
             <Carousel.Item>

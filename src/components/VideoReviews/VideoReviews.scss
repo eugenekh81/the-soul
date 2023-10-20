@@ -3,13 +3,9 @@
 
 .video-reviews {
   &__item {
-    margin: 0 0 24px;
-    width: 100%;
+    margin: 0 auto 24px;
+    width: fit-content;
     height: 100%;
-
-    &:last-child {
-      margin: 0;
-    }
   }
 
   &__item iframe {

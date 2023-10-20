@@ -41,4 +41,18 @@
       transform: scaleX(-1) translateX(-20%) rotate(-15deg);
     }
   }
+
+  &__description {
+    margin: 0 0 24px;
+    text-align: justify;
+  }
+
+  &__subtitle {
+    margin: 0 0 24px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: $colorGreen
+  }
 }

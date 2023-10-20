@@ -1,4 +1,14 @@
 import './ModulesList.scss';
+import module1cover from '/images/modules/m1.png';
+import module2cover from '/images/modules/m2.png';
+import module3cover from '/images/modules/m3.png';
+import module4cover from '/images/modules/m4.png';
+import module5cover from '/images/modules/m5.png';
+import module6cover from '/images/modules/m6.png';
+import module7cover from '/images/modules/m7.png';
+import module8cover from '/images/modules/m8.png';
+import module9cover from '/images/modules/m9.png';
+
 import module1report from '/pdf/module-reports/module-1__summary.pdf';
 import module2report from '/pdf/module-reports/module-2__summary.pdf';
 import module3report from '/pdf/module-reports/module-3__summary.pdf';
@@ -19,15 +29,22 @@ export const ModulesList = () => {
 
         <ul className='modules__list'>
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 1</p>
-              <p className='module__title'>
-                Feelings
-                <br />
-                and
-                <br />
-                emotions
-              </p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module1cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 1</p>
+                <p className='module__title'>
+                  Feelings
+                  <br />
+                  and
+                  <br />
+                  emotions
+                </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -38,15 +55,27 @@ export const ModulesList = () => {
               &quot;transformer booth&quot; to help people cope with their
               conditions and give them support.
             </p>
-            <a href={module1report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module1report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 1
             </a>
           </li>
 
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 2</p>
-              <p className='module__title'>Body</p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module2cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 2</p>
+                <p className='module__title'>Body</p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -55,20 +84,32 @@ export const ModulesList = () => {
               everything that we are going through, and we are need to learn how
               to support our body.
             </p>
-            <a href={module2report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module2report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 2
             </a>
           </li>
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 3</p>
-              <p className='module__title'>
-                Strength
-                <br />
-                and
-                <br />
-                confidence
-              </p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module3cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 3</p>
+                <p className='module__title'>
+                  Strength
+                  <br />
+                  and
+                  <br />
+                  confidence
+                </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -77,20 +118,32 @@ export const ModulesList = () => {
               effective actions or work. This was the most popular question
               among participants.
             </p>
-            <a href={module3report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module3report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 3
             </a>
           </li>
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 4</p>
-              <p className='module__title'>
-                Love
-                <br />
-                and
-                <br />
-                relationships
-              </p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module4cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 4</p>
+                <p className='module__title'>
+                  Love
+                  <br />
+                  and
+                  <br />
+                  relationships
+                </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -100,20 +153,32 @@ export const ModulesList = () => {
               about separation, look for new ways to be together and support
               each other.
             </p>
-            <a href={module4report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module4report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 4
             </a>
           </li>
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 5</p>
-              <p className='module__title'>
-                Freedom
-                <br />
-                and
-                <br />
-                responsibility
-              </p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module5cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 5</p>
+                <p className='module__title'>
+                  Freedom
+                  <br />
+                  and
+                  <br />
+                  responsibility
+                </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -125,23 +190,35 @@ export const ModulesList = () => {
               parents and obsolete ideas about yourself that no longer serve
               you.
             </p>
-            <a href={module5report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module5report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 5
             </a>
           </li>
 
           <li className='modules__module module'>
-            <div className='module__content'>
-              <p className='module__number'>Module 6</p>
-              <p className='module__title'>
-                Home,
-                <br />
-                safe space
-                <br />
-                and
-                <br />
-                belonging
-              </p>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module6cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
+                <p className='module__number'>Module 6</p>
+                <p className='module__title'>
+                  Home,
+                  <br />
+                  safe space
+                  <br />
+                  and
+                  <br />
+                  belonging
+                </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -152,12 +229,23 @@ export const ModulesList = () => {
               and how to re-create such sense and feeling of home regardless of
               their current location and circumstances.
             </p>
-            <a href={module6report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module6report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 6
             </a>
           </li>
           <li className='modules__module module'>
-            <div className='module__content'>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module7cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
               <p className='module__number'>Module 7</p>
               <p className='module__title'>
                 Money
@@ -166,6 +254,11 @@ export const ModulesList = () => {
                 <br />
                 wellbeing
               </p>
+              </div>
+            </div>
+
+            <div className='module__content'>
+
             </div>
 
             <p className='module__description'>
@@ -175,13 +268,24 @@ export const ModulesList = () => {
               amount for today and set the target income, activate your
               confidence and start taking real steps.
             </p>
-            <a href={module7report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module7report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 7
             </a>
           </li>
 
           <li className='modules__module module'>
-            <div className='module__content'>
+            <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module8cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
               <p className='module__number'>Module 8</p>
               <p className='module__title'>
                 Unity
@@ -190,6 +294,7 @@ export const ModulesList = () => {
                 <br />
                 Integration
               </p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -201,15 +306,27 @@ export const ModulesList = () => {
               accepting others, being more tolerant and caring no matter the
               differences.
             </p>
-            <a href={module8report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module8report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 8
             </a>
           </li>
 
           <li className='modules__module module'>
-            <div className='module__content'>
+          <div className='module__img-container'>
+              <img
+                className='module__cover'
+                src={module9cover}
+                alt='Module cover'
+              />
+              <div className='module__cover-text'>
               <p className='module__number'>Module 9</p>
               <p className='module__title'>The future</p>
+              </div>
             </div>
 
             <p className='module__description'>
@@ -221,7 +338,12 @@ export const ModulesList = () => {
               with life.
             </p>
 
-            <a href={module9report} className='module__report-button' target='_blank' rel="noreferrer">
+            <a
+              href={module9report}
+              className='button'
+              target='_blank'
+              rel='noreferrer'
+            >
               Detailed report: Module 9
             </a>
           </li>

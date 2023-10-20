@@ -11,9 +11,11 @@ import { VideoReviews } from './components/VideoReviews';
 import { Contacts } from './components/Contacts';
 import { Partners } from './components/Partners';
 import { Reviews } from './components/Reviews';
-import { Demographics } from './components/Demographics';
 import { PsychologicalState } from './components/PsychologicalState/';
 import { Infographics } from './components/Infographics';
+import { Participants } from './components/Participants/Participants';
+import { JoinTheProgram } from './components/JoinProgram/JoinTheProgram';
+import { SupportUs } from './components/SupportUs/SupportUs';
 
 export const App = () => {
   return (
@@ -29,7 +31,7 @@ export const App = () => {
 
         <Presentation />
 
-        <Demographics />
+        <Participants />
 
         <PsychologicalState />
 
@@ -40,6 +42,10 @@ export const App = () => {
         <Reviews />
 
         <VideoReviews />
+
+        <JoinTheProgram />
+
+        <SupportUs />
 
         <Team />
 
