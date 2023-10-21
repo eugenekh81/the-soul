@@ -2,6 +2,14 @@
 @import 'utils/mixins';
 @import 'blocks/page';
 @import 'blocks/section';
-@import 'blocks/container';
+// @import 'blocks/container';
 @import 'blocks/carousel';
 @import 'blocks/button';
+
+.text {
+  &-align {
+    &-center {
+      text-align: center;
+    }
+  }
+}

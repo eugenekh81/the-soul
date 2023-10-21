@@ -7,12 +7,11 @@ import { Concepts } from './components/Concepts';
 import { ModulesList } from './components/ModulesList';
 import { Presentation } from './components/Presentation';
 import { Team } from './components/Team/Team';
-import { VideoReviews } from './components/VideoReviews';
 import { Contacts } from './components/Contacts';
 import { Partners } from './components/Partners';
 import { Reviews } from './components/Reviews';
 import { PsychologicalState } from './components/PsychologicalState/';
-import { Infographics } from './components/Infographics';
+import { Results } from './components/Results';
 import { Participants } from './components/Participants/Participants';
 import { JoinTheProgram } from './components/JoinProgram/JoinTheProgram';
 import { SupportUs } from './components/SupportUs/SupportUs';
@@ -37,11 +36,9 @@ export const App = () => {
 
         <ModulesList />
 
-        <Infographics />
+        <Results />
 
         <Reviews />
-
-        <VideoReviews />
 
         <JoinTheProgram />
 

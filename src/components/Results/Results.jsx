@@ -1,15 +1,15 @@
-import './Infographics.scss';
+import './Results.scss';
 import { infographics } from '../../data/infographics';
 import { InfographicsItem } from '../InfographicsItem/InfographicsItem';
 import Carousel from 'react-bootstrap/Carousel';
 
-export const Infographics = () => {
+export const Results = () => {
   return (
     <section className='page__section section infographics'>
       <div className='container'>
-        <h2 className='section__title'>Infographics</h2>
+        <h2 className='section__title'>Results</h2>
         <p className='section__description' style={{ textAlign: 'center' }}>
-          Ukrainian Circle features
+          Over the course of the Program, the following key results were achieved:
         </p>
         <ul className='infographics__list'>
           <Carousel variant="dark">

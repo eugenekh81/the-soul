@@ -1,5 +1,43 @@
 .reviews {
   &__item {
-    margin: 0 auto 36px;
+    margin: 0 auto 0;
   }
+
+  &__item {
+    margin: 0 auto 0;
+    width: fit-content;
+    height: 100%;
+  }
+
+  &__item iframe {
+    width: 280px;
+    height: calc(280px / 9 * 16);
+    left: 0px;
+    top: 0px;
+    border-radius: 24px;
+  }
+
+  & .carousel {
+    height: 540px;
+
+    &-inner {
+      height: 100%;
+      display: flex;
+      align-items: start;
+    }
+
+    justify-content: start;
+  };
+}
+
+.video-reviews {
+
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
