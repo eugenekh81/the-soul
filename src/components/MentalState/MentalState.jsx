@@ -27,30 +27,31 @@ export const MentalState = () => (
             alt='Conditions chart'
           />
         </Col>
-        <Col sm={12} md={12} lg={8} >
+        <Col className='mental-state__list-container' sm={12} md={12} lg={8}>
           <ul className='mental-state__list'>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>13%</span>
-              Severe physical conditions: insomnia, anxiety, panic attacks, loss of
-              appetite, excessive appetite, palpitations, deterioration of health
+              Severe physical conditions: insomnia, anxiety, panic attacks, loss
+              of appetite, excessive appetite, palpitations, deterioration of
+              health
             </li>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>24%</span>
               Distortion of mental balance: self-doubt, doubts mental-state
-              one&apos;s abilities, loss of inner support, feeling sad and helpless,
-              self-criticism
+              one&apos;s abilities, loss of inner support, feeling sad and
+              helpless, self-criticism
             </li>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>12%</span>
-              Problems in personal relationships: loneliness, worries, conflicts,
-              divorce, betrayal, lack of relationships
+              Problems in personal relationships: loneliness, worries,
+              conflicts, divorce, betrayal, lack of relationships
             </li>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>17%</span>
-              Problems with work and income: loss of confidence in one&apos;s skills
-              and abilities, loss of business or job, lack of fulfillment, lack of
-              motivation, no ability to earn, conflicts in the team or with
-              management
+              Problems with work and income: loss of confidence in one&apos;s
+              skills and abilities, loss of business or job, lack of
+              fulfillment, lack of motivation, no ability to earn, conflicts in
+              the team or with management
             </li>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>16%</span>
@@ -60,43 +61,46 @@ export const MentalState = () => (
             </li>
             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>19%</span>
-              Mental conditions: apathy, powerlessness, depression, lack of interest
-              in life, outbursts of anger, irritability, anxiety, excessive control
+              Mental conditions: apathy, powerlessness, depression, lack of
+              interest in life, outbursts of anger, irritability, anxiety,
+              excessive control
             </li>
           </ul>
         </Col>
       </Row>
 
+      <Row>
+        <Col xs={12} sm={6} lg={8} className='mental-state__item section__description'>
+          Participants described their well-being in their own words, in their
+          own words mental-state feelings, experiences, emotions and mental
+          health
+        </Col>
 
-      <h2 className='section__subtitle'>
-        Participants described their well-being in their own words, in their own
-        words mental-state feelings, experiences, emotions and mental health
-      </h2>
+        <Col xs={12} sm={6} lg={4} className='mental-state__item mental-state__image'>
+          <img
+            src={womanSad}
+            alt='mental state before the program'
+            className='mental-state__image--girl-sad'
+          />
+        </Col>
 
-      <div className='mental-state__image'>
-        <img
-          src={womanSad}
-          alt='mental state before the program'
-          className='mental-state__image--girl-sad'
-        />
-      </div>
+        <Col xs={12} sm={6} lg={8} className='mental-state__item section__description'>
+          It was important to determine what people want at this stage, so each
+          participant answered the following question:
+          <br />
+          <br />
+          What changes would you like to see in your life after completing the
+          mental Recovery Programme?
+        </Col>
 
-      <h2 className='section__subtitle'>
-        It was important to determine what people want at this stage, so each
-        participant answered the following question:
-        <br />
-        <br />
-        What changes would you like to see in your life after completing the
-        mental Recovery Programme?
-      </h2>
-
-      <div className='mental-state__image'>
-        <img
-          src={womanHappy}
-          alt='mental state after the program'
-          className='mental-state__image--girl-happy'
-        />
-      </div>
+        <Col xs={12} sm={6} lg={4} className='mental-state__item mental-state__image'>
+          <img
+            src={womanHappy}
+            alt='mental state after the program'
+            className='mental-state__image--girl-happy'
+          />
+        </Col>
+      </Row>
     </div>
   </section>
 );

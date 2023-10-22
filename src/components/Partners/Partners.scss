@@ -1,4 +1,27 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .partners-list {
+  &--mobile {
+    display: block;
+    @include onTablet--s {
+      display: none;
+    }
+  }
+
+    &--desktop {
+      display: none;
+      @include onTablet--s {
+        margin: 0 auto;
+        display: flex;
+        max-width: 576px;
+      }
+
+      @include onDesktop {
+        max-width: unset;
+      }
+    }
+
   .carousel {
     height: 400px;
 
@@ -11,5 +34,13 @@
         transform: translateX(120%);
       }
     }
+  }
+}
+
+.partner {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
   }
 }

@@ -49,7 +49,7 @@ export const Contacts = () => {
               type='tel'
               placeholder='Phone number'
             />
-            <button type='submit' className='subscribe__button'>
+            <button type='submit' className='button subscribe__button'>
               Subscribe
             </button>
           </form>

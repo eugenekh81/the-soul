@@ -9,17 +9,31 @@
     @include onTablet--m {
       flex-direction: row;
       justify-content: center;
+      align-items: stretch;
     }
 
     @include onDesktop {
       flex-direction: row;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
     }
   }
 
+  &__list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
   &__list {
+
     margin: 0 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__list-item {
@@ -27,10 +41,21 @@
     text-align: justify;
     font-size: 14px;
 
+    display: flex;
+    gap: 8px;
+
     &--state {
-      margin-right: 12px;
-      padding: 8px 8px;
       display: flex;
+      flex-shrink: 0;
+      margin-right: 12px;
+      padding: 0 0px;
+
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+
+      flex-direction: row;
+
       justify-content: center;
       align-items: center;
 
@@ -38,15 +63,10 @@
       font-weight: 700;
       color: #fff;
 
-      border-radius: 8px;
       float: left;
       box-shadow: 2px 2px 4px #333;
 
       transition: transform 200ms linear;
-    }
-
-    &:hover &--state {
-      transform: scale(1.1);
     }
 
     &:nth-child(1) &--state {
@@ -76,28 +96,38 @@
     }
   }
 
+  &__item:nth-child(2) {
+    order: 0;
+    @include onTablet--s {
+      order: -2;
+    }
+  }
+
   &__image {
     margin: 0 0 24px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-
     @include onTablet--m {
-      align-items: start;
-
+      align-items: center;
     }
 
     & img {
       width: 100%;
       object-fit: cover;
-
     }
 
     &--conditions-graph {
       width: 100%;
       object-fit: contain;
       object-position: left;
+    }
+
+    &--girl-happy {
+    }
+
+    &--girl-sad {
     }
   }
 }

@@ -2,6 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import './ModulesList.scss';
+
 import module1cover from '/images/modules/m1.png';
 import module2cover from '/images/modules/m2.png';
 import module3cover from '/images/modules/m3.png';
@@ -63,7 +64,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 1
+                Module report
               </a>
             </div>
           </Col>
@@ -94,7 +95,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 2
+                Module report
               </a>
             </div>
           </Col>
@@ -129,7 +130,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 3
+                Module report
               </a>
             </div>
           </Col>
@@ -165,7 +166,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 4
+                Module report
               </a>
             </div>
           </Col>
@@ -187,7 +188,7 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-
+            <div className='module__content-container'>
             <p className='module__description'>
               Objective: understand the concepts of freedom, independence,
               dependence on another person and interdependence, learn how to
@@ -203,8 +204,9 @@ export const ModulesList = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Detailed report: Module 5
+              Module report
             </a>
+            </div>
           </Col>
 
           <Col xs={12} sm={6} lg={4} className='modules__module module'>
@@ -222,7 +224,6 @@ export const ModulesList = () => {
                   safe space
                   <br />
                   and
-                  <br />
                   belonging
                 </p>
               </div>
@@ -242,7 +243,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 6
+                Module report
               </a>
             </div>
           </Col>
@@ -278,7 +279,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 7
+                Module report
               </a>
             </div>
           </Col>
@@ -318,7 +319,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 8
+                Module report
               </a>
             </div>
           </Col>
@@ -351,7 +352,7 @@ export const ModulesList = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                Detailed report: Module 9
+                Module report
               </a>
             </div>
           </Col>

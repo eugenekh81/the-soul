@@ -1,7 +1,28 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .reviews {
-  &__item {
-    margin: 0 auto 0;
+&__list {
+  display: block;
+
+  @include onTablet--s {
+    margin: 0 0 48px;
   }
+
+  &--mobile {
+    @include onTablet--s {
+      display: none;
+    }
+  }
+  &--desktop {
+    display: none;
+    @include onTablet--s {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
 
   &__item {
     margin: 0 auto 0;
@@ -28,10 +49,21 @@
 
     justify-content: start;
   };
+
+  & .carousel.reviews__carousel--reviews {
+    height: 408px;
+  }
 }
 
 .video-reviews {
+  row-gap: 48px;
 
+  & .reviews__item {
+    & iframe {
+      width: 220px;
+      height: 220px * 16/9;
+    }
+  }
 }
 
 .embed-container {

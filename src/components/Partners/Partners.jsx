@@ -1,3 +1,6 @@
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
 import './Partners.scss';
 import consciousness from '/images/partners/consciousness-centered.png';
 import katieEastman from '/images/partners/Katie_Eastman-centered.png';
@@ -10,7 +13,7 @@ export const Partners = () => {
     <section className='page__section section partners'>
       <div className='container'>
         <h2 className='section__title'>Partners</h2>
-        <div className='partners-list'>
+        <div className='partners-list partners-list--mobile'>
           <Carousel variant='dark'>
             <Carousel.Item interval={3000}>
               <a
@@ -54,7 +57,52 @@ export const Partners = () => {
             </Carousel.Item>
           </Carousel>
         </div>
-        <button type='submit' className='subscribe__button'>
+
+        <div className='partners-list partners-list--desktop'>
+          <Row>
+            <Col sm={6} lg={3} className="partner__item">
+              <a
+                href='https://www.wca.earth/'
+                className='partner__link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={consciousness} alt='Consciousness' />
+              </a>
+            </Col>
+            <Col sm={6} lg={3} className="partner__item">
+              <a
+                href='https://drkatieeastman.com/about'
+                className='partner__link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={katieEastman} alt='Katie Eastman' />
+              </a>
+            </Col>
+            <Col sm={6} lg={3} className="partner__item">
+              <a
+                href='#'
+                className='partners__link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={renovare} alt='Renovare' />
+              </a>
+            </Col>
+            <Col sm={6} lg={3} className="partner__item">
+              <a
+                href='https://www.ekrfoundation.org/'
+                className='partners__link renovare'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={EKR} alt='' />
+              </a>
+            </Col>
+          </Row>
+        </div>
+        <button type='submit' className='button subscribe__button'>
           Donate
         </button>
       </div>

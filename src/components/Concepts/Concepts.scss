@@ -20,11 +20,13 @@
 
   &__item {
     position: relative;
-
+    margin: 0 auto;
     padding: 40px 20px 20px;
     border: 1px solid $colorGreen;
     border-radius: 12px;
     background-color: $colorBeige;
+
+    width: 280px;
 
     @include onTablet--s {
       width: calc(50% - 12px);

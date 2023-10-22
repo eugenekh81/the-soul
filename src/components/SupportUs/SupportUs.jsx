@@ -12,7 +12,7 @@ export const SupportUs = () => {
           If you would like to support The Ukrainian Circle project, you may donate any amount you wish - any help is appreciated!
         </p>
 
-        <a href="" className="button">Donate Now</a>
+        <a href="" className="button section__button">Donate Now</a>
       </div>
     </section>
   );
