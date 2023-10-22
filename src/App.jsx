@@ -10,7 +10,7 @@ import { Team } from './components/Team/Team';
 import { Contacts } from './components/Contacts';
 import { Partners } from './components/Partners';
 import { Reviews } from './components/Reviews';
-import { PsychologicalState } from './components/PsychologicalState/';
+import { MentalState } from './components/MentalState';
 import { Results } from './components/Results';
 import { Participants } from './components/Participants/Participants';
 import { JoinTheProgram } from './components/JoinProgram/JoinTheProgram';
@@ -22,7 +22,6 @@ export const App = () => {
       <Header />
 
       <main className='main'>
-
         <Hero />
 
         <About />
@@ -33,7 +32,7 @@ export const App = () => {
 
         <Participants />
 
-        <PsychologicalState />
+        <MentalState />
 
         <ModulesList />
 

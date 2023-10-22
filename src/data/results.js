@@ -14,7 +14,7 @@ export const results = [
   {
     id: 3,
     number: 30,
-    text: 'psychological exercises',
+    text: 'mental exercises',
     iconId: '#psy',
   },
   {
@@ -53,4 +53,4 @@ export const results = [
     text: 'participants wished to extend their involvement',
     iconId: '#heart',
   },
-]
+];

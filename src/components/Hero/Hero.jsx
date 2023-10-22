@@ -15,7 +15,7 @@ export const Hero = () => {
           </div>
           <div className='hero__decor-element'></div>
           <p className='hero__description hero__description--top'>
-            psychological recovery program
+            mental recovery program
           </p>
           <p className='hero__description hero__description--bottom'>
             June - August 2023

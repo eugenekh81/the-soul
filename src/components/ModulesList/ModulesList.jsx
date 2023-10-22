@@ -48,11 +48,11 @@ export const ModulesList = () => {
               </div>
             </div>
 
-            <div className="module__content-container">
+            <div className='module__content-container'>
               <p className='module__description'>
-                Objective: understand one&apos;s state and conditions, and not to
-                direct your emotions at destroying yourself and others. Learn to
-                deal with difficult feelings and process them like &quot;in a
+                Objective: understand one&apos;s state and conditions, and not
+                to direct your emotions at destroying yourself and others. Learn
+                to deal with difficult feelings and process them like &quot;in a
                 transformer booth&quot;. In fact, the Program became such a
                 &quot;transformer booth&quot; to help people cope with their
                 conditions and give them support.
@@ -81,12 +81,12 @@ export const ModulesList = () => {
               </div>
             </div>
 
-            <div className="module__content-container">
+            <div className='module__content-container'>
               <p className='module__description'>
                 Objective: learn relaxation techniques and stress relief through
                 physical exercises. The body is supposed to help us cope with
-                everything that we are going through, and we are need to learn how
-                to support our body.
+                everything that we are going through, and we are need to learn
+                how to support our body.
               </p>
               <a
                 href={module2report}
@@ -116,12 +116,12 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-            <div className="module__content-container">
+            <div className='module__content-container'>
               <p className='module__description'>
                 Objective: investigate and explore their own aggression and to
-                learn how to deal with it constructively and apply for creativity,
-                effective actions or work. This was the most popular question
-                among participants.
+                learn how to deal with it constructively and apply for
+                creativity, effective actions or work. This was the most popular
+                question among participants.
               </p>
               <a
                 href={module3report}
@@ -151,13 +151,13 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-            <div className="module__content-container">
+            <div className='module__content-container'>
               <p className='module__description'>
-                Objective: find feeling of self-love, get to know yourself better.
-                And then look at the relationships honestly, without illusions and
-                false expectations, and to accept a partner or make a decision
-                about separation, look for new ways to be together and support
-                each other.
+                Objective: find feeling of self-love, get to know yourself
+                better. And then look at the relationships honestly, without
+                illusions and false expectations, and to accept a partner or
+                make a decision about separation, look for new ways to be
+                together and support each other.
               </p>
               <a
                 href={module4report}
@@ -227,23 +227,23 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-            <div className="module__content-container">
-            <p className='module__description'>
-              Objective: find and build your own shelter in the soul and find it
-              in life, to walk the &quot;hero&apos;s path to oneself&quot;. In
-              this module, participants can discover their safe space inside,
-              think deeply about the meaning of home and what it means to them
-              and how to re-create such sense and feeling of home regardless of
-              their current location and circumstances.
-            </p>
-            <a
-              href={module6report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 6
-            </a>
+            <div className='module__content-container'>
+              <p className='module__description'>
+                Objective: find and build your own shelter in the soul and find
+                it in life, to walk the &quot;hero&apos;s path to oneself&quot;.
+                In this module, participants can discover their safe space
+                inside, think deeply about the meaning of home and what it means
+                to them and how to re-create such sense and feeling of home
+                regardless of their current location and circumstances.
+              </p>
+              <a
+                href={module6report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 6
+              </a>
             </div>
           </Col>
           <Col xs={12} sm={6} lg={4} className='modules__module module'>
@@ -254,32 +254,32 @@ export const ModulesList = () => {
                 alt='Module cover'
               />
               <div className='module__cover-text'>
-              <p className='module__number'>Module 7</p>
-              <p className='module__title'>
-                Money
-                <br />
-                and
-                <br />
-                wellbeing
-              </p>
+                <p className='module__number'>Module 7</p>
+                <p className='module__title'>
+                  Money
+                  <br />
+                  and
+                  <br />
+                  wellbeing
+                </p>
               </div>
             </div>
-            <div className="module__content-container">
-            <p className='module__description'>
-              Objective: better understand your feelings, stereotypes, attitudes
-              and psychological blocks concerning money. Rediscover your inner
-              resources, strengths, talents and skills. Understand the income
-              amount for today and set the target income, activate your
-              confidence and start taking real steps.
-            </p>
-            <a
-              href={module7report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 7
-            </a>
+            <div className='module__content-container'>
+              <p className='module__description'>
+                Objective: better understand your feelings, stereotypes,
+                attitudes and mental blocks concerning money. Rediscover your
+                inner resources, strengths, talents and skills. Understand the
+                income amount for today and set the target income, activate your
+                confidence and start taking real steps.
+              </p>
+              <a
+                href={module7report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 7
+              </a>
             </div>
           </Col>
 
@@ -291,69 +291,68 @@ export const ModulesList = () => {
                 alt='Module cover'
               />
               <div className='module__cover-text'>
-              <p className='module__number'>Module 8</p>
-              <p className='module__title'>
-                Unity
-                <br />
-                and
-                <br />
-                Integration
-              </p>
+                <p className='module__number'>Module 8</p>
+                <p className='module__title'>
+                  Unity
+                  <br />
+                  and
+                  <br />
+                  Integration
+                </p>
               </div>
             </div>
 
-            <div className="module__content-container">
-
-            <p className='module__description'>
-              Objective: overcome the schism in the Ukrainian society and in
-              one&apos;s own soul. Establishing what unites us all regardless of
-              where we are, and apply our ability to connect with ourselves and
-              to others. The whole person needs to be able to integrate
-              different parts of the soul. The module was aimed at helping
-              accepting others, being more tolerant and caring no matter the
-              differences.
-            </p>
-            <a
-              href={module8report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
+            <div className='module__content-container'>
+              <p className='module__description'>
+                Objective: overcome the schism in the Ukrainian society and in
+                one&apos;s own soul. Establishing what unites us all regardless
+                of where we are, and apply our ability to connect with ourselves
+                and to others. The whole person needs to be able to integrate
+                different parts of the soul. The module was aimed at helping
+                accepting others, being more tolerant and caring no matter the
+                differences.
+              </p>
+              <a
+                href={module8report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
               >
-              Detailed report: Module 8
-            </a>
-              </div>
+                Detailed report: Module 8
+              </a>
+            </div>
           </Col>
 
           <Col xs={12} sm={6} lg={4} className='modules__module module'>
-          <div className='module__img-container'>
+            <div className='module__img-container'>
               <img
                 className='module__cover'
                 src={module9cover}
                 alt='Module cover'
               />
               <div className='module__cover-text'>
-              <p className='module__number'>Module 9</p>
-              <p className='module__title'>The future</p>
+                <p className='module__number'>Module 9</p>
+                <p className='module__title'>The future</p>
               </div>
             </div>
-            <div className="module__content-container">
-            <p className='module__description'>
-              Objective: develop an ability to see and imagine the future, take
-              baby steps and have faith in something good, overcome the
-              consequences of trauma and assess the extent how the 5 main signs
-              of post-traumatic growth are expressed in one&apos;s life. The
-              ability to see the future is a symbol of recovery and connection
-              with life.
-            </p>
+            <div className='module__content-container'>
+              <p className='module__description'>
+                Objective: develop an ability to see and imagine the future,
+                take baby steps and have faith in something good, overcome the
+                consequences of trauma and assess the extent how the 5 main
+                signs of post-traumatic growth are expressed in one&apos;s life.
+                The ability to see the future is a symbol of recovery and
+                connection with life.
+              </p>
 
-            <a
-              href={module9report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 9
-            </a>
+              <a
+                href={module9report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 9
+              </a>
             </div>
           </Col>
         </Row>
