@@ -1,4 +1,4 @@
-export const infographics = [
+export const results = [
   {
     id: 1,
     number: 18,

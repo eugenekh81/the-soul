@@ -1,3 +1,6 @@
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import './ModulesList.scss';
 import module1cover from '/images/modules/m1.png';
 import module2cover from '/images/modules/m2.png';
@@ -19,16 +22,14 @@ import module7report from '/pdf/module-reports/module-7__summary.pdf';
 import module8report from '/pdf/module-reports/module-8__summary.pdf';
 import module9report from '/pdf/module-reports/module-9__summary.pdf';
 
-// import Carousel from 'react-bootstrap/Carousel';
-
 export const ModulesList = () => {
   return (
     <section className='page__section section modules'>
       <div className='container'>
         <h2 className='section__title'>Structure</h2>
 
-        <ul className='modules__list'>
-          <li className='modules__module module'>
+        <Row className='modules__list'>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -47,25 +48,27 @@ export const ModulesList = () => {
               </div>
             </div>
 
-            <p className='module__description'>
-              Objective: understand one&apos;s state and conditions, and not to
-              direct your emotions at destroying yourself and others. Learn to
-              deal with difficult feelings and process them like &quot;in a
-              transformer booth&quot;. In fact, the Program became such a
-              &quot;transformer booth&quot; to help people cope with their
-              conditions and give them support.
-            </p>
-            <a
-              href={module1report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 1
-            </a>
-          </li>
+            <div className="module__content-container">
+              <p className='module__description'>
+                Objective: understand one&apos;s state and conditions, and not to
+                direct your emotions at destroying yourself and others. Learn to
+                deal with difficult feelings and process them like &quot;in a
+                transformer booth&quot;. In fact, the Program became such a
+                &quot;transformer booth&quot; to help people cope with their
+                conditions and give them support.
+              </p>
+              <a
+                href={module1report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 1
+              </a>
+            </div>
+          </Col>
 
-          <li className='modules__module module'>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -78,22 +81,24 @@ export const ModulesList = () => {
               </div>
             </div>
 
-            <p className='module__description'>
-              Objective: learn relaxation techniques and stress relief through
-              physical exercises. The body is supposed to help us cope with
-              everything that we are going through, and we are need to learn how
-              to support our body.
-            </p>
-            <a
-              href={module2report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 2
-            </a>
-          </li>
-          <li className='modules__module module'>
+            <div className="module__content-container">
+              <p className='module__description'>
+                Objective: learn relaxation techniques and stress relief through
+                physical exercises. The body is supposed to help us cope with
+                everything that we are going through, and we are need to learn how
+                to support our body.
+              </p>
+              <a
+                href={module2report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 2
+              </a>
+            </div>
+          </Col>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -111,23 +116,24 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-
-            <p className='module__description'>
-              Objective: investigate and explore their own aggression and to
-              learn how to deal with it constructively and apply for creativity,
-              effective actions or work. This was the most popular question
-              among participants.
-            </p>
-            <a
-              href={module3report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 3
-            </a>
-          </li>
-          <li className='modules__module module'>
+            <div className="module__content-container">
+              <p className='module__description'>
+                Objective: investigate and explore their own aggression and to
+                learn how to deal with it constructively and apply for creativity,
+                effective actions or work. This was the most popular question
+                among participants.
+              </p>
+              <a
+                href={module3report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 3
+              </a>
+            </div>
+          </Col>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -145,24 +151,25 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-
-            <p className='module__description'>
-              Objective: find feeling of self-love, get to know yourself better.
-              And then look at the relationships honestly, without illusions and
-              false expectations, and to accept a partner or make a decision
-              about separation, look for new ways to be together and support
-              each other.
-            </p>
-            <a
-              href={module4report}
-              className='button'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Detailed report: Module 4
-            </a>
-          </li>
-          <li className='modules__module module'>
+            <div className="module__content-container">
+              <p className='module__description'>
+                Objective: find feeling of self-love, get to know yourself better.
+                And then look at the relationships honestly, without illusions and
+                false expectations, and to accept a partner or make a decision
+                about separation, look for new ways to be together and support
+                each other.
+              </p>
+              <a
+                href={module4report}
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed report: Module 4
+              </a>
+            </div>
+          </Col>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -198,9 +205,9 @@ export const ModulesList = () => {
             >
               Detailed report: Module 5
             </a>
-          </li>
+          </Col>
 
-          <li className='modules__module module'>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -220,7 +227,7 @@ export const ModulesList = () => {
                 </p>
               </div>
             </div>
-
+            <div className="module__content-container">
             <p className='module__description'>
               Objective: find and build your own shelter in the soul and find it
               in life, to walk the &quot;hero&apos;s path to oneself&quot;. In
@@ -237,8 +244,9 @@ export const ModulesList = () => {
             >
               Detailed report: Module 6
             </a>
-          </li>
-          <li className='modules__module module'>
+            </div>
+          </Col>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -256,11 +264,7 @@ export const ModulesList = () => {
               </p>
               </div>
             </div>
-
-            <div className='module__content'>
-
-            </div>
-
+            <div className="module__content-container">
             <p className='module__description'>
               Objective: better understand your feelings, stereotypes, attitudes
               and psychological blocks concerning money. Rediscover your inner
@@ -276,9 +280,10 @@ export const ModulesList = () => {
             >
               Detailed report: Module 7
             </a>
-          </li>
+            </div>
+          </Col>
 
-          <li className='modules__module module'>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
             <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -297,6 +302,8 @@ export const ModulesList = () => {
               </div>
             </div>
 
+            <div className="module__content-container">
+
             <p className='module__description'>
               Objective: overcome the schism in the Ukrainian society and in
               one&apos;s own soul. Establishing what unites us all regardless of
@@ -311,12 +318,13 @@ export const ModulesList = () => {
               className='button'
               target='_blank'
               rel='noreferrer'
-            >
+              >
               Detailed report: Module 8
             </a>
-          </li>
+              </div>
+          </Col>
 
-          <li className='modules__module module'>
+          <Col xs={12} sm={6} lg={4} className='modules__module module'>
           <div className='module__img-container'>
               <img
                 className='module__cover'
@@ -328,7 +336,7 @@ export const ModulesList = () => {
               <p className='module__title'>The future</p>
               </div>
             </div>
-
+            <div className="module__content-container">
             <p className='module__description'>
               Objective: develop an ability to see and imagine the future, take
               baby steps and have faith in something good, overcome the
@@ -346,8 +354,9 @@ export const ModulesList = () => {
             >
               Detailed report: Module 9
             </a>
-          </li>
-        </ul>
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

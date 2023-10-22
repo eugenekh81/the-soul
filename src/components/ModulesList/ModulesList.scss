@@ -21,11 +21,35 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: row;
+
     margin: 0 0 24px;
+
+    @include onTablet--s {
+      row-gap: 48px;
+    }
   }
 }
 
 .module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include onTablet--s {
+    // height: 100%;
+    margin: 0;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    justify-content: space-between;
+  }
+
   &__number {
     font-size: 12px;
 
@@ -45,8 +69,13 @@
     border-radius: 24px;
     overflow: hidden;
   }
+
   &__img-container {
     position: relative;
+
+    @include onTablet--s {
+      margin-bottom: 12px;
+    }
   }
 
   &__cover-text {
@@ -58,12 +87,10 @@
     top: 0;
     bottom: 0;
 
-
     margin: 0 0 24px;
     padding: 24px 14px;
 
     width: 100%;
-
 
     border-radius: 24px;
     overflow: hidden;
@@ -78,8 +105,11 @@
     margin: 0 0 24px;
     object-fit: cover;
     width: 100%;
-    height: 100%;
     z-index: -1;
+
+    @include onTablet--s {
+      object-fit: contain;
+    }
   }
 
   &__description {
@@ -87,6 +117,12 @@
     font-size: 14px;
     text-align: justify;
     line-height: 1.5;
+
+    @include onTablet--s {
+      justify-content: start;
+      align-self: start;
+    }
+
     b {
       font-weight: 700;
     }
