@@ -22,6 +22,7 @@ export const App = () => {
       <Header />
 
       <main className='main'>
+
         <Hero />
 
         <About />

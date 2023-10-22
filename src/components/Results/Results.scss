@@ -4,24 +4,52 @@
 .infographics {
   color: $colorGreen;
 
-& .carousel {
-  height: 360px;
+  &__list {
+    &--desktop {
+      display: none;
 
-  &-control-prev {
-    transform: translate(-80%, -110%);
+      @include onTablet--s {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 24px;
+      }
+
+      @include onTablet--m {
+        row-gap: 18px;
+      }
+    }
   }
 
-  &-control-next {
-    transform: translate(80%, -110%);
+  & .carousel {
+    height: 360px;
+
+    &-control-prev {
+      transform: translate(-80%, -110%);
+    }
+
+    &-control-next {
+      transform: translate(80%, -110%);
+    }
   }
 
-}
+  & .carousel-item {
+    padding: 0 0 40px;
+  }
 
-& .carousel-item {
-  padding: 0 0 40px;
-}
   &__item {
     margin: 0 auto 20px;
+
+    @include onTablet--s {
+      margin: 0;
+      height: unset;
+      width: calc(50% - 10px);
+    }
+
+    @include onTablet--m {
+      width: calc(33.33333% - 10px);
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -48,6 +76,5 @@
   }
 
   &__description {
-
   }
 }

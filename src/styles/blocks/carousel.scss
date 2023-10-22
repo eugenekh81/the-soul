@@ -1,5 +1,13 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
 .carousel {
   height: 400px;
+
+  @include onTablet--s {
+      display: none;
+  }
+
   &-inner {
     height: 100%;
     display: flex;
@@ -7,13 +15,14 @@
   }
 
   &-dark &-indicators [data-bs-target] {
+
     height: 8px;
     width: 8px;
     background-color: $colorGreen;
     border-radius: 50%;
   }
 
-  &-control {
+    &-control {
     &-prev {
       top: 50%;
       transform: translate(-120%, -50%);
@@ -48,4 +57,10 @@
 
     color: $colorBeige;
         // filter: none;
+}
+
+.carousel.slide.carousel-dark button.active {
+  border-radius: 450%;
+  width: 12px;
+  height: 8px;
 }

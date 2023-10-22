@@ -3,31 +3,35 @@
 
 .concept {
   &__list {
-    padding: 40px 0 0;
+    padding: 40px 12px 0;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
 
-    // gap: 60px;
+    row-gap: 60px;
     color: $colorGreen;
 
-    @include onTablet--m {
-     flex-direction: row;
-     column-gap: 20px;
+    @include onTablet--s {
+
      row-gap: 48px;
     }
   }
 
   &__item {
     position: relative;
-    // width: 100%;
+
     padding: 40px 20px 20px;
     border: 1px solid $colorGreen;
     border-radius: 12px;
     background-color: $colorBeige;
 
+    @include onTablet--s {
+      width: calc(50% - 12px);
+    }
+
     @include onTablet--m {
-      width: 338px;
+      width: calc(33.33333% - 24px);
     }
   }
 

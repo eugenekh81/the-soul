@@ -14,10 +14,29 @@
 
   &__video-container {
     margin: 0 0 24px;
+
     & iframe {
       width: 100%;
-      height: fit-content;
+      height: 100%;
       border-radius: 24px;
+
+      @include hero--mobile-big {
+        height: 200px;
+      }
+
+      @include onTablet--s {
+        height: 280px;
+      }
+
+      @include onTablet--m {
+        height: 360px;
+      }
+
+      @include onDesktop {
+        height: 480px;
+      }
+
+
     }
   }
 }
