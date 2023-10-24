@@ -10,23 +10,20 @@ export const Participants = () => (
     <div className='container container--geo'>
       <h2 className='section__title'>Participants</h2>
 
-      <p className='section__description'>
+    <Row className='participants__content'>
+      <Col sm={12} lg={6} className='section__description participants__description'>
         Participants filled a registration form, which allowed us to get to know
         each person better. The war forced many people to leave their homes, so
         participants joined our programme from all over the world and Ukraine.
         In terms of the proportion, 29% are outside Ukraine and are distributed
         across Europe and the world, and 71% are in Ukraine
-      </p>
-
-      <Row>
-        <Col xs={12} sm={7} className='participants__image'>
+      </Col>
+        <Col xs={12} sm={12} lg={4} className='participants__image participants__image--maps-container'>
             <img
               src={ukraineMap}
               alt='Ukraine demographics'
               className='participants__image--ukraine-map'
             />
-        </Col>
-        <Col xs={12} sm={5} className='participants__image'>
             <img
               src={europeMap}
               alt='Europe demographics'
@@ -37,19 +34,19 @@ export const Participants = () => (
 
       <h3 className='section__subtitle'>AGE STRUCTURE</h3>
 
-      <Row>
-        <Col xs={12} sm={6}>
+      <Row className='participants__age-structure'>
+        <Col xs={12} sm={4} lg={4}>
           <ul className='participants__list'>
             <li className='participants__list-item'>
               47% - women aged 36 - 50 y.o.
             </li>
             <li className='participants__list-item'>
-              up to 20% - women under 35 y.o.
+              20% - women under 35 y.o.
             </li>
             <li className='participants__list-item'>13% - women aged 50+</li>
           </ul>
         </Col>
-        <Col xs={12} sm={6}>
+        <Col xs={10} sm={8} lg={4}>
           <div className='participants__image'>
             <img
               src={ageDiagram}

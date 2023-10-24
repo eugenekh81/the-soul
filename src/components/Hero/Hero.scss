@@ -9,12 +9,6 @@
     display: flex;
     flex-direction: column;
 
-    /* background: linear-gradient(
-      180deg,
-      rgba(203, 159, 91, 0.39) 39.06%,
-      rgba(203,  159, 91, 0) 89.58%
-    ); */
-
     @include onTablet--s {
       flex-direction: row;
     }
@@ -70,11 +64,6 @@
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    /* background: linear-gradient(
-      180deg,
-      rgba(23, 70, 54, 0.72) 0%,
-      #174636 100%
-    ); */
 
     background: linear-gradient(180deg, rgba(23, 70, 54, 0.72) 0%, #174636 100%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -95,7 +84,10 @@
       @include onTablet--m {
         font-size: 48px;
         line-height: 48px;
+        letter-spacing: -0.95px;
       }
+
+      @include onDesktop {}
     }
 
     &--bottom {
@@ -130,23 +122,30 @@
     &--top {
       margin: 0 0 4px;
 
+      @include onTablet--s {
+        letter-spacing: 1px;
+      }
+
       @include onTablet--m {
         font-size: 16px;
+        letter-spacing: 2.9px;
+
       }
     }
 
     &--bottom {
       margin: 0 0 16px;
       font-weight: 400;
-      line-height: 100%; /* 14px */
-      letter-spacing: 5.18px;
+      line-height: 100%;
 
       @include onTablet--s {
         margin: 0;
+        letter-spacing: 3.8px;
       }
 
       @include onTablet--m {
         font-size: 17px;
+        letter-spacing: 6px;
       }
     }
   }

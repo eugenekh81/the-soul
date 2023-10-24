@@ -2,13 +2,37 @@
 @import '../../styles/utils/mixins';
 
 .participants {
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__description {
+    padding: 24px;
+    border-radius: 24px;
+
+    @include onDesktop {
+      background-color: $colorBeige;
+    }
+  }
 
   &__list {
-    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      background-color: $colorBeige;
+      padding: 20px;
+      border-radius: 24px;
+    }
   }
 
   &__list-item {
-    margin: 0 0 16px;
     text-align: justify;
     font-size: 14px;
 
@@ -65,7 +89,6 @@
   &__image {
     margin: 0 0 24px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -75,8 +98,28 @@
 
     & img {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
+
+      @include onTablet--s {
+        width: 50%;
+      }
+
+      @include onDesktop {
+        width: 100%;
+      }
+    }
+
+    &--maps-container {
+      flex-direction: column;
+
+      @include onTablet--s {
+        flex-direction: row;
+      }
+
+      @include onDesktop {
+        flex-direction: column;
+      }
     }
 
     &--conditions-graph {
@@ -101,5 +144,11 @@
     &--girl-happy {
       background-image: url('/images/about/about--girl-happy.png');
     }
+  }
+
+  &__age-structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

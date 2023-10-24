@@ -69,8 +69,8 @@ export const MentalState = () => (
         </Col>
       </Row>
 
-      <Row>
-        <Col xs={12} sm={6} lg={8} className='mental-state__item section__description'>
+      <Row className='mental-state__girls-images mental-state__girls-images--swap-images'>
+        <Col xs={12} sm={6} lg={4} className='mental-state__item section__description'>
           Participants described their well-being in their own words, in their
           own words mental-state feelings, experiences, emotions and mental
           health
@@ -83,8 +83,9 @@ export const MentalState = () => (
             className='mental-state__image--girl-sad'
           />
         </Col>
-
-        <Col xs={12} sm={6} lg={8} className='mental-state__item section__description'>
+  </Row>
+  <Row className='mental-state__girls-images'>
+        <Col xs={12} sm={6} lg={4} className='mental-state__item section__description'>
           It was important to determine what people want at this stage, so each
           participant answered the following question:
           <br />

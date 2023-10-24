@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { concepts } from '../../data/concepts.js';
 import './Concepts.scss';
+import { concepts } from '../../data/concepts.js';
 import sprite from '/images/concepts/concepts.svg';
 
 export const Concepts = () => {
