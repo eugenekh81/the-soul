@@ -61,7 +61,7 @@
   & .reviews__item {
     & iframe {
       width: 220px;
-      height: 220px * 16/9;
+      height: calc(220px * 16 / 9);
     }
   }
 }

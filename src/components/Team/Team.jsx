@@ -9,7 +9,7 @@ import IrynaRoenko from '/images/team/iroenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
 export const Team = () => {
   return (
-    <section className='page__section section team'>
+    <section className='page__section page__section--bgc-green section team'>
       <div className='container'>
         <h2 className='section__title'>Team </h2>
 

@@ -10,27 +10,29 @@ export const Participants = () => (
     <div className='container container--geo'>
       <h2 className='section__title'>Participants</h2>
 
-    <Row className='participants__content'>
-      <Col sm={12} lg={6} className='section__description participants__description'>
+    <div className='participants__content'>
+      <p className='section__description participants__description'>
         Participants filled a registration form, which allowed us to get to know
         each person better. The war forced many people to leave their homes, so
         participants joined our programme from all over the world and Ukraine.
         In terms of the proportion, 29% are outside Ukraine and are distributed
         across Europe and the world, and 71% are in Ukraine
-      </Col>
-        <Col xs={12} sm={12} lg={4} className='participants__image participants__image--maps-container'>
+      </p>
+      <div className="participants__image participants__image--ukraine-map">
             <img
               src={ukraineMap}
               alt='Ukraine demographics'
-              className='participants__image--ukraine-map'
             />
-            <img
-              src={europeMap}
-              alt='Europe demographics'
-              className=' participants__image--europe-map'
-            />
-          </Col>
-      </Row>
+      </div>
+      <div className="participants__image participants__image--europe-map">
+      <img
+        src={europeMap}
+        alt='Europe demographics'
+      />
+      </div>
+
+
+      </div>
 
       <h3 className='section__subtitle'>AGE STRUCTURE</h3>
 

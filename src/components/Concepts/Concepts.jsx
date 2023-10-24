@@ -6,7 +6,7 @@ import sprite from '/images/concepts/concepts.svg';
 
 export const Concepts = () => {
   return (
-    <section className='page__section concepts'>
+    <section className='page__section page__section--bgc-green section concepts'>
       <div className='container'>
       <h2 className='section__title'>Key concepts</h2>
 

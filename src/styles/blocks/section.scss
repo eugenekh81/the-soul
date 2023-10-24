@@ -2,6 +2,7 @@
 @import '../utils/mixins';
 
 .section {
+  padding: 48px 0 48px;
   &__title {
     width: fit-content;
 
@@ -45,6 +46,10 @@
   &__description {
     margin: 0 0 24px;
     text-align: justify;
+
+    &--mg-0 {
+      margin: 0;
+    }
   }
 
   &__subtitle {

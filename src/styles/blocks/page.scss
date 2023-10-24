@@ -2,9 +2,21 @@
 @import '../utils/mixins';
 
 .page {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   &__section {
-    margin: 0 0 48px;
+    &--bgc-green {
+      background-color: $colorGreen;
+      color: $colorBeige;
+
+      & .section__title {
+        color: $colorBeige;
+
+        &::before, &::after {
+          background-image: url('/images/decor/leaf-yellow.png');
+          filter: brightness(5);
+        }
+      }
+    }
   }
 }

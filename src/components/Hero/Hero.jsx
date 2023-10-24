@@ -4,7 +4,9 @@ export const Hero = () => {
   return (
     <section className='hero'>
       <div className='hero__content'>
-        <div className='hero__banner'></div>
+        <div className='hero__banner'>
+          <div className="hero__banner--green-fill"></div>
+        </div>
         <div className='hero__title-container'>
           <div className='hero__title'>
             <span className='hero__title--top'>

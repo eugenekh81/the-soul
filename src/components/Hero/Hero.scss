@@ -1,3 +1,4 @@
+@import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
 
 .hero {
@@ -16,15 +17,21 @@
 
   &__banner {
     border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
     overflow: hidden;
 
-    margin: 0 0 24px;
     height: 290px;
 
     background: no-repeat scroll right / cover url('/images/hero/main-banner--mobile-full.png'), linear-gradient(90deg, rgba(217, 217, 217, 0.00) 0%, #BA8A49 100%);
 
-
+    &--green-fill {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      background-color: $colorGreen;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
 
     @include hero--mobile-big {
       height: 290px;

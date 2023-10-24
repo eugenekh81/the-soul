@@ -2,6 +2,33 @@
 @import '../../styles/utils/mixins';
 
 .about {
+  position: relative;
+  &__description {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+
+    & span {
+      font-weight: 700;
+    }
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+
+      transform: translate(-50%, 50%);
+      content: '';
+      display: block;
+
+      height: 48px;
+      width: 300px;
+      background-image: url('/images/decor/leaf-beige.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
   &__list {
     margin: 0 0 24px;
