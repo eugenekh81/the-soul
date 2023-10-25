@@ -4,18 +4,31 @@
 
 .contacts {
   &__title {
+    text-align: center;
     font-size: 16px;
     margin: 0 0 12px;
     font-weight: 700;
+
+    @include onTablet--m {
+      text-align: left;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
 
+    @include onTablet--m {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+    }
+
     @include onDesktop {
-      flex-direction: row;
-      flex-wrap: wrap;
+      grid-template: repeat(1, 1fr) / repeat(4, 1fr)
+    }
+
+    @include onDesktop--xl {
+      width: 100%;
       justify-content: space-between;
     }
   }
@@ -25,6 +38,10 @@
     flex-direction: column;
     font-size: 14px;
     margin: 0 0 24px;
+
+    @include onTablet--m {
+      margin: 0;
+    }
 
     @include onDesktop {
       width: 230px;
@@ -112,10 +129,18 @@
 
   &__subscribe {
     margin-bottom: 36px;
+
+    @include onTablet--m {
+      margin: 0;
+    }
   }
 
   &__social {
     margin-bottom: 36px;
+
+    @include onTablet--m {
+      margin: 0;
+    }
   }
 }
 
@@ -243,6 +268,7 @@
     @include onDesktop {
       display: flex;
       flex-direction: column;
+      gap: 10px;
     }
   }
 

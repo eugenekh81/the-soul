@@ -102,7 +102,7 @@ export const Partners = () => {
             </Col>
           </Row>
         </div>
-        <button type='submit' className='button subscribe__button'>
+        <button type='submit' className='button section__button'>
           Donate
         </button>
       </div>
