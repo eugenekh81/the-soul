@@ -34,7 +34,7 @@ export const Contacts = () => {
         </div>
 
         <div className='contacts__subscribe subscribe'>
-          <div className='subscribe__title'>Subscribe to our newsletter</div>
+          <div className='subscribe__title'>Newsletter</div>
           <form className='subscribe__form'>
             <input
               className='subscribe__item subscribe__name'
@@ -57,7 +57,7 @@ export const Contacts = () => {
           </form>
         </div>
         <div className='contacts__social social'>
-          <div className='social__title'>Follow us on socials</div>
+          <div className='social__title'>Follow us</div>
           <div className='social__icons'>
             <a href='https://www.facebook.com/TheSoul.Psychology/' className='social__icon social__icon--fb' target='_blank' rel="noreferrer">
               <svg
