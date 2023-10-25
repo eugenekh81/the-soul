@@ -15,17 +15,16 @@
   }
 
   &-dark &-indicators [data-bs-target] {
-
     height: 8px;
     width: 8px;
-    background-color: $colorGreen;
+    // background-color: $colorGreen;
     border-radius: 50%;
   }
 
     &-control {
     &-prev {
       top: 50%;
-      transform: translate(-120%, -50%);
+      transform: translateY(-50%);
       &-icon {
         // filter: none;
         color: #fff;
@@ -39,7 +38,7 @@
 
     &-next {
       top: 50%;
-      transform: translate(120%, -50%);
+      transform: translateY(-50%);
 
       height: 30px;
       width: 30px;

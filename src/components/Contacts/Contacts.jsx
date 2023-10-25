@@ -4,9 +4,11 @@ export const Contacts = () => {
   return (
     <section className='page__section section contacts'>
       <div className='container'>
-        <h2 className='section__title'>Contacts</h2>
+        {/* <h2 className='section__title'>Contacts</h2> */}
 
-        <div className='contacts__content'>
+<div className='contacts__content'>
+        <div className='contacts__links'>
+          <div className='contacts__title'>Contacts</div>
           <a
             href='tel:+38(067)4451284'
             className='contacts__contact contacts__phone'
@@ -33,7 +35,7 @@ export const Contacts = () => {
 
         <div className='contacts__subscribe subscribe'>
           <div className='subscribe__title'>Subscribe to our newsletter</div>
-          <form>
+          <form className='subscribe__form'>
             <input
               className='subscribe__item subscribe__name'
               type='text'
@@ -110,6 +112,7 @@ export const Contacts = () => {
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
+        </div>
         </div>
       </div>
     </section>
