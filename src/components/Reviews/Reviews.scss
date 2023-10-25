@@ -2,27 +2,38 @@
 @import '../../styles/utils/mixins';
 
 .reviews {
-&__list {
-  display: block;
+  &__container {
 
-  @include onTablet--s {
-    margin: 0 0 48px;
+    &--tablet {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      // width: 90%;
+    }
   }
 
-  &--mobile {
+  &__list {
+    display: block;
+
     @include onTablet--s {
+      margin: 0 0 48px;
+    }
+
+    &--mobile {
+      @include onTablet--s {
+        display: none;
+      }
+    }
+
+    &--desktop {
       display: none;
-    }
-  }
-  &--desktop {
-    display: none;
-    @include onTablet--s {
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
 
+      @include onTablet--s {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 
   &__item {
     margin: 0 auto 0;
@@ -48,9 +59,9 @@
     }
 
     justify-content: start;
-  };
+  }
 
-  & .carousel.reviews__carousel--reviews {
+  & .carousel.reviews__carousel {
     height: 408px;
   }
 }

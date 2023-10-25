@@ -1,17 +1,17 @@
 import Col from 'react-bootstrap/Col';
 import PropTypes from 'prop-types';
-import sprite from '/images/infographics/infographics.svg';
+import sprite from '/images/results/results.svg';
 
 export const ResultsItem = ({ number, text, iconId }) => {
   return (
-    <Col sm={6} md={4} className='infographics__item'>
-      <svg className='infographics__icon'>
+    <Col sm={6} md={4} className='results__item'>
+      <svg className='results__icon'>
         <use href={`${sprite}${iconId}`}></use>
       </svg>
-      <div className='infographics__text'>
-        <span className='infographics__number'>{number} </span>
+      <div className='results__text'>
+        <span className='results__number'>{number} </span>
 
-        <span className='infographics__description'>{text}</span>
+        <span className='results__description'>{text}</span>
       </div>
     </Col>
   );

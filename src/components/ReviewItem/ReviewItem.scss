@@ -11,7 +11,8 @@
 
 
   @include onTablet--s {
-    width: 100%;
+    width: 220px;
+    padding: 12px;
   }
 
   &__image-container {

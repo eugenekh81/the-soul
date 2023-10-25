@@ -22,7 +22,6 @@ export const Reviews = () => {
               );
             })}
           </Carousel>
-        </div>
 
         <Carousel variant='dark'>
           <Carousel.Item>
@@ -33,7 +32,7 @@ export const Reviews = () => {
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowFullScreen
-              ></iframe>
+                ></iframe>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -44,7 +43,7 @@ export const Reviews = () => {
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowFullScreen
-              ></iframe>
+                ></iframe>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -59,16 +58,17 @@ export const Reviews = () => {
             </div>
           </Carousel.Item>
         </Carousel>
+      </div>
 
-        <Row className='reviews__list reviews__list--desktop'>
+        {/* <Row className='reviews__list reviews__list--desktop'>
           {reviews.map((r) => (
             <Col key={r.id} sm={6} lg={4}>
               <ReviewItem {...r} />
             </Col>
           ))}
-        </Row>
+        </Row> */}
 
-        <Row className='reviews__list reviews__list--desktop video-reviews'>
+        {/* <Row className='reviews__list reviews__list--desktop video-reviews'>
           <div className='reviews__item'>
             <iframe
               src='https://www.youtube.com/embed/fEuExMpBU_o?si=x6k3GVOaYExfrJSb'
@@ -96,7 +96,20 @@ export const Reviews = () => {
               allowFullScreen
             ></iframe>
           </div>
-        </Row>
+        </Row> */}
+          <Carousel fade variant='dark' className="reviews__carousel reviews__carousel--tablet">
+              <Carousel.Item interval={3000}>
+              <div className="reviews__container--tablet">
+                  <ReviewItem {...reviews[0]} />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div className="reviews__container--tablet">
+                  <ReviewItem {...reviews[2]} />
+              </div>
+            </Carousel.Item>
+          </Carousel>
+
       </div>
     </section>
   );
