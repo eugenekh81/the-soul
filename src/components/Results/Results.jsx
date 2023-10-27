@@ -14,7 +14,7 @@ export const Results = () => {
           achieved:
         </p>
         <div className='results__list'>
-          <Carousel variant='dark'>
+          <Carousel variant='dark' className='results__carousel'>
             <Carousel.Item>
               {results.slice(0, 3).map((i) => (
                 <ResultsItem {...i} key={i.id} />

@@ -6,10 +6,10 @@ import personPlaceholderImg from '/images/reviews/review_person_placeholder.png'
 export const reviews = [
   {
     id: 1,
-    name: "Svitlana",
-    imgSrc: personPlaceholderImg,
-    location: "Kyiv region, Ukraine",
-    review_text: "This week I have noticed my decisions - for me, to act like that is the freedom. Choice, to make own choice, instead of going down the stream. It is important to do something new that you haven't done before (relationship, vacation, new places to visit)."
+    name: "Hanna",
+    imgSrc: hanna,
+    location: "Naklo, Poland",
+    review_text: "Thank you for your work, the excercises are really powerful, the recommendations are effective and the work is very professional. I wish you development, prosperity and peace!"
   },
   {
     id: 2,
@@ -24,13 +24,6 @@ export const reviews = [
     imgSrc: personPlaceholderImg,
     location: "Dnipro, Ukraine",
     review_text: "This program gave me an opportunity to know my inner world better and accept myself"
-  },
-  {
-    id: 4,
-    name: "Hanna",
-    imgSrc: hanna,
-    location: "Naklo, Poland",
-    review_text: "Thank you for your work, the excercises are really powerful, the recommendations are effective and the work is very professional. I wish you development, prosperity and peace!"
   },
   {
     id: 5,
@@ -55,11 +48,18 @@ export const reviews = [
   },
   {
     id: 8,
-    name: "Olha",
+    name: "Svitlana",
     imgSrc: personPlaceholderImg,
-    location: "Dnipro, Ukraine",
-    review_text: "Thank you for the project! I cannot stop. I need all of you very much. I understood after the training that my anger, aggression and evil emotions are necessary to cope with. I need to direct new energy into new productive channels."
+    location: "Kyiv region, Ukraine",
+    review_text: "This week I have noticed my decisions - for me, to act like that is the freedom. Choice, to make own choice, instead of going down the stream. It is important to do something new that you haven't done before (relationship, vacation, new places to visit)."
   },
+  {
+  id: 4,
+  name: "Olha",
+  imgSrc: personPlaceholderImg,
+  location: "Dnipro, Ukraine",
+  review_text: "Thank you for the project! I cannot stop. I need all of you very much. I understood after the training that my anger, aggression and evil emotions are necessary to cope with. I need to direct new energy into new productive channels."
+},
   {
     id: 9,
     name: "Hanna",

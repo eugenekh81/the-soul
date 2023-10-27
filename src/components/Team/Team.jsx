@@ -14,7 +14,7 @@ export const Team = () => {
         <h2 className='section__title'>Team </h2>
 
         <div className='team__list'>
-          <Carousel className='team__carousel' variant='dark' >
+          <Carousel className='team__carousel' variant='dark'>
             <Carousel.Item interval={3000}>
               <div className='team__person person'>
                 <div className='person__image-container'>
@@ -30,7 +30,7 @@ export const Team = () => {
                 <p className='person__role'>
                   Psychologist
                   <br />
-                  co-founder of The Soul Center
+                  founder of The Soul Center
                 </p>
               </div>
             </Carousel.Item>

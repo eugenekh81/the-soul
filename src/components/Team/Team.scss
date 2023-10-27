@@ -5,11 +5,15 @@
 .team {
   &__carousel {
     position: relative;
-    height: 384px;
+    height: min-content;
+
+    @include onTablet--s {
+      display: none;
+    }
 
     &.carousel.carousel-dark.slide .carousel-indicators {
       position: absolute;
-      bottom: 0;
+      bottom: -50px;
       [data-bs-target] {
         background-color: $colorBeige;
       }
@@ -17,11 +21,6 @@
   }
 
   &__list {
-    & .carousel-inner {
-      display: flex;
-      align-items: start;
-    }
-
     &--desktop {
       display: none;
 
@@ -59,8 +58,8 @@
 }
 
 .person {
-  width: 200px;
-  height: 330px;
+  width: 240px;
+  height: 320px;
   position: relative;
   padding: 24px 16px 24px;
   display: flex;
@@ -75,6 +74,10 @@
 
   &:hover {
     box-shadow: 0 0 8px $colorGreen;
+  }
+
+  @include onTablet--s {
+    width: 200px;
   }
 
   &__image-container {

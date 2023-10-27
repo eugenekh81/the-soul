@@ -4,7 +4,6 @@ import './Reviews.scss';
 import { reviews } from '../../data/reviews';
 import { ReviewItem } from '../ReviewItem/';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 export const Reviews = () => {
   return (
@@ -12,8 +11,7 @@ export const Reviews = () => {
       <div className='container'>
         <h2 className='section__title'>Reviews</h2>
 
-        <div className='reviews__list reviews__list--mobile'>
-          <Carousel variant='dark' className="reviews__carousel--reviews">
+          <Carousel variant='dark' className='reviews__carousel reviews__carousel--mobile'>
             {reviews.map((r) => {
               return (
                 <Carousel.Item interval={3000} key={r.id}>
@@ -23,7 +21,71 @@ export const Reviews = () => {
             })}
           </Carousel>
 
-        <Carousel variant='dark'>
+
+        <Carousel className="reviews__carousel reviews__carousel--tablet-s" variant='dark'>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(0, 2).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(2, 4).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(4, 6).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(6, 8).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(8, 9).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+        </Carousel>
+
+        <Carousel className="reviews__carousel reviews__carousel--desktop" variant='dark'>
+        <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(0, 3).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(3, 6).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className='reviews__slide-container'>
+              {reviews.slice(6, 9).map((r) => (
+                <ReviewItem {...r} key={r.imgSrc} />
+              ))}
+            </div>
+          </Carousel.Item>
+        </Carousel>
+
+
+        <Carousel className='reviews__carousel reviews__carousel--mobile video-reviews' variant='dark'>
           <Carousel.Item>
             <div className='reviews__item'>
               <iframe
@@ -32,7 +94,7 @@ export const Reviews = () => {
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowFullScreen
-                ></iframe>
+              ></iframe>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -43,7 +105,7 @@ export const Reviews = () => {
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowFullScreen
-                ></iframe>
+              ></iframe>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -58,17 +120,8 @@ export const Reviews = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-      </div>
 
-        {/* <Row className='reviews__list reviews__list--desktop'>
-          {reviews.map((r) => (
-            <Col key={r.id} sm={6} lg={4}>
-              <ReviewItem {...r} />
-            </Col>
-          ))}
-        </Row> */}
-
-        {/* <Row className='reviews__list reviews__list--desktop video-reviews'>
+        <Row className='video-reviews video-reviews--desktop'>
           <div className='reviews__item'>
             <iframe
               src='https://www.youtube.com/embed/fEuExMpBU_o?si=x6k3GVOaYExfrJSb'
@@ -96,20 +149,7 @@ export const Reviews = () => {
               allowFullScreen
             ></iframe>
           </div>
-        </Row> */}
-          <Carousel fade variant='dark' className="reviews__carousel reviews__carousel--tablet">
-              <Carousel.Item interval={3000}>
-              <div className="reviews__container--tablet">
-                  <ReviewItem {...reviews[0]} />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-            <div className="reviews__container--tablet">
-                  <ReviewItem {...reviews[2]} />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-
+        </Row>
       </div>
     </section>
   );
