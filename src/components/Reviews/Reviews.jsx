@@ -11,16 +11,15 @@ export const Reviews = () => {
       <div className='container'>
         <h2 className='section__title'>Reviews</h2>
 
-          <Carousel variant='dark' className='reviews__carousel reviews__carousel--mobile'>
-            {reviews.map((r) => {
-              return (
-                <Carousel.Item interval={3000} key={r.id}>
-                  <ReviewItem {...r} key={r.id} />
-                </Carousel.Item>
-              );
-            })}
-          </Carousel>
-
+        <Carousel variant='dark' className='reviews__carousel reviews__carousel--mobile'>
+          {reviews.map((r) => {
+            return (
+              <Carousel.Item interval={3000} key={r.id}>
+                <ReviewItem {...r} key={r.id} />
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
 
         <Carousel className="reviews__carousel reviews__carousel--tablet-s" variant='dark'>
           <Carousel.Item>
@@ -83,7 +82,6 @@ export const Reviews = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-
 
         <Carousel className='reviews__carousel reviews__carousel--mobile video-reviews' variant='dark'>
           <Carousel.Item>
