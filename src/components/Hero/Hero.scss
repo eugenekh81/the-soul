@@ -16,23 +16,25 @@
   &__banner {
     border-bottom-right-radius: 50px;
     overflow: hidden;
-
     height: 290px;
 
     background: no-repeat scroll right / cover url('/images/hero/main-banner--mobile-full.png'), linear-gradient(90deg, rgb(255, 255, 255) 0%, #BA8A49 100%), $colorGreen;
-
+background-color: red;
     &--green-fill {
+
       position: absolute;
-      height: 40px;
-      width: 40px;
+      height: 100px;
+      width: 100px;
       background-color: $colorGreen;
-      bottom: 0;
-      right: 0;
+
+      right: 0px;
+      bottom: 252px;
       z-index: -1;
 
-      display: none;
       @include onTablet--s {
         display: block;
+        bottom: 0;
+        // right: 0;
       }
     }
 
@@ -50,12 +52,13 @@
   }
 
   &__title-container {
+    background: $colorGreen;
     @include onTablet--s {
+      background: none;
       position: absolute;
       top:50%;
       transform: translateY(-50%);
       right: 55%;
-      // width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -67,24 +70,29 @@
   }
 
   &__title {
-    padding: 8px 0 0;
+    padding: 50px 0 0;
     margin: 0 0 14px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-
-    background: linear-gradient(180deg, rgba(23, 70, 54, 0.72) 0%, #174636 100%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-
+    background: linear-gradient(180deg, $colorBeige 0%, #BA8A49 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    color: $colorBeige;
     @include onTablet--s {
       padding: 0;
+      background: linear-gradient(180deg, rgba(23, 70, 54, 0.72) 0%, #174636 100%);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
+
 
     &--top {
       font-size: 38px;
@@ -114,9 +122,12 @@
 
   &__decor-element {
     margin: 0 auto 12px;
-    width: 106px;
-    height: 30px;
-    background-image: url('/images/hero/hero--decor-element.png');
+    background-image: url("/images/decor/leaf-beige.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 214px;
+    height: 65px;
+    // background-image: url('/images/hero/hero--decor-element.png');
 
     @include onTablet--s {
       display: none;
@@ -126,8 +137,12 @@
   &__description {
     margin: 0;
     font-size: 14px;
-    color: #000;
+    color: $colorBeige;
     text-align: center;
+
+    @include onTablet--s {
+      color: #2e2e2e;
+    }
 
     &--top {
       margin: 0 0 4px;

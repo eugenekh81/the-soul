@@ -15,39 +15,43 @@
     }
 
     @include onDesktop {
-      grid-template: repeat(3, min-content) / repeat(12, 1fr);
+      grid-template: max-content 50px min-content min-content / repeat(12, 1fr);
 
       row-gap: 24px;
     }
   }
 
   &__description {
+    position: relative;
     padding: 24px;
     border-radius: 24px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
     @include onTablet--s {
-      grid-column: 1 / 13;
+      grid-column: 2 / 12;
       grid-row: 1 / 2;
     }
 
-    @include onDesktop {
-      grid-column: 1 / 13;
-      grid-row: 1 / 2;
+    @include onDesktop--xl {
       background-color: $colorBeige;
     }
+  }
+
+  &__list-container {
+    display: flex;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
-    gap: 25px;
+    // gap: 25px;
 
     @include onDesktop {
       display: flex;
-      flex-direction: column;
+      justify-content: space-evenly;
       background-color: $colorBeige;
       padding: 20px;
       border-radius: 24px;
@@ -131,6 +135,11 @@
       }
     }
 
+    &--age-graph {
+      background-color: $colorBeige;
+      border-radius: 12px;
+    }
+
     &--maps-container {
       flex-direction: column;
 
@@ -163,7 +172,7 @@
         width: 100%;
 
         grid-column: 1 / 8;
-        grid-row: 2 / 4;
+        grid-row: 3 / 5;
       }
 
       @include onDesktop {
@@ -177,7 +186,7 @@
 
       @include onTablet--s {
         grid-column: 8 / 13;
-        grid-row: 1 / 4;
+        grid-row: 2 / 5;
 
       }
 
@@ -199,6 +208,14 @@
   &__age-structure {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+  }
+
+  &__percentage {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: $colorGreen;
   }
 }
