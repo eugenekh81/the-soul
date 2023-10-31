@@ -1,0 +1,14 @@
+.projects {
+  &__uc-container {
+    margin: 0 auto 48px;
+    width: 70%;
+    border-radius: 55px;
+    /* border-radius: 650px; */
+    overflow: hidden;
+  }
+
+  &__project-description {
+    font-size: 24px;
+    text-align: center;
+  }
+}

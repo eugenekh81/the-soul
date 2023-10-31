@@ -10,11 +10,10 @@
     flex-wrap: wrap;
 
     row-gap: 60px;
-    color: $colorGreen;
+    color: $colorDarkGreen;
 
     @include onTablet--s {
-
-     row-gap: 48px;
+      row-gap: 48px;
     }
   }
 
@@ -54,7 +53,7 @@
   &__icon {
     width: 46px;
     height: 46px;
-    fill: $colorGreen;
+    fill: $colorDarkGreen;
   }
 
   &__content {
@@ -78,5 +77,5 @@
 
 .example {
   height: 100px;
-  width: 100px;;
+  width: 100px;
 }

@@ -1,14 +1,13 @@
 @import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
 
-
 .contacts {
   &__title {
     text-align: center;
     font-size: 16px;
     margin: 0 0 12px;
     font-weight: 700;
-    color: $colorGreen;
+    color: $colorDarkGreen;
 
     @include onTablet--m {
       text-align: left;
@@ -21,7 +20,7 @@
 
     @include onTablet--m {
       display: grid;
-      grid-template: repeat(2, 1fr) / repeat(2, 1fr);;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     }
 
     @include onDesktop {
@@ -32,7 +31,6 @@
     }
 
     @include onDesktop--xl {
-
     }
   }
 
@@ -76,7 +74,7 @@
 
       margin-right: 8px;
 
-     filter: invert(0.5);
+      filter: invert(0.5);
       background-size: contain;
 
       background-position: center;
@@ -96,7 +94,6 @@
 
   &__email::before {
     background-image: url('/images/icons/envelope.svg');
-
   }
 
   &__address-container {
@@ -152,16 +149,15 @@
   display: flex;
   flex-direction: column;
 
-@include onDesktop {
-  width: 240px;
-}
-
+  @include onDesktop {
+    width: 240px;
+  }
 
   &__title {
     text-align: center;
     font-weight: 700;
     margin: 0 0 12px;
-    color: $colorGreen;
+    color: $colorDarkGreen;
 
     @include onDesktop {
       text-align: left;
@@ -201,7 +197,7 @@
 
     &::placeholder {
       font-size: 12px;
-      color:#aeadad;
+      color: #aeadad;
     }
 
     &:focus {
@@ -222,20 +218,19 @@
     font-weight: 500;
     border-radius: 48px;
 
-    background-color: $colorGreen;
+    background-color: $colorDarkGreen;
     color: #fff;
 
     border: 1px solid transparent;
 
     box-shadow: 0px 6px 23px 0px #004e176d;
 
-
     transition: all 0.25s ease-in-out;
 
     &:hover {
       background-color: #fff;
-      color: $colorGreen;
-      border-color: $colorGreen;
+      color: $colorDarkGreen;
+      border-color: $colorDarkGreen;
     }
 
     @include onDesktop {
@@ -258,7 +253,7 @@
     text-align: center;
     margin: 0 0 24px;
     font-weight: 700;
-    color: $colorGreen;
+    color: $colorDarkGreen;
 
     @include onTablet--m {
       text-align: left;
@@ -274,7 +269,7 @@
 
     &:hover {
       opacity: 1;
-     & .social__icon:not(:hover) {
+      & .social__icon:not(:hover) {
         opacity: 0.8;
       }
     }
@@ -282,7 +277,6 @@
     @include onTablet--s {
       gap: 12px;
     }
-
 
     @include onDesktop {
       display: flex;
@@ -305,7 +299,7 @@
     }
 
     &--fb {
-      fill: #0866FF;
+      fill: #0866ff;
     }
 
     &--ig {

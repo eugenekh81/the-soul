@@ -2,7 +2,7 @@
 @import '../utils/mixins';
 
 .section {
-  padding: 100px 0 100px;
+  padding: 60px 0 60px;
   &__title {
     width: fit-content;
 
@@ -14,9 +14,14 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: $colorGreen;
+    color: $colorDarkGreen;
 
-    &::before, &::after {
+    @include onDesktop {
+      margin: 0 auto 48px;
+    }
+
+    &::before,
+    &::after {
       position: absolute;
       box-sizing: content-box;
       content: '';
@@ -29,9 +34,7 @@
       background-size: contain;
       background-position: center;
 
-      background-repeat:
-      no-repeat;
-
+      background-repeat: no-repeat;
     }
 
     &::before {
@@ -58,7 +61,7 @@
 
     text-align: center;
 
-    color: $colorGreen
+    color: $colorDarkGreen;
   }
 
   &__button {

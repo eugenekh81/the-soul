@@ -1,0 +1,43 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.home-hero {
+  position: relative;
+
+  &__banner {
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-image: url('/images/home/home--desktop.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 18px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 00;
+    letter-spacing: 8px;
+
+    color: $colorBeige;
+    text-shadow: 2px 2px 16px $colorDarkGreen;
+  }
+
+  &__subtitle {
+    letter-spacing: 13.8px;
+    color: $colorDarkGreen;
+  }
+}

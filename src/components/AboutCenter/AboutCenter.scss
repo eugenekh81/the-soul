@@ -1,0 +1,36 @@
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
+.about-center {
+  &__content {
+
+    height: 50%;
+    display: flex;
+    gap: 32px;
+  }
+  &__text {
+    text-align: justify;
+    line-height: 1.5;
+
+    & span {
+      color: $colorDarkGreen;
+      font-weight: 700;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    flex-shrink: 0.2;
+    align-items: center;
+    width: 400px;
+
+  }
+  & img {
+    border-radius: 24px;
+    padding: 6px;
+    background-color: $colorBeige;
+    object-fit: cover;
+    object-position: center;
+
+  }
+}

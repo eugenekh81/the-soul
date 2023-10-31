@@ -1,7 +1,6 @@
 @import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
 
-
 .team {
   &__carousel {
     position: relative;
@@ -30,9 +29,7 @@
         width: calc(200px * 2 + 20px);
         gap: 20px;
         flex-wrap: wrap;
-
       }
-
 
       @include onTablet--m {
       }
@@ -73,7 +70,7 @@
   background-color: $colorBeige;
 
   &:hover {
-    box-shadow: 0 0 8px $colorGreen;
+    box-shadow: 0 0 8px $colorDarkGreen;
   }
 
   @include onTablet--s {
@@ -105,7 +102,7 @@
     text-align: center;
     margin: 0 0 12px;
     font-weight: bold;
-    color: $colorGreen;
+    color: $colorDarkGreen;
     font-size: 18px;
   }
 
@@ -114,6 +111,6 @@
     font-size: 14px;
     opacity: 0.8;
     line-height: 1.5;
-    color: #2e2e2e
+    color: #2e2e2e;
   }
 }

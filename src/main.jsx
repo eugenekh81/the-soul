@@ -5,7 +5,7 @@ import './styles/index.scss';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Root } from '/src/routes/Root';
-import { HomePage } from './pages/HomePage.jsx';
+import { HomePage } from './pages/HomePage/HomePage.jsx';
 import { UkrainianCirclePage } from './pages/UkrainianCirlcePage/UkrainianCirclePage';
 
 const router = createBrowserRouter([

@@ -18,14 +18,16 @@
     overflow: hidden;
     height: 290px;
 
-    background: no-repeat scroll right / cover url('/images/hero/main-banner--mobile-full.png'), linear-gradient(90deg, rgb(255, 255, 255) 0%, #BA8A49 100%), $colorGreen;
-background-color: red;
+    background: no-repeat scroll right / cover
+        url('/images/hero/main-banner--mobile-full.png'),
+      linear-gradient(90deg, rgb(255, 255, 255) 0%, #ba8a49 100%),
+      $colorDarkGreen;
+    background-color: red;
     &--green-fill {
-
       position: absolute;
       height: 100px;
       width: 100px;
-      background-color: $colorGreen;
+      background-color: $colorDarkGreen;
 
       right: 0px;
       bottom: 252px;
@@ -52,11 +54,11 @@ background-color: red;
   }
 
   &__title-container {
-    background: $colorGreen;
+    background: $colorDarkGreen;
     @include onTablet--s {
       background: none;
       position: absolute;
-      top:50%;
+      top: 50%;
       transform: translateY(-50%);
       right: 55%;
       display: flex;
@@ -77,22 +79,24 @@ background-color: red;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    background: linear-gradient(180deg, $colorBeige 0%, #BA8A49 100%);
+    background: linear-gradient(180deg, $colorBeige 0%, #ba8a49 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: $colorBeige;
     @include onTablet--s {
       padding: 0;
-      background: linear-gradient(180deg, rgba(23, 70, 54, 0.72) 0%, #174636 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(23, 70, 54, 0.72) 0%,
+        #174636 100%
+      );
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-
 
     &--top {
       font-size: 38px;
@@ -105,7 +109,8 @@ background-color: red;
         letter-spacing: -0.95px;
       }
 
-      @include onDesktop {}
+      @include onDesktop {
+      }
     }
 
     &--bottom {
@@ -122,7 +127,7 @@ background-color: red;
 
   &__decor-element {
     margin: 0 auto 12px;
-    background-image: url("/images/decor/leaf-beige.png");
+    background-image: url('/images/decor/leaf-beige.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 214px;
@@ -154,7 +159,6 @@ background-color: red;
       @include onTablet--m {
         font-size: 16px;
         letter-spacing: 2.9px;
-
       }
     }
 

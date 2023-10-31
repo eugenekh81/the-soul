@@ -11,7 +11,7 @@
   font-weight: 500;
   border-radius: 48px;
 
-  background-color: $colorGreen;
+  background-color: $colorDarkGreen;
   color: #fff;
 
   border: 1px solid transparent;
@@ -22,7 +22,7 @@
 
   &:hover {
     background-color: #fff;
-    color: $colorGreen;
-    border-color: $colorGreen;
+    color: $colorDarkGreen;
+    border-color: $colorDarkGreen;
   }
 }

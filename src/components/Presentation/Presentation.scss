@@ -2,14 +2,13 @@
 @import '../../styles/utils/mixins';
 
 .presentation {
-
   &__title {
     margin: 0 0 24px;
 
     font-weight: 700;
     text-align: center;
 
-    color: $colorGreen;
+    color: $colorDarkGreen;
   }
 
   &__video-container {
@@ -35,8 +34,6 @@
       @include onDesktop {
         height: 520px;
       }
-
-
     }
   }
 }

@@ -1,6 +1,6 @@
-import './About.scss';
+import './AboutUC.scss';
 
-export const About = () => {
+export const AboutUC = () => {
   return (
     <section className='page__section page__section--bgc-green section about'>
       <div className='container'>

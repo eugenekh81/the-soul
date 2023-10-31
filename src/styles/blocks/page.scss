@@ -7,13 +7,14 @@
 
   &__section {
     &--bgc-green {
-      background-color: $colorGreen;
+      background-color: $colorDarkGreen;
       color: $colorBeige;
 
       & .section__title {
         color: $colorBeige;
 
-        &::before, &::after {
+        &::before,
+        &::after {
           background-image: url('/images/decor/leaf-yellow.png');
           filter: brightness(5);
         }

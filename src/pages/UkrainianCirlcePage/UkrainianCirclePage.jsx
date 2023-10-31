@@ -1,5 +1,5 @@
 import { Hero } from '/src/components/Hero';
-import { About } from '/src/components/About';
+import { AboutUC } from '/src/components/AboutUC';
 import { Concepts } from '/src/components/Concepts';
 import { ModulesList } from '/src/components/ModulesList';
 import { Presentation } from '/src/components/Presentation';
@@ -12,37 +12,34 @@ import { Participants } from '/src/components/Participants/Participants';
 import { JoinTheProgram } from '/src/components/JoinProgram/JoinTheProgram';
 import { SupportUs } from '/src/components/SupportUs/SupportUs';
 
-
 export const UkrainianCirclePage = () => {
   return (
     <>
+      <Hero />
 
-        <Hero />
+      <AboutUC />
 
-        <About />
+      <Concepts />
 
-        <Concepts />
+      <Presentation />
 
-        <Presentation />
+      <Participants />
 
-        <Participants />
+      <MentalState />
 
-        <MentalState />
+      <ModulesList />
 
-        <ModulesList />
+      <Results />
 
-        <Results />
+      <Reviews />
 
-        <Reviews />
+      <JoinTheProgram />
 
-        <JoinTheProgram />
+      <SupportUs />
 
-        <SupportUs />
+      <Team />
 
-        <Team />
-
-        <Partners />
-
+      <Partners />
     </>
   );
 };

@@ -14,11 +14,11 @@
   &-dark &-indicators [data-bs-target] {
     height: 8px;
     width: 8px;
-    // background-color: $colorGreen;
+    // background-color: $colorDarkGreen;
     border-radius: 50%;
   }
 
-    &-control {
+  &-control {
     &-prev {
       top: 50%;
       transform: translateY(-50%);
@@ -48,11 +48,11 @@
 .carousel .carousel-control-prev .carousel-control-prev-icon,
 .carousel .carousel-control-next .carousel-control-next-icon {
   // filter: none;
-    height: 16px;
-    width: 16px;
+  height: 16px;
+  width: 16px;
 
-    color: $colorBeige;
-        // filter: none;
+  color: $colorBeige;
+  // filter: none;
 }
 
 .carousel.slide.carousel-dark button.active {
