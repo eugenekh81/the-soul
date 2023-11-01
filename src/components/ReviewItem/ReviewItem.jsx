@@ -7,7 +7,6 @@ export const ReviewItem = ({
   location,
   review_text
 }) => {
-  console.log(name);
     return (
     <div className='reviews__item review'>
       <div className='review__image-container'>

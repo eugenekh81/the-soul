@@ -2,56 +2,8 @@
 @import '../../styles/utils/mixins';
 
 .soul-cover {
-
-  &__content {
-    margin: 0 auto;
-    position: relative;
-
-    height: 747.5px;
-    background-image: url('/images/home/the-soul--cover.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 40px;
-    left: 34px;
-    height: 90%;
-  }
-
-  &__meet {
-    font-size: 24px;
-    margin: 0 0 30px;
-  }
-
-  &__center-name {
-    margin: 0 0 30px;
-    font-size: 110px;
-    font-weight: 900;
-    color: $colorGold;
-    text-shadow: 4px 4px 8px lightgray;
-  }
-
-  &__quote {
-    margin: 0 0 30px 34px;
-    font-size: 30px;
-    width: 420px;
-    font-weight: 700;
-
-    color: $colorLightGreen;
-  }
-
-  &__happiness {
-    margin: 0 0 30px;
-    font-size: 24px;
-    font-weight: 700;
-    color: $colorLightGreen;
-    width: 560px;
+  &__video-container {
+    border-radius: 24px;
+    overflow: hidden;
   }
 }

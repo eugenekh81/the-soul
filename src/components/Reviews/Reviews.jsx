@@ -11,7 +11,10 @@ export const Reviews = () => {
       <div className='container'>
         <h2 className='section__title'>Reviews</h2>
 
-        <Carousel variant='dark' className='reviews__carousel reviews__carousel--mobile'>
+        <Carousel
+          variant='dark'
+          className='reviews__carousel reviews__carousel--mobile'
+        >
           {reviews.map((r) => {
             return (
               <Carousel.Item interval={3000} key={r.id}>
@@ -21,69 +24,78 @@ export const Reviews = () => {
           })}
         </Carousel>
 
-        <Carousel className="reviews__carousel reviews__carousel--tablet-s" variant='dark'>
+        <Carousel
+          className='reviews__carousel reviews__carousel--tablet-s'
+          variant='dark'
+        >
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(0, 2).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(2, 4).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(4, 6).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(6, 8).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(8, 9).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
         </Carousel>
 
-        <Carousel className="reviews__carousel reviews__carousel--desktop" variant='dark'>
-        <Carousel.Item>
+        <Carousel
+          className='reviews__carousel reviews__carousel--desktop'
+          variant='dark'
+        >
+          <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(0, 3).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(3, 6).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className='reviews__slide-container'>
               {reviews.slice(6, 9).map((r) => (
-                <ReviewItem {...r} key={r.imgSrc} />
+                <ReviewItem {...r} key={`${r.id}-${r.imgSrc}`} />
               ))}
             </div>
           </Carousel.Item>
         </Carousel>
 
-        <Carousel className='reviews__carousel reviews__carousel--mobile video-reviews' variant='dark'>
+        <Carousel
+          className='reviews__carousel reviews__carousel--mobile video-reviews'
+          variant='dark'
+        >
           <Carousel.Item>
             <div className='reviews__item'>
               <iframe

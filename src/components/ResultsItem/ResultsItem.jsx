@@ -18,7 +18,7 @@ export const ResultsItem = ({ number, text, iconId }) => {
 };
 
 ResultsItem.propTypes = {
-  number: PropTypes.numberisRequired,
-  text: PropTypes.stringisRequired,
-  iconId: PropTypes.stringisRequired,
+  number: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
+  iconId: PropTypes.string.isRequired,
 };

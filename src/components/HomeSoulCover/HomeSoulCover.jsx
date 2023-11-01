@@ -1,31 +1,19 @@
+import Ratio from 'react-bootstrap/Ratio';
 import './HomeSoulCover.scss';
 
 export const HomeSoulCover = () => {
   return (
     <section className='page__section section soul-cover'>
-      <div className="container">
-        <div className="soul-cover__content">
-          <div className="soul-cover__text-container">
-          <p className="soul-cover__meet">
-            Meet Ukrainian Psychology center
-          </p>
-          <h2 className="soul-cover__center-name">
-            The Soul
-          </h2>
-          <p className="soul-cover__quote">
-            Taking care of your soul is taking care of your future.
-          </p>
-          <p className="soul-cover__happiness">
-            By doing so, you are creating your own happiness and overall well-being of the nation.
-          </p>
-          <p className="soul-cover__quote">
-          Psychotherapy is the care of the soul.
-          </p>
-          <p className="soul-cover__happiness">
-          Everyone has a soul which needs love, care and attention.
-          </p>
-          </div>
-        </div>
+      <div className='container'>
+        <Ratio aspectRatio='16x9' className='soul-cover__video-container'>
+          <iframe
+            src='https://www.youtube.com/embed/CL0daxScqpI?si=Ywlb1lj9fyEpI5bg'
+            title='YouTube video player'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowFullScreen
+          ></iframe>
+        </Ratio>
       </div>
     </section>
   );

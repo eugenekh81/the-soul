@@ -1,4 +1,6 @@
 import './Header.scss';
+import { Link } from 'react-router-dom';
+
 import logo from '/images/logo/header-logo--mobile.png';
 
 export const Header = () => {
@@ -7,9 +9,9 @@ export const Header = () => {
     <header className="header">
         <div className="container">
           <div className="header__content">
-          <a href="/the-soul/" className="logo">
+          <Link to="/" className="logo">
             <img src={logo} alt="The Soul" />
-          </a>
+          </Link>
 
           <div className="header__buttons">
             <a href="tel:+123456789" className="header__button header__button--call"></a>
