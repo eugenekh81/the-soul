@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/ukrainian-circle',
+        path: 'ukrainian-circle',
         element: <UkrainianCirclePage />,
       },
     ],
