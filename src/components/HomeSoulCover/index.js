@@ -1,1 +1,1 @@
-export * from './HomeSoulCover.scss';
+export * from './HomeSoulCover.jsx';

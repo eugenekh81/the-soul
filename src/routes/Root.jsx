@@ -8,7 +8,7 @@ export const Root = () => {
   return (
     <ScrollToTop>
       <Header />
-      <main>
+      <main className='page__main'>
         <Outlet />
       </main>
 

@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 
+  &__main {
+    min-height: calc(100vh - 60px - 384px);
+  }
+
   &__section {
     &--bgc-green {
       background-color: $colorDarkGreen;

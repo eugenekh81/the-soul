@@ -1,4 +1,9 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .projects {
+  position: relative;
+
   &__uc-container {
     display: block;
     margin: 0 auto 48px;
@@ -8,11 +13,20 @@
   }
 
   &__project-description {
+    margin: 0 auto 36px;
     font-size: 24px;
+    line-height: 1.5;
     text-align: center;
+    width: 70%;
+  }
+
+  &__uc-button-more {
+   margin: 0 auto;
+   border-color: $colorBeige;
   }
 
   &__past-project {
     margin: 0 0 48px;
    }
+
 }

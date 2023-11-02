@@ -1,1 +1,1 @@
-export * from './PastProjects.scss';
+export * from './PastProjects.jsx';
