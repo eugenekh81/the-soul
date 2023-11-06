@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 
 import OleksandraShymanova from '/images/team/ashymanova-mobile.png';
 import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
-import IrynaRoenko from '/images/team/iroenko-mobile.png';
+import IrynaRoyenko from '/images/team/iroyenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
 import { NavLink } from 'react-router-dom';
 export const Team = () => {
@@ -17,7 +17,7 @@ export const Team = () => {
         <div className='team__list'>
           <Carousel className='team__carousel' variant='dark'>
             <Carousel.Item interval={3000}>
-              <NavLink className='team__person person'>
+              <NavLink className='team__person person' to='/the-soul/en/team/oleksandra-shymanova'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -36,7 +36,7 @@ export const Team = () => {
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='team__person person'>
+              <NavLink className='team__person person' to='/the-soul/en/team/mariya-vynnytska'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -55,22 +55,22 @@ export const Team = () => {
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='team__person person'>
+              <NavLink className='person' to='/the-soul/en/team/iryna-royenko'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
-                    src={IrynaRoenko}
+                    src={IrynaRoyenko}
                     alt='Team member'
                   />
                 </div>
 
-                <h3 className='person__name'>Iryna Roenko</h3>
+                <h3 className='person__name'>Iryna Royenko</h3>
 
                 <p className='person__role'>Psychologist</p>
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='team__person person'>
+              <NavLink className='person' to='/the-soul/en/team/maryna-yakhno'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -110,7 +110,7 @@ export const Team = () => {
                 </NavLink>
               </Col>
               <Col sm={6} lg={3} className='team__person'>
-                <NavLink className='person'>
+                <NavLink className='person' to='/the-soul/en/team/mariya-vynnytska'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -128,20 +128,23 @@ export const Team = () => {
                 </p>
                 </NavLink>
               </Col>
-              <Col sm={6} lg={3} className='team__person person'>
+              <Col sm={6} lg={3} className='team__person'>
+              <NavLink className='person' to='/the-soul/en/team/iryna-royenko'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
-                    src={IrynaRoenko}
+                    src={IrynaRoyenko}
                     alt='Team member'
                   />
                 </div>
 
-                <h3 className='person__name'>Iryna Roenko</h3>
+                <h3 className='person__name'>Iryna Royenko</h3>
 
                 <p className='person__role'>Psychologist</p>
+              </NavLink>
               </Col>
-              <Col sm={6} lg={3}  className='team__person person'>
+              <Col sm={6} lg={3}  className='team__person'>
+              <NavLink className='person' to='/the-soul/en/team/maryna-yakhno'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -153,6 +156,7 @@ export const Team = () => {
                 <h3 className='person__name'>Maryna Yakhno</h3>
 
                 <p className='person__role'>Psychologist</p>
+                </NavLink>
               </Col>
         </Row>
       </div>

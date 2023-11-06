@@ -12,7 +12,10 @@ import { HomePage } from './pages/HomePage/';
 import { UkrainianCirclePage } from './pages/UkrainianCirlcePage/';
 import { ErrorPage } from './pages/ErrorPage/';
 import { TeamPage } from './pages/TeamPages/';
-import { OleksandraShymanova } from './pages/TeamPages/OleksandraShymanova/';
+import { OleksandraShymanova } from './pages/TeamPages/OleksandraShymanova';
+import { MariyaVynnytska } from './pages/TeamPages/MariyaVynnytska';
+import { IrynaRoyenko } from './pages/TeamPages/IrynaRoyenko';
+import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +45,18 @@ const router = createBrowserRouter([
           {
             path: 'oleksandra-shymanova',
             element: <OleksandraShymanova />,
+          },
+          {
+            path: 'mariya-vynnytska',
+            element: <MariyaVynnytska />,
+          },
+          {
+            path: 'iryna-royenko',
+            element: <IrynaRoyenko />,
+          },
+          {
+            path: 'maryna-yakhno',
+            element: <MarynaYakhno />,
           },
         ],
       },

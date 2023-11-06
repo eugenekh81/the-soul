@@ -6,13 +6,7 @@ export const HomeSoulCover = () => {
     <section className='page__section section soul-cover'>
       <div className='container'>
         <Ratio aspectRatio='16x9' className='soul-cover__video-container'>
-          <iframe
-            src='https://www.youtube.com/embed/CL0daxScqpI?si=Ywlb1lj9fyEpI5bg'
-            title='YouTube video player'
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/CL0daxScqpI?si=c9unNHasCNnwpvXD" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </Ratio>
       </div>
     </section>

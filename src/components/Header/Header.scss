@@ -1,25 +1,80 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .header {
   position: sticky;
   top: 0;
-  background-color: #f7f0e8;
+  // background-color: #f7f0e8;
+  background-color: $colorDarkGreen;
+
   z-index: 99;
 
   &__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 60px;
   }
 
+  &__nav-link {
+    display: flex;
+    justify-content: start;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: $colorGoldLight;
+    font-weight: 400;
+
+    &--team {
+      position: relative;
+    }
+  }
+
+  &__team-list {
+    top: 100%;
+  }
+
+  .team-list {
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    background-color: $colorBeige;
+    width: max-content;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    opacity: 0;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &--open {
+      height: 156px;
+      opacity: 1;
+
+    }
+
+    &__link {
+      text-decoration: none;
+      font-size: 16px;
+      color: $colorDarkGreen;
+    }
+  }
 
   &__buttons {
     display: flex;
     gap: 12px;
+    align-items: center;
 
   }
 
   &__button {
     background-repeat: no-repeat;
+    background-position: center;
     display: block;
     height: 32px;
     width: 32px;
@@ -30,6 +85,10 @@
 
     &--burger-menu {
       background-image: url('/images/header/header-burger--mobile.png');
+
+      @include onDesktop {
+        display: none;
+      }
     }
   }
 }
@@ -37,11 +96,28 @@
 .logo {
   display: flex;
 
-
-
   & img {
     display: flex;
+    align-self: center;
 
     width: 150px;
   }
+}
+
+.nav {
+  display: flex;
+  gap: 60px;
+   & .active-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      content: '';
+      height: 4px;
+      background-color: $colorGoldLight;
+      width: 100%;
+    }
+   }
 }

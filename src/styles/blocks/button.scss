@@ -25,4 +25,8 @@
     color: $colorDarkGreen;
     border-color: $colorDarkGreen;
   }
+
+  &--centered {
+    margin: 0 auto;
+  }
 }

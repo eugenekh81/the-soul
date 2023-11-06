@@ -1,5 +1,6 @@
 import './Presentation.scss';
 import Ratio from 'react-bootstrap/Ratio';
+import detailedReport from '/pdf/project-report/final_report_Ukrainian_Circle_Program.pdf';
 
 export const Presentation = () => {
   return (
@@ -18,6 +19,15 @@ export const Presentation = () => {
             allowFullScreen
           ></iframe>
         </Ratio>
+
+        <a
+                href={detailedReport}
+                className='button button--centered'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Detailed Program Report
+              </a>
       </div>
     </section>
   );

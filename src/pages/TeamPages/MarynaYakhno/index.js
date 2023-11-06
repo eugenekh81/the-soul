@@ -1,0 +1,1 @@
+export * from './MarynaYakhno.jsx';

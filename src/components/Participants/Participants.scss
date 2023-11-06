@@ -10,7 +10,11 @@
     grid-template-rows: repeat(3, min-content);
 
     @include onTablet--s {
-      grid-template: repeat(2, min-content) / repeat(12, 1fr);
+    }
+
+    @include onTablet--m {
+      // display: grid;
+      // grid-template: repeat(2, min-content) / repeat(12, 1fr);
     }
 
     @include onDesktop {
@@ -27,7 +31,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
-    @include onTablet--s {
+    @include onTablet--m {
       grid-column: 2 / 12;
       grid-row: 1 / 2;
     }
@@ -164,10 +168,14 @@
       margin: 0 auto;
 
       @include onTablet--s {
+
+      }
+
+      @include onTablet--m {
         margin: 0;
         width: 100%;
 
-        grid-column: 1 / 8;
+        grid-column: 2 / 7;
         grid-row: 3 / 5;
       }
 
@@ -180,12 +188,24 @@
       grid-column: 1 / 2;
       grid-row: 3 / 4;
 
-      @include onTablet--s {
+      @include onTablet--m {
+        grid-column: 7 / 11;
+        grid-row: 2 / 5;
+      }
+
+      @include onTablet--m {
         grid-column: 8 / 13;
         grid-row: 2 / 5;
       }
 
       @include onDesktop {
+        grid-column: 8 / 12;
+        grid-row: 2 / 5;
+      }
+
+      @include onDesktop--xl {
+        grid-column: 7 / 12;
+        grid-row: 2 / 5;
       }
     }
 

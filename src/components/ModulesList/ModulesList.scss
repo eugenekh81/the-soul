@@ -67,7 +67,10 @@
       font-size: 16px;
     }
     @include onDesktop {
-      font-size: 15px;
+      font-size: 16px;
+    }
+    @include onDesktop--xl {
+      font-size: 19px;
     }
   }
 

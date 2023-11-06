@@ -8,9 +8,9 @@ import { Partners } from '/src/components/Partners';
 import { Reviews } from '/src/components/Reviews';
 import { MentalState } from '/src/components/MentalState';
 import { Results } from '/src/components/Results';
-import { Participants } from '/src/components/Participants/Participants';
-import { JoinTheProgram } from '/src/components/JoinProgram/JoinTheProgram';
-import { SupportUs } from '/src/components/SupportUs/SupportUs';
+import { Participants } from '/src/components/Participants';
+import { JoinTheProgram } from '/src/components/JoinProgram';
+import { SupportUs } from '/src/components/SupportUs';
 import { Helmet } from 'react-helmet';
 
 export const UkrainianCirclePage = () => {
