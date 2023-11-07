@@ -33,7 +33,7 @@ export const Footer = () => {
             </address>
           </div>
 
-          <div className='footer__subscribe subscribe'>
+          {/* <div className='footer__subscribe subscribe'>
             <div className='subscribe__title'>Newsletter</div>
             <form className='subscribe__form'>
               <input
@@ -55,7 +55,8 @@ export const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
+
           <div className='footer__social social'>
             <div className='social__title'>Follow us</div>
             <div className='social__icons'>
@@ -125,14 +126,14 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className='footer__map'>
+          {/* <div className='footer__map'>
             <iframe
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.4634719594828!2d30.513038985310693!3d50.433281529530994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee2d347bc75%3A0xb338869328d0e562!2sAntonovycha%20St%2C%2039%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1696716746302!5m2!1sen!2sua'
               allowFullScreen=''
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -7,8 +7,12 @@
     overflow: hidden;
 
     &--about-us {
-      width: 70%;
       margin: 0 auto;
+      width: 100%;
+
+      @include onTablet--m {
+        width: 70%;
+      }
     }
   }
 }

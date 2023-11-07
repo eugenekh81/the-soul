@@ -137,7 +137,7 @@
   }
 
   &__social {
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
 
     @include onTablet--m {
       margin: 0;
@@ -242,12 +242,11 @@
 .social {
   display: flex;
   flex-direction: column;
+  width: max-content;
 
   @include onTablet--m {
     width: max-content;
   }
-
-  width: max-content;
 
   &__title {
     text-align: center;
@@ -266,6 +265,8 @@
   &__icons {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    width: 100%;
 
     &:hover {
       opacity: 1;
