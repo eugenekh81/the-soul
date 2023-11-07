@@ -8,7 +8,7 @@ export const Projects = () => {
     <section className='page__section page__section--bgc-green section projects'>
       <div className='container'>
         <h2 className='section__title'>Projects</h2>
-        <NavLink to="/the-soul/en/ukrainian-circle" className='projects__uc-container'>
+        <NavLink to="/en/ukrainian-circle" className='projects__uc-container'>
           <Hero />
         </NavLink>
 

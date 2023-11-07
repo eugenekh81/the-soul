@@ -1,5 +1,7 @@
 @import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
+$teamListItemHeight: 30px;
+$teamListGap: 8px;
 
 .header {
   position: sticky;
@@ -8,6 +10,28 @@
   background-color: $colorDarkGreen;
 
   z-index: 99;
+
+  &__nav-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $colorGoldLight;
+      border-radius: 4px;
+
+      bottom: 0;
+      right: 0;
+      height: 4px;
+      width: 0%;
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
 
   &__content {
     display: flex;
@@ -38,7 +62,7 @@
   .team-list {
     display: flex;
     padding: 8px 16px;
-    gap: 8px;
+    gap: $teamListGap;
     align-items: start;
     flex-direction: column;
     position: absolute;
@@ -53,15 +77,17 @@
     border-bottom-right-radius: 5px;
 
     &--open {
-      height: 156px;
+      height: $teamListItemHeight * 4 + 8px * 2 + $teamListGap * 3;
       opacity: 1;
-
     }
 
     &__link {
+      display: flex;
+      align-items: center;
       text-decoration: none;
       font-size: 16px;
       color: $colorDarkGreen;
+      height: $teamListItemHeight;
     }
   }
 
@@ -105,8 +131,14 @@
 }
 
 .nav {
-  display: flex;
-  gap: 60px;
+  display: none;
+
+  @include onTablet--m {
+    display: flex;
+    gap: 60px;
+  }
+
+
    & .active-link {
     position: relative;
 
@@ -116,6 +148,7 @@
       display: block;
       content: '';
       height: 4px;
+      border-radius: 4px;
       background-color: $colorGoldLight;
       width: 100%;
     }

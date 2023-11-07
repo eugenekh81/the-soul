@@ -7,9 +7,14 @@
   &__uc-container {
     display: block;
     margin: 0 auto 48px;
-    width: 70%;
     border-radius: 55px;
     overflow: hidden;
+
+    width: 100%;
+    @include onDesktop {
+      width: 70%;
+    }
+
   }
 
   &__project-description {

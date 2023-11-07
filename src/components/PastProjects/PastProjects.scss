@@ -1,5 +1,26 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
 .past-project {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include onDesktop {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &__video-container {
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 24px;
+
+    @include onDesktop--xl {
+      margin: 0;
+    }
+  }
 
   &__image {
     border-radius: 24px;
@@ -14,13 +35,27 @@
   }
 
   &__description {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    order: -1;
+
+    @include onDesktop--xl {
+      order: 0;
+    }
   }
 
   &__title {
     font-size: 30px;
     margin: 0 0 24px;
     font-weight: 600;
+    text-align: center;
+
+    @include onDesktop--xl {
+      text-align: left;
+    }
   }
 
   &__paragraph {
@@ -28,8 +63,10 @@
   }
 
   &--reverse {
-    & .past-project__description {
-      order: -1;
+    @include onDesktop--xl {
+      & .past-project__description {
+        order: -1;
+      }
     }
   }
 }

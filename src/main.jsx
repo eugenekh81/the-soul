@@ -11,7 +11,6 @@ import { Root } from '/src/routes/Root';
 import { HomePage } from './pages/HomePage/';
 import { UkrainianCirclePage } from './pages/UkrainianCirlcePage/';
 import { ErrorPage } from './pages/ErrorPage/';
-import { TeamPage } from './pages/TeamPages/';
 import { OleksandraShymanova } from './pages/TeamPages/OleksandraShymanova';
 import { MariyaVynnytska } from './pages/TeamPages/MariyaVynnytska';
 import { IrynaRoyenko } from './pages/TeamPages/IrynaRoyenko';
@@ -19,11 +18,11 @@ import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
 
 const router = createBrowserRouter([
   {
-    path: '/the-soul',
+    path: '/',
     element: <Navigate to='en' replace={true} />,
   },
   {
-    path: '/the-soul/en',
+    path: '/en',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -38,10 +37,6 @@ const router = createBrowserRouter([
       {
         path: 'team',
         children: [
-          {
-            index: true,
-            element: <TeamPage />,
-          },
           {
             path: 'oleksandra-shymanova',
             element: <OleksandraShymanova />,

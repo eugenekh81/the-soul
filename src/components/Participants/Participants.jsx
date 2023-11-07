@@ -29,7 +29,7 @@ export const Participants = () => (
       <h3 className='section__subtitle'>AGE STRUCTURE</h3>
 
       <Row className='participants__age-structure'>
-        <Col xs={12} sm={4} lg={4} className='participants__list-container'>
+        <Col xs={10} sm={8} lg={4} className='participants__list-container'>
           <ul className='participants__list'>
             <li className='participants__list-item'>
               <div className='participants__percentage'>47%</div>

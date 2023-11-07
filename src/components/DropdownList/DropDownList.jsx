@@ -21,7 +21,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to='/the-soul/en/team/oleksandra-shymanova'
+          to='/en/team/oleksandra-shymanova'
         >
           Olexandra Shymanova
         </NavLink>
@@ -29,7 +29,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to='/the-soul/en/team/mariya-vynnytska'
+          to='/en/team/mariya-vynnytska'
         >
           Mariya Vynnytska
         </NavLink>
@@ -37,7 +37,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to='/the-soul/en/team/iryna-royenko'
+          to='/en/team/iryna-royenko'
         >
           Iryna Royenko
         </NavLink>
@@ -45,7 +45,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to='/the-soul/en/team/maryna-yakhno'
+          to='/en/team/maryna-yakhno'
         >
           Maryna Yakhno
         </NavLink>

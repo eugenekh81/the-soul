@@ -10,7 +10,7 @@ export const PastProjects = () => {
         <h2 className='section__title'>Past projects</h2>
 
         <Row className='projects__past-project past-project'>
-          <Col sm={4}>
+          <Col sm={8} md={7} lg={7} xl={4} className='past-project__video-container'>
             <Ratio aspectRatio='16x9' className='soul-cover__video-container'>
               <iframe
                 src='https://www.youtube.com/embed/F63pu641Tdk?si=_Vyg2cDFIskYuInh'
@@ -21,8 +21,7 @@ export const PastProjects = () => {
               ></iframe>
             </Ratio>
           </Col>
-          <Col sm={8}>
-            <div className='past-project__description'>
+          <Col sm={8} md={10} lg={7} xl={8} className='past-project__description'>
             <h3 className='past-project__title'>Crisis Center</h3>
               <p className='past-project__paragraph'>
                 In February 2022 from the Soul Development Center, we turned
@@ -35,12 +34,11 @@ export const PastProjects = () => {
                 with children who needed mental health support. We were doing
                 this for free and with the help of our international sponsors.
               </p>
-            </div>
           </Col>
         </Row>
 
         <Row className='projects__past-project past-project past-project--reverse'>
-          <Col sm={4}>
+        <Col sm={8} md={7} lg={7} xl={4} className='past-project__video-container'>
             <Ratio aspectRatio='16x9' className='soul-cover__video-container'>
               <iframe
                 src='https://www.youtube.com/embed/SQPVRJa9jf8?si=So5GaOg-5Qylc1NV'
@@ -51,7 +49,7 @@ export const PastProjects = () => {
               ></iframe>
             </Ratio>
           </Col>
-          <Col sm={8} className='past-project__description'>
+          <Col sm={8} md={10} lg={7} xl={8} className='past-project__description'>
           <h3 className='past-project__title'>Crisis Groups</h3>
             <p className='past-project__paragraph'>
               In January 2023, we revived the work of our Crisis Center with a
@@ -66,13 +64,13 @@ export const PastProjects = () => {
               Individual sessions are very much in demand.
             </p>
             <p className='past-project__paragraph'>
-              During just January - March 2023 only, we provided 100 sessions
+              During just January - March 2023 only, we provided more than 100 sessions
             </p>
           </Col>
         </Row>
 
         <Row className='projects__past-project past-project'>
-          <Col sm={4}>
+        <Col sm={8} md={7} lg={7} xl={4} className='past-project__video-container'>
             <Ratio aspectRatio='16x9' className='soul-cover__video-container'>
               <iframe
                 src='https://www.youtube.com/embed/UQFVVzhYQBo?si=SX1EEjptZXCUajm6'
@@ -83,7 +81,7 @@ export const PastProjects = () => {
               ></iframe>
             </Ratio>
           </Col>
-          <Col sm={6} className='past-project__description'>
+          <Col sm={8} md={10} lg={7} xl={8} className='past-project__description'>
             <h3 className='past-project__title'>Meeting with The Soul</h3>
             <p className='past-project__paragraph'>
               In autumn 2022, we launched a series of Psychological support

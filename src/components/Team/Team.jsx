@@ -17,7 +17,7 @@ export const Team = () => {
         <div className='team__list'>
           <Carousel className='team__carousel' variant='dark'>
             <Carousel.Item interval={3000}>
-              <NavLink className='team__person person' to='/the-soul/en/team/oleksandra-shymanova'>
+              <NavLink className='team__person person' to='/en/team/oleksandra-shymanova'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -36,7 +36,7 @@ export const Team = () => {
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='team__person person' to='/the-soul/en/team/mariya-vynnytska'>
+              <NavLink className='team__person person' to='/en/team/mariya-vynnytska'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -55,7 +55,7 @@ export const Team = () => {
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='person' to='/the-soul/en/team/iryna-royenko'>
+              <NavLink className='person' to='/en/team/iryna-royenko'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -70,7 +70,7 @@ export const Team = () => {
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='person' to='/the-soul/en/team/maryna-yakhno'>
+              <NavLink className='person' to='/en/team/maryna-yakhno'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -89,7 +89,7 @@ export const Team = () => {
 
         <Row className='team__list--desktop'>
               <Col sm={6} lg={3} className='team__person'>
-                <NavLink className='person' to='/the-soul/en/team/oleksandra-shymanova'>
+                <NavLink className='person' to='/en/team/oleksandra-shymanova'>
                   <div className='person__image-container'>
                     <img
                       className='person__image'
@@ -110,7 +110,7 @@ export const Team = () => {
                 </NavLink>
               </Col>
               <Col sm={6} lg={3} className='team__person'>
-                <NavLink className='person' to='/the-soul/en/team/mariya-vynnytska'>
+                <NavLink className='person' to='/en/team/mariya-vynnytska'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -129,7 +129,7 @@ export const Team = () => {
                 </NavLink>
               </Col>
               <Col sm={6} lg={3} className='team__person'>
-              <NavLink className='person' to='/the-soul/en/team/iryna-royenko'>
+              <NavLink className='person' to='/en/team/iryna-royenko'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -144,7 +144,7 @@ export const Team = () => {
               </NavLink>
               </Col>
               <Col sm={6} lg={3}  className='team__person'>
-              <NavLink className='person' to='/the-soul/en/team/maryna-yakhno'>
+              <NavLink className='person' to='/en/team/maryna-yakhno'>
                 <div className='person__image-container'>
                   <img
                     className='person__image'

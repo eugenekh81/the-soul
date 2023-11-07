@@ -13,8 +13,6 @@
     }
 
     @include onTablet--m {
-      // display: grid;
-      // grid-template: repeat(2, min-content) / repeat(12, 1fr);
     }
 
     @include onDesktop {
@@ -46,18 +44,17 @@
   }
 
   &__list {
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: $colorBeige;
+    border-radius: 12px;
+
     width: 100%;
     align-items: center;
-
-    @include onDesktop {
-      display: flex;
-      justify-content: space-evenly;
-      background-color: $colorBeige;
-      padding: 20px;
-      border-radius: 12px;
-    }
   }
 
   &__list-item {
@@ -221,6 +218,11 @@
   &__age-structure {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @include onTablet--s {
+    }
   }
 
   &__percentage {

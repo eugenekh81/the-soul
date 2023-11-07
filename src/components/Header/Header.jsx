@@ -59,18 +59,17 @@ export const Header = () => {
     <header className='header'>
       <div className='container'>
         <div className='header__content'>
-          <NavLink to='/the-soul' className='logo'>
+          <NavLink to='/' className='logo'>
             <img src={logo} alt='The Soul' />
           </NavLink>
 
         <nav className="nav">
           <NavLink
-            to='/the-soul/en/ukrainian-circle'
+            to='/en/ukrainian-circle'
             className={cn(
               'header__nav-link',
-              'header__nav-link--team',
               {
-                'active-link': pathname === '/the-soul/en/ukrainian-circle',
+                'active-link': pathname === '/en/ukrainian-circle',
               }
             )}
           >
