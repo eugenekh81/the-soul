@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 
-import logo from '/images/logo/header-logo-1--mobile.png';
+import logo from '/images/logo/header-logo-2--mobile.png';
 import { DropDownList } from '../DropdownList/DropDownList';
 export const Header = () => {
   const { pathname } = useLocation();
