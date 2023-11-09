@@ -70,13 +70,11 @@ export const MentalState = () => (
       </Row>
 
       <Row className='mental-state__girls-images mental-state__girls-images--swap-images'>
-        <Col xs={12} sm={6} lg={4} className='mental-state__item section__description'>
-          Participants described their well-being in their own words, in their
-          own words mental-state feelings, experiences, emotions and mental
-          health
+        <Col xs={12} sm={12} md={6} lg={6} className='mental-state__item mental-state__item-description section__description'>
+          Participants described their well-being in their own words -  their feelings, experiences, emotions and mental health
         </Col>
 
-        <Col xs={12} sm={6} lg={4} className='mental-state__item mental-state__image'>
+        <Col xs={12} sm={12} md={6} lg={6} className='mental-state__item mental-state__image'>
           <img
             src={womanSad}
             alt='mental state before the program'
@@ -85,16 +83,15 @@ export const MentalState = () => (
         </Col>
   </Row>
   <Row className='mental-state__girls-images'>
-        <Col xs={12} sm={6} lg={4} className='mental-state__item section__description'>
+        <Col xs={12} sm={12} md={6} lg={6} className='mental-state__item section__description mental-state__item-description mental-state__item-description--last'>
           It was important to determine what people want at this stage, so each
           participant answered the following question:
           <br />
           <br />
-          What changes would you like to see in your life after completing the
-          mental Recovery Programme?
+          <span>What changes would you like to see in your life after completing the mental Recovery Programme?</span>
         </Col>
 
-        <Col xs={12} sm={6} lg={4} className='mental-state__item mental-state__image'>
+        <Col xs={12} sm={12} md={6} lg={6} className='mental-state__item mental-state__image'>
           <img
             src={womanHappy}
             alt='mental state after the program'

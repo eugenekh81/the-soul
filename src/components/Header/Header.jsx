@@ -96,9 +96,11 @@ export const Header = () => {
 
           <div className='header__buttons'>
             <a
-              href='tel:+123456789'
-              className='header__button header__button--call'
-            ></a>
+              href='mailto:contact@thesoul.com.ua'
+              className='header__button header__button--email'
+            >
+              <span>contact@thesoul.com.ua</span>
+            </a>
             <a
               href='#menu'
               className='header__button header__button--burger-menu'

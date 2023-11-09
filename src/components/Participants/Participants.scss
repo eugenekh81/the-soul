@@ -218,7 +218,6 @@
   &__age-structure {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
 
     @include onTablet--s {

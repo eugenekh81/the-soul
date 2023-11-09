@@ -9,21 +9,20 @@
     width: 100%;
     height: calc(100vh - 60px);
 
-    background-image: url('/images/home/home--desktop.jpg');
+    background-image: url('/images/home/home--mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center left 53%;
 
-    @include onMobile--xs {
-      background-position: left -250px center;
+    @include onTablet--s {
+      background-position: center left 55%;
     }
 
-    background-position: left -240px center;
-
-
-    @include onTablet--m {
-      height: 600px;
-      background-position: left center;
+    @include onDesktop {
+      background-position: center;
+      background-image: url('/images/home/home--desktop.jpg');
     }
+
   }
 
   &__text-container {
@@ -34,13 +33,13 @@
     right: 0;
 
     @include onTablet--s {
-      left: 30%;
-      transform: translateY(-50%);
+      top: 50%
 
     }
 
     @include onDesktop {
-      left: 50%;
+      top: 65%;
+      left: 10%;
     }
 
     display: flex;
@@ -52,16 +51,57 @@
   }
 
   &__title {
+    position: relative;
+    display: flex;
+    width: max-content;
     margin: 0;
-    font-size: 64px;
-    letter-spacing: 8px;
 
     color: $colorBeige;
     text-shadow: 2px 2px 16px $colorDarkGreen;
+    font-size: 50px;
+    letter-spacing: 8px;
+
+   /*  background-image: url('/images/home/title-o.png');
+    background-size: 40px;
+    background-position: left 188px top 9px; */
+
+    background-repeat: no-repeat;
+
+    @include onTablet--s {
+      background-size: 50px;
+      background-position: left 229px top 12px;
+      font-size: 64px;
+      letter-spacing: 8px;
+    }
+
+
+    & img {
+      flex-shrink: 0;
+
+      margin: 9px 5px 0 0px;
+      width: 40px;
+      height: 40px;
+
+      background-repeat: no-repeat;
+      background-position: left 2px top 9px;
+
+
+      @include onTablet--s {
+        margin: 12px 5px 0 0;
+        width: 50px;
+        height: 50px;
+      }
+
+
+    }
   }
 
   &__subtitle {
-    letter-spacing: 13.8px;
     color: $colorDarkGreen;
+    letter-spacing: 9px;
+
+    @include onTablet--s {
+      letter-spacing: 13.8px;
+    }
   }
 }

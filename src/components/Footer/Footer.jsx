@@ -17,10 +17,10 @@ export const Footer = () => {
             </a>
 
             <a
-              href='mailto:psysoulcenter@gmail.com'
+              href='mailto:contact@thesoul.com.ua'
               className='footer__contact footer__email'
             >
-              psysoulcenter@gmail.com
+              contact@thesoul.com.ua
             </a>
 
             <address className='footer__address-container'>

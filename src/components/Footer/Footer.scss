@@ -20,14 +20,12 @@
 
     @include onTablet--m {
       display: grid;
-      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     }
 
     @include onDesktop {
-      grid-template: repeat(1, min-content) / repeat(4, max-content);
-      justify-content: space-between;
-      grid-template: repeat(1, min-content) / repeat(4, max-content);
-      justify-content: space-between;
+      grid-template: repeat(1, min-content) / repeat(2, max-content);
+      justify-content: space-evenly;
     }
 
     @include onDesktop--xl {
@@ -45,19 +43,25 @@
     }
 
     @include onDesktop {
-      width: 222px;
+      width: 320px;
     }
   }
 
   &__contact {
     margin: 0 0 16px;
+    padding: 0 0 0 48px;
     color: #2e2e2e;
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
 
     text-decoration: none;
+
+    @include onTablet--m {
+      padding: 0;
+    }
 
     &:hover {
       color: #000;
@@ -281,8 +285,10 @@
 
     @include onDesktop {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 108px;
+      gap: 12px;
     }
   }
 
