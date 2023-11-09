@@ -2,6 +2,7 @@
 @import '../../styles/utils/mixins';
 
 .soul-cover {
+  padding-top: 0;
   &__video-container {
     border-radius: 24px;
     overflow: hidden;
