@@ -97,7 +97,11 @@ export const Header = () => {
           <div className='header__buttons'>
             <a
               href='mailto:contact@thesoul.com.ua'
-              className='header__button header__button--email'
+              className='header__button header__button--mobile header__button--email-icon'
+            ></a>
+            <a
+              href='mailto:contact@thesoul.com.ua'
+              className='header__button header__button--desktop header__button--email'
             >
               <span>contact@thesoul.com.ua</span>
             </a>

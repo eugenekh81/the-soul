@@ -105,6 +105,21 @@ $teamListGap: 8px;
     height: 32px;
     width: 32px;
 
+    &--mobile {
+      display: flex;
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+      @include onDesktop {
+        display: flex;
+      }
+    }
+
     &--call {
       background-image: url('/images/header/header-phone--mobile.png');
     }
@@ -123,6 +138,11 @@ $teamListGap: 8px;
           padding: 0 0 0 32px;
         }
       }
+    }
+
+    &--email-icon {
+      background-image: url('/images/icons/email.svg');
+      background-position: center;
     }
 
     &--burger-menu {
