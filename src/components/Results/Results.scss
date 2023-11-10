@@ -49,10 +49,6 @@
     }
   }
 
-  & .carousel-item {
-    // padding: 0 0 40px;
-  }
-
   &__item {
     margin: 0 auto 20px;
 
@@ -103,6 +99,8 @@
     font-weight: 700;
   }
 
-  &__description {
+  &__description--main {
+    font-size: 24px;
+    margin: 0 0 48px;
   }
 }

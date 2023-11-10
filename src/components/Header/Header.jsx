@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 
-import logo from '/images/logo/header-logo-2--mobile.png';
+import logo from '/images/logo/header-logo-4--mobile.png';
 import { DropDownList } from '../DropdownList/DropDownList';
 export const Header = () => {
   const { pathname } = useLocation();
@@ -58,41 +58,34 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='container'>
-        <div className='header__content'>
+        <div className='header__content noselect'>
           <NavLink to='/' className='logo'>
             <img src={logo} alt='The Soul' />
           </NavLink>
 
-        <nav className="nav">
-          <NavLink
-            to='/en/ukrainian-circle'
-            className={cn(
-              'header__nav-link',
-              {
+          <nav className='nav'>
+            <NavLink
+              to='/en/ukrainian-circle'
+              className={cn('header__nav-link', {
                 'active-link': pathname === '/en/ukrainian-circle',
-              }
-            )}
-          >
-            Ukrainian Circle
-          </NavLink>
+              })}
+            >
+              Ukrainian Circle
+            </NavLink>
 
-          <NavLink
-            className={cn(
-              'header__nav-link',
-              'header__nav-link--team',
-              {
+            <NavLink
+              className={cn('header__nav-link', 'header__nav-link--team', {
                 'active-link': pathname.includes('team'),
-              }
-            )}
-            onClick={handleMenuToggle}
-            ref={dropdownLink}
-          >
-            Our Team
-            {isListRendered && (
-              <DropDownList isTeamOpen={isTeamOpen} clickCheck={clickCheck} />
-            )}
-          </NavLink>
-        </nav>
+              })}
+              onClick={handleMenuToggle}
+              ref={dropdownLink}
+            >
+              Our Team
+              {isListRendered && (
+                <DropDownList isTeamOpen={isTeamOpen} clickCheck={clickCheck} />
+              )}
+            </NavLink>
+          </nav>
 
           <div className='header__buttons'>
             <a

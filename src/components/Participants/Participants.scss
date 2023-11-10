@@ -30,12 +30,18 @@
     grid-row: 1 / 2;
 
     @include onTablet--m {
+      display: grid;
       grid-column: 2 / 12;
       grid-row: 1 / 2;
+      background-color: $colorBeige;
     }
 
-    @include onDesktop--xl {
-      background-color: $colorBeige;
+    @include onDesktop {
+      font-size: 24px;
+    }
+
+    & strong {
+      color: $colorDarkGreen;
     }
   }
 
@@ -161,8 +167,8 @@
 
       grid-column: 1 / 2;
       grid-row: 2 / 3;
-      width: 80%;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0 auto 48px;
 
       @include onTablet--s {
 

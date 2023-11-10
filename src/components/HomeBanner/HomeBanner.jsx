@@ -6,7 +6,7 @@ export const HomeBanner = () => {
       <section className='home-hero'>
         <div className='home-hero__banner'>
         </div>
-        <div className="home-hero__text-container">
+        <div className="home-hero__text-container noselect">
           <h1 className='home-hero__title'>
             THE S<img src='/images/home/title-o.png'/>UL
           </h1>

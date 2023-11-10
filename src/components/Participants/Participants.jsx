@@ -29,7 +29,7 @@ export const Participants = () => (
       <h3 className='section__subtitle'>AGE STRUCTURE</h3>
 
       <Row className='participants__age-structure'>
-        <Col xs={10} sm={8} lg={4} className='participants__list-container'>
+        <Col xs={10} sm={4} lg={5} className='participants__list-container'>
           <ul className='participants__list'>
             <li className='participants__list-item'>
               <div className='participants__percentage'>47%</div>
@@ -47,7 +47,7 @@ export const Participants = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={10} sm={8} lg={4}>
+        <Col xs={10} sm={7} lg={5}>
           <div className='participants__image'>
             <img
               src={ageDiagram}
