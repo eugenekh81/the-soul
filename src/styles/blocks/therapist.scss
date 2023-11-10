@@ -3,8 +3,9 @@
 
 .therapist {
   padding: 0;
+
   &__header-background {
-    padding: 50px;
+    padding: 50px 0;
     background: rgb(247, 240, 224);
     background: linear-gradient(
       180deg,
@@ -13,9 +14,31 @@
     );
   }
 
+  &__image-container {
+    order: -1;
+    margin: 0 auto 40px;
+
+    @include onTablet--m {
+      width: 250px;
+      order: 0;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      width: 300px;
+    }
+  }
+
   &__header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @include onTablet--m {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__name {
@@ -23,11 +46,22 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 39px;
     font-weight: 600;
+    text-align: center;
+
+    @include onTablet--m {
+      text-align: left;
+    }
+
   }
 
   &__role {
     margin: 0 0 4px;
     font-size: 17px;
+    text-align: center;
+
+    @include onTablet--m {
+      text-align: left;
+    }
 
     &--last-child {
       margin-bottom: 50px;
@@ -35,6 +69,8 @@
   }
 
   &__book-button {
+    margin: 0 auto;
+
     text-decoration: none;
     background-color: $colorGold;
     border: 2px solid $colorGold;
@@ -47,6 +83,11 @@
     font-size: 18px;
     border-radius: 5px;
     font-weight: 600;
+
+
+    @include onTablet--m {
+      margin: 0;
+    }
 
     transition: all 300ms ease-in-out;
 
@@ -63,7 +104,7 @@
   }
 
   &__about {
-    padding: 50px 0 50px;
+    padding: 0 0 50px;
   }
 
   &__about-title {
@@ -71,18 +112,31 @@
     font-family: 'Montserrat';
     font-size: 35px;
     font-weight: 600;
+
+    text-align: center;
+
+    @include onTablet--m {
+      text-align: left;
+    }
   }
 
   &__about-subtitle {
     margin: 0 0 20px;
     font-size: 30px;
     font-weight: 600;
+
+    text-align: center;
+
+    @include onTablet--m {
+      text-align: left;
+    }
   }
 
   &__about-description {
     margin: 0 0 30px;
     padding: 0 0 0 20px;
     font-size: 18px;
+    line-height: 1.5;
 
     & b {
       font-weight: 600;
