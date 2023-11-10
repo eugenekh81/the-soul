@@ -58,7 +58,7 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='container'>
-        <div className='header__content noselect'>
+        <div className='header__content'>
           <NavLink to='/' className='logo'>
             <img src={logo} alt='The Soul' />
           </NavLink>
