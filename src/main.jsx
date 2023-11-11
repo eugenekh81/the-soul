@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element: <Navigate to='en' replace={true} />,
   },
   {
-    path: '/en',
+    path: '/:lang',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
