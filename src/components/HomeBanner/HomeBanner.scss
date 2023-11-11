@@ -5,11 +5,14 @@
   position: relative;
 
   &__banner {
-    // align-items: center;
     width: 100%;
     height: calc(100vh - 60px);
 
     background-image: url('/images/home/home--mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left 53%;

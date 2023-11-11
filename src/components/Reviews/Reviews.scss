@@ -57,8 +57,17 @@
 
   & .reviews__carousel {
     height: 408px;
+    width: 80%;
     max-width: 992px;
     margin: 0 auto;
+
+    @include onTablet--s {
+      width: 100%;
+    }
+
+    @include onDesktop {
+      width: 90%;
+    }
 
     &--mobile {
       display: flex;

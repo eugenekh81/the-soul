@@ -1,3 +1,5 @@
+
+import sprite from '/images/concepts/concepts.svg';
 import './SupportUs.scss';
 
 export const SupportUs = () => {
@@ -12,7 +14,13 @@ export const SupportUs = () => {
           If you would like to support The Ukrainian Circle project, you may donate any amount you wish - any help is appreciated!
         </p>
 
-        <a href="" className="button section__button">Donate Now</a>
+
+        <a href="" className="button section__button">
+              <svg className='support-us__icon'>
+                  <use href={sprite + '#plant'} />
+              </svg>
+          Donate now
+              </a>
       </div>
     </section>
   );

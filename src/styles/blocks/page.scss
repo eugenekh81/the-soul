@@ -5,6 +5,11 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 
+  ::selection {
+    background-color: $colorDarkGreen;
+    color: $colorBeige;
+  }
+
   &__main {
     min-height: calc(100vh - 60px - 384px);
   }

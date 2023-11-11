@@ -3,9 +3,10 @@
 
 .team {
   &__carousel {
+    margin: 0 auto;
     position: relative;
     height: min-content;
-
+    width: 80%;
     @include onTablet--s {
       display: none;
     }
