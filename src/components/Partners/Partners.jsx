@@ -7,13 +7,14 @@ import katieEastman from '/images/partners/Katie_Eastman-centered.png';
 import renovare from '/images/partners/renovare.png';
 import EKR from '/images/partners/EKR.png';
 import Carousel from 'react-bootstrap/Carousel';
+import { Donate } from '../Donate/Donate';
 
 export const Partners = () => {
   return (
     <section className='page__section section partners'>
       <div className='container'>
         <h2 className='section__title'>Partners</h2>
-        <div className='partners-list partners-list--mobile'>
+        <div className='partners-list partners-list--mobile partners-list__carousel'>
           <Carousel variant='dark'>
             <Carousel.Item interval={3000}>
               <a
@@ -102,9 +103,7 @@ export const Partners = () => {
             </Col>
           </Row>
         </div>
-        <button type='submit' className='button section__button'>
-          Donate
-        </button>
+        <Donate />
       </div>
     </section>
   );

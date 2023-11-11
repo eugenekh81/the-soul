@@ -22,8 +22,20 @@
       }
     }
 
-  .carousel {
-    height: 400px;
+    &__carousel {
+      margin: 0 0 24px;
+    }
+
+  & .carousel {
+    height: 550px;
+    display: flex;
+    align-items: center;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+
+    }
 
     &-control {
       &-prev {
