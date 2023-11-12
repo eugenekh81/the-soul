@@ -105,6 +105,8 @@ margin: 0 0 24px;
     }
   };
 
+  &__question
+
   &__legend-description {
     font-size: 18px;
 
@@ -120,6 +122,7 @@ margin: 0 0 24px;
     color: $colorGoldLight;
     text-align: center;
     font-size: 18px;
+    font-weight: 600;
 
 
     @include onDesktop {

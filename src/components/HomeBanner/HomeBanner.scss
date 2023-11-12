@@ -8,6 +8,7 @@
     width: 100%;
     height: calc(100vh - 60px);
 
+
     background-image: url('/images/home/home--mobile.jpg');
     // background-attachment: fixed;
     background-position: center;
@@ -16,17 +17,21 @@
     background-position: center left 53%;
 
     @include onTablet--s {
+
       background-position: center left 55%;
     }
 
-    @include onDesktop {
+    @include onTablet--m {
+      height: auto;
+      padding-top: 55%;
       background-position: top 35% left 55%;
+      background-image: url('/images/home/home--desktop.jpg');
+    }
+
+    @include onDesktop {
     }
 
     @include onDesktop--xxl {
-      background-position: center;
-      background-image: url('/images/home/home--desktop.jpg');
-
       background-position: top 35% left 55%;
     }
 

@@ -1,6 +1,13 @@
 import IrynaRoyenkoPhoto from '/images/team/iroyenko-mobile.png';
 
 export const IrynaRoyenko = () => {
+  const aboutDescription = (
+    <>
+      Psychologist, game practitioner, a leader of the transformational game {' '}
+      <b>“Women Who Run With the Wolves”</b>
+    </>
+  );
+
   return (
     <section className='page__section page__section--therapist section team__page therapist'>
       <div className='therapist__header-background'>
@@ -32,10 +39,7 @@ export const IrynaRoyenko = () => {
         <div className='container'>
           <h3 className='therapist__about-title'>Background</h3>
 
-          <div className='theradivist__about-description'>
-            Psychologist, game practitioner, a leader of the transformational
-            game <b>“Women Who Run With the Wolves”</b>
-          </div>
+          <div className='therapist__about-description'>{aboutDescription}</div>
 
           <h4 className='therapist__about-subtitle'>Education</h4>
 
@@ -61,7 +65,9 @@ export const IrynaRoyenko = () => {
             In my work, I use the following methods:
             <ul className='therapist__list'>
               <li className='therapist__list-item'>Psychodrama</li>
-              <li className='therapist__list-item'>Eye movement desensitization and reprocessing (EMDR)</li>
+              <li className='therapist__list-item'>
+                Eye movement desensitization and reprocessing (EMDR)
+              </li>
               <li className='therapist__list-item'>
                 Metaphorical and associative cards
               </li>

@@ -19,7 +19,7 @@ export const MentalState = () => (
         <br/>
         <strong>And here are the results:</strong>
       </p>
-
+    </div>
       <Row className='mental-state__content'>
         <Col sm={12} md={8} lg={4} className='mental-state__image'>
           <img
@@ -111,7 +111,7 @@ export const MentalState = () => (
           lg={5}
           className='mental-state__item mental-state__item-description mental-state__item-description--last'
         >
-          <span>
+          <span className='menal-state__question'>
             Which changes would you like to see in your life after completing
             the mental Recovery Programme?
           </span>
@@ -132,6 +132,6 @@ export const MentalState = () => (
         </Col>
       </Row>
 </div>
-    </div>
+
   </section>
 );
