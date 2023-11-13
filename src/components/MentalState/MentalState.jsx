@@ -15,18 +15,15 @@ export const MentalState = () => (
         All the participants are people affected by war. They have lost their
         mental health and are prone to serious conditions. We suggested that
         they indicate in the registration form what worries them the most.
-        <br/>
-        <br/>
-        <strong>And here are the results:</strong>
+
       </p>
-    </div>
       <Row className='mental-state__content'>
         <Col sm={12} md={8} lg={4} className='mental-state__image'>
           <img
             className='mental-state__image--conditions-graph'
             src={diagramMobile}
             alt='Conditions chart'
-          />
+            />
         </Col>
         <Col className='mental-state__list-container' sm={12} md={12} lg={8}>
           <ul className='mental-state__list'>
@@ -61,7 +58,7 @@ export const MentalState = () => (
               I?&quot;, feeling of isolation
             </li>
             <li className='mental-state__list-item'>
-              <span className='mental-state__list-item--state'>19%</span>
+              <span className='mental-state__list-item--state'>18%</span>
               Mental conditions: apathy, powerlessness, depression, lack of
               interest in life, outbursts of anger, irritability, anxiety,
               excessive control
@@ -69,6 +66,7 @@ export const MentalState = () => (
           </ul>
         </Col>
       </Row>
+    </div>
 
 <div className="mental-state__container">
       <Row className='mental-state__girls-images mental-state__girls-images--swap-images'>

@@ -10,7 +10,6 @@
 
 
     background-image: url('/images/home/home--mobile.jpg');
-    // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +110,10 @@
   &__subtitle {
     color: $colorDarkGreen;
     letter-spacing: 9px;
+
+    &--ua {
+      letter-spacing: 6px;
+    }
 
     @include onTablet--s {
       letter-spacing: 13.8px;

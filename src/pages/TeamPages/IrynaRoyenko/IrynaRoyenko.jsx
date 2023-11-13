@@ -1,26 +1,25 @@
+import { useParams } from 'react-router-dom';
 import IrynaRoyenkoPhoto from '/images/team/iroyenko-mobile.png';
 
 export const IrynaRoyenko = () => {
-  const aboutDescription = (
-    <>
-      Psychologist, game practitioner, a leader of the transformational game {' '}
-      <b>“Women Who Run With the Wolves”</b>
-    </>
-  );
-
+  const { lang } = useParams();
   return (
     <section className='page__section page__section--therapist section team__page therapist'>
       <div className='therapist__header-background'>
         <div className='container'>
           <div className='therapist__header'>
             <div className='therapist__description'>
-              <h1 className='therapist__name'>Iryna Royenko</h1>
+              <h1 className='therapist__name'>
+                {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
+              </h1>
               <div className='therapist__role therapist__role--last-child'>
-                PSYCHOLOGIST
+                {lang === 'en' ? 'PSYCHOLOGIST' : 'ПСИХОЛОГ'}
               </div>
 
               <a href='#' className='therapist__book-button'>
-                Book a consultation
+                {lang === 'en'
+                  ? 'Book a consultation'
+                  : 'Записатися на консультацію'}
               </a>
             </div>
 
@@ -37,96 +36,183 @@ export const IrynaRoyenko = () => {
 
       <div className='therapist__about'>
         <div className='container'>
-          <h3 className='therapist__about-title'>Background</h3>
-
-          <div className='therapist__about-description'>{aboutDescription}</div>
-
-          <h4 className='therapist__about-subtitle'>Education</h4>
+          <h3 className='therapist__about-title'>
+            {lang === 'en' ? 'Background' : 'Про психолога'}
+          </h3>
 
           <div className='therapist__about-description'>
-            First - International Relations
-            <br />
-            Second - Psychology
+            {lang === 'en' ? (
+              <>
+                Psychologist, game practitioner, a leader of the
+                transformational game{' '}
+                <b>&quot;Women Who Run With the Wolves&quot;</b>
+              </>
+            ) : (
+              <>
+                Психолог, ігропрактик, ведуча Трансформаційної жіночої гри{' '}
+                <b>&quot;Та, що біжить з вовками&quot;</b>
+              </>
+            )}
           </div>
 
-          <h4 className='therapist__about-subtitle'>Experience</h4>
+          <h4 className='therapist__about-subtitle'>
+            {lang === 'en' ? 'Education' : 'Освіта'}
+          </h4>
 
           <div className='therapist__about-description'>
-            150+ hours of personal therapy
-            <br />
-            50+ hours of supervision
-          </div>
-
-          <div className='therapist__about-description'>
-            Run individual and group therapy sessions
-          </div>
-
-          <div className='therapist__about-description'>
-            In my work, I use the following methods:
             <ul className='therapist__list'>
-              <li className='therapist__list-item'>Psychodrama</li>
               <li className='therapist__list-item'>
-                Eye movement desensitization and reprocessing (EMDR)
-              </li>
-              <li className='therapist__list-item'>
-                Metaphorical and associative cards
-              </li>
-              <li className='therapist__list-item'>
-                host of the transformationl game{' '}
-                <b>“Women Who Run With the Wolves”</b>
+                {lang === 'en' ? (
+                  <>
+                    First - International Relations
+                    <br />
+                    Second - Psychology
+                  </>
+                ) : (
+                  <>
+                    Перша – у сфері міжнародних відносин, друга – психологічна.
+                  </>
+                )}
               </li>
             </ul>
           </div>
 
-          <h4 className='therapist__about-subtitle'>Requests I work with:</h4>
+          <h4 className='therapist__about-subtitle'>
+            {lang === 'en' ? 'Experience' : 'Досвід'}
+          </h4>
+          <div className='therapist__about-description'>
+            <ul className='therapist__list'>
+              <li className='therapist__list-item'>
+                {lang === 'en'
+                  ? '150+ hours of personal therapy'
+                  : 'Понад 150 годин особистої терапії'}
+              </li>
+              <li className='therapist__list-item'>
+                {lang === 'en'
+                  ? '50+ hours of supervision'
+                  : 'Понад 50 годин супервізії'}
+              </li>
+              <li className='therapist__list-item'>
+                {lang === 'en' ? (
+                  <>
+                    Host of the transformational game{' '}
+                    <b>&quot;Women Who Run With the Wolves&quot;</b>
+                  </>
+                ) : (
+                  <>
+                    Ведуча Трансформаційної жіночої гри{' '}
+                    <b>&quot;Та, що біжить з вовками&quot;</b>
+                  </>
+                )}
+              </li>
+            </ul>
+          </div>
+
+          <div className='therapist__about-description'>
+            {lang === 'en'
+              ? 'In my work, I use the following methods:'
+              : 'В своїй роботі використовую методи:'}
+            <ul className='therapist__list'>
+              <li className='therapist__list-item'>
+                {lang === 'en' ? 'Psychodrama' : 'Психодрама'}
+              </li>
+              <li className='therapist__list-item'>
+                {lang === 'en'
+                  ? 'Eye movement desensitization and reprocessing (EMDR)'
+                  : 'Десенсибілізація та репроцесуалізація (тобто опрацювання травми) рухом очей (EMDR)'}
+              </li>
+              <li className='therapist__list-item'>
+                {lang === 'en'
+                  ? 'Metaphorical and associative cards'
+                  : 'Метафорично-асоціаціативні карти'}
+              </li>
+            </ul>
+          </div>
+
+          <h4 className='therapist__about-subtitle'>
+            {lang === 'en'
+              ? 'Requests I work with:'
+              : 'Запити, з якими працює:'}
+          </h4>
           <div className='therapist__about-description'>
             <ul className='therapist__list' style={{ listStyle: 'none' }}>
               <li className='therapist__list-item'>
-                Relationships:
+                <span style={{ fontWeight: 700 }}>
+                  {lang === 'en' ? 'Relationships:' : 'Відносини:'}
+                </span>
+
                 <ul className='therapist__list'>
                   <li className='therapist__list-item'>
-                    difficulties in relationships (s/he does not hear me,
-                    emotional instability, when it feels “I can&apos;t do this
-                    anymore”, or “I am doing everything for him/her, and he/she
-                    does not appreciate”)
+                    {lang === 'en'
+                      ? 'difficulties in relationships (s/he does not hear me, emotional instability, when it feels "I can\'t do this anymore", or "I am doing everything for him/her, and he/she doesn\'t appreciate it")'
+                      : 'Складнощі у відносинах (він/вона мене не чує, емоційна нестабільність, коли "я так більше не можу", коли "я для нього/неї все, а він не цінує")'}
                   </li>
                   <li className='therapist__list-item'>
-                    Breakup up/divorce, loss of loved ones, processing grief
-                    (based my own experience)
+                    {lang === 'en'
+                      ? 'Breakup up/divorce, loss of loved ones, processing grief (based my own experience)'
+                      : 'Розрив/розлучення, втрата близьких, проживання горя (на власному досвіді)'}
                   </li>
                   <li className='therapist__list-item'>
-                    Loneliness in relationships, emotional alienation and
-                    remoteness
+                    {lang === 'en'
+                      ? 'Loneliness in relationships, emotional alienation and remoteness'
+                      : 'Самотність у відносинах, емоційна відчуженість та віддаленість'}
                   </li>
                 </ul>
               </li>
               <li className='therapist__list-item'>
-                In search for oneself:
+                <span style={{ fontWeight: 700 }}>
+                  {lang === 'en' ? 'Searching for oneself:' : 'Пошук себе:'}
+                </span>
+
                 <ul className='therapist__list'>
                   <li className='therapist__list-item'>
-                    Lack of self-realization
+                    {lang === 'en'
+                      ? 'Lack of self-realization'
+                      : 'Відсутність самореалізації'}
                   </li>
-                  <li className='therapist__list-item'>Self-doubt</li>
                   <li className='therapist__list-item'>
-                    Self-esteem improvement
+                    {lang === 'en' ? 'Self-doubt' : 'Невпевненість в собі'}
+                  </li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en'
+                      ? 'Self-esteem improvement'
+                      : 'Підвищення самооцінки'}
                   </li>
                 </ul>
               </li>
               <li className='therapist__list-item'>
-                Emotional and physical manifestations:
+                <span style={{ fontWeight: 700 }}>
+                  {lang === 'en'
+                    ? 'Emotional and physical manifestations:'
+                    : 'Емоційні та тілесні прояви:'}
+                </span>
                 <ul className='therapist__list'>
-                  <li className='therapist__list-item'>Fears</li>
-                  <li className='therapist__list-item'>Panic attacks</li>
-                  <li className='therapist__list-item'>Apathy</li>
-                  <li className='therapist__list-item'>Life on autopilot</li>
-                  <li className='therapist__list-item'>Powerlessness</li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en' ? 'Fears' : 'Страхи'}
+                  </li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en' ? 'Panic attacks' : 'Панічні атаки'}
+                  </li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en' ? 'Apathy' : 'Апатія'}
+                  </li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en'
+                      ? 'Life on autopilot'
+                      : 'Життя на автопілоті'}
+                  </li>
+                  <li className='therapist__list-item'>
+                    {lang === 'en' ? 'Powerlessness' : 'Безсилля'}
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
 
           <a href='#' className='therapist__book-button button--centered'>
-            Book a consultation
+            {lang === 'en'
+              ? 'Book a consultation'
+              : 'Записатися на консультацію'}
           </a>
         </div>
       </div>

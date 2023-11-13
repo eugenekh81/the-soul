@@ -1,11 +1,13 @@
 
 import { Outlet } from 'react-router-dom';
-import { Header } from '/src/components/Header/';
+import { Header } from '/src/components/Header';
 import { Footer } from '/src/components/Footer/';
 import { ScrollToTop } from '../components/ScrollToTop/ScrollToTop';
+import { LangContextProvider } from '../context/LangContextProvider';
 
 export const Root = () => {
-  return (
+  return (<>
+    <LangContextProvider>
     <ScrollToTop>
       <Header />
       <main className='page__main'>
@@ -13,5 +15,7 @@ export const Root = () => {
       </main>
       <Footer />
     </ScrollToTop>
+    </LangContextProvider>
+  </>
   );
 };

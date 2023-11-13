@@ -5,9 +5,11 @@ import { useEffect, useRef, useState } from 'react';
 
 import logo from '/images/logo/header-logo-4--mobile.png';
 import { DropDownList } from '../DropdownList/DropDownList';
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
 export const Header = () => {
   const { pathname } = useLocation();
   const [isTeamOpen, setIsTeamOpen] = useState(false);
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const [isListRendered, setIsListRendered] = useState(false);
   const dropdownLink = useRef(null);
 
@@ -54,11 +56,12 @@ export const Header = () => {
       }, 1);
     }
   };
-
+console.log(isBurgerOpen);
   return (
     <header className='header'>
       <div className='container'>
-        <div className='header__content'>
+        <div className='top-actions'>
+          <div className="top-actions__content">
           <NavLink to='/' className='logo'>
             <img src={logo} alt='The Soul' />
           </NavLink>
@@ -87,24 +90,31 @@ export const Header = () => {
             </NavLink>
           </nav>
 
-          <div className='header__buttons'>
+          <div className='top-actions__buttons'>
             <a
               href='mailto:contact@thesoul.com.ua'
-              className='header__button header__button--mobile header__button--email-icon'
+              className='top-actions__button top-actions__button--mobile top-actions__button--email-icon'
             ></a>
             <a
               href='mailto:contact@thesoul.com.ua'
-              className='header__button header__button--desktop header__button--email'
+              className='top-actions__button top-actions__button--desktop top-actions__button--email'
             >
               <span>contact@thesoul.com.ua</span>
             </a>
-            <a
-              href='#menu'
-              className='header__button header__button--burger-menu'
-            ></a>
+            <button
+              type='button'
+              href='#'
+              className='top-actions__button top-actions__button--burger-menu'
+              onClick={() => {
+                console.log('clicked!');
+                setIsBurgerOpen(prev => !prev)
+              }}
+            ></button>
+          </div>
           </div>
         </div>
       </div>
+      <BurgerMenu isOpen={isBurgerOpen} onClose={() => setIsBurgerOpen(false)} />
     </header>
   );
 };

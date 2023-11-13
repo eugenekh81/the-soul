@@ -30,15 +30,7 @@ $teamListGap: 8px;
       width: 100%;
       left: 0;
     }
-  }
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-  }
-
-  &__nav-link {
     display: flex;
     justify-content: start;
     width: max-content;
@@ -87,70 +79,6 @@ $teamListGap: 8px;
       font-size: 16px;
       color: $colorDarkGreen;
       height: $teamListItemHeight;
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-
-  }
-
-  &__button {
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    height: 32px;
-    width: 32px;
-
-    &--mobile {
-      display: flex;
-
-      @include onDesktop {
-        display: none;
-      }
-    }
-
-    &--desktop {
-      display: none;
-      @include onDesktop {
-        display: flex;
-      }
-    }
-
-    &--call {
-      background-image: url('/images/header/header-phone--mobile.png');
-    }
-
-    &--email {
-      width: max-content;
-      background-image: url('/images/icons/email.svg');
-      background-position: left center;
-
-      & span {
-        display: none;
-        @include onDesktop {
-          font-size: 18px;
-          display: flex;
-          align-items: center;
-          color: #eccb80;
-          padding: 0 0 0 32px;
-        }
-      }
-    }
-
-    &--email-icon {
-      background-image: url('/images/icons/email.svg');
-      background-position: center;
-    }
-
-    &--burger-menu {
-      background-image: url('/images/header/header-burger--mobile.svg');
-
-      @include onDesktop {
-        display: none;
-      }
     }
   }
 }
