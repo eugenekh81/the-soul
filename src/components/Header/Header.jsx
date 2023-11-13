@@ -75,7 +75,8 @@ export const Header = () => {
                 'active-link': pathname === '/en/ukrainian-circle',
               })}
             >
-              Ukrainian Circle
+              {lang === 'en' ? 'Ukrainian Circle' : 'Українське коло'}
+
             </NavLink>
 
             <NavLink
@@ -85,7 +86,8 @@ export const Header = () => {
               onClick={handleMenuToggle}
               ref={dropdownLink}
             >
-              Our Team
+              {lang === 'en' ? 'Our Team' : 'Наша Команда'}
+
               {isListRendered && (
                 <DropDownList isTeamOpen={isTeamOpen} clickCheck={clickCheck} />
               )}

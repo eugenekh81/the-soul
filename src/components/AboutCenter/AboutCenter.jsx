@@ -1,10 +1,15 @@
+import { useContext } from 'react';
 import './AboutCenter.scss';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const AboutCenter = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section section about-center'>
       <div className='container'>
-        <h2 className='about-center__title section__title'>About Us</h2>
+        <h2 className='about-center__title section__title'>
+          {lang === 'en' ? 'About Us' : 'Про Нас'}
+        </h2>
 
         <div className="about-center__content">
         <div className="about-center__image-container">

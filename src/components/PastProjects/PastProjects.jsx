@@ -2,12 +2,18 @@ import Ratio from 'react-bootstrap/Ratio';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './PastProjects.scss';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const PastProjects = () => {
+  const { lang } = useContext(LangContext);
+
   return (
     <section className='page__section section past-projects'>
       <div className='container'>
-        <h2 className='section__title'>Past projects</h2>
+        <h2 className='section__title'>
+          {lang === 'en' ? 'Past projects' : 'Релізовані проекти'}
+        </h2>
 
         <Row className='projects__past-project past-project'>
           <Col sm={8} md={7} lg={7} xl={4} className='past-project__video-container'>

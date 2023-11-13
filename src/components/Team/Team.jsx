@@ -8,16 +8,22 @@ import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
 import IrynaRoyenko from '/images/team/iroyenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 export const Team = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section page__section--bgc-green section team'>
       <div className='container'>
-        <h2 className='section__title'>Team </h2>
+        <h2 className='section__title'>{lang === 'en' ? 'Team' : 'Команда'}</h2>
 
         <div className='team__list'>
           <Carousel className='team__carousel' variant='dark'>
             <Carousel.Item interval={3000}>
-              <NavLink className='team__person person' to='/en/team/oleksandra-shymanova'>
+              <NavLink
+                className='team__person person'
+                to={`/${lang}/team/oleksandra-shymanova`}
+              >
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -26,17 +32,34 @@ export const Team = () => {
                   />
                 </div>
 
-                <h3 className='person__name'>Olexandra Shymanova</h3>
+                <h3 className='person__name'>
+                  {lang === 'en'
+                    ? 'Oleksandra Shymanova'
+                    : 'Олександра Шиманова'}
+                </h3>
 
                 <p className='person__role'>
-                  Psychologist
-                  <br />
-                  founder of The Soul Center
+                  {lang === 'en' ? (
+                    <>
+                      psychologist
+                      <br />
+                      founder of The Soul Center
+                    </>
+                  ) : (
+                    <>
+                      психолог
+                      <br />
+                      засновник Центру The Soul
+                    </>
+                  )}
                 </p>
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='team__person person' to='/en/team/mariya-vynnytska'>
+              <NavLink
+                className='team__person person'
+                to={`/${lang}/team/mariya-vynnytska`}
+              >
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -45,17 +68,29 @@ export const Team = () => {
                   />
                 </div>
 
-                <h3 className='person__name'>Mariya Vynnytska</h3>
+                <h3 className='person__name'>
+                  {lang === 'en' ? 'Mariya Vynntska' : 'Марія Вінницька'}
+                </h3>
 
                 <p className='person__role'>
-                  Psychologist
-                  <br />
-                  co-founder of The Soul Center
+                  {lang === 'en' ? (
+                    <>
+                      psychologist
+                      <br />
+                      co-founder of The Soul Center
+                    </>
+                  ) : (
+                    <>
+                      психолог
+                      <br />
+                      співзасновник Центру The Soul
+                    </>
+                  )}
                 </p>
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='person' to='/en/team/iryna-royenko'>
+              <NavLink className='person' to={`/${lang}/team/iryna-royenko`}>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -64,13 +99,17 @@ export const Team = () => {
                   />
                 </div>
 
-                <h3 className='person__name'>Iryna Royenko</h3>
+                <h3 className='person__name'>
+                  {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
+                </h3>
 
-                <p className='person__role'>Psychologist</p>
+                <p className='person__role'>
+                  {lang === 'en' ? 'psychologist' : 'психолог'}
+                </p>
               </NavLink>
             </Carousel.Item>
             <Carousel.Item>
-              <NavLink className='person' to='/en/team/maryna-yakhno'>
+              <NavLink className='person' to={`/${lang}/team/maryna-yakhno`}>
                 <div className='person__image-container'>
                   <img
                     className='person__image'
@@ -79,85 +118,123 @@ export const Team = () => {
                   />
                 </div>
 
-                <h3 className='person__name'>Maryna Yakhno</h3>
+                <h3 className='person__name'>
+                  {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
+                </h3>
 
-                <p className='person__role'>Psychologist</p>
+                <p className='person__role'>
+                  {lang === 'en' ? 'psychologist' : 'психолог'}
+                </p>
               </NavLink>
             </Carousel.Item>
           </Carousel>
         </div>
 
         <Row className='team__list--desktop'>
-              <Col sm={6} lg={3} className='team__person'>
-                <NavLink className='person' to='/en/team/oleksandra-shymanova'>
-                  <div className='person__image-container'>
-                    <img
-                      className='person__image'
-                      src={OleksandraShymanova}
-                      alt='Team member'
-                    />
-                  </div>
+          <Col sm={6} lg={3} className='team__person'>
+            <NavLink
+              className='person'
+              to={`/${lang}/team/oleksandra-shymanova`}
+            >
+              <div className='person__image-container'>
+                <img
+                  className='person__image'
+                  src={OleksandraShymanova}
+                  alt='Team member'
+                />
+              </div>
 
-                  <h3 className='person__name'>
-                    Oleksandra Shymanova
-                  </h3>
+              <h3 className='person__name'>
+                {' '}
+                {lang === 'en' ? 'Oleksandra Shymanova' : 'Олександра Шиманова'}
+              </h3>
 
-                  <p className='person__role'>
+              <p className='person__role'>
+                {lang === 'en' ? (
+                  <>
                     Psychologist
                     <br />
-                    founder
-                  </p>
-                </NavLink>
-              </Col>
-              <Col sm={6} lg={3} className='team__person'>
-                <NavLink className='person' to='/en/team/mariya-vynnytska'>
-                <div className='person__image-container'>
-                  <img
-                    className='person__image'
-                    src={MariyaVynnytska}
-                    alt='Team member'
-                  />
-                </div>
+                    founder of The Soul Center
+                  </>
+                ) : (
+                  <>
+                    психолог
+                    <br />
+                    засновник Центру The Soul
+                  </>
+                )}
+              </p>
+            </NavLink>
+          </Col>
+          <Col sm={6} lg={3} className='team__person'>
+            <NavLink className='person' to={`/${lang}/team/mariya-vynnytska`}>
+              <div className='person__image-container'>
+                <img
+                  className='person__image'
+                  src={MariyaVynnytska}
+                  alt='Team member'
+                />
+              </div>
 
-                <h3 className='person__name'>Mariya Vynnytska</h3>
+              <h3 className='person__name'>
+                {lang === 'en' ? 'Mariya Vynntska' : 'Марія Вінницька'}
+              </h3>
 
-                <p className='person__role'>
-                  Psychologist
-                  <br />
-                  co-founder
-                </p>
-                </NavLink>
-              </Col>
-              <Col sm={6} lg={3} className='team__person'>
-              <NavLink className='person' to='/en/team/iryna-royenko'>
-                <div className='person__image-container'>
-                  <img
-                    className='person__image'
-                    src={IrynaRoyenko}
-                    alt='Team member'
-                  />
-                </div>
+              <p className='person__role'>
+                {lang === 'en' ? (
+                  <>
+                    psychologist
+                    <br />
+                    co-founder of The Soul Center
+                  </>
+                ) : (
+                  <>
+                    психолог
+                    <br />
+                    співзасновниця Центру The Soul
+                  </>
+                )}
+              </p>
+            </NavLink>
+          </Col>
+          <Col sm={6} lg={3} className='team__person'>
+            <NavLink className='person' to={`/${lang}/team/iryna-royenko`}>
+              <div className='person__image-container'>
+                <img
+                  className='person__image'
+                  src={IrynaRoyenko}
+                  alt='Team member'
+                />
+              </div>
 
-                <h3 className='person__name'>Iryna Royenko</h3>
+              <h3 className='person__name'>
+                {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
+              </h3>
 
-                <p className='person__role'>Psychologist</p>
-              </NavLink>
-              </Col>
-              <Col sm={6} lg={3}  className='team__person'>
-              <NavLink className='person' to='/en/team/maryna-yakhno'>
-                <div className='person__image-container'>
-                  <img
-                    className='person__image'
-                    src={MarynaYakhno}
-                    alt='Team member'
-                  />
-                </div>
+              <p className='person__role'>
+                {lang === 'en' ? 'psychologist' : 'психолог'}
+              </p>
+            </NavLink>
+          </Col>
+          <Col sm={6} lg={3} className='team__person'>
+            <NavLink className='person' to={`/${lang}/team/maryna-yakhno`}>
+              <div className='person__image-container'>
+                <img
+                  className='person__image'
+                  src={MarynaYakhno}
+                  alt='Team member'
+                />
+              </div>
 
-                <h3 className='person__name'>Maryna Yakhno</h3>
+              <h3 className='person__name'>
+                {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
+              </h3>
 
-                <p className='person__role'>Psychologist</p>
-                </NavLink>
-              </Col>
+              <p className='person__role'>
+                {lang === 'en' ? 'psychologist' : 'психолог'}
+              </p>
+            </NavLink>
+          </Col>
         </Row>
       </div>
     </section>

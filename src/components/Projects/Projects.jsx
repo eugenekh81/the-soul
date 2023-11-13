@@ -2,13 +2,18 @@ import { Hero } from '../Hero/Hero';
 import { NavLink } from 'react-router-dom';
 
 import './Projects.scss';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const Projects = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section page__section--bgc-green section projects'>
       <div className='container'>
-        <h2 className='section__title'>Projects</h2>
-        <NavLink to="/en/ukrainian-circle" className='projects__uc-container'>
+        <h2 className='section__title'>
+        {lang === 'en' ? 'Projects' : 'Проекти'}
+          </h2>
+        <NavLink to={`/${lang}/ukrainian-circle`} className='projects__uc-container'>
           <Hero />
         </NavLink>
 
@@ -23,7 +28,10 @@ export const Projects = () => {
           We encourage you to enroll and become a participant
         </p>
 
-        <NavLink to="ukrainian-circle" className="button projects__uc-button-more">Ukrainian Circle Project</NavLink>
+        <NavLink to={`/${lang}/ukrainian-circle`} className="button projects__uc-button-more">
+        {lang === 'en' ? 'Ukrainian Circle Project' : 'Проект Українське Коло'}
+
+          </NavLink>
 
       </div>
     </section>

@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const DropDownList = ({ isTeamOpen, clickCheck }) => {
+  const { lang } = useContext(LangContext);
   useEffect(() => {
     return () => {
       setTimeout(() => {
@@ -21,33 +23,37 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to='/en/team/oleksandra-shymanova'
+          to={`/${lang}/team/oleksandra-shymanova`}
         >
-          Olexandra Shymanova
+          {lang === 'en' ? 'Olexandra Shymanova' : 'Олександра Шиманова'}
+
         </NavLink>
       </li>
       <li>
         <NavLink
           className='team-list__link'
-          to='/en/team/mariya-vynnytska'
+          to={`/${lang}/team/mariya-vynnytska`}
         >
-          Mariya Vynnytska
+          {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Вінницька'}
+
         </NavLink>
       </li>
       <li>
         <NavLink
           className='team-list__link'
-          to='/en/team/iryna-royenko'
+          to={`/${lang}/team/iryna-royenko`}
         >
-          Iryna Royenko
+          {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
+
         </NavLink>
       </li>
       <li>
         <NavLink
           className='team-list__link'
-          to='/en/team/maryna-yakhno'
+          to={`/${lang}/team/maryna-yakhno`}
         >
-          Maryna Yakhno
+          {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
+
         </NavLink>
       </li>
     </ul>
