@@ -1,13 +1,16 @@
 import './Header.scss';
 import cn from 'classnames';
 import { NavLink, useLocation } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 
 import logo from '/images/logo/header-logo-4--mobile.png';
 import { DropDownList } from '../DropdownList/DropDownList';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import { LangContext } from '../../context/LangContextProvider';
+
 export const Header = () => {
   const { pathname } = useLocation();
+  const { lang } = useContext(LangContext);
   const [isTeamOpen, setIsTeamOpen] = useState(false);
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const [isListRendered, setIsListRendered] = useState(false);
@@ -56,13 +59,12 @@ export const Header = () => {
       }, 1);
     }
   };
-console.log(isBurgerOpen);
   return (
     <header className='header'>
       <div className='container'>
         <div className='top-actions'>
           <div className="top-actions__content">
-          <NavLink to='/' className='logo'>
+          <NavLink to={`/${lang || ''}`} className='logo'>
             <img src={logo} alt='The Soul' />
           </NavLink>
 
