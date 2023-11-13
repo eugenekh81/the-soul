@@ -3,12 +3,18 @@ import { results } from '../../data/results';
 import { ResultsItem } from '../ResultsItem/ResultsItem';
 
 import Carousel from 'react-bootstrap/Carousel';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const Results = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section section results'>
       <div className='container'>
-        <h2 className='section__title'>Results</h2>
+        <h2 className='section__title'>
+          {lang === 'en' ? 'Results' : 'Результати'}
+
+          </h2>
         <p className='results__description--main' style={{ textAlign: 'center' }}>
           Over the course of the Program, the following key results were
           achieved:

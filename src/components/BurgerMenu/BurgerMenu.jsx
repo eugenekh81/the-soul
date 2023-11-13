@@ -4,10 +4,11 @@ import logo from '/images/logo/header-logo-4--mobile.png';
 import cn from 'classnames';
 import { LangContext } from '../../context/LangContextProvider';
 import { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export const BurgerMenu = ({ isOpen, onClose }) => {
   const { lang, setLang } = useContext(LangContext);
+  const { pathname } = useLocation();
 
   return (
     <aside className={cn('burger-menu', { 'burger-menu--open': isOpen })}>
@@ -46,7 +47,10 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
       <div className='burger-menu__content'>
         <div className='burger-menu__lang-selector'>
           <button
-            className='burger-menu__lang-btn'
+            className={cn(
+              'burger-menu__lang-btn',
+              { 'is-active--lang': lang === 'en'}
+            )}
             onClick={() => {
               setLang('en');
               /* onClose(); */
@@ -56,7 +60,10 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
           </button>
           {' | '}
           <button
-            className='burger-menu__lang-btn'
+            className={cn(
+              'burger-menu__lang-btn',
+              { 'is-active--lang': lang === 'ua'}
+            )}
             onClick={() => {
               setLang('ua');
               /* onClose(); */
@@ -72,7 +79,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               <NavLink
                 to={`/${lang}`}
                 onClick={() => onClose()}
-                className={'burger-menu__nav-link'}
+                className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}`})}
               >
                 {lang === 'en' ? 'Home' : 'Головна'}
               </NavLink>
@@ -81,7 +88,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               <NavLink
                 to={`/${lang}/ukrainian-circle`}
                 onClick={() => onClose()}
-                className={'burger-menu__nav-link'}
+                className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/ukrainian-circle`})}
               >
                 {lang === 'en' ? 'Ukrainian circle' : 'Українське коло'}
               </NavLink>
@@ -96,7 +103,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/oleksandra-shymanova`}
                   onClick={() => onClose()}
-                  className={'burger-menu__nav-link'}
+                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/oleksandra-shymanova`})}
                 >
                   {lang === 'en'
                     ? 'Oleksandra Shymanova'
@@ -107,7 +114,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/mariya-vynnytska`}
                   onClick={() => onClose()}
-                  className={'burger-menu__nav-link'}
+                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/mariya-vynnytska`})}
                 >
                   {lang === 'en' ? 'Mariya Vynntska' : 'Марія Винницька'}
                 </NavLink>
@@ -116,7 +123,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/iryna-royenko`}
                   onClick={() => onClose()}
-                  className={'burger-menu__nav-link'}
+                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/iryna-royenko`})}
                 >
                   {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
                 </NavLink>
@@ -125,7 +132,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/maryna-yakhno`}
                   onClick={() => onClose()}
-                  className={'burger-menu__nav-link'}
+                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/maryna-yakhno`})}
                 >
                   {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
                 </NavLink>

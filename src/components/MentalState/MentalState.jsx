@@ -1,10 +1,11 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './MentalState.scss';
-
+import { mentalStateLegend } from '../../data/mentalStateLegend.js';
 import diagramMobile from '/images/about/about--diagram--mobile.png';
 import womanSad from '/images/about/about--girl-sad.png';
 import womanHappy from '/images/about/about--girl-happy.png';
+import { MentalStateItem } from '../MentalStateItem/MentalStateItem';
 
 export const MentalState = () => (
   <section className='page__section section mental-state'>
@@ -15,7 +16,6 @@ export const MentalState = () => (
         All the participants are people affected by war. They have lost their
         mental health and are prone to serious conditions. We suggested that
         they indicate in the registration form what worries them the most.
-
       </p>
       <Row className='mental-state__content'>
         <Col sm={12} md={8} lg={4} className='mental-state__image'>
@@ -27,7 +27,8 @@ export const MentalState = () => (
         </Col>
         <Col className='mental-state__list-container' sm={12} md={12} lg={8}>
           <ul className='mental-state__list'>
-            <li className='mental-state__list-item'>
+            {mentalStateLegend.map(item => <MentalStateItem key={item.id} {...item} />  )}
+{/*             <li className='mental-state__list-item'>
               <span className='mental-state__list-item--state'>13%</span>
               Severe physical conditions: insomnia, anxiety, panic attacks, loss
               of appetite, excessive appetite, palpitations, deterioration of
@@ -62,7 +63,7 @@ export const MentalState = () => (
               Mental conditions: apathy, powerlessness, depression, lack of
               interest in life, outbursts of anger, irritability, anxiety,
               excessive control
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>

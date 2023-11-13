@@ -6,9 +6,11 @@ import { HomeSoulCover } from '../../components/HomeSoulCover/';
 import { Projects } from '../../components/Projects/';
 import { PastProjects } from '../../components/PastProjects/';
 import { Helmet } from 'react-helmet';
-import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
+
 export const HomePage = () => {
-  const { lang } = useParams();
+  const { lang } = useContext(LangContext);
   return (
     <>
       <Helmet>

@@ -33,7 +33,7 @@ export const Participants = () => (
           <ul className='participants__list'>
             <li className='participants__list-item'>
               <div className='participants__percentage'>47%</div>
-              <div className='participant__category'>
+              <div className='participants__category'>
                 women aged 36 - 50 y.o.
               </div>
             </li>
@@ -47,7 +47,7 @@ export const Participants = () => (
             </li>
           </ul>
         </Col>
-        <Col xs={10} sm={7} lg={5}>
+        <Col xs={10} sm={8} lg={5}>
           <div className='participants__image'>
             <img
               src={ageDiagram}

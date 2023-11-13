@@ -50,6 +50,7 @@
   }
 
   &__list {
+    border-radius: 12px;
     padding: 20px;
 
     display: flex;
@@ -57,10 +58,21 @@
     justify-content: space-evenly;
 
     background-color: $colorBeige;
-    border-radius: 12px;
+
+    @include onTablet--s {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
 
     width: 100%;
     align-items: center;
+
+    @include onDesktop {
+      border-radius: 12px;
+    }
   }
 
   &__list-item {
@@ -142,6 +154,18 @@
     &--age-graph {
       background-color: $colorBeige;
       border-radius: 12px;
+
+      @include onTablet--s {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+      }
+
+      @include onDesktop {
+        border-radius: 12px;
+      }
     }
 
     &--maps-container {
@@ -224,16 +248,45 @@
   &__age-structure {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
 
     @include onTablet--s {
+      gap: 0;
+    }
+
+    @include onDesktop {
+      gap: 20px;
     }
   }
 
   &__percentage {
     text-align: center;
-    font-size: 56px;
+    font-size: 44px;
     font-weight: 600;
     color: $colorDarkGreen;
+
+    @include onTablet--m {
+      font-size: 56px;
+    }
+
+    @include onDesktop {
+      font-size: 80px;
+    }
+  }
+
+  &__category {
+    font-size: 14px;
+
+    @include onTablet--s {
+      text-align: center;
+      font-size: 16px;
+    }
+    @include onTablet--m {
+      font-size: 18px;
+    }
+    @include onDesktop {
+      font-size: 20px;
+    }
+
   }
 }

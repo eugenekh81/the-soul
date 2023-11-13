@@ -154,13 +154,13 @@ export const Team = () => {
                   <>
                     Psychologist
                     <br />
-                    founder of The Soul Center
+                    founder
                   </>
                 ) : (
                   <>
                     психолог
                     <br />
-                    засновник Центру The Soul
+                    засновник
                   </>
                 )}
               </p>
@@ -185,13 +185,13 @@ export const Team = () => {
                   <>
                     psychologist
                     <br />
-                    co-founder of The Soul Center
+                    co-founder
                   </>
                 ) : (
                   <>
                     психолог
                     <br />
-                    співзасновниця Центру The Soul
+                    співзасновник
                   </>
                 )}
               </p>
