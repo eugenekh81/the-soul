@@ -16,7 +16,10 @@ export const LanguageSelector = () => {
   return (
     <div className='language-selector'>
       <button
-        className='language-selector__button'
+        className={cn(
+          'language-selector__button',
+          { 'language-selector__button--active': lang === 'en'}
+        )}
         onClick={() => setLang('en')}
       >
         en
@@ -31,7 +34,10 @@ export const LanguageSelector = () => {
         ></div>
       </div>
       <button
-        className='language-selector__button'
+        className={cn(
+          'language-selector__button',
+          { 'language-selector__button--active': lang === 'ua'}
+        )}
         onClick={() => setLang('ua')}
       >
         ua

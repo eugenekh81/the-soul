@@ -23,7 +23,16 @@ export const OleksandraShymanova = () => {
                   : 'ЗАСНОВНИЦЯ ЦЕНТРУ ПСИХОЛОГІЇ THE SOUL'}
               </div>
 
-              <a href='#' className='therapist__book-button'>
+              <a
+                href={
+                  lang === 'en'
+                    ? '#'
+                    : 'https://docs.google.com/forms/d/e/1FAIpQLSc7lG2-EZP0OvoqtWU1X13zCRavwsvprP-tqPcX6FyEArKhXA/viewform'
+                }
+                target='_blank'
+                className='therapist__book-button'
+                rel='noreferrer'
+              >
                 {lang === 'en'
                   ? 'Book a consultation'
                   : 'Записатися на консультацію'}
@@ -124,7 +133,9 @@ export const OleksandraShymanova = () => {
                   : 'незадоволеність якістю життя, бажання та намір бути щасливим'}
               </li>
               <li className='therapist__list-item'>
-                {lang === 'en' ? 'traumatic events and their consequences' : 'травматичні події та їх наслідки'}
+                {lang === 'en'
+                  ? 'traumatic events and their consequences'
+                  : 'травматичні події та їх наслідки'}
               </li>
               <li className='therapist__list-item'>
                 {lang === 'en'
@@ -153,7 +164,16 @@ export const OleksandraShymanova = () => {
               </li>
             </ul>
           </div>
-          <a href='#' className='therapist__book-button button--centered'>
+          <a
+            href={
+              lang === 'en'
+                ? '#'
+                : 'https://docs.google.com/forms/d/e/1FAIpQLSc7lG2-EZP0OvoqtWU1X13zCRavwsvprP-tqPcX6FyEArKhXA/viewform'
+            }
+            target='_blank'
+            className='therapist__book-button'
+            rel='noreferrer'
+          >
             {lang === 'en'
               ? 'Book a consultation'
               : 'Записатися на консультацію'}

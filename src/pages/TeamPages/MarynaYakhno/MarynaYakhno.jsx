@@ -16,7 +16,16 @@ export const MarynaYakhno = () => {
                 {lang === 'en' ? 'PSYCHOLOGIST' : 'ПСИХОЛОГ'}
               </div>
 
-              <a href='#' className='therapist__book-button'>
+              <a
+                href={
+                  lang === 'en'
+                    ? '#'
+                    : 'https://docs.google.com/forms/d/e/1FAIpQLSc7lG2-EZP0OvoqtWU1X13zCRavwsvprP-tqPcX6FyEArKhXA/viewform'
+                }
+                target='_blank'
+                className='therapist__book-button'
+                rel='noreferrer'
+              >
                 {lang === 'en'
                   ? 'Book a consultation'
                   : 'Записатися на консультацію'}
@@ -199,18 +208,21 @@ export const MarynaYakhno = () => {
                       : 'Нездатніть відпустити колишнього партнера / стосунки'}
                   </li>
                   <li className='therapist__list-item'>
-                    {lang === 'en' ? 'Fear of ending toxic relationships' : 'Нездатність завершити токсичні стосунки через страх залишитися самій / самому'}
+                    {lang === 'en'
+                      ? 'Fear of ending toxic relationships'
+                      : 'Нездатність завершити токсичні стосунки через страх залишитися самій / самому'}
                   </li>
                 </ul>
               </li>
               <li className='therapist__list-item'>
                 <span style={{ fontWeight: 700 }}>
-                {lang === 'en' ? 'Search for meaning:' : 'Пошук сенсів'}
-
+                  {lang === 'en' ? 'Search for meaning:' : 'Пошук сенсів'}
                 </span>
                 <ul className='therapist__list'>
                   <li className='therapist__list-item'>
-                    {lang === 'en' ? "Search for one's purpose in life" : 'Пошук призначення у житті'}
+                    {lang === 'en'
+                      ? "Search for one's purpose in life"
+                      : 'Пошук призначення у житті'}
                   </li>
                   <li className='therapist__list-item'>
                     {lang === 'en' ? 'Loneliness' : 'Самотність'}
@@ -225,14 +237,20 @@ export const MarynaYakhno = () => {
               </li>
               <li className='therapist__list-item'>
                 <span style={{ fontWeight: 700 }}>
-                {lang === 'en' ? 'Underachievment and unfulfillment:' : 'Самоідентичність та творча самореалізація:' }
+                  {lang === 'en'
+                    ? 'Underachievment and unfulfillment:'
+                    : 'Самоідентичність та творча самореалізація:'}
                 </span>
                 <ul className='therapist__list'>
                   <li className='therapist__list-item'>
-                    {lang === 'en' ? 'Not being needed by others' : 'Відчуття непотрібності оточуючим'}
+                    {lang === 'en'
+                      ? 'Not being needed by others'
+                      : 'Відчуття непотрібності оточуючим'}
                   </li>
                   <li className='therapist__list-item'>
-                    {lang === 'en' ? 'Absence of clear goals in life' : 'Відсутність чітких життєвих цілей'}
+                    {lang === 'en'
+                      ? 'Absence of clear goals in life'
+                      : 'Відсутність чітких життєвих цілей'}
                   </li>
                   <li className='therapist__list-item'>
                     {lang === 'en'
@@ -244,7 +262,16 @@ export const MarynaYakhno = () => {
             </ul>
           </div>
 
-          <a href='#' className='therapist__book-button button--centered'>
+          <a
+            href={
+              lang === 'en'
+                ? '#'
+                : 'https://docs.google.com/forms/d/e/1FAIpQLSc7lG2-EZP0OvoqtWU1X13zCRavwsvprP-tqPcX6FyEArKhXA/viewform'
+            }
+            target='_blank'
+            className='therapist__book-button'
+            rel='noreferrer'
+          >
             {lang === 'en'
               ? 'Book a consultation'
               : 'Записатися на консультацію'}
