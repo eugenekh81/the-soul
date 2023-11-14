@@ -1,0 +1,47 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.language-selector {
+  display: none;
+
+  @include onTablet--m {
+    display: flex;
+    gap: 8px;
+}
+
+  &__toggler-window {
+    align-self: center;
+    position: relative;
+    width: 32px;
+    height: 18px;
+
+    border-radius: 50px;
+    background-color: $colorBeige;
+    cursor: pointer;
+  }
+
+  &__toggler {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: $colorGold;
+    border-radius: 50%;
+    left: 0;
+
+    transition: transform 0.1s ease-in-out;
+
+    &--lang-en {
+      transform: translateX(0);
+    }
+
+    &--lang-ua {
+      transform: translateX(14px);
+    }
+  }
+
+  &__button {
+    color: $colorBeige;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

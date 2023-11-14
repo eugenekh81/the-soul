@@ -1,34 +1,37 @@
+import { useContext } from 'react';
 import './ReviewItem.scss';
 import PropTypes from 'prop-types';
+import { LangContext } from '../../context/LangContextProvider';
 
-export const ReviewItem = ({
-  name,
-  imgSrc,
-  location,
-  review_text
-}) => {
-    return (
+export const ReviewItem = ({ name, imgSrc, location, review_text }) => {
+  const { lang } = useContext(LangContext);
+  return (
     <div className='reviews__item review'>
       <div className='review__image-container'>
-        <img
-          className='review__image'
-          src={imgSrc}
-          alt='person'
-        />
+        <img className='review__image' src={imgSrc} alt='person' />
       </div>
 
-      <div className='review__name'>{name}</div>
+      <div className='review__name'>{name[lang]}</div>
 
-      <div className='review__location'>{location}</div>
+      <div className='review__location'>{location[lang]}</div>
 
-      <div className='review__text'>{review_text}</div>
+      <div className='review__text'>{review_text[lang]}</div>
     </div>
   );
 };
 
 ReviewItem.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.shape({
+    en: PropTypes.string.isRequired,
+    ua: PropTypes.string.isRequired,
+  }).isRequired,
   imgSrc: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  review_text: PropTypes.string.isRequired,
-}
+  location: PropTypes.shape({
+    en: PropTypes.string.isRequired,
+    ua: PropTypes.string.isRequired,
+  }).isRequired,
+  review_text: PropTypes.shape({
+    en: PropTypes.string.isRequired,
+    ua: PropTypes.string.isRequired,
+  }).isRequired,
+};

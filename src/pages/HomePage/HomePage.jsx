@@ -8,6 +8,7 @@ import { PastProjects } from '../../components/PastProjects/';
 import { Helmet } from 'react-helmet';
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
+import { Partners } from '../../components/Partners/Partners';
 
 export const HomePage = () => {
   const { lang } = useContext(LangContext);
@@ -40,6 +41,8 @@ export const HomePage = () => {
       <PastProjects />
 
       <Team />
+
+      <Partners />
     </>
   );
 };

@@ -1,18 +1,27 @@
+import { useContext } from 'react';
 import './JoinTheProgram.scss';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const JoinTheProgram = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section section join-the-program'>
       <div className='container'>
-        <h2 className='section__title block-centered'>JOIN THE PROGRAM</h2>
+        <h2 className='section__title block-centered'>
+          {lang === 'en' ? 'JOIN THE PROGRAM' : 'Приєднатись до Програми'}
+
+        </h2>
 
         <div className='join-the-program__content'>
           <p className='section__description'>
-            You are welcome to participate in the Ukrainian Circle project, it
-            is available in our Telegram channel.
-            <br />
-            <br />
-            To enroll, all you need to do is to submit the form below
+            {lang === 'en'
+              ? 'You are welcome to participate in the Ukrainian Circle project, it is available in our Telegram channel.'
+              : 'Ви можете стати учасником Програми в будь-який час. '}
+          </p>
+          <p className='section__description'>
+            {lang === 'en'
+              ? 'All you need to do is submit the form below to enroll'
+              : 'Для цього вам необхідно заповнити форму реєстрації та долучитись до нашого Телеграм-каналу'}
           </p>
 
           <a
@@ -21,7 +30,7 @@ export const JoinTheProgram = () => {
             target='_blank'
             rel='noreferrer'
           >
-            Join
+            {lang === 'en' ? 'Join' : 'Приєднатись'}
           </a>
         </div>
       </div>

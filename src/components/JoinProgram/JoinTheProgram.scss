@@ -73,12 +73,11 @@
   & .section__button {
     font-size: 40px;
     height: 60px;
-    width: 170px;
+
 
     @include onDesktop {
       font-size: 40px;
       height: 60px;
-      width: 220px;
     }
   }
 }

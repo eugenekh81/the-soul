@@ -12,12 +12,19 @@ import { Participants } from '/src/components/Participants';
 import { JoinTheProgram } from '/src/components/JoinProgram';
 import { SupportUs } from '/src/components/SupportUs';
 import { Helmet } from 'react-helmet';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const UkrainianCirclePage = () => {
+  const { lang } = useContext(LangContext);
   return (
     <>
       <Helmet>
-        <title>The Soul | Ukrainian Cirle</title>
+        <title>
+          {lang === 'en'
+            ? 'The Soul | Ukrainian Cirle'
+            : 'The Soul | Українське Коло'}
+        </title>
         <meta
           name='description'
           content="The Soul Ukrainian Center of Psychology is a professional collaboration of psychologists from different disciplines, established to offer psychological support to people and provide a choice of the most effective methods and approaches. The Ukrainian Center of Psychology, The Soul 'Душа', was created on February 2, 2021, as an initiative and creative union of psychologists practicing in various fields (such as psychoanalysis)."

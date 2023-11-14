@@ -50,36 +50,45 @@ $teamListGap: 8px;
     top: 100%;
   }
 
-  .team-list {
+  &__options-container {
     display: flex;
-    padding: 8px 16px;
-    gap: $teamListGap;
-    align-items: start;
-    flex-direction: column;
-    position: absolute;
-    background-color: $colorBeige;
-    width: max-content;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s linear;
-    opacity: 0;
+    gap: 20px;
 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-    &--open {
-      height: $teamListItemHeight * 4 + 8px * 2 + $teamListGap * 3;
-      opacity: 1;
+    @include onDesktop {
+      gap: 40px;
     }
+  }
+}
 
-    &__link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      font-size: 16px;
-      color: $colorDarkGreen;
-      height: $teamListItemHeight;
-    }
+.team-list {
+  display: flex;
+  padding: 8px 16px;
+  gap: $teamListGap;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  background-color: $colorBeige;
+  width: max-content;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  opacity: 0;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &--open {
+    height: $teamListItemHeight * 4 + 8px * 2 + $teamListGap * 3;
+    opacity: 1;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: $colorDarkGreen;
+    height: $teamListItemHeight;
   }
 }
 

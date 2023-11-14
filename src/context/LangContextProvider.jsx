@@ -17,12 +17,9 @@ export const LangContextProvider = ({ children }) => {
     [lang]
   );
 
-  console.log(location, 'this is location in context');
   const url = `/${lang}${pathname.slice(3)}`;
-  console.log(url);
 
   useEffect(() => {
-    console.log(pathname, 'pathname changed');
     navigate(url);
   }, [pathname, lang]);
 

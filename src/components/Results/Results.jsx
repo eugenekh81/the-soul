@@ -13,11 +13,14 @@ export const Results = () => {
       <div className='container'>
         <h2 className='section__title'>
           {lang === 'en' ? 'Results' : 'Результати'}
-
-          </h2>
-        <p className='results__description--main' style={{ textAlign: 'center' }}>
-          Over the course of the Program, the following key results were
-          achieved:
+        </h2>
+        <p
+          className='results__description--main'
+          style={{ textAlign: 'center' }}
+        >
+          {lang === 'en'
+            ? 'Over the course of the Program, the following key results were achieved:'
+            : 'Під час реалізації Програми було досягнуто такі основні результати:'}
         </p>
         <div className='results__list'>
           <Carousel variant='dark' className='results__carousel'>

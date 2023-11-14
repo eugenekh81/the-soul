@@ -7,6 +7,7 @@ import logo from '/images/logo/header-logo-4--mobile.png';
 import { DropDownList } from '../DropdownList/DropDownList';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
 import { LangContext } from '../../context/LangContextProvider';
+import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
 
 export const Header = () => {
   const { pathname } = useLocation();
@@ -63,62 +64,71 @@ export const Header = () => {
     <header className='header'>
       <div className='container'>
         <div className='top-actions'>
-          <div className="top-actions__content">
-          <NavLink to={`/${lang || ''}`} className='logo'>
-            <img src={logo} alt='The Soul' />
-          </NavLink>
-
-          <nav className='nav'>
-            <NavLink
-              to='/en/ukrainian-circle'
-              className={cn('header__nav-link', {
-                'active-link': pathname === '/en/ukrainian-circle',
-              })}
-            >
-              {lang === 'en' ? 'Ukrainian Circle' : 'Українське коло'}
-
+          <div className='top-actions__content'>
+            <NavLink to={`/${lang || ''}`} className='logo'>
+              <img src={logo} alt='The Soul' />
             </NavLink>
 
-            <NavLink
-              className={cn('header__nav-link', 'header__nav-link--team', {
-                'active-link': pathname.includes('team'),
-              })}
-              onClick={handleMenuToggle}
-              ref={dropdownLink}
-            >
-              {lang === 'en' ? 'Our Team' : 'Наша Команда'}
+            <nav className='nav'>
+              <NavLink
+                to='/en/ukrainian-circle'
+                className={cn('header__nav-link', {
+                  'active-link': pathname === `/${lang}/ukrainian-circle`,
+                })}
+              >
+                {lang === 'en' ? 'Ukrainian Circle' : 'Українське Коло'}
+              </NavLink>
 
-              {isListRendered && (
-                <DropDownList isTeamOpen={isTeamOpen} clickCheck={clickCheck} />
-              )}
-            </NavLink>
-          </nav>
+              <NavLink
+                className={cn('header__nav-link', 'header__nav-link--team', {
+                  'active-link': pathname.includes('team'),
+                })}
+                onClick={handleMenuToggle}
+                ref={dropdownLink}
+              >
+                {lang === 'en' ? 'Team' : 'Команда'}
 
-          <div className='top-actions__buttons'>
-            <a
-              href='mailto:contact@thesoul.com.ua'
-              className='top-actions__button top-actions__button--mobile top-actions__button--email-icon'
-            ></a>
-            <a
-              href='mailto:contact@thesoul.com.ua'
-              className='top-actions__button top-actions__button--desktop top-actions__button--email'
-            >
-              <span>contact@thesoul.com.ua</span>
-            </a>
-            <button
-              type='button'
-              href='#'
-              className='top-actions__button top-actions__button--burger-menu'
-              onClick={() => {
-                console.log('clicked!');
-                setIsBurgerOpen(prev => !prev)
-              }}
-            ></button>
-          </div>
+                {isListRendered && (
+                  <DropDownList
+                    isTeamOpen={isTeamOpen}
+                    clickCheck={clickCheck}
+                  />
+                )}
+              </NavLink>
+            </nav>
+
+            <div className='header__options-container'>
+              <LanguageSelector />
+
+              <div className='top-actions__buttons'>
+                <a
+                  href='mailto:contact@thesoul.com.ua'
+                  className='top-actions__button top-actions__button--mobile top-actions__button--email-icon'
+                ></a>
+                <a
+                  href='mailto:contact@thesoul.com.ua'
+                  className='top-actions__button top-actions__button--desktop top-actions__button--email'
+                >
+                  <span>contact@thesoul.com.ua</span>
+                </a>
+                <button
+                  type='button'
+                  href='#'
+                  className='top-actions__button top-actions__button--burger-menu'
+                  onClick={() => {
+                    console.log('clicked!');
+                    setIsBurgerOpen((prev) => !prev);
+                  }}
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <BurgerMenu isOpen={isBurgerOpen} onClose={() => setIsBurgerOpen(false)} />
+      <BurgerMenu
+        isOpen={isBurgerOpen}
+        onClose={() => setIsBurgerOpen(false)}
+      />
     </header>
   );
 };

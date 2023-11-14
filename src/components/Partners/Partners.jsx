@@ -8,12 +8,17 @@ import renovare from '/images/partners/renovare.png';
 import EKR from '/images/partners/EKR.png';
 import Carousel from 'react-bootstrap/Carousel';
 import { Donate } from '../Donate/Donate';
+import { useContext } from 'react';
+import { LangContext } from '../../context/LangContextProvider';
 
 export const Partners = () => {
+  const { lang } = useContext(LangContext);
   return (
     <section className='page__section section partners'>
       <div className='container'>
-        <h2 className='section__title'>Partners</h2>
+        <h2 className='section__title'>
+          {lang === 'en' ? 'Partners' : 'Партнери'}
+        </h2>
         <div className='partners-list partners-list--mobile partners-list__carousel'>
           <Carousel variant='dark'>
             <Carousel.Item interval={3000}>
