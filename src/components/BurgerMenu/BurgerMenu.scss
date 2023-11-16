@@ -68,6 +68,7 @@
   }
 
   &__menu-list {
+    margin: 0 0 24px;
     font-size: 24px;
     margin-left: 20px;
     gap: 14px;
@@ -103,6 +104,10 @@
       cursor: none;
       pointer-events: none;
     }
+  }
+
+  &__social {
+    margin: 0 auto;
   }
 }
 
