@@ -1,0 +1,24 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.error-page {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px - 363px);
+    text-align: center;
+
+    gap: 60px;
+  }
+
+  &__home-button {
+    padding: 12px 24px;
+    font-size: 24px;
+    display: flex;
+    background-color: $colorDarkGreen;
+    color: $colorBeige;
+    border-radius: 50px;
+  }
+}

@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import { createContext, useEffect, useMemo, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 export const LangContext = createContext({ lang: 'en', setLang: () => {} });
 
 export const LangContextProvider = ({ children }) => {
-  const [lang, setLang] = useState('en');
+  const { lang: paramsLang } = useParams();
+  const [lang, setLang] = useState(paramsLang || 'en');
   const { pathname } = useLocation();
   const navigate = useNavigate();
 

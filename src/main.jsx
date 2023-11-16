@@ -19,39 +19,45 @@ import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to='en' replace={true} />,
-  },
-  {
-    path: '/:lang',
+    /* element: <Navigate to='en' replace={true} />, */
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: 'ukrainian-circle',
-        element: <UkrainianCirclePage />,
-      },
-      {
-        path: 'team',
+        path: ':lang',
         children: [
           {
-            path: 'oleksandra-shymanova',
-            element: <OleksandraShymanova />,
+            index: true,
+            element: <HomePage />,
           },
           {
-            path: 'mariya-vynnytska',
-            element: <MariyaVynnytska />,
+            path: 'ukrainian-circle',
+            element: <UkrainianCirclePage />,
           },
           {
-            path: 'iryna-royenko',
-            element: <IrynaRoyenko />,
+            path: 'team',
+            children: [
+              {
+                path: 'oleksandra-shymanova',
+                element: <OleksandraShymanova />,
+              },
+              {
+                path: 'mariya-vynnytska',
+                element: <MariyaVynnytska />,
+              },
+              {
+                path: 'iryna-royenko',
+                element: <IrynaRoyenko />,
+              },
+              {
+                path: 'maryna-yakhno',
+                element: <MarynaYakhno />,
+              },
+            ],
           },
           {
-            path: 'maryna-yakhno',
-            element: <MarynaYakhno />,
+            path: '*',
+            element: <ErrorPage />,
           },
         ],
       },
