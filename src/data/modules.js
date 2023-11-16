@@ -8,21 +8,34 @@ import module7cover from '/images/modules/m7.png';
 import module8cover from '/images/modules/m8.png';
 import module9cover from '/images/modules/m9.png';
 
-import module1report from '/pdf/module-reports/module-1__summary.pdf';
-import module2report from '/pdf/module-reports/module-2__summary.pdf';
-import module3report from '/pdf/module-reports/module-3__summary.pdf';
-import module4report from '/pdf/module-reports/module-4__summary.pdf';
-import module5report from '/pdf/module-reports/module-5__summary.pdf';
-import module6report from '/pdf/module-reports/module-6__summary.pdf';
-import module7report from '/pdf/module-reports/module-7__summary.pdf';
-import module8report from '/pdf/module-reports/module-8__summary.pdf';
-import module9report from '/pdf/module-reports/module-9__summary.pdf';
+import module1reportEn from '/pdf/module-reports/en/module-1__summary.pdf';
+import module2reportEn from '/pdf/module-reports/en/module-2__summary.pdf';
+import module3reportEn from '/pdf/module-reports/en/module-3__summary.pdf';
+import module4reportEn from '/pdf/module-reports/en/module-4__summary.pdf';
+import module5reportEn from '/pdf/module-reports/en/module-5__summary.pdf';
+import module6reportEn from '/pdf/module-reports/en/module-6__summary.pdf';
+import module7reportEn from '/pdf/module-reports/en/module-7__summary.pdf';
+import module8reportEn from '/pdf/module-reports/en/module-8__summary.pdf';
+import module9reportEn from '/pdf/module-reports/en/module-9__summary.pdf';
+
+import module1reportUa from '/pdf/module-reports/ua/module-1__summary.pdf';
+import module2reportUa from '/pdf/module-reports/ua/module-2__summary.pdf';
+import module3reportUa from '/pdf/module-reports/ua/module-3__summary.pdf';
+import module4reportUa from '/pdf/module-reports/ua/module-4__summary.pdf';
+import module5reportUa from '/pdf/module-reports/ua/module-5__summary.pdf';
+import module6reportUa from '/pdf/module-reports/ua/module-6__summary.pdf';
+import module7reportUa from '/pdf/module-reports/ua/module-7__summary.pdf';
+import module8reportUa from '/pdf/module-reports/ua/module-8__summary.pdf';
+import module9reportUa from '/pdf/module-reports/ua/module-9__summary.pdf';
 
 export const modules = [
   {
     id: 1,
     cover: module1cover,
-    report: module1report,
+    report: {
+      en: module1reportEn,
+      ua: module1reportUa,
+    },
     title: {
       en: 'Feelings and emotions',
       ua: 'Душа та почуття',
@@ -39,7 +52,10 @@ export const modules = [
   {
     id: 2,
     cover: module2cover,
-    report: module2report,
+    report: {
+      en: module2reportEn,
+      ua: module2reportUa,
+    },
     title: {
       en: 'Body',
       ua: 'Тіло',
@@ -56,7 +72,10 @@ export const modules = [
   {
     id: 3,
     cover: module3cover,
-    report: module3report,
+    report: {
+      en: module3reportEn,
+      ua: module3reportUa,
+    },
     title: {
       en: 'Strength and confidence',
       ua: 'Сила та впевненість',
@@ -73,7 +92,10 @@ export const modules = [
   {
     id: 4,
     cover: module4cover,
-    report: module4report,
+    report: {
+      en: module4reportEn,
+      ua: module4reportUa,
+    },
     title: {
       en: 'Love and relationships',
       ua: 'Кохання та стосунки',
@@ -90,7 +112,10 @@ export const modules = [
   {
     id: 5,
     cover: module5cover,
-    report: module5report,
+    report: {
+      en: module5reportEn,
+      ua: module5reportUa,
+    },
     title: {
       en: 'Freedom and responsibility',
       ua: 'Свобода та відповідальність',
@@ -107,7 +132,10 @@ export const modules = [
   {
     id: 6,
     cover: module6cover,
-    report: module6report,
+    report: {
+      en: module6reportEn,
+      ua: module6reportUa,
+    },
     title: {
       en: 'Home, safe space and belonging',
       ua: 'Дім',
@@ -124,7 +152,10 @@ export const modules = [
   {
     id: 7,
     cover: module7cover,
-    report: module7report,
+    report: {
+      en: module7reportEn,
+      ua: module7reportUa,
+    },
     title: {
       en: 'Money and wellbeing',
       ua: 'Гроші та благополуччя',
@@ -141,7 +172,10 @@ export const modules = [
   {
     id: 8,
     cover: module8cover,
-    report: module8report,
+    report: {
+      en: module8reportEn,
+      ua: module8reportUa,
+    },
     title: {
       en: 'Unity and Integration',
       ua: 'Єдність та цілісність',
@@ -158,7 +192,10 @@ export const modules = [
   {
     id: 9,
     cover: module9cover,
-    report: module9report,
+    report: {
+      en: module9reportEn,
+      ua: module9reportUa,
+    },
     title: {
       en: 'The future',
       ua: 'Майбутнє',

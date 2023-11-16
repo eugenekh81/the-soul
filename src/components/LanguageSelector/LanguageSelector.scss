@@ -12,36 +12,46 @@
   &__toggler-window {
     align-self: center;
     position: relative;
-    width: 35px;
-    height: 20px;
+    width: 36px;
+    height: 18px;
 
     border-radius: 50px;
     background-color: $colorBeige;
     cursor: pointer;
+
+    transition: all 0.05s linear;
+
+    background-color: $colorDarkestGreen;
   }
 
   &__toggler {
     position: absolute;
     height: 18px;
     width: 18px;
-    background-color: $colorGold;
+    background-color: $colorGoldLight;
     border-radius: 50%;
-    top: 1px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
 
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &--lang-en {
-      transform: translateX(0);
+      transform: translateX(0) rotate(0deg);
+      background-image: url('/images/icons/flag-us.png');
     }
 
     &--lang-ua {
-      transform: translateX(15px);
+      transform: translateX(18px) rotate(360deg);
+      background-image: url('/images/icons/flag-ukraine.png');
     }
   }
 
   &__button {
-    color: $colorBeige;
+    color: $colorGoldLight;
     font-size: 18px;
     font-weight: 400;
 
@@ -51,6 +61,7 @@
 
     &--active {
       opacity: 1;
+      font-weight: 700;
     }
   }
 }

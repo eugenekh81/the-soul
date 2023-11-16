@@ -186,12 +186,12 @@
       letter-spacing: 1px;
 
       @include onTablet--s {
-        letter-spacing: 1px;
+        letter-spacing: 0px;
       }
 
       @include onTablet--m {
         font-size: 16px;
-        letter-spacing: 2.9px;
+        letter-spacing: 0.4px;
       }
 
       &_ua {
@@ -207,12 +207,12 @@
 
       @include onTablet--s {
         margin: 0;
-        letter-spacing: 3.8px;
+        letter-spacing: 5.4px;
       }
 
       @include onTablet--m {
         font-size: 17px;
-        letter-spacing: 6px;
+        letter-spacing: 6.4px;
       }
     }
   }

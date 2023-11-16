@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import MariyaVynnytskaPhoto from '/images/team/mvynnytska-mobile.png';
+import MariyaVynnytskaPhoto from '/images/team/mvynnytska1-mobile.png';
 
 export const MariyaVynnytska = () => {
   const { lang } = useParams();

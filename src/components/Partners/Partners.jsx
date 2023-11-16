@@ -1,12 +1,11 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-
 import './Partners.scss';
-import consciousness from '/images/partners/consciousness-centered.png';
-import katieEastman from '/images/partners/Katie_Eastman-centered.png';
-import renovare from '/images/partners/renovare.png';
-import EKR from '/images/partners/EKR.png';
-import Carousel from 'react-bootstrap/Carousel';
+
+import ekr320 from '/images/partners/ekr-320.png';
+import katie320 from '/images/partners/katieeastman-320.png';
+import renovare320 from '/images/partners/renovare-320.png';
+import solven320 from '/images/partners/solven-320.png';
+import wca320 from '/images/partners/wca-320.png';
+
 import { Donate } from '../Donate/Donate';
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
@@ -19,95 +18,37 @@ export const Partners = () => {
         <h2 className='section__title'>
           {lang === 'en' ? 'Partners' : 'Партнери'}
         </h2>
-        <div className='partners-list partners-list--mobile partners-list__carousel'>
-          <Carousel variant='dark'>
-            <Carousel.Item interval={3000}>
-              <a
-                href='https://www.wca.earth/'
-                className='partner__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={consciousness} alt='Consciousness' />
-              </a>
-            </Carousel.Item>
-            <Carousel.Item>
-              <a
-                href='https://drkatieeastman.com/about'
-                className='partner__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={katieEastman} alt='Katie Eastman' />
-              </a>
-            </Carousel.Item>
-            <Carousel.Item>
-              <a
-                href='#'
-                className='partners__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={renovare} alt='Renovare' />
-              </a>
-            </Carousel.Item>
-            <Carousel.Item>
-              <a
-                href='https://www.ekrfoundation.org/'
-                className='partners__link renovare'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={EKR} alt='' />
-              </a>
-            </Carousel.Item>
-          </Carousel>
-        </div>
 
-        <div className='partners-list partners-list--desktop'>
-          <Row>
-            <Col sm={6} lg={3} className="partner__item">
-              <a
-                href='https://www.wca.earth/'
-                className='partner__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={consciousness} alt='Consciousness' />
-              </a>
-            </Col>
-            <Col sm={6} lg={3} className="partner__item">
-              <a
-                href='https://drkatieeastman.com/about'
-                className='partner__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={katieEastman} alt='Katie Eastman' />
-              </a>
-            </Col>
-            <Col sm={6} lg={3} className="partner__item">
-              <a
-                href='#'
-                className='partners__link'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={renovare} alt='Renovare' />
-              </a>
-            </Col>
-            <Col sm={6} lg={3} className="partner__item">
-              <a
-                href='https://www.ekrfoundation.org/'
-                className='partners__link renovare'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={EKR} alt='' />
-              </a>
-            </Col>
-          </Row>
-        </div>
+        <ul className='partners__list'>
+          <li className='partners__list-item'>
+            <a href='https://www.solvenplus.one/' className='partners__link'>
+              <img src={solven320} alt='' className='partners__logo' />
+            </a>
+          </li>
+          <li className='partners__list-item'>
+            <a className='partners__link'>
+              <img src={renovare320} alt='' className='partners__logo' />
+            </a>
+          </li>
+          <li className='partners__list-item'>
+            <a
+              href='https://drkatieeastman.com/about'
+              className='partners__link'
+            >
+              <img src={katie320} alt='' className='partners__logo' />
+            </a>
+          </li>
+          <li className='partners__list-item'>
+            <a href='https://www.ekrfoundation.org/' className='partners__link'>
+              <img src={ekr320} alt='' className='partners__logo' />
+            </a>
+          </li>
+          <li className='partners__list-item'>
+            <a href='https://www.wca.earth/' className='partners__link'>
+              <img src={wca320} alt='' className='partners__logo' />
+            </a>
+          </li>
+        </ul>
         <Donate />
       </div>
     </section>

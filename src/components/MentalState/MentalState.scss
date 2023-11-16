@@ -18,7 +18,7 @@
     }
 
     @include onDesktop {
-      margin: 0 0 40px;
+      margin: 0 0 24px;
       flex-direction: row;
       justify-content: center;
       align-items: stretch;
@@ -104,8 +104,6 @@ margin: 0 0 24px;
       }
     }
   };
-
-  &__question
 
   &__legend-description {
     font-size: 18px;
@@ -243,9 +241,14 @@ margin: 0 0 24px;
     }
 
     &--conditions-graph {
+      margin: 0 0 24px;
       width: 100%;
       object-fit: contain;
       object-position: left;
+
+      @include onDesktop {
+        margin: 0;
+      }
     }
 
     &--girl-happy {

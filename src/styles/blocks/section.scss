@@ -2,7 +2,12 @@
 @import '../utils/mixins';
 
 .section {
-  padding: 60px 0 60px;
+padding: 40px 0 40px;
+
+  @include onDesktop {
+    padding: 50px 0 50px;
+
+  }
   &__title {
     width: fit-content;
 

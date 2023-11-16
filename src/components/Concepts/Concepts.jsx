@@ -15,7 +15,7 @@ export const Concepts = () => {
           {lang === 'en' ? 'Key concepts' : 'Ключові постулати'}
         </h2>
 
-        <p className='section__description text-align-center'>
+        <p className='section__description concepts__description text-align-center'>
           {lang === 'en' ? (
             <>
               The &quot;Ukrainian Circle&quot; Program is based on these key

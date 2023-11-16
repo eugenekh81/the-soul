@@ -28,14 +28,14 @@ export const MentalState = () => {
             : "Всі учасники – люди, постраждали від війни. Вони втратили  психологічне здоров'я і схильні до травматичних станів. В реєстраційній формі вони вказали, що їх найбільше хвилює."}
         </p>
         <Row className='mental-state__content'>
-          <Col sm={12} md={8} lg={4} className='mental-state__image'>
+          <Col sm={12} md={8} lg={5} className='mental-state__image'>
             <img
               className='mental-state__image--conditions-graph'
               src={diagramMobile}
               alt='Conditions chart'
             />
           </Col>
-          <Col className='mental-state__list-container' sm={12} md={12} lg={8}>
+          <Col className='mental-state__list-container' sm={12} md={12} lg={7}>
             <ul className='mental-state__list'>
               {mentalStateLegend.map((item) => (
                 <MentalStateItem key={item.id} {...item} />

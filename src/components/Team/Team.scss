@@ -64,8 +64,26 @@
   padding: 0;
   margin: 0 auto;
 
+  @include onMobile--xs {
+    width: 160px;
+    height: 282px;
+  }
+
+  width: 180px;
+  height: 312px;
+
+  @include onTablet--s {
+    width: 200px;
+  }
+
+  @include onTablet--m {
+    width: 220px;
+  }
+
+@include onDesktop {
   width: 240px;
-  height: 320px;
+}
+
   position: relative;
   padding: 24px 16px 24px;
   display: flex;
@@ -89,6 +107,12 @@
   &__image-container {
     position: relative;
     margin: 0 0 24px;
+
+    @include onMobile--xs {
+      width: 110px;
+      height: 110px;
+    }
+
     width: 140px;
     height: 140px;
     border-radius: 50%;

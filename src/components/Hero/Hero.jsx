@@ -36,7 +36,7 @@ export const Hero = () => {
             })}
           >
             {lang === 'en'
-              ? 'mental recovery program'
+              ? 'mental health recovery program'
               : 'програма психологічного відновлення'}
           </p>
           <p className='hero__description hero__description--bottom'>

@@ -8,23 +8,28 @@ export const LanguageSelector = () => {
 
   const languageToggler = () => {
     if (lang === 'en') {
-      return setLang ('ua');
+      return setLang('ua');
     }
 
     setLang('en');
-  }
+  };
   return (
     <div className='language-selector'>
       <button
-        className={cn(
-          'language-selector__button',
-          { 'language-selector__button--active': lang === 'en'}
-        )}
+        className={cn('language-selector__button', {
+          'language-selector__button--active': lang === 'en',
+        })}
         onClick={() => setLang('en')}
       >
         en
       </button>
-      <div className='language-selector__toggler-window' onClick={languageToggler}>
+      <div
+        className={cn('language-selector__toggler-window', {
+          'language-selector__toggler-window--en': lang === 'en',
+          'language-selector__toggler-window--ua': lang === 'ua',
+        })}
+        onClick={languageToggler}
+      >
         <div
           className={cn(
             'language-selector__toggler',
@@ -34,10 +39,9 @@ export const LanguageSelector = () => {
         ></div>
       </div>
       <button
-        className={cn(
-          'language-selector__button',
-          { 'language-selector__button--active': lang === 'ua'}
-        )}
+        className={cn('language-selector__button', {
+          'language-selector__button--active': lang === 'ua',
+        })}
         onClick={() => setLang('ua')}
       >
         ua

@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import OleksandraShymanova from '/images/team/ashymanova-mobile.png';
-import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
+import MariyaVynnytska from '/images/team/mvynnytska1-mobile.png';
 import IrynaRoyenko from '/images/team/iroyenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
 import { NavLink } from 'react-router-dom';
@@ -152,7 +152,7 @@ export const Team = () => {
               <p className='person__role'>
                 {lang === 'en' ? (
                   <>
-                    Psychologist
+                    psychologist
                     <br />
                     founder
                   </>

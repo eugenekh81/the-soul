@@ -1,58 +1,23 @@
 @import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
 
-.partners-list {
-  &--mobile {
-    display: block;
-    @include onTablet--s {
-      display: none;
+.partners {
+  &__list {
+    margin: 0 0 40px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @include onDesktop {
+      margin: 0 0 60px;
+      gap: 50px;
     }
   }
 
-    &--desktop {
-      display: none;
-      @include onTablet--s {
-        margin: 0 auto;
-        display: flex;
-        max-width: 576px;
-      }
-
-      @include onDesktop {
-        max-width: unset;
-      }
-    }
-
-    &__carousel {
-      margin: 0 0 24px;
-    }
-
-  & .carousel {
-    height: 550px;
-    display: flex;
-    align-items: center;
-
-    &-inner {
-      display: flex;
-      align-items: center;
-
-    }
-
-    &-control {
-      &-prev {
-        transform: translateX(-120%);
-      }
-
-      &-next {
-        transform: translateX(120%);
-      }
-    }
-  }
-}
-
-.partner {
-  &__item {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  &__list-item {
+    flex-shrink: 0;
   }
 }
