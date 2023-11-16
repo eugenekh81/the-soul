@@ -21,12 +21,17 @@ export const Partners = () => {
 
         <ul className='partners__list'>
           <li className='partners__list-item'>
-            <a href='https://www.solvenplus.one/' className='partners__link'>
+            <a
+              href='https://www.solvenplus.one/'
+              className='partners__link'
+              target='_blank'
+              rel='noreferrer'
+            >
               <img src={solven320} alt='' className='partners__logo' />
             </a>
           </li>
           <li className='partners__list-item'>
-            <a className='partners__link'>
+            <a className='partners__link' target='_blank'>
               <img src={renovare320} alt='' className='partners__logo' />
             </a>
           </li>
@@ -34,6 +39,8 @@ export const Partners = () => {
             <a
               href='https://drkatieeastman.com/about'
               className='partners__link'
+              target='_blank'
+              rel='noreferrer'
             >
               <img src={katie320} alt='' className='partners__logo' />
             </a>
@@ -44,7 +51,12 @@ export const Partners = () => {
             </a>
           </li>
           <li className='partners__list-item'>
-            <a href='https://www.wca.earth/' className='partners__link'>
+            <a
+              href='https://www.wca.earth/'
+              className='partners__link'
+              target='_blank'
+              rel='noreferrer'
+            >
               <img src={wca320} alt='' className='partners__logo' />
             </a>
           </li>
