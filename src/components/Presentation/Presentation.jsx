@@ -11,7 +11,7 @@ export const Presentation = () => {
       <div className='container'>
         <h2 className='presentation__title'>
           {lang === 'en'
-            ? 'Presentation of the Ukrainian Circle Project by the founders of the Centre - Maria Vynnytska and Oleksandra Shymanova'
+            ? 'Presentation of the Ukrainian Circle Project by the founders of the Centre - Maria Vynnytska and Olexandra Shymanova'
             : 'Презентація Програми психологічного відновлення “Українське коло” від засновниць Центру - Олександри Шиманової та Марії Винницької'}
         </h2>
 

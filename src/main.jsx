@@ -2,19 +2,16 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.scss';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Root } from '/src/routes/Root';
 import { HomePage } from './pages/HomePage/';
 import { UkrainianCirclePage } from './pages/UkrainianCirlcePage/';
 import { ErrorPage } from './pages/ErrorPage/';
-import { OleksandraShymanova } from './pages/TeamPages/OleksandraShymanova';
+import { OlexandraShymanova } from './pages/TeamPages/OlexandraShymanova';
 import { MariyaVynnytska } from './pages/TeamPages/MariyaVynnytska';
 import { IrynaRoyenko } from './pages/TeamPages/IrynaRoyenko';
 import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
+import { MeetingWithTheSoulPage } from './pages/MeetingWithTheSoulPage/MeetingWithTheSoulPage';
 
 const router = createBrowserRouter([
   {
@@ -38,8 +35,8 @@ const router = createBrowserRouter([
             path: 'team',
             children: [
               {
-                path: 'oleksandra-shymanova',
-                element: <OleksandraShymanova />,
+                path: 'olexandra-shymanova',
+                element: <OlexandraShymanova />,
               },
               {
                 path: 'mariya-vynnytska',
@@ -52,6 +49,15 @@ const router = createBrowserRouter([
               {
                 path: 'maryna-yakhno',
                 element: <MarynaYakhno />,
+              },
+            ],
+          },
+          {
+            path: 'projects',
+            children: [
+              {
+                path: 'meeting-with-the-soul',
+                element: <MeetingWithTheSoulPage />,
               },
             ],
           },

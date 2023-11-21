@@ -47,10 +47,9 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
       <div className='burger-menu__content'>
         <div className='burger-menu__lang-selector'>
           <button
-            className={cn(
-              'burger-menu__lang-btn',
-              { 'is-active--lang': lang === 'en'}
-            )}
+            className={cn('burger-menu__lang-btn', {
+              'is-active--lang': lang === 'en',
+            })}
             onClick={() => {
               setLang('en');
               /* onClose(); */
@@ -60,10 +59,9 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
           </button>
           {' | '}
           <button
-            className={cn(
-              'burger-menu__lang-btn',
-              { 'is-active--lang': lang === 'ua'}
-            )}
+            className={cn('burger-menu__lang-btn', {
+              'is-active--lang': lang === 'ua',
+            })}
             onClick={() => {
               setLang('ua');
               /* onClose(); */
@@ -79,7 +77,9 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               <NavLink
                 to={`/${lang}`}
                 onClick={() => onClose()}
-                className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}`})}
+                className={cn('burger-menu__nav-link', {
+                  'is-active': pathname === `/${lang}`,
+                })}
               >
                 {lang === 'en' ? 'Home' : 'Головна'}
               </NavLink>
@@ -88,25 +88,35 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               <NavLink
                 to={`/${lang}/ukrainian-circle`}
                 onClick={() => onClose()}
-                className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/ukrainian-circle`})}
+                className={cn('burger-menu__nav-link', {
+                  'is-active': pathname === `/${lang}/ukrainian-circle`,
+                })}
               >
                 {lang === 'en' ? 'Ukrainian circle' : 'Українське коло'}
               </NavLink>
             </li>
             <li className='burger-menu__list-item'>
-              <NavLink to='#' className={'burger-menu__nav-link burger-menu__nav-link--inactive'}>
+              <NavLink
+                to='#'
+                className={
+                  'burger-menu__nav-link burger-menu__nav-link--inactive'
+                }
+              >
                 {lang === 'en' ? 'Our team:' : 'Наша команда:'}
               </NavLink>
             </li>
             <ul className='burger-menu__menu-list'>
               <li className='burger-menu__list-item'>
                 <NavLink
-                  to={`/${lang}/team/oleksandra-shymanova`}
+                  to={`/${lang}/team/olexandra-shymanova`}
                   onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/oleksandra-shymanova`})}
+                  className={cn('burger-menu__nav-link', {
+                    'is-active':
+                      pathname === `/${lang}/team/olexandra-shymanova`,
+                  })}
                 >
                   {lang === 'en'
-                    ? 'Oleksandra Shymanova'
+                    ? 'Olexandra Shymanova'
                     : 'Олександра Шиманова'}
                 </NavLink>
               </li>
@@ -114,16 +124,20 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/mariya-vynnytska`}
                   onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/mariya-vynnytska`})}
+                  className={cn('burger-menu__nav-link', {
+                    'is-active': pathname === `/${lang}/team/mariya-vynnytska`,
+                  })}
                 >
-                  {lang === 'en' ? 'Mariya Vynntska' : 'Марія Винницька'}
+                  {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
                 </NavLink>
               </li>
               <li className='burger-menu__list-item'>
                 <NavLink
                   to={`/${lang}/team/iryna-royenko`}
                   onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/iryna-royenko`})}
+                  className={cn('burger-menu__nav-link', {
+                    'is-active': pathname === `/${lang}/team/iryna-royenko`,
+                  })}
                 >
                   {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
                 </NavLink>
@@ -132,7 +146,9 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 <NavLink
                   to={`/${lang}/team/maryna-yakhno`}
                   onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', { 'is-active': pathname === `/${lang}/team/maryna-yakhno`})}
+                  className={cn('burger-menu__nav-link', {
+                    'is-active': pathname === `/${lang}/team/maryna-yakhno`,
+                  })}
                 >
                   {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
                 </NavLink>

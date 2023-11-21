@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import MariyaVynnytskaPhoto from '/images/team/mvynnytska1-mobile.png';
+import MariyaVynnytskaPhoto from '/images/team/mvynnytska-mobile.png';
 
 export const MariyaVynnytska = () => {
   const { lang } = useParams();
@@ -10,7 +10,7 @@ export const MariyaVynnytska = () => {
           <div className='therapist__header'>
             <div className='therapist__description'>
               <h1 className='therapist__name'>
-                {lang === 'en' ? 'Mariya Vynntska' : 'Марія Вінницька'}
+                {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
               </h1>
               <div className='therapist__role'>
                 {lang === 'en' ? 'PSYCHOLOGIST' : 'ПСИХОЛОГ'}

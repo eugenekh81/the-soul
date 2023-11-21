@@ -11,7 +11,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       setTimeout(() => {
         document.removeEventListener('click', clickCheck);
       }, 300);
-    }
+    };
   }, [isTeamOpen]);
 
   return (
@@ -23,10 +23,9 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       <li>
         <NavLink
           className='team-list__link'
-          to={`/${lang}/team/oleksandra-shymanova`}
+          to={`/${lang}/team/olexandra-shymanova`}
         >
           {lang === 'en' ? 'Olexandra Shymanova' : 'Олександра Шиманова'}
-
         </NavLink>
       </li>
       <li>
@@ -34,26 +33,17 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
           className='team-list__link'
           to={`/${lang}/team/mariya-vynnytska`}
         >
-          {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Вінницька'}
-
+          {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className='team-list__link'
-          to={`/${lang}/team/iryna-royenko`}
-        >
+        <NavLink className='team-list__link' to={`/${lang}/team/iryna-royenko`}>
           {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
-
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className='team-list__link'
-          to={`/${lang}/team/maryna-yakhno`}
-        >
+        <NavLink className='team-list__link' to={`/${lang}/team/maryna-yakhno`}>
           {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
-
         </NavLink>
       </li>
     </ul>
@@ -63,4 +53,4 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
 DropDownList.propTypes = {
   isTeamOpen: PropTypes.bool,
   clickCheck: PropTypes.func,
-}
+};

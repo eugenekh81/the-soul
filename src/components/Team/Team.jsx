@@ -3,8 +3,8 @@ import './Team.scss';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import OleksandraShymanova from '/images/team/ashymanova-mobile.png';
-import MariyaVynnytska from '/images/team/mvynnytska1-mobile.png';
+import OlexandraShymanova from '/images/team/oshymanova-mobile.png';
+import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
 import IrynaRoyenko from '/images/team/iroyenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
 import { NavLink } from 'react-router-dom';
@@ -22,19 +22,19 @@ export const Team = () => {
             <Carousel.Item interval={3000}>
               <NavLink
                 className='team__person person'
-                to={`/${lang}/team/oleksandra-shymanova`}
+                to={`/${lang}/team/olexandra-shymanova`}
               >
                 <div className='person__image-container'>
                   <img
                     className='person__image'
-                    src={OleksandraShymanova}
+                    src={OlexandraShymanova}
                     alt='Team member'
                   />
                 </div>
 
                 <h3 className='person__name'>
                   {lang === 'en'
-                    ? 'Oleksandra Shymanova'
+                    ? 'Olexandra Shymanova'
                     : 'Олександра Шиманова'}
                 </h3>
 
@@ -69,7 +69,7 @@ export const Team = () => {
                 </div>
 
                 <h3 className='person__name'>
-                  {lang === 'en' ? 'Mariya Vynntska' : 'Марія Вінницька'}
+                  {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
                 </h3>
 
                 <p className='person__role'>
@@ -134,19 +134,19 @@ export const Team = () => {
           <Col sm={6} lg={3} className='team__person'>
             <NavLink
               className='person'
-              to={`/${lang}/team/oleksandra-shymanova`}
+              to={`/${lang}/team/olexandra-shymanova`}
             >
               <div className='person__image-container'>
                 <img
                   className='person__image'
-                  src={OleksandraShymanova}
+                  src={OlexandraShymanova}
                   alt='Team member'
                 />
               </div>
 
               <h3 className='person__name'>
                 {' '}
-                {lang === 'en' ? 'Oleksandra Shymanova' : 'Олександра Шиманова'}
+                {lang === 'en' ? 'Olexandra Shymanova' : 'Олександра Шиманова'}
               </h3>
 
               <p className='person__role'>
@@ -177,7 +177,7 @@ export const Team = () => {
               </div>
 
               <h3 className='person__name'>
-                {lang === 'en' ? 'Mariya Vynntska' : 'Марія Вінницька'}
+                {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
               </h3>
 
               <p className='person__role'>

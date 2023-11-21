@@ -7,7 +7,7 @@ export const HomeBanner = () => {
   const { lang } = useContext(LangContext);
   return (
     <>
-      <section className='home-hero'>
+      <section className='home-hero noselect'>
         <div className='home-hero__banner'></div>
         <div className='home-hero__text-container'>
           <h1 className='home-hero__title'>

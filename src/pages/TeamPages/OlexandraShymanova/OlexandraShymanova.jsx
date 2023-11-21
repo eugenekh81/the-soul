@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import OleksandraShymanovaPhoto from '/images/team/ashymanova-mobile.png';
+import OlexandraShymanovaPhoto from '/images/team/oshymanova-mobile.png';
 
-export const OleksandraShymanova = () => {
+export const OlexandraShymanova = () => {
   const { lang } = useParams();
   return (
     <section className='page__section page__section--therapist section team__page therapist'>
@@ -10,7 +10,7 @@ export const OleksandraShymanova = () => {
           <div className='therapist__header'>
             <div className='therapist__description'>
               <h1 className='therapist__name'>
-                {lang === 'en' ? 'Oleksandra Shymanova' : 'Олександра Шиманова'}
+                {lang === 'en' ? 'Olexandra Shymanova' : 'Олександра Шиманова'}
               </h1>
               <div className='therapist__role'>
                 {lang === 'en'
@@ -41,7 +41,7 @@ export const OleksandraShymanova = () => {
 
             <div className='therapist__image-container'>
               <img
-                src={OleksandraShymanovaPhoto}
+                src={OlexandraShymanovaPhoto}
                 alt='Therapist'
                 className='therapist__photo'
               />
