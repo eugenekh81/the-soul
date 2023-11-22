@@ -45,7 +45,9 @@ export const MentalState = () => {
         </Row>
       </div>
 
-      <div className='mental-state__container'>
+      <div className='mental-state__girls-pictures'>
+        <div className="container">
+          <div className="mental-state__container">
         <Row className='mental-state__girls-images mental-state__girls-images--swap-images'>
           <Col
             xs={12}
@@ -109,6 +111,8 @@ export const MentalState = () => {
             />
           </Col>
         </Row>
+          </div>
+        </div>
       </div>
     </section>
   );

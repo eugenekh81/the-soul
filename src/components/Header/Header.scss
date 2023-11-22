@@ -1,7 +1,7 @@
 @import '../../styles/utils/vars';
 @import '../../styles/utils/mixins';
 $teamListItemHeight: 30px;
-$teamListGap: 8px;
+$teamListGap: 0;
 
 .header {
   position: sticky;
@@ -15,7 +15,7 @@ $teamListGap: 8px;
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       background-color: $colorGoldLight;
       border-radius: 4px;
 
@@ -46,7 +46,8 @@ $teamListGap: 8px;
     }
   }
 
-  &__team-list {
+  &__team-list,
+  &__projects-list {
     top: 100%;
   }
 
@@ -60,16 +61,16 @@ $teamListGap: 8px;
   }
 }
 
-.team-list {
+.team-list,
+.projects-list {
   display: flex;
-  padding: 8px 16px;
+  // padding: 8px 0;
   gap: $teamListGap;
   align-items: start;
   flex-direction: column;
   position: absolute;
   background-color: $colorBeige;
   width: max-content;
-  height: 0;
   overflow: hidden;
   transition: all 0.3s linear;
   opacity: 0;
@@ -77,18 +78,35 @@ $teamListGap: 8px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
+  max-height: 0;
+
   &--open {
-    height: $teamListItemHeight * 4 + 8px * 2 + $teamListGap * 3;
+    // height: $teamListItemHeight * 4 + 8px * 2 + $teamListGap * 3;
     opacity: 1;
   }
 
+  &__item {
+    width: 100%;
+  }
+
   &__link {
+    padding: 4px 16px;
     display: flex;
     align-items: center;
     text-decoration: none;
     font-size: 16px;
     color: $colorDarkGreen;
     height: $teamListItemHeight;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover,
+    &.active {
+      background-color: $colorDarkGreen;
+      color: $colorBeige;
+
+
+    }
   }
 }
 
@@ -111,8 +129,7 @@ $teamListGap: 8px;
     gap: 60px;
   }
 
-
-   & .active-link {
+  & .active-link {
     position: relative;
 
     &::after {
@@ -125,5 +142,5 @@ $teamListGap: 8px;
       background-color: $colorGoldLight;
       width: 100%;
     }
-   }
+  }
 }

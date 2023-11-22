@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { useContext, useEffect } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
-export const DropDownList = ({ isTeamOpen, clickCheck }) => {
+export const DropDownListTeam = ({ isTeamOpen, clickCheck }) => {
   const { lang } = useContext(LangContext);
   useEffect(() => {
     return () => {
@@ -19,8 +19,11 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
       className={cn('header__team-list', 'team-list', {
         'team-list--open': isTeamOpen,
       })}
+      style={{
+        maxHeight: isTeamOpen ? `${30 * 4 + 8 * 2 + 8 * 3}px` : '0',
+      }}
     >
-      <li>
+      <li className='team-list__item'>
         <NavLink
           className='team-list__link'
           to={`/${lang}/team/olexandra-shymanova`}
@@ -28,7 +31,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
           {lang === 'en' ? 'Olexandra Shymanova' : 'Олександра Шиманова'}
         </NavLink>
       </li>
-      <li>
+      <li className='team-list__item'>
         <NavLink
           className='team-list__link'
           to={`/${lang}/team/mariya-vynnytska`}
@@ -36,12 +39,12 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
           {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
         </NavLink>
       </li>
-      <li>
+      <li className='team-list__item'>
         <NavLink className='team-list__link' to={`/${lang}/team/iryna-royenko`}>
           {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
         </NavLink>
       </li>
-      <li>
+      <li className='team-list__item'>
         <NavLink className='team-list__link' to={`/${lang}/team/maryna-yakhno`}>
           {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
         </NavLink>
@@ -50,7 +53,7 @@ export const DropDownList = ({ isTeamOpen, clickCheck }) => {
   );
 };
 
-DropDownList.propTypes = {
+DropDownListTeam.propTypes = {
   isTeamOpen: PropTypes.bool,
   clickCheck: PropTypes.func,
 };

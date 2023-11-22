@@ -1,4 +1,4 @@
-import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery/MeetingWithTheSoulGallery.jsx';
+import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery';
 
 export const MeetingWIthTheSoulContent = () => {
   return (

@@ -1,5 +1,5 @@
 import './MeetingWithTheSoulPage.scss';
-import { MeetingWithTheSoulBanner } from '../../components/MeetingWithTheSoulBanner/MeetingWithTheSoulBanner';
+import { MeetingWithTheSoulBanner } from '../../components/MeetingWithTheSoulBanner';
 import { Partners } from '../../components/Partners/Partners';
 import { MeetingWIthTheSoulContent } from '../../MeetingWithTheSoulContent/MeetingWIthTheSoulContent';
 

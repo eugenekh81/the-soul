@@ -40,6 +40,10 @@
   }
 
   &__description-content {
+    &:not(:last-child) {
+      margin: 0 0 40px;
+    }
+
     padding: 24px 28px;
 
     background-color: $colorBeige;
@@ -60,29 +64,69 @@
   }
 
   &__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    margin: 0 0 40px;
+    display: none;
+
+    @include onTablet--m {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
+
+  &__carousel {
+    margin: 0 0 40px;
+
+    @include onTablet--m {
+      display: none;
+    }
+  }
+
+  &__carousel.carousel.carousel-dark .carousel-indicators > button {
+    background-color: $colorBeige;
   }
 
   &__gallery-item {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    gap: 26px;
+
+    @include onTablet--m {
+      gap: 20px;
+      width: 210px;
+    }
+
+    @include onDesktop {
+      width: 270px;
+      gap: 30px;
+    }
+
+    @include onDesktop--xl {
+      width: 330px;
+    }
+
+    @include onDesktop--xxl {
+      width: 400px;
+    }
     justify-content: space-between;
     overflow: hidden;
 
-    // background-color: $colorBeige;
+    &--carousel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      margin: 0 auto;
+      width: 300px;
+      height: 400px;
+    }
   }
 
   &__gallery-image {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    max-height: 100%;
+    object-fit: cover;
     object-position: center;
     border-radius: 24px;
-
   }
 }
