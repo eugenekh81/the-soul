@@ -28,8 +28,17 @@ const router = createBrowserRouter([
             element: <HomePage />,
           },
           {
-            path: 'ukrainian-circle',
-            element: <UkrainianCirclePage />,
+            path: 'projects',
+            children: [
+              {
+                path: 'ukrainian-circle',
+                element: <UkrainianCirclePage />,
+              },
+              {
+                path: 'meeting-with-the-soul',
+                element: <MeetingWithTheSoulPage />,
+              },
+            ],
           },
           {
             path: 'team',
@@ -52,15 +61,7 @@ const router = createBrowserRouter([
               },
             ],
           },
-          {
-            path: 'projects',
-            children: [
-              {
-                path: 'meeting-with-the-soul',
-                element: <MeetingWithTheSoulPage />,
-              },
-            ],
-          },
+
           {
             path: '*',
             element: <ErrorPage />,

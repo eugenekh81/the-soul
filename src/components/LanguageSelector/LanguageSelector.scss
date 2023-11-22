@@ -4,6 +4,20 @@
 .language-selector {
   display: none;
 
+  &--burger {
+    display: flex;
+    gap: 10px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+
+    & button {
+      color: $colorDarkGreen;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+
   @include onTablet--m {
     display: flex;
     gap: 8px;

@@ -1,9 +1,11 @@
+import PropTypes from 'prop-types';
+
 import './LanguageSelector.scss';
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 import cn from 'classnames';
 
-export const LanguageSelector = () => {
+export const LanguageSelector = ({ variant }) => {
   const { lang, setLang } = useContext(LangContext);
 
   const languageToggler = () => {
@@ -14,7 +16,11 @@ export const LanguageSelector = () => {
     setLang('en');
   };
   return (
-    <div className='language-selector'>
+    <div
+      className={cn('language-selector', {
+        'language-selector--burger': variant === 'burger',
+      })}
+    >
       <button
         className={cn('language-selector__button', {
           'language-selector__button--active': lang === 'en',
@@ -48,4 +54,8 @@ export const LanguageSelector = () => {
       </button>
     </div>
   );
+};
+
+LanguageSelector.propTypes = {
+  variant: PropTypes.string,
 };

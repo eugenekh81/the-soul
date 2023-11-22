@@ -73,7 +73,8 @@ export const Header = () => {
               <NavLink
                 to='/en/ukrainian-circle'
                 className={cn('header__nav-link', {
-                  'active-link': pathname === `/${lang}/ukrainian-circle`,
+                  'active-link':
+                    pathname === `/${lang}/projects/ukrainian-circle`,
                 })}
               >
                 {lang === 'en' ? 'Ukrainian Circle' : 'Українське Коло'}

@@ -14,7 +14,7 @@ export const Projects = () => {
           {lang === 'en' ? 'Projects' : 'Проекти'}
         </h2>
         <NavLink
-          to={`/${lang}/ukrainian-circle`}
+          to={`/${lang}/projects/ukrainian-circle`}
           className='projects__uc-container'
         >
           <Hero />
@@ -24,7 +24,8 @@ export const Projects = () => {
           {lang === 'en' ? (
             <>
               Our primary project that covers all areas of everyday life.
-              <br /><br />
+              <br />
+              <br />
               It spans over 9 weeks in the form of online meetings.
               <br />
               <br />
@@ -36,18 +37,20 @@ export const Projects = () => {
             <>
               Основна програма, що охоплює всі сфери життя та допомагає
               відновили ментальне здоров’я українців.
-              <br /><br />
+              <br />
+              <br />
               Програма проходить онлайн та триває 9 тижнів.
               <br />
               <br />
               Пілотний проект був успішно реалізований влітку 2023, наступний
-              запланований у 2024 році. Ми закликаємо вас записатися та стати учасником Програми
+              запланований у 2024 році. Ми закликаємо вас записатися та стати
+              учасником Програми
             </>
           )}
         </p>
 
         <NavLink
-          to={`/${lang}/ukrainian-circle`}
+          to={`/${lang}/projects/ukrainian-circle`}
           className='button projects__uc-button-more'
         >
           {lang === 'en'

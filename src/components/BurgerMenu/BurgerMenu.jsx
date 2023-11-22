@@ -5,9 +5,10 @@ import cn from 'classnames';
 import { LangContext } from '../../context/LangContextProvider';
 import { useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { LanguageSelector } from '../LanguageSelector/';
 
 export const BurgerMenu = ({ isOpen, onClose }) => {
-  const { lang, setLang } = useContext(LangContext);
+  const { lang } = useContext(LangContext);
   const { pathname } = useLocation();
 
   return (
@@ -45,31 +46,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
       </div>
 
       <div className='burger-menu__content'>
-        <div className='burger-menu__lang-selector'>
-          <button
-            className={cn('burger-menu__lang-btn', {
-              'is-active--lang': lang === 'en',
-            })}
-            onClick={() => {
-              setLang('en');
-              /* onClose(); */
-            }}
-          >
-            EN
-          </button>
-          {' | '}
-          <button
-            className={cn('burger-menu__lang-btn', {
-              'is-active--lang': lang === 'ua',
-            })}
-            onClick={() => {
-              setLang('ua');
-              /* onClose(); */
-            }}
-          >
-            UA
-          </button>
-        </div>
+        <LanguageSelector variant='burger' />
 
         <div className='container'>
           <ul className='burger-menu__menu-list'>
@@ -86,10 +63,11 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
             </li>
             <li className='burger-menu__list-item'>
               <NavLink
-                to={`/${lang}/ukrainian-circle`}
+                to={`/${lang}/projects/ukrainian-circle`}
                 onClick={() => onClose()}
                 className={cn('burger-menu__nav-link', {
-                  'is-active': pathname === `/${lang}/ukrainian-circle`,
+                  'is-active':
+                    pathname === `/${lang}/projects/ukrainian-circle`,
                 })}
               >
                 {lang === 'en' ? 'Ukrainian circle' : 'Українське коло'}
