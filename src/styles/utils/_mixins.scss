@@ -4,7 +4,6 @@
   }
 }
 
-
 @mixin hero--mobile-big {
   @media (min-width: 410px) {
     @content;
