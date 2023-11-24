@@ -3,13 +3,15 @@ import './BurgerMenu.scss';
 import logo from '/images/logo/header-logo-4--mobile.png';
 import cn from 'classnames';
 import { LangContext } from '../../context/LangContextProvider';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { LanguageSelector } from '../LanguageSelector/';
 
 export const BurgerMenu = ({ isOpen, onClose }) => {
   const { lang } = useContext(LangContext);
   const { pathname } = useLocation();
+  const [isTeamOpen, setIsTeamOpen] = useState(false);
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
 
   return (
     <aside className={cn('burger-menu', { 'burger-menu--open': isOpen })}>
@@ -26,6 +28,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               >
                 <img src={logo} alt='The Soul' />
               </NavLink>
+              <LanguageSelector variant='burger' />
               <div className='top-actions__buttons'>
                 <a
                   href='mailto:contact@thesoul.com.ua'
@@ -46,8 +49,6 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
       </div>
 
       <div className='burger-menu__content'>
-        <LanguageSelector variant='burger' />
-
         <div className='container'>
           <ul className='burger-menu__menu-list'>
             <li className='burger-menu__list-item'>
@@ -61,77 +62,119 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 {lang === 'en' ? 'Home' : 'Головна'}
               </NavLink>
             </li>
-            <li className='burger-menu__list-item'>
-              <NavLink
-                to={`/${lang}/projects/ukrainian-circle`}
-                onClick={() => onClose()}
-                className={cn('burger-menu__nav-link', {
-                  'is-active':
-                    pathname === `/${lang}/projects/ukrainian-circle`,
-                })}
-              >
-                {lang === 'en' ? 'Ukrainian circle' : 'Українське коло'}
-              </NavLink>
+
+            <li
+              className={cn('burger-menu__list-item', 'burger-menu__dropdown', {
+                'burger-menu__dropdown--open': isProjectsOpen,
+              })}
+              onClick={() => setIsProjectsOpen(!isProjectsOpen)}
+            >
+              <button type='button' className='burger-menu__nav-button'>
+                {lang === 'en' ? 'Projects' : 'Проекти'}
+                <svg
+                  className={cn('accordeon-icon', {
+                    'accordeon-icon--open': isProjectsOpen,
+                  })}
+                >
+                  <use href='/images/icons/right-arrow.svg#rightArrow'></use>
+                </svg>
+              </button>
+              <ul className='burger-menu__menu-list'>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/projects/ukrainian-circle`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active':
+                        pathname === `/${lang}/projects/ukrainian-circle`,
+                    })}
+                  >
+                    {lang === 'en' ? 'Ukrainian circle' : 'Українське коло'}
+                  </NavLink>
+                </li>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/projects/meetings-with-the-soul`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active':
+                        pathname === `/${lang}/projects/meetings-with-the-soul`,
+                    })}
+                  >
+                    {lang === 'en'
+                      ? 'Meetings with The Soul'
+                      : 'Зустрічі з Душею'}
+                  </NavLink>
+                </li>
+              </ul>
             </li>
-            <li className='burger-menu__list-item'>
-              <NavLink
-                to='#'
-                className={
-                  'burger-menu__nav-link burger-menu__nav-link--inactive'
-                }
-              >
-                {lang === 'en' ? 'Our team:' : 'Наша команда:'}
-              </NavLink>
+            <li
+              className={cn('burger-menu__list-item', 'burger-menu__dropdown', {
+                'burger-menu__dropdown--open': isTeamOpen,
+              })}
+              onClick={() => setIsTeamOpen(!isTeamOpen)}
+            >
+              <button type='button' className='burger-menu__nav-button'>
+                {lang === 'en' ? 'Team' : 'Команда'}
+                <svg
+                  className={cn('accordeon-icon', {
+                    'accordeon-icon--open': isTeamOpen,
+                  })}
+                >
+                  <use href='/images/icons/right-arrow.svg#rightArrow'></use>
+                </svg>
+              </button>
+              <ul className='burger-menu__menu-list'>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/team/olexandra-shymanova`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active':
+                        pathname === `/${lang}/team/olexandra-shymanova`,
+                    })}
+                  >
+                    {lang === 'en'
+                      ? 'Olexandra Shymanova'
+                      : 'Олександра Шиманова'}
+                  </NavLink>
+                </li>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/team/mariya-vynnytska`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active':
+                        pathname === `/${lang}/team/mariya-vynnytska`,
+                    })}
+                  >
+                    {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
+                  </NavLink>
+                </li>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/team/iryna-royenko`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active': pathname === `/${lang}/team/iryna-royenko`,
+                    })}
+                  >
+                    {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
+                  </NavLink>
+                </li>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/team/maryna-yakhno`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active': pathname === `/${lang}/team/maryna-yakhno`,
+                    })}
+                  >
+                    {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
+                  </NavLink>
+                </li>
+              </ul>
             </li>
-            <ul className='burger-menu__menu-list'>
-              <li className='burger-menu__list-item'>
-                <NavLink
-                  to={`/${lang}/team/olexandra-shymanova`}
-                  onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', {
-                    'is-active':
-                      pathname === `/${lang}/team/olexandra-shymanova`,
-                  })}
-                >
-                  {lang === 'en'
-                    ? 'Olexandra Shymanova'
-                    : 'Олександра Шиманова'}
-                </NavLink>
-              </li>
-              <li className='burger-menu__list-item'>
-                <NavLink
-                  to={`/${lang}/team/mariya-vynnytska`}
-                  onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', {
-                    'is-active': pathname === `/${lang}/team/mariya-vynnytska`,
-                  })}
-                >
-                  {lang === 'en' ? 'Mariya Vynnytska' : 'Марія Винницька'}
-                </NavLink>
-              </li>
-              <li className='burger-menu__list-item'>
-                <NavLink
-                  to={`/${lang}/team/iryna-royenko`}
-                  onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', {
-                    'is-active': pathname === `/${lang}/team/iryna-royenko`,
-                  })}
-                >
-                  {lang === 'en' ? 'Iryna Royenko' : 'Ірина Роєнко'}
-                </NavLink>
-              </li>
-              <li className='burger-menu__list-item'>
-                <NavLink
-                  to={`/${lang}/team/maryna-yakhno`}
-                  onClick={() => onClose()}
-                  className={cn('burger-menu__nav-link', {
-                    'is-active': pathname === `/${lang}/team/maryna-yakhno`,
-                  })}
-                >
-                  {lang === 'en' ? 'Maryna Yakhno' : 'Марина Яхно'}
-                </NavLink>
-              </li>
-            </ul>
           </ul>
 
           <div className='burger-menu__social social'>

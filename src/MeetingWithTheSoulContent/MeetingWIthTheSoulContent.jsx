@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery';
 import { LangContext } from '../context/LangContextProvider';
+import { MeetingWithTheSoulReviews } from '../components/MeetingWithTheSoulReviews/MeetingWithTheSoulReviews';
 
 export const MeetingWIthTheSoulContent = () => {
   const { lang } = useContext(LangContext);
@@ -35,6 +36,8 @@ export const MeetingWIthTheSoulContent = () => {
               : 'Серед них - дослідження архетипу Афіни в собі (медитативна практика), зʼєднання зі своїми цілями та бажаннями (розстановочна вправа), подолання розколу життя на ДО та ПІСЛЯ та подолання розколу в душі після травми тощо. Обговорювали почуття та емоції, зміни що відбуваються довкола та зміни, що відбуваються у кожного в душі.'}
           </p>
         </div>
+
+        <MeetingWithTheSoulReviews />
 
         <div className='meeting-soul__description-content meeting-soul__description-content--dark-green'>
           <p className='meeting-soul__description'>

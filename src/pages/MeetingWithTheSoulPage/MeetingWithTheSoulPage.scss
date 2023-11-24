@@ -41,7 +41,11 @@
 
   &__description-content {
     &:not(:last-child) {
-      margin: 0 0 40px;
+      margin: 0 0 24px;
+
+      @include onTablet--m {
+        margin: 0 0 40px;
+      }
     }
 
     padding: 24px 28px;
@@ -62,7 +66,6 @@
     font-size: 24px;
     font-weight: 500;
     text-align: justify;
-
   }
 
   &__gallery {

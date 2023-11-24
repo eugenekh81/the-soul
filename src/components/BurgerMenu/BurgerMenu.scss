@@ -81,16 +81,20 @@
   &__list-item {
     color: $colorDarkGreen;
     display: flex;
+    flex-direction: column;
+    gap: 14px;
   }
 
-  &__nav-link {
+  &__nav-link,
+  &__nav-button {
     padding: 6px 14px;
     border: 1px solid transparent;
     border-radius: 50px;
     color: $colorDarkGreen;
     display: flex;
+
     height: 100%;
-    width: max-content;
+    width: 100%;
 
     transition: all 0.3s ease-in-out;
 
@@ -103,6 +107,26 @@
       border: none;
       cursor: none;
       pointer-events: none;
+    }
+
+  }
+
+  &__nav-button {
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+  }
+
+  &__dropdown {
+    position: relative;
+    cursor: pointer;
+    max-height: 42px;
+    overflow: hidden;
+
+    transition: max-height 0.3s ease-in-out;
+
+    &--open {
+      max-height: 300px;
     }
   }
 
@@ -131,5 +155,15 @@
     width: 8px;
     background-color: $colorDarkGreen;
     border-radius: 50%;
+  }
+}
+
+.accordeon-icon {
+  height: 16px;
+  width: 14px;
+  transition: transform 0.3s ease-in-out;
+
+  &--open {
+    transform: rotate(90deg);
   }
 }

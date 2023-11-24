@@ -35,9 +35,9 @@ export const DropDownListProjects = ({ isProjectsOpen, clickCheck }) => {
       <li className='projects-list__item'>
         <NavLink
           className='projects-list__link'
-          to={`/${lang}/projects/meeting-with-the-soul`}
+          to={`/${lang}/projects/meetings-with-the-soul`}
         >
-          {lang === 'en' ? 'Meeting With The Soul' : 'Зустрічі з Душею'}
+          {lang === 'en' ? 'Meetings with The Soul' : 'Зустрічі з Душею'}
         </NavLink>
       </li>
     </ul>

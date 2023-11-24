@@ -7,7 +7,7 @@ export const MeetingWithTheSoulBanner = () => {
     <section className='meeting-soul'>
       <div className='meeting-soul__banner'>
         <h1 className='meeting-soul__main-title'>
-          {lang === 'en' ? <>Meeting with the Soul</> : <>Зустрічі з Душею</>}
+          {lang === 'en' ? <>Meetings with The Soul</> : <>Зустрічі з Душею</>}
         </h1>
       </div>
     </section>

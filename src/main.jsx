@@ -35,7 +35,7 @@ const router = createBrowserRouter([
                 element: <UkrainianCirclePage />,
               },
               {
-                path: 'meeting-with-the-soul',
+                path: 'meetings-with-the-soul',
                 element: <MeetingWithTheSoulPage />,
               },
             ],
