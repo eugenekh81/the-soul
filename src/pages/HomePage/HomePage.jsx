@@ -17,7 +17,7 @@ export const HomePage = () => {
       <Helmet>
         <html lang={lang} />
         <title>
-          {lang === 'en' ? 'The Soul | Home' : 'The Soul | Домашня'}
+          {lang === 'en' ? 'The Soul | Home' : 'The Soul | Головна'}
         </title>
         <meta
           name='description'
