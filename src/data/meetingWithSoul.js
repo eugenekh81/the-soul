@@ -12,6 +12,7 @@ import galleryItem11 from '/images/projects/meeting-with-the-soul-gallery/galler
 import galleryItem12 from '/images/projects/meeting-with-the-soul-gallery/gallery-item-12.jpg';
 import galleryItem13 from '/images/projects/meeting-with-the-soul-gallery/gallery-item-13.jpg';
 import galleryItem14 from '/images/projects/meeting-with-the-soul-gallery/gallery-item-14.jpg';
+import galleryItem15 from '/images/projects/meeting-with-the-soul-gallery/gallery-item-15.jpg';
 
 export const meetingWithSoul = [
   {
@@ -40,7 +41,7 @@ export const meetingWithSoul = [
   },
   {
     id: 7,
-    images: [galleryItem9, galleryItem13],
+    images: [galleryItem15, galleryItem13],
   },
   {
     id: 8,

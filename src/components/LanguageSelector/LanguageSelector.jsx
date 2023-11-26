@@ -15,6 +15,7 @@ export const LanguageSelector = ({ variant }) => {
 
     setLang('en');
   };
+
   return (
     <div
       className={cn('language-selector', {
