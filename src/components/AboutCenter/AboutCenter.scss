@@ -34,17 +34,27 @@
     display: flex;
     flex-shrink: 0.2;
     align-items: center;
+    overflow: hidden;
+
+    border-radius: 24px;
+    // background-color: $colorBeige;
+    height: max-content;
 
     @include onTablet--m {
       margin: 0 auto;
-      width: 400px;
+      max-width: 400px;
     }
   }
   & img {
-    border-radius: 24px;
-    padding: 6px;
-    background-color: $colorBeige;
+    display: flex;
     object-fit: cover;
     object-position: center;
+    transform: scale(1);
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

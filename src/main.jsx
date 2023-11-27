@@ -5,6 +5,7 @@ import './styles/index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Root } from '/src/routes/Root';
 import { HomePage } from './pages/HomePage/';
+import { AboutUsPage } from './pages/AboutUsPage/';
 import { UkrainianCirclePage } from './pages/UkrainianCirlcePage/';
 import { ErrorPage } from './pages/ErrorPage/';
 import { OlexandraShymanova } from './pages/TeamPages/OlexandraShymanova';
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <HomePage />,
+          },
+          {
+            path: 'about-us',
+            element: <AboutUsPage />,
           },
           {
             path: 'projects',
