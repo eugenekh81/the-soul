@@ -62,6 +62,17 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 {lang === 'en' ? 'Home' : 'Головна'}
               </NavLink>
             </li>
+            <li className='burger-menu__list-item'>
+              <NavLink
+                to={`/${lang}/about-us`}
+                onClick={() => onClose()}
+                className={cn('burger-menu__nav-link', {
+                  'is-active': pathname === `/${lang}/about-us`,
+                })}
+              >
+                {lang === 'en' ? 'About Us' : 'Про нас'}
+              </NavLink>
+            </li>
 
             <li
               className={cn('burger-menu__list-item', 'burger-menu__dropdown', {

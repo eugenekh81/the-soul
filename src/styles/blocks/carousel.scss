@@ -14,7 +14,7 @@
   &-dark &-indicators [data-bs-target] {
     height: 8px;
     width: 8px;
-    // background-color: $colorDarkGreen;
+    background-color: $colorDarkGreen;
     border-radius: 50%;
   }
 
@@ -52,11 +52,25 @@
   width: 16px;
 
   color: $colorBeige;
+
   // filter: none;
 }
 
-.carousel.slide.carousel-dark button.active {
-  border-radius: 450%;
-  width: 12px;
+.carousel.slide.carousel-dark button,
+.carousel.slide button {
+  width: 8px;
   height: 8px;
+  background-color: $colorDarkGreen;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel.slide.carousel-dark.theme-light button {
+  background-color: $colorBeige;
+}
+
+.carousel.slide.carousel-dark button.active {
+  width: 16px;
+  border-radius: 44%;
+  transition: all 0.3s ease-in-out;
 }

@@ -132,7 +132,15 @@ export const Header = () => {
 
             <nav className='nav'>
               <NavLink
-                to='/en/ukrainian-circle'
+                to={`/${lang}/about-us`}
+                className={cn('header__nav-link', {
+                  'active-link': pathname.includes('about-us'),
+                })}
+              >
+                {lang === 'en' ? 'About Us' : 'Про нас'}
+              </NavLink>
+              <NavLink
+                to={`/${lang}/ukrainian-circle`}
                 className={cn('header__nav-link', {
                   'active-link': pathname.includes('projects'),
                 })}

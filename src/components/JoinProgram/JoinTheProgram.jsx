@@ -8,7 +8,7 @@ export const JoinTheProgram = () => {
     <section className='page__section section join-the-program'>
       <div className='container'>
         <h2 className='section__title block-centered'>
-          {lang === 'en' ? 'JOIN THE PROGRAM' : 'Приєднатись до Програми'}
+          {lang === 'en' ? 'JOIN' : 'Приєднатись'}
 
         </h2>
 

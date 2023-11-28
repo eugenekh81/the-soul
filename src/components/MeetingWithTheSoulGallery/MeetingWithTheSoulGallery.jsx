@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { meetingWithSoul } from '../../data/meetingWithSoul';
-// import { MeetingWithTheSoulGalleryItem } from '../MeetingWithTheSoulGalleryItem';
+import { MeetingWithTheSoulGalleryItem } from '../MeetingWithTheSoulGalleryItem';
 
 export const MeetingWithTheSoulGallery = () => {
   return (
@@ -22,12 +22,6 @@ export const MeetingWithTheSoulGallery = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-
-      {/* <ul className='meeting-soul__gallery'>
-        {meetingWithSoul.map((item) => (
-          <MeetingWithTheSoulGalleryItem key={item.id} images={item.images} />
-        ))}
-      </ul> */}
 
       <Carousel
         variant='dark'
@@ -52,32 +46,20 @@ export const MeetingWithTheSoulGallery = () => {
         <Carousel.Item className='meeting-soul__carousel-item--desktop'>
           <div className='meeting-soul__carousel-items-container--desktop'>
             {meetingWithSoul.slice(3, 6).map((item) => (
-              <div className='meeting-soul__gallery-item' key={item.id}>
-                {item.images.map((image) => (
-                  <img
-                    key={image}
-                    src={image}
-                    className='meeting-soul__gallery-image'
-                    alt='gallery photo'
-                  />
-                ))}
-              </div>
+              <MeetingWithTheSoulGalleryItem
+                key={item.images[0]}
+                images={item.images}
+              />
             ))}
           </div>
         </Carousel.Item>
         <Carousel.Item className='meeting-soul__carousel-item--desktop'>
           <div className='meeting-soul__carousel-items-container--desktop'>
             {meetingWithSoul.slice(6, 9).map((item) => (
-              <div className='meeting-soul__gallery-item' key={item.id}>
-                {item.images.map((image) => (
-                  <img
-                    key={image}
-                    src={image}
-                    className='meeting-soul__gallery-image'
-                    alt='gallery photo'
-                  />
-                ))}
-              </div>
+              <MeetingWithTheSoulGalleryItem
+                key={item.images[0]}
+                images={item.images}
+              />
             ))}
           </div>
         </Carousel.Item>

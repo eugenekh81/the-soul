@@ -24,7 +24,7 @@
   & .carousel {
     margin: 0 auto;
     width: 80%;
-    height: 374px;
+    height: 360px;
     display: flex;
     align-items: start;
 
@@ -33,7 +33,6 @@
     }
 
     &-indicators {
-      bottom: -15px;
 
       [data-bs-target] {
         background-color: $colorDarkGreen;
@@ -41,11 +40,11 @@
     }
 
     & > .carousel-control-prev {
-      top: calc((374px / 2) - 30px);
+      top: calc((360px / 2) - 30px);
     }
 
     & > .carousel-control-next {
-      top: calc((374px / 2) - 30px);
+      top: calc((360px / 2) - 30px);
     }
   }
 

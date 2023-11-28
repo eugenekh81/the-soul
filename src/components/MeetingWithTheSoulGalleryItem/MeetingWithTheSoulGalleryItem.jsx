@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export const MeetingWithTheSoulGalleryItem = ({ images }) => {
   console.log(images);
   return (
-    <li className='meeting-soul__gallery-item'>
+    <div className='meeting-soul__gallery-item'>
       {images.map((image) => (
         <img
           key={image}
@@ -12,7 +12,7 @@ export const MeetingWithTheSoulGalleryItem = ({ images }) => {
           alt='gallery photo'
         />
       ))}
-    </li>
+    </div>
   );
 };
 
