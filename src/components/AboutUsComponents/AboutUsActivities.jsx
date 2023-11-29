@@ -20,7 +20,7 @@ export const AboutUsActivities = () => {
               : 'До війни ми працювали як Центр психології та проводили багато психологічних заходів різного формату в Києві:'}
           </p>
 
-          <AboutUsGallery images={activities.meetings} slides={4} />
+          <AboutUsGallery images={activities.meetings} />
 
           <p className='about-us__activities-text'>
             {lang === 'en'
@@ -42,7 +42,7 @@ export const AboutUsActivities = () => {
               : 'Ми розпочали нашу співпрацю з міжнародними організаціями. Долучились до навчальних програм з опрацювання горя та втрати (EKR), брали участь у Колоквіумі, присвяченому психічному здоров&apos;ю українців перед аудиторію з США, Нової Зеландії, Малайзії, Сінгапуру та інших країн світу.'}
           </p>
 
-          <AboutUsGallery images={activities.conferences} slides={3} />
+          <AboutUsGallery images={activities.conferences} />
         </div>
       </div>
     </section>

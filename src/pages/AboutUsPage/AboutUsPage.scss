@@ -47,24 +47,55 @@
   &__description {
     &-content {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+
       gap: 30px;
+
+      @include onTablet--m {
+        align-items: stretch;
+        flex-direction: row;
+      }
+
+      @include onDesktop {
+      }
+
+      @include onDesktop--xl {
+      }
     }
 
     &-text-container {
+      padding: 0 12px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include onTablet--s {
+        padding: 0;
+      }
     }
 
     &-text {
-      font-size: 24px;
+      font-size: 16px;
       line-height: 1.25;
       text-align: justify;
+
+      @include onDesktop {
+        font-size: 20px;
+      }
+
+      @include onDesktop--xxl {
+        font-size: 24px;
+      }
     }
 
     &-documents-container {
-      width: 400px;
+      width: 200px;
       flex-shrink: 0;
+
+      @include onDesktop {
+        width: 400px;
+      }
     }
 
     &-documents {
@@ -75,12 +106,43 @@
   &__goal {
     &-content {
       display: flex;
-      flex-direction: row;
-      gap: 40px;
+      flex-direction: column;
+      gap: 24px;
+
+      align-items: center;
+      justify-content: center;
+
+      @include onTablet--s {
+        // flex-direction: row;
+      }
+
+      @include onTablet--m {
+        display: initial;
+      }
+
+      @include onDesktop {
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+
+        gap: 40px;
+      }
     }
 
     &-img-container {
       flex-shrink: 0;
+      width: 200px;
+      @include onTablet--s {
+        margin: 0 24px 0 0;
+        float: left;
+        width: 180px;
+      }
+
+      @include onDesktop {
+        margin: 0;
+        float: none;
+        width: 400px;
+      }
     }
 
     &-img {
@@ -88,7 +150,7 @@
     }
 
     &-text-container {
-      display: flex;
+      // display: flex;
       flex-direction: column;
       gap: 20px;
 
@@ -96,8 +158,18 @@
     }
 
     &-text {
-      font-size: 24px;
+      margin: 0 0 24px;
+
+      font-size: 16px;
       line-height: 1.25;
+
+      @include onDesktop {
+        font-size: 20px;
+      }
+
+      @include onDesktop--xl {
+        font-size: 24px;
+      }
     }
   }
 
@@ -106,34 +178,124 @@
     }
 
     &-text {
-      margin: 0 0 24px;
-
-      font-size: 24px;
+      font-size: 16px;
       line-height: 1.25;
+      text-align: justify;
+
+      @include onDesktop {
+        font-size: 20px;
+      }
+
+      @include onDesktop--xl {
+        font-size: 24px;
+      }
+
+      margin: 0 0 24px;
 
       &--last {
         margin: 0;
       }
     }
+
     &-carousel {
+      &--mobile {
+        display: block;
+
+        @include onTablet--m {
+          display: none;
+        }
+      }
+
+      &--tablet-m {
+        display: none;
+        @include onTablet--m {
+          display: block;
+        }
+
+        @include onDesktop {
+          display: none;
+        }
+      }
+
+      &--desktop {
+        display: none;
+
+        @include onDesktop {
+          display: block;
+        }
+      }
+
       &-item-content {
         margin: 0 auto;
-        max-width: 1040px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+
+        width: 260px;
+
+        @include onTablet--s {
+          width: 320px;
+        }
+
+        @include onTablet--m {
+          width: 100%;
+          margin: 0;
+          display: flex;
+          padding: 0 20px
+        }
+
+        @include onDesktop {
+          max-width: 1040px;
+          margin: 0 auto;
+        }
+
+
+        @include onDesktop--xl {
+          max-width: 1200px;
+        }
+
+        @include onDesktop--xxl {
+          padding: 0;
+          max-width: 1200px;
+        }
       }
 
       &-item-img {
+        margin: 0 auto;
         border-radius: 24px;
-        height: 200px;
+        height: 160px;
+
+        @include onTablet--s {
+          height: 190px;
+        }
+
+        @include onTablet--m {
+          margin: 0;
+        }
+
+        @include onDesktop {
+          height: 175px;
+        }
+
+        @include onDesktop--xl {
+          height: 200px;
+        }
+
+        @include onDesktop--xxl {
+          height: 240px;
+        }
+
+
       }
     }
   }
 
   &__gallery {
-    // margin: 0 0 24px;
     padding: 50px 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &__plans {

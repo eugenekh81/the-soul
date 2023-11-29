@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import documents from '/images/about-us/about-us--documents.jpg';
 import { LangContext } from '../../context/LangContextProvider';
+import { NavLink } from 'react-router-dom';
 
 export const AboutUsDescription = () => {
   const { lang } = useContext(LangContext);
@@ -26,9 +27,52 @@ export const AboutUsDescription = () => {
                 : 'З 2023 року ми працюємо як Громадська організація \'Український Центр психології "Душа"\'.'}
             </p>
             <p className='about-us__description-text'>
-              {lang === 'en'
-                ? 'Our team consists of 4 psychologists - Oleksandra Shymanova, Maria Vynnytska, Marina Yakhno, and Irina Royenko. We are located in different parts of the world - Alexandra in Belgium, Maria in Singapore, Marina and Irina are both in Ukraine. Regardless, we all work together, united by a common goal and mission.'
-                : 'В нашій команді 4 психологи - Олександра Шиманова, Марія Винницька, Марина Яхно та Ірина Роєнко. Всі ми знаходимось в різних кінцях світу - Олександра - Бельгія, Марія - Сінгапур, Марина та Ірина - Україна, але працюємо разом, обʼєднані однією метою та місією.'}
+              {lang === 'en' ? (
+                <>
+                  Our team consists of 4 psychologists -{' '}
+                  <NavLink to={`/${lang}/team/olexandra-shymanova`}>
+                    Olexandra Shymanova
+                  </NavLink>
+                  ,{' '}
+                  <NavLink to={`/${lang}/team/mariya-vynnytska`}>
+                    Mariya Vynnytska
+                  </NavLink>
+                  ,{' '}
+                  <NavLink to={`/${lang}/team/maryna-yakhno`}>
+                    Maryna Yakhno
+                  </NavLink>
+                  , and{' '}
+                  <NavLink to={`/${lang}/team/iryna-Royenko`}>
+                    Irina Royenko
+                  </NavLink>
+                  . We are located in different parts of the world - Alexandra
+                  in Belgium, Maria in Singapore, Marina and Irina are both in
+                  Ukraine. Regardless, we all work together, united by a common
+                  goal and mission.
+                </>
+              ) : (
+                <>
+                  В нашій команді 4 психологи -{' '}
+                  <NavLink to={`/${lang}/team/olexandra-shymanova`}>
+                    Олександра Шиманова
+                  </NavLink>
+                  ,{' '}
+                  <NavLink to={`/${lang}/team/mariya-vynnytska`}>
+                    Марія Винницька
+                  </NavLink>
+                  ,{' '}
+                  <NavLink to={`/${lang}/team/maryna-yakhno`}>
+                    Марина Яхно
+                  </NavLink>{' '}
+                  та{' '}
+                  <NavLink to={`/${lang}/team/iryna-Royenko`}>
+                    Ірина Роєнко
+                  </NavLink>
+                  . Всі ми знаходимось в різних кінцях світу - Олександра -
+                  Бельгія, Марія - Сінгапур, Марина та Ірина - Україна, але
+                  працюємо разом, обʼєднані однією метою та місією.
+                </>
+              )}
             </p>
           </div>
           <div className='about-us__description-documents-container'>
