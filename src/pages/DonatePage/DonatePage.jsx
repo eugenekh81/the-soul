@@ -18,7 +18,7 @@ export const DonatePage = () => {
           <div className='donate-page__text-container'>
             <p className='donate-page__text'>
               {lang === 'en'
-                ? 'Everything we do is free of charge for everyone. We have worked and will continue to work only because of your support'
+                ? 'Everything we do is free of charge for everyone. We have worked and will continue to work only because of your support.'
                 : 'Вся наша діяльність - безоплатна для людей. Ми працювали і працюємо тільки завдяки вашій підтримці.'}
             </p>
             <p className='donate-page__text'>
