@@ -17,17 +17,17 @@
     }
 
     @include onDesktop {
-      padding: 10px;
       border-radius: 50%;
-      height: 120px;
-      width: 120px;
+      height: 80px;
+      width: 80px;
     }
   }
+
   &__button {
-    padding: 0 24px;
+    padding: 0 36px;
     display: flex;
     gap: 20px;
-    width: 300px;
+    width: 340px;
     height: 60px;
     font-size: 24px;
 
@@ -42,10 +42,9 @@
 
     @include onDesktop {
       border-radius: 100px;
-
-      width: 440px;
+      width: 400px;
       font-size: 30px;
-      height: 96px;
+      height: 80px;
     }
 
     &:hover {

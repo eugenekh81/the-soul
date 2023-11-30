@@ -6,6 +6,8 @@ import {
   AboutUsActivities,
 } from '../../components/AboutUsComponents';
 import {} from '../../components/AboutUsComponents';
+import { Donate } from '../../components/Donate/Donate';
+import { Partners } from '../../components/Partners/Partners';
 import './AboutUsPage.scss';
 
 export const AboutUsPage = () => {
@@ -16,6 +18,8 @@ export const AboutUsPage = () => {
       <AboutUsGoal />
       <AboutUsActivities />
       <AboutUsPlans />
+      <Donate />
+      <Partners />
     </div>
   );
 };

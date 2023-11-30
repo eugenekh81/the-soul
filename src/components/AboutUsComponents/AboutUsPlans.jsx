@@ -33,7 +33,7 @@ export const AboutUsPlans = () => {
 
             <p className='about-us__plans-text'>
               {lang === 'en'
-                ? ''
+                ? 'There will be regular psychological support groups as well as live broadcasts, workshops and online psychological events.'
                 : 'Також в нашому Центрі будуть діяти регулярні групи психологічної підтримки, виходити прямі ефіри та практичні матеріали, організовуватись психологічні заходи онлайн формату.'}
             </p>
           </div>

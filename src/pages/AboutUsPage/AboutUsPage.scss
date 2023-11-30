@@ -241,14 +241,13 @@
           width: 100%;
           margin: 0;
           display: flex;
-          padding: 0 20px
+          padding: 0 20px;
         }
 
         @include onDesktop {
           max-width: 1040px;
           margin: 0 auto;
         }
-
 
         @include onDesktop--xl {
           max-width: 1200px;
@@ -284,8 +283,6 @@
         @include onDesktop--xxl {
           height: 240px;
         }
-
-
       }
     }
   }
@@ -299,7 +296,15 @@
   }
 
   &__plans {
-    font-size: 18px;
+    font-size: 16px;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xxl {
+      font-size: 24px;
+    }
 
     &-list {
       margin: 0 0 25px;
