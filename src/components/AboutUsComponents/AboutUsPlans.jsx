@@ -16,18 +16,18 @@ export const AboutUsPlans = () => {
             <ul className='about-us__plans-list'>
               <li className='about-us__plans-item'>
                 {lang === 'en'
-                  ? '"Therapeutic War Life Stories" Project (February-March 2024)'
-                  : 'Проект “Терапевтичні воєнні історії життя” (лютий-березень 2024 р.)'}
+                  ? '"Therapeutic War Life Stories" Project (scheduled for February-March 2024, budget - 75,000 uah) is focused on people\'s stories of trauma and helping them in coping with the challenging experiences of war.'
+                  : 'Проєкт "Терапевтичні воєнні історії життя" (запланований період реалізації лютий-березень 2024 р., бюджет - 75 000 грн) - направлений на людські історії про травмування та подолання важкого досвіду війни.'}
               </li>
               <li className='about-us__plans-item'>
                 {lang === 'en'
-                  ? 'The "Ukrainian Circle 2.0" Project (June-August 2024)'
-                  : 'Проект “Українське коло 2.0” (червень-серпень 2024 р.)'}
+                  ? 'The "Ukrainian Circle 2.0" Project (scheduled for June-August 2024, budget - 320,000 uah) is a 3-month long Psychological Recovery Program focused on addressing all aspects of life - emotional states, self-confidence, finance and self-realization, relationships and feeling of security.'
+                  : 'Проєкт "Українське коло 2.0" (запланований період реалізації червень-серпень 2024 р., бюджет - 320 000 грн) - 3-х місячна Програма психологічного відновлення, направлена на опрацювання всіх сфер життя - емоційні стани, впевненість в собі, гроші та реалізація, стосунки, відчуття безпеки тощо.'}
               </li>
               <li className='about-us__plans-item'>
                 {lang === 'en'
-                  ? 'The "Effective Practices for Assisting Individuals Who Have Experienced Severe Traumatic Events" Project (September-November 2024)'
-                  : 'Проект “Дієві практики допомоги людям, що пережили важкі травматичні події” (вересень-листопад 2024 р.)'}
+                  ? 'The "Effective Methods for Assisting Individuals Who Have Experienced Severe Traumatic Events" Project (September-November 2024, budget - 51,000 uah) involves collecting best practices based on previous projects, group sessions and spreading those methods among women that were affected by war.'
+                  : 'Проєкт "Дієві практики допомоги людям, що пережили важкі травматичні події" (запланований період реалізації вересень-листопад 2024 р., бюджет - 51 000 грн) - збір найбільш дієвих практик на основі проведених проектів, опрацювання в групах та розповсюдження серед жінок, постраждалих від війни.'}
               </li>
             </ul>
 

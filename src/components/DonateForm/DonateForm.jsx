@@ -12,9 +12,9 @@ export const DonateForm = () => {
 
   const donateInputField = useRef(null);
 
-  useEffect(() => {
+/*   useEffect(() => {
     donateInputField.current.focus();
-  }, [donateInputField]);
+  }, [donateInputField]); */
 
   return (
     <form className='donate-form' onSubmit={handleFormSubmit}>
