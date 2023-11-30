@@ -26,7 +26,7 @@
     background-color: $colorDarkGreen;
   }
 
-  @include onTablet--m {
+  @include onDesktop {
     display: none;
     transform: translateX(-100%);
   }

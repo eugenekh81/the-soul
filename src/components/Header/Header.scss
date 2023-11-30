@@ -99,13 +99,10 @@ $teamListGap: 0;
     height: $teamListItemHeight;
     transition: all 0.3s ease-in-out;
 
-
     &:hover,
     &.active {
       background-color: $colorDarkGreen;
       color: $colorBeige;
-
-
     }
   }
 }
@@ -124,9 +121,9 @@ $teamListGap: 0;
 .nav {
   display: none;
 
-  @include onTablet--m {
+  @include onDesktop {
     display: flex;
-    gap: 60px;
+    gap: 20px;
   }
 
   & .active-link {
