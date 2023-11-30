@@ -13,6 +13,7 @@ import { MariyaVynnytska } from './pages/TeamPages/MariyaVynnytska';
 import { IrynaRoyenko } from './pages/TeamPages/IrynaRoyenko';
 import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
 import { MeetingWithTheSoulPage } from './pages/MeetingWithTheSoulPage/MeetingWithTheSoulPage';
+import { DonatePage } from './pages/DonatePage/DonatePage';
 
 const router = createBrowserRouter([
   {
@@ -66,7 +67,10 @@ const router = createBrowserRouter([
               },
             ],
           },
-
+          {
+            path: 'donate',
+            element: <DonatePage />
+          },
           {
             path: '*',
             element: <ErrorPage />,

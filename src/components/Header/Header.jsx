@@ -173,6 +173,15 @@ export const Header = () => {
                   />
                 )}
               </NavLink>
+
+              <NavLink
+                to={`/${lang}/donate`}
+                className={cn('header__nav-link', {
+                  'active-link': pathname === `/${lang}/donate`,
+                })}
+              >
+                {lang === 'en' ? 'Donate' : 'Підтримати'}
+              </NavLink>
             </nav>
 
             <div className='header__options-container'>
@@ -187,7 +196,7 @@ export const Header = () => {
                   href='mailto:contact@thesoul.com.ua'
                   className='top-actions__button top-actions__button--desktop top-actions__button--email'
                 >
-                  <span>contact@thesoul.com.ua</span>
+                  <span>{/* contact@thesoul.com.ua */}</span>
                 </a>
                 <button
                   type='button'

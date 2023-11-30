@@ -123,9 +123,9 @@
       @include onDesktop {
         display: flex;
         flex-direction: row;
-        // align-items: center;
+        align-items: center;
 
-        gap: 40px;
+        gap: 20px;
       }
     }
 
