@@ -1,0 +1,12 @@
+.animation {
+  transition: all 0.5s ease-out;
+  &__fade-up {
+    opacity: 0;
+    transform: translateY(20%);
+
+    &--fire {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
