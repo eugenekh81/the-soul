@@ -1,9 +1,14 @@
 import { useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
+import cn from 'classnames';
+
 import './AboutCenter.scss';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const AboutCenter = () => {
   const { lang } = useContext(LangContext);
+  const { ref: mainPhotoRef, inView } = useInView();
+
   return (
     <section className='page__section section about-center'>
       <div className='container'>
@@ -12,10 +17,17 @@ export const AboutCenter = () => {
         </h2>
 
         <div className='about-center__content'>
-          <div className='about-center__image-container'>
+          <div
+            className={cn(
+              'about-center__image-container',
+              'animation',
+              'animation__fade-up',
+              { 'animation__fade-up--fire': inView }
+            )}
+          >
             <img src='/images/home/home--team.png' alt='The Soul Team' />
           </div>
-          <div className='about-center__text-container'>
+          <div className='about-center__text-container' ref={mainPhotoRef}>
             <p className='about-center__text'>
               {lang === 'en'
                 ? 'The Soul Psychology Center was founded in Feb 2021.'

@@ -12,6 +12,7 @@ import { Partners } from '../../components/Partners/Partners';
 
 export const HomePage = () => {
   const { lang } = useContext(LangContext);
+
   return (
     <>
       <Helmet>

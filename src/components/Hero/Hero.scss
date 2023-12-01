@@ -207,12 +207,12 @@
 
       @include onTablet--s {
         margin: 0;
-        letter-spacing: 5.4px;
+        letter-spacing: 4px;
       }
 
       @include onTablet--m {
         font-size: 17px;
-        letter-spacing: 6.4px;
+        letter-spacing: 6px;
       }
     }
   }

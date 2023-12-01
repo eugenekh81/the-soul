@@ -2,6 +2,7 @@
 @import 'utils/mixins';
 @import 'utils/normalize';
 @import 'utils/noselect';
+@import 'blocks/animation.scss';
 @import 'blocks/page';
 @import 'blocks/top-actions';
 @import 'blocks/section';
@@ -16,4 +17,3 @@
     }
   }
 }
- 

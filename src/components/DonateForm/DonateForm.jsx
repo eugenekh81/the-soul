@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 import './DonateForm.scss';
 
@@ -11,10 +11,6 @@ export const DonateForm = () => {
   };
 
   const donateInputField = useRef(null);
-
-/*   useEffect(() => {
-    donateInputField.current.focus();
-  }, [donateInputField]); */
 
   return (
     <form className='donate-form' onSubmit={handleFormSubmit}>
