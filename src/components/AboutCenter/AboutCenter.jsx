@@ -33,7 +33,7 @@ export const AboutCenter = () => {
               { 'animation__fade-up--fire': inView || animated }
             )}
           >
-            <img src='/images/home/home--team.png' alt='The Soul Team' />
+            <img src='/images/home/home--team.jpg' alt='The Soul Team' />
             <div className='animation__point' ref={mainPhotoRef} />
           </div>
           <div className='about-center__text-container'>
