@@ -28,7 +28,7 @@ export const DonatePage = () => {
             </p>
             <p className='donate-page__text'>
               {lang === 'en'
-                ? 'You may donate any amount to support our Center - this donation will be used to fun our project and sustain our operations.'
+                ? 'You may donate any amount to support our Center - this donation will be used to fund our project and sustain our operations.'
                 : 'Ви можете переказати будь-яку комфортну вам суму в підтримку нашого Центру - вона буде направлена на реалізацію наших проектів та підтримку діяльності.'}
             </p>
           </div>
