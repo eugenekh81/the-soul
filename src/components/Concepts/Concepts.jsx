@@ -1,10 +1,10 @@
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './Concepts.scss';
 import { concepts } from '../../data/concepts.js';
-import sprite from '/images/concepts/concepts.svg';
+
 import { LangContext } from '../../context/LangContextProvider.jsx';
 import { useContext } from 'react';
+import { ConceptItem } from '../ConceptItem/ConceptItem.jsx';
 
 export const Concepts = () => {
   const { lang } = useContext(LangContext);
@@ -31,17 +31,7 @@ export const Concepts = () => {
 
         <Row className='concept__list'>
           {concepts.map((c) => (
-            <Col xs={12} sm={6} lg={4} className='concept__item' key={c.id}>
-              <div className='concept__icon-container'>
-                <svg className='concept__icon'>
-                  <use href={sprite + c.iconSrc} />
-                </svg>
-              </div>
-              <div className='concept__content'>
-                <h3 className='concept__title'>{c.title[lang]}</h3>
-                <p className='concept__text'>{c.text[lang]}</p>
-              </div>
-            </Col>
+            <ConceptItem key={c.id} {...c} />
           ))}
         </Row>
       </div>

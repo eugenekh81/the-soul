@@ -1,12 +1,63 @@
 .animation {
-  transition: all 0.5s ease-out;
+  animation-duration: 600ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-direction: normal;
+  &__point {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 1px;
+    width: 1px;
+    z-index: -99;
+  }
+
+  transition: all 0.5s ease;
   &__fade-up {
-    opacity: 0;
-    transform: translateY(20%);
+    /*     opacity: 0;
+    transform: translateY(20%); */
+    animation-name: fadeDown;
 
     &--fire {
-      opacity: 1;
-      transform: translateY(0);
+      /*       opacity: 1;
+      transform: translateY(0); */
+      animation-name: fadeUp;
+
+      // animation-delay: 0;
+
+      // animation: fadeUp 300ms ease 0 1 normal;
     }
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  60% {
+    transform: translateY(-5%);
+  }
+
+  95% {
+    transform: translateY(1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20%);
   }
 }

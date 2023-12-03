@@ -19,5 +19,11 @@
 
   &__list-item {
     flex-shrink: 0;
+
+    @for $child from 0 through 5 {
+      &:nth-child(#{$child}) {
+        animation-delay: calc(#{$child} * 100ms);
+      }
+    }
   }
 }
