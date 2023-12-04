@@ -1,6 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './Team.scss';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import OlexandraShymanova from '/images/team/oshymanova-mobile.png';
