@@ -4,6 +4,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-direction: normal;
+
   &__point {
     position: absolute;
     left: 50%;
@@ -15,8 +16,6 @@
 
   transition: all 0.5s ease;
   &__fade-up {
-    /*     opacity: 0;
-    transform: translateY(20%); */
     animation-name: fadeDown;
 
     &--fire {
@@ -28,6 +27,10 @@
 
       // animation: fadeUp 300ms ease 0 1 normal;
     }
+  }
+
+  &__fade-up-centered {
+    animation: fadeUpCentered;
   }
 }
 
@@ -59,5 +62,36 @@
   100% {
     opacity: 0;
     transform: translateY(20%);
+  }
+}
+
+@keyframes fadeDownCentered {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50, 20%);
+  }
+}
+
+@keyframes fadeUpCentered {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20%);
+  }
+
+  60% {
+    transform: translate(-50%, -5%);
+  }
+
+  95% {
+    transform: translate(-50%, 1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }

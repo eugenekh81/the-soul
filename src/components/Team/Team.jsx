@@ -7,9 +7,12 @@ import OlexandraShymanova from '/images/team/oshymanova-mobile.png';
 import MariyaVynnytska from '/images/team/mvynnytska-mobile.png';
 import IrynaRoyenko from '/images/team/iroyenko-mobile.png';
 import MarynaYakhno from '/images/team/myakhno-mobile.png';
+import { team } from '../../data/team.js';
+
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
+import { TeamMember } from '../TeamMember/TeamMember.jsx';
 export const Team = () => {
   const { lang } = useContext(LangContext);
   return (
@@ -131,7 +134,7 @@ export const Team = () => {
         </div>
 
         <Row className='team__list--desktop'>
-          <Col sm={6} lg={3} className='team__person'>
+          {/*           <Col sm={6} lg={3} className='team__person'>
             <NavLink
               className='person'
               to={`/${lang}/team/olexandra-shymanova`}
@@ -154,7 +157,7 @@ export const Team = () => {
                   <>
                     psychologist
                     <br />
-                    founder
+                    psychologist
                   </>
                 ) : (
                   <>
@@ -234,7 +237,11 @@ export const Team = () => {
                 {lang === 'en' ? 'psychologist' : 'психолог'}
               </p>
             </NavLink>
-          </Col>
+          </Col> */}
+
+          {team.map((t) => (
+            <TeamMember key={t.id} {...t} />
+          ))}
         </Row>
       </div>
     </section>

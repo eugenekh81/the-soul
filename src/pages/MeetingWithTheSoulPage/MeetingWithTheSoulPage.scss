@@ -5,13 +5,21 @@
   position: relative;
 
   &__banner {
-    height: 600px;
+    height: 100vh;
     width: 100%;
 
     background-image: url('/images/projects/meeting-with-the-Soul--banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include onDesktop {
+      height: 600px;
+    }
   }
 
   &__main-title {
@@ -26,9 +34,11 @@
     max-width: 600px;
     text-align: center;
 
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
+    /*     left: 50%;
+    bottom: 10%; */
+
+    /*     transform: translate(-50%, 20%);
+    opacity: 0; */
 
     padding: 20px 40px;
     border-radius: 24px;
@@ -63,9 +73,17 @@
   }
 
   &__description {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: justify;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xxl {
+      font-size: 24px;
+    }
   }
 
   &__gallery {

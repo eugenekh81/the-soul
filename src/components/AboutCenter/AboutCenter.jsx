@@ -16,7 +16,6 @@ export const AboutCenter = () => {
     }
   }, [inView]);
 
-  console.log(inView, animated);
   return (
     <section className='page__section section about-center'>
       <div className='container'>

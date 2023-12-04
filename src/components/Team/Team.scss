@@ -32,9 +32,6 @@
         flex-wrap: wrap;
       }
 
-      @include onTablet--m {
-      }
-
       @include onDesktop {
         width: 100%;
         justify-content: space-between;
@@ -55,6 +52,12 @@
 
     @include onTablet--s {
       margin: 0;
+    }
+
+    @for $child from 0 through 4 {
+      &:nth-child(#{$child}) {
+        animation-delay: calc(#{$child} * 100ms);
+      }
     }
   }
 }
@@ -80,9 +83,9 @@
     width: 220px;
   }
 
-@include onDesktop {
-  width: 240px;
-}
+  @include onDesktop {
+    width: 240px;
+  }
 
   position: relative;
   padding: 24px 16px 24px;

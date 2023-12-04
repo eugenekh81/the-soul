@@ -18,7 +18,7 @@ import { DonatePage } from './pages/DonatePage/DonatePage';
 const router = createBrowserRouter([
   {
     path: '/',
-    /* element: <Navigate to='en' replace={true} />, */
+
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
           },
           {
             path: 'donate',
-            element: <DonatePage />
+            element: <DonatePage />,
           },
           {
             path: '*',

@@ -6,7 +6,7 @@ export const AboutUsHero = () => {
 
   return (
     <section className='about-us__hero'>
-      <h1 className='about-us__main-title'>
+      <h1 className='about-us__main-title animation animation__fade-up animation__fade-up--fire'>
         {lang === 'en' ? 'About us' : 'Про нас'}
       </h1>
     </section>

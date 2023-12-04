@@ -1,7 +1,7 @@
 import './MeetingWithTheSoulPage.scss';
 import { MeetingWithTheSoulBanner } from '../../components/MeetingWithTheSoulBanner';
-import { Partners } from '../../components/Partners/Partners';
-import { MeetingWIthTheSoulContent } from '../../MeetingWithTheSoulContent/MeetingWIthTheSoulContent';
+import { Partners } from '../../components/Partners';
+import { MeetingWIthTheSoulContent } from '../../MeetingWithTheSoulContent';
 import { Helmet } from 'react-helmet';
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';

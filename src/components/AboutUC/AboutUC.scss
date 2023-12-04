@@ -4,12 +4,24 @@
 .about {
   position: relative;
   &__description {
+    text-align: justify;
+
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: justify;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xxl {
+      font-size: 24px;
+    }
+
     font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
     margin: 0;
-
-    text-align: justify;
 
     & span {
       font-weight: 700;

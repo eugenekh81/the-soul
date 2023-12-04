@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery';
 import { LangContext } from '../context/LangContextProvider';
-import { MeetingWithTheSoulReviews } from '../components/MeetingWithTheSoulReviews/MeetingWithTheSoulReviews';
+import { MeetingWithTheSoulReviews } from '../components/MeetingWithTheSoulReviews';
 
 export const MeetingWIthTheSoulContent = () => {
   const { lang } = useContext(LangContext);
