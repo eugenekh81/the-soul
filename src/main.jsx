@@ -12,13 +12,13 @@ import { OlexandraShymanova } from './pages/TeamPages/OlexandraShymanova';
 import { MariyaVynnytska } from './pages/TeamPages/MariyaVynnytska';
 import { IrynaRoyenko } from './pages/TeamPages/IrynaRoyenko';
 import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
-import { MeetingWithTheSoulPage } from './pages/MeetingWithTheSoulPage/MeetingWithTheSoulPage';
-import { DonatePage } from './pages/DonatePage/DonatePage';
+import { MeetingWithTheSoulPage } from './pages/MeetingWithTheSoulPage';
+import { DonatePage } from './pages/DonatePage';
+import { YellowBlue } from './pages/YellowBlue';
 
 const router = createBrowserRouter([
   {
     path: '/',
-
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -70,6 +70,15 @@ const router = createBrowserRouter([
           {
             path: 'donate',
             element: <DonatePage />,
+          },
+          {
+            path: 'events',
+            children: [
+              {
+                path: 'yellow-blue',
+                element: <YellowBlue />,
+              },
+            ],
           },
           {
             path: '*',

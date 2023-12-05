@@ -34,6 +34,14 @@
   }
 }
 
+.reveal {
+  animation: reveal 600ms ease 1 normal both 1s;
+}
+
+.pull-up {
+  animation: pullUp 600ms ease 1 normal both 1s;
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -93,5 +101,23 @@
   100% {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pullUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }

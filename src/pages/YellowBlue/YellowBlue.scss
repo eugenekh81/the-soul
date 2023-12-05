@@ -1,0 +1,172 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.yellow-blue {
+  &__hero {
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 85.94%,
+      #cfd4f8 100%
+    );
+
+    background-repeat: no-repeat;
+  }
+
+  &__hero-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0;
+    height: 50vh;
+    max-width: 1280px;
+    background: url('/images/yellow-blue/yellow-blue--stripes.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+
+    @include onTablet--s {
+      padding: 80px 0 0;
+      height: 600px;
+      background-size: 310px;
+      background-position: center;
+    }
+
+    @include onTablet--m {
+      display: block;
+      padding: 140px 0 0;
+      height: 440px;
+      background-size: 310px;
+      background-position: right 0 top 130px;
+    }
+
+    @include onDesktop {
+      padding: 170px 0 0;
+      height: 540px;
+      background-size: 410px;
+      background-position: right 0 center;
+    }
+
+    @include onDesktop--xl {
+      padding: 140px 0 0;
+      height: 600px;
+      background-size: 510px;
+      background-position: right 0 top 140px;
+    }
+    @include onDesktop--xxl {
+      background-size: 610px;
+      background-position: right 0 top 114px;
+    }
+  }
+
+  &__description {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+
+    @include onTablet--s {
+      gap: 300px;
+    }
+
+    @include onTablet--m {
+      gap: 60px;
+    }
+
+    @include onDesktop {
+      gap: 60px;
+    }
+
+    @include onDesktop--xl {
+      gap: 112px;
+    }
+  }
+
+  &__main-title {
+    font-family: 'Spartan ExtraBold';
+    font-size: 60px;
+    line-height: 1.25;
+    letter-spacing: -6px;
+    font-weight: 700;
+    width: fit-content;
+
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+
+    &--yellow {
+      color: $colorYellow;
+    }
+    &--blue {
+      color: $colorBlue;
+    }
+
+    @include onTablet--m {
+      font-size: 50px;
+    }
+
+    @include onDesktop {
+      font-size: 60px;
+    }
+
+    @include onDesktop--xl {
+      font-size: 78px;
+    }
+  }
+
+  &__schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-container {
+    overflow: hidden;
+  }
+
+  &__text {
+    color: $colorBlueSchedule;
+    font-weight: 600;
+
+    transform: translateY(100%);
+
+    animation-delay: 2s;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+    @include onDesktop--xl {
+      font-size: 30px;
+    }
+
+    &--last {
+      animation-delay: 2.5s;
+    }
+  }
+
+  &__information {
+    animation-delay: 3.3s;
+  }
+
+  &__information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__text-item {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @include onTablet--m {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xl {
+      font-size: 24px;
+    }
+  }
+}
