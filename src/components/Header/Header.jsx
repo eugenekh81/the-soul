@@ -184,6 +184,17 @@ export const Header = () => {
               </NavLink>
             </nav>
 
+            <NavLink
+              className={cn('header__yellow-blue', 'header__nav-link', {
+                'active-link': pathname === `/${lang}/events/yellow-blue`,
+              })}
+              to={`/${lang}/events/yellow-blue`}
+            >
+              <span className='header__yellow-blue--yellow'>Yellow </span>
+
+              <span className='header__yellow-blue--blue'>Blue</span>
+            </NavLink>
+
             <div className='header__options-container'>
               <LanguageSelector />
 

@@ -59,6 +59,36 @@ $teamListGap: 0;
       gap: 40px;
     }
   }
+
+  &__yellow-blue {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: 900;
+    &--yellow {
+      color: $colorYellow;
+    }
+
+    &--blue {
+      color: $colorBlue;
+    }
+  }
+
+  & .active-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      content: '';
+      height: 4px;
+      border-radius: 4px;
+      background-color: $colorGoldLight;
+      width: 100%;
+    }
+  }
 }
 
 .team-list,
@@ -126,18 +156,11 @@ $teamListGap: 0;
     gap: 20px;
   }
 
-  & .active-link {
-    position: relative;
+  @include onDesktop--xl {
+    gap: 40px;
+  }
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      display: block;
-      content: '';
-      height: 4px;
-      border-radius: 4px;
-      background-color: $colorGoldLight;
-      width: 100%;
-    }
+  @include onDesktop--xxl {
+    gap: 60px;
   }
 }
