@@ -61,8 +61,12 @@ $teamListGap: 0;
   }
 
   &__yellow-blue {
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+    }
 
     font-size: 20px;
     font-weight: 900;

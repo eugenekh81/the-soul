@@ -197,6 +197,25 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                 {lang === 'en' ? 'Donate' : 'Підтримати'}
               </NavLink>
             </li>
+            <li className='burger-menu__list-item'>
+              <NavLink
+                className={cn(
+                  'burger-menu__yellow-blue',
+                  'burger-menu__nav-link',
+                  {
+                    'is-active': pathname === `/${lang}/events/yellow-blue`,
+                  }
+                )}
+                to={`/${lang}/events/yellow-blue`}
+                onClick={() => onClose()}
+              >
+                <span className='burger-menu__yellow-blue--yellow'>
+                  Yellow{' '}
+                </span>
+
+                <span className='burger-menu__yellow-blue--blue'>Blue</span>
+              </NavLink>
+            </li>
           </ul>
 
           <div className='burger-menu__social social'>

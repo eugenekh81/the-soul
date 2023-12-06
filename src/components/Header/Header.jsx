@@ -214,7 +214,6 @@ export const Header = () => {
                   href='#'
                   className='top-actions__button top-actions__button--burger-menu'
                   onClick={() => {
-                    console.log('clicked!');
                     setIsBurgerOpen((prev) => !prev);
                   }}
                 ></button>
