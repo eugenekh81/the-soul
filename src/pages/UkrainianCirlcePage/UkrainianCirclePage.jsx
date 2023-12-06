@@ -16,7 +16,7 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const UkrainianCirclePage = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <>
       <Helmet>

@@ -1,18 +1,18 @@
 import './Header.scss';
 import cn from 'classnames';
 import { NavLink, useLocation } from 'react-router-dom';
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import logo from '/images/logo/header-logo-4--mobile.png';
 import { DropDownListTeam } from '../DropdownListTeam';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
-import { LangContext } from '../../context/LangContextProvider';
 import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
 import { DropDownListProjects } from '../DropdownListProjects';
+import { useLang } from '../../hooks/useLang';
 
 export const Header = () => {
   const { pathname } = useLocation();
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const [isTeamOpen, setIsTeamOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);

@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const PastProjects = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='page__section section past-projects'>

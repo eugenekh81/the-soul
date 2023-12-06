@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const Projects = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section page__section--bgc-green section projects'>
       <div className='container'>

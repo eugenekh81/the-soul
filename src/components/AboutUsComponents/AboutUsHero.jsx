@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const AboutUsHero = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='about-us__hero'>

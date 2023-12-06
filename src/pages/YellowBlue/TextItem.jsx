@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import cn from 'classnames';
 
 export const TextItem = ({ text }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();;
   const { ref, inView } = useInView();
   const [animated, setAnimated] = useState(false);
 

@@ -1,9 +1,8 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import './Footer.scss';
-import { LangContext } from '../../context/LangContextProvider';
 
 export const Footer = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <footer className='page__section section footer'>
       <div className='container'>
@@ -33,8 +32,9 @@ export const Footer = () => {
                 href='https://maps.app.goo.gl/2KJrcCEBJxVKcxSZ9'
                 className='footer__contact footer__address'
               >
-                {lang === 'en' ? '39 Antonovycha str, apt.22, Kyiv, Ukraine' : 'вул. Антоновича, 39, м. Київ, Україна'}
-
+                {lang === 'en'
+                  ? '39 Antonovycha str, apt.22, Kyiv, Ukraine'
+                  : 'вул. Антоновича, 39, м. Київ, Україна'}
               </a>
             </address>
           </div>
@@ -66,8 +66,7 @@ export const Footer = () => {
           <div className='footer__social social'>
             <div className='social__title'>
               {lang === 'en' ? 'Follow us' : 'Соцмережі'}
-
-              </div>
+            </div>
             <div className='social__icons'>
               <a
                 href='https://www.facebook.com/TheSoul.Psychology/'

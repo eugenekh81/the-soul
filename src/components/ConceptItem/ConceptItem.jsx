@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Col from 'react-bootstrap/Col';
 import './ConceptItem.scss';
 import sprite from '/images/concepts/concepts.svg';
-import { useContext, useEffect, useState } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useEffect, useState } from 'react';
 import cn from 'classnames';
+import { useLang } from '../../hooks/useLang';
 
 export const ConceptItem = ({ iconSrc, title, text }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const { ref: conceptRef, inView } = useInView();
   const [animated, setAnimated] = useState(false);
 

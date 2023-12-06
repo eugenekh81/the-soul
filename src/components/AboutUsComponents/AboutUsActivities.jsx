@@ -1,11 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { activities } from '../../data/activities';
 import { AboutUsGallery } from './AboutUsGallery';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const AboutUsActivities = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='page__section section about-us__activities'>

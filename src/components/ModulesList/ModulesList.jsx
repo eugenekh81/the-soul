@@ -8,7 +8,7 @@ import { LangContext } from '../../context/LangContextProvider';
 import { ModuleItem } from '../ModuleItem/';
 
 export const ModulesList = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section section modules'>
       <div className='container'>

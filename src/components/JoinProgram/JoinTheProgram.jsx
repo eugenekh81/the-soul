@@ -1,15 +1,13 @@
-import { useContext } from 'react';
 import './JoinTheProgram.scss';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const JoinTheProgram = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section section join-the-program'>
       <div className='container'>
         <h2 className='section__title block-centered'>
           {lang === 'en' ? 'JOIN' : 'Приєднатись'}
-
         </h2>
 
         <div className='join-the-program__content'>

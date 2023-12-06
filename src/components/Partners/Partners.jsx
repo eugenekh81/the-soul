@@ -3,12 +3,11 @@ import './Partners.scss';
 import { partners } from '../../data/partners';
 
 import { Donate } from '../Donate/Donate';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import { PartnersItem } from '../PartnersItem/PartnersItem';
+import { useLang } from '../../hooks/useLang';
 
 export const Partners = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section section partners'>
       <div className='container'>

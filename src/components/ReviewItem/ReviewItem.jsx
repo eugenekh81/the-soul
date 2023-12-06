@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const ReviewItem = ({ name, imgSrc, location, review_text }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <div className='reviews__item review'>
       <div className='review__image-container'>

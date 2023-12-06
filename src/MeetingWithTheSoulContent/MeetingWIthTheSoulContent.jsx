@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery';
-import { LangContext } from '../context/LangContextProvider';
 import { MeetingWithTheSoulReviews } from '../components/MeetingWithTheSoulReviews';
+import { useLang } from '../hooks/useLang';
 
 export const MeetingWIthTheSoulContent = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='page__section section meeting-soul__content'>

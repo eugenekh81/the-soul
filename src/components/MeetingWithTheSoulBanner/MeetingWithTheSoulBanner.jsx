@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const MeetingWithTheSoulBanner = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='meeting-soul'>
       <div className='meeting-soul__banner'>

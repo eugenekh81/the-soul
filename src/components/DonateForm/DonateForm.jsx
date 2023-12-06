@@ -1,9 +1,9 @@
-import { useContext, useRef, useState } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useRef, useState } from 'react';
 import './DonateForm.scss';
+import { useLang } from '../../hooks/useLang';
 
 export const DonateForm = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const [amount, setAmount] = useState(0);
 
   const handleFormSubmit = (e) => {

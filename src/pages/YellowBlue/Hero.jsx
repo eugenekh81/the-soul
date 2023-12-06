@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { LangContext } from "../../context/LangContextProvider";
+import { useLang } from '../../hooks/useLang';
 
 export const Hero = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='yellow-blue__hero reveal'>
       <div className='container'>
@@ -15,12 +14,16 @@ export const Hero = () => {
             <div className='yellow-blue__schedule'>
               <div className='yellow-blue__text-container'>
                 <p className='yellow-blue__text pull-up'>
-                  {lang === 'en' ? 'December 15, 2023 / Friday' : '15 грудня 2023 року / п’ятниця'}
+                  {lang === 'en'
+                    ? 'December 15, 2023 / Friday'
+                    : '15 грудня 2023 року / п’ятниця'}
                 </p>
               </div>
               <div className='yellow-blue__text-container'>
                 <p className='yellow-blue__text yellow-blue__text--last pull-up'>
-                  {lang === 'en' ? '7:00 pm EET' : '19:00 – 21:00 за київським часом'}
+                  {lang === 'en'
+                    ? '7:00 pm EET'
+                    : '19:00 – 21:00 за київським часом'}
                 </p>
               </div>
             </div>

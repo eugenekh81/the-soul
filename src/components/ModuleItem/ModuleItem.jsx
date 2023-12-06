@@ -12,7 +12,7 @@ export const ModuleItem = ({
   description,
   button,
 }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <Col xs={12} sm={6} lg={4} className='modules__module module'>
       <div className='module__img-container'>

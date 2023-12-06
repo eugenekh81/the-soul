@@ -1,12 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { useContext, useEffect } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useEffect } from 'react';
+import { useLang } from '../../hooks/useLang';
 
 export const DropDownListProjects = ({ isProjectsOpen, clickCheck }) => {
-  console.log('opening projects dropdown');
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   useEffect(() => {
     return () => {
       setTimeout(() => {

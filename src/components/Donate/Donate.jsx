@@ -1,13 +1,13 @@
 import sprite from '/images/concepts/concepts.svg';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Donate.scss';
-import { LangContext } from '../../context/LangContextProvider';
 import cn from 'classnames';
+import { useLang } from '../../hooks/useLang';
 
 export const Donate = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const { ref: mainPhotoRef, inView } = useInView();
   const [animated, setAnimated] = useState(false);
 

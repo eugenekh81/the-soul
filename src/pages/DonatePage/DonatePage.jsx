@@ -1,10 +1,9 @@
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import './DonatePage.scss';
 import { DonateForm } from '../../components/DonateForm';
+import { useLang } from '../../hooks/useLang';
 
 export const DonatePage = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <div className='donate-page'>
       <section className='page__section section donate-page__hero'>

@@ -1,9 +1,8 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import './MeetingWithTheSoulReviews.scss';
-import { LangContext } from '../../context/LangContextProvider';
 
 export const MeetingWithTheSoulReviews = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='meeting-soul-reviews page__section section'>

@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import './BurgerMenu.scss';
 import logo from '/images/logo/header-logo-4--mobile.png';
 import cn from 'classnames';
-import { LangContext } from '../../context/LangContextProvider';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { LanguageSelector } from '../LanguageSelector/';
+import { useLang } from '../../hooks/useLang';
 
 export const BurgerMenu = ({ isOpen, onClose }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const { pathname } = useLocation();
   const [isTeamOpen, setIsTeamOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);

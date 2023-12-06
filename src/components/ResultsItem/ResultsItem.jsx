@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const ResultsItem = ({ number, text, iconId }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <Col sm={6} md={4} className='results__item'>

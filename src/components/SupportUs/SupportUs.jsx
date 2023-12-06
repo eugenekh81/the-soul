@@ -4,7 +4,7 @@ import './SupportUs.scss';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const SupportUs = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section section support-us'>
       <div className='container'>

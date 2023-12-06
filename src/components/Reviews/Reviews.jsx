@@ -8,12 +8,12 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const Reviews = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='section page__section reviews'>
       <div className='container'>
         <h2 className='section__title'>
-          {lang === 'en' ? 'Reviews': 'Відгуки'}
+          {lang === 'en' ? 'Reviews' : 'Відгуки'}
         </h2>
 
         <Carousel

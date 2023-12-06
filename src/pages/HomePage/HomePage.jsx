@@ -6,12 +6,11 @@ import { HomeSoulCover } from '../../components/HomeSoulCover/';
 import { Projects } from '../../components/Projects/';
 import { PastProjects } from '../../components/PastProjects/';
 import { Helmet } from 'react-helmet';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import { Partners } from '../../components/Partners/Partners';
+import { useLang } from '../../hooks/useLang';
 
 export const HomePage = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <>

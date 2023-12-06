@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const Presentation = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='section page__section presentation'>
       <div className='container'>

@@ -1,12 +1,12 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import cn from 'classnames';
 
 import './AboutCenter.scss';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const AboutCenter = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   const { ref: mainPhotoRef, inView } = useInView();
   const [animated, setAnimated] = useState(false);
 

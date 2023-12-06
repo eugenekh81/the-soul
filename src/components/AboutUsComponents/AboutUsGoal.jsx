@@ -1,9 +1,8 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import handsAndPlant from '/images/about-us/about-us--hands-and-plant.jpg';
-import { LangContext } from '../../context/LangContextProvider';
 
 export const AboutUsGoal = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='page__section section about-us__goal'>

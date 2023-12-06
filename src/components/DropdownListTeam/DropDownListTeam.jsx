@@ -5,7 +5,7 @@ import { useContext, useEffect } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 
 export const DropDownListTeam = ({ isTeamOpen, clickCheck }) => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   useEffect(() => {
     return () => {
       setTimeout(() => {

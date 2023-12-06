@@ -3,11 +3,10 @@ import { MeetingWithTheSoulBanner } from '../../components/MeetingWithTheSoulBan
 import { Partners } from '../../components/Partners';
 import { MeetingWIthTheSoulContent } from '../../MeetingWithTheSoulContent';
 import { Helmet } from 'react-helmet';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const MeetingWithTheSoulPage = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <>

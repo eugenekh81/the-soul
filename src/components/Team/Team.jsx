@@ -9,11 +9,11 @@ import MarynaYakhno from '/images/team/myakhno-mobile.png';
 import { team } from '../../data/team.js';
 
 import { NavLink } from 'react-router-dom';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import { TeamMember } from '../TeamMember/TeamMember.jsx';
+import { useLang } from '../../hooks/useLang.jsx';
+
 export const Team = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section page__section--bgc-green section team'>
       <div className='container'>

@@ -1,13 +1,11 @@
 import Row from 'react-bootstrap/Row';
 import './Concepts.scss';
 import { concepts } from '../../data/concepts.js';
-
-import { LangContext } from '../../context/LangContextProvider.jsx';
-import { useContext } from 'react';
 import { ConceptItem } from '../ConceptItem/ConceptItem.jsx';
+import { useLang } from '../../hooks/useLang.jsx';
 
 export const Concepts = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='page__section page__section--bgc-green section concepts'>
       <div className='container'>

@@ -1,10 +1,9 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import documents from '/images/about-us/about-us--documents.jpg';
-import { LangContext } from '../../context/LangContextProvider';
 import { NavLink } from 'react-router-dom';
 
 export const AboutUsDescription = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='about-us__description page__section section'>

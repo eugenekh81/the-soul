@@ -4,7 +4,7 @@ import { LangContext } from '../../context/LangContextProvider';
 import cn from 'classnames';
 
 export const Hero = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
   return (
     <section className='hero'>
       <div className='hero__content'>

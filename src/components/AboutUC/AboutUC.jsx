@@ -3,7 +3,7 @@ import { LangContext } from '../../context/LangContextProvider';
 import './AboutUC.scss';
 
 export const AboutUC = () => {
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   return (
     <section className='page__section page__section--bgc-green section about'>

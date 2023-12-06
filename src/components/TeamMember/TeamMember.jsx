@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import { useInView } from 'react-intersection-observer';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import { NavLink } from 'react-router-dom';
-import { LangContext } from '../../context/LangContextProvider';
 import cn from 'classnames';
+import { useLang } from '../../hooks/useLang';
 
 export const TeamMember = ({ imgSrc, name, link, role }) => {
   const { ref: mainPhotoRef, inView } = useInView();
   const [animated, setAnimated] = useState(false);
-  const { lang } = useContext(LangContext);
+  const lang = useLang();
 
   useEffect(() => {
     if (inView) {
