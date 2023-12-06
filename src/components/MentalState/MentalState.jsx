@@ -8,8 +8,7 @@ import womanHappyEn from '/images/about/about--girl-happy--en.png';
 import womanSadUa from '/images/about/about--girl-sad--ua.png';
 import womanHappyUa from '/images/about/about--girl-happy--ua.png';
 import { MentalStateItem } from '../MentalStateItem/MentalStateItem';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider.jsx';
+import { useLang } from '../../hooks/useLang.jsx';
 
 export const MentalState = () => {
   const lang = useLang();

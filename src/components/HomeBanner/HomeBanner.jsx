@@ -1,6 +1,5 @@
+import { useLang } from '../../hooks/useLang';
 import './HomeBanner.scss';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import cn from 'classnames';
 
 export const HomeBanner = () => {

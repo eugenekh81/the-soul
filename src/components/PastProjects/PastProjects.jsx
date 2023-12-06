@@ -2,8 +2,7 @@ import Ratio from 'react-bootstrap/Ratio';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './PastProjects.scss';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const PastProjects = () => {
   const lang = useLang();

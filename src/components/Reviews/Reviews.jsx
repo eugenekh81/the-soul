@@ -4,8 +4,7 @@ import './Reviews.scss';
 import { reviews } from '../../data/reviews';
 import { ReviewItem } from '../ReviewItem/';
 import Row from 'react-bootstrap/Row';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const Reviews = () => {
   const lang = useLang();

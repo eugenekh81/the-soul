@@ -156,6 +156,10 @@
     font-size: 16px;
     line-height: 1.25;
 
+    &--center {
+      text-align: center;
+    }
+
     @include onTablet--m {
       font-size: 18px;
       line-height: 1.5;
@@ -167,6 +171,305 @@
 
     @include onDesktop--xl {
       font-size: 24px;
+    }
+  }
+
+  &__schedule-info {
+    background-color: $colorBeigeDark;
+  }
+
+  &__event-info {
+    text-align: justify;
+    padding: 50px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 24px;
+
+    @include onDesktop {
+      padding: 40px;
+    }
+  }
+
+  &__timezones-list {
+    list-style: disc;
+    padding-left: 20px;
+
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &--center {
+      text-align: center;
+    }
+
+    @include onTablet--m {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xl {
+      font-size: 24px;
+    }
+  }
+
+  &__event-text {
+    font-size: 16px;
+    line-height: 1.25;
+
+    &--center {
+      text-align: center;
+    }
+
+    @include onTablet--m {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onDesktop--xl {
+      font-size: 24px;
+    }
+  }
+
+  &__registration {
+    background-color: $colorDarkGreen;
+    padding: 50px 0;
+
+    @include onTablet--s {
+      padding: 100px 0;
+    }
+
+    @include onTablet--m {
+      padding: 50px 0;
+    }
+
+    &-content {
+      color: $colorBeige;
+      font-size: 16px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 40px;
+
+      @include onTablet--s {
+        gap: 60px;
+      }
+
+      @include onTablet--m {
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      @include onDesktop {
+        height: 400px;
+        font-size: 24px;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+
+      text-align: center;
+
+      @include onTablet--s {
+        font-size: 40px;
+        width: 100%;
+      }
+
+      @include onTablet--m {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      @include onDesktop {
+        font-size: 40px;
+        font-weight: 600;
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: $colorYellow;
+
+      font-size: 30px;
+      font-weight: 600;
+      height: 60px;
+      width: 80%;
+
+      @include onTablet--s {
+        width: 100%;
+        font-size: 60px;
+        height: 120px;
+        font-weight: 600;
+      }
+
+      @include onTablet--m {
+        font-size: 30px;
+        width: 80%;
+        height: 30%;
+        font-weight: 600;
+      }
+
+      @include onDesktop {
+        font-size: 40px;
+        height: 100px;
+        width: 400px;
+        flex-shrink: 0;
+        font-weight: 900;
+      }
+
+      border-radius: 100px;
+      background-color: $colorBlue;
+      transition: all 0.3s ease;
+      transform: scale(1);
+
+      &:hover {
+        color: $colorBlue;
+        background-color: $colorGoldLight;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__more-info {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include onTablet--m {
+        gap: 60px;
+      }
+
+      @include onDesktop {
+        gap: 80px;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+
+      text-align: center;
+
+      @include onTablet--s {
+        font-size: 30px;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      gap: 40px;
+
+      @include onTablet--s {
+      }
+
+      @include onTablet--m {
+        flex-direction: row;
+        gap: unset;
+      }
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      font-size: 30px;
+
+      border-radius: 100px;
+
+      background-color: $colorLightGreen;
+      color: $colorYellow;
+      font-weight: 500;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $colorBlue;
+        color: $colorYellow;
+      }
+
+      @include onTablet--s {
+        height: 60px;
+        font-size: 30px;
+      }
+
+      @include onTablet--m {
+        height: 80px;
+        width: 300px;
+
+        font-size: 40px;
+      }
+
+      @include onDesktop {
+        height: 100px;
+        width: 400px;
+
+        font-size: 40px;
+      }
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 20px;
+
+      @include onTablet--s {
+        font-size: 24px;
+      }
+
+      &--big {
+        font-size: 36px;
+        font-weight: 500;
+        color: $colorDarkGreen;
+      }
+    }
+  }
+
+  &__partners {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-title {
+      font-size: 30px;
+      text-align: center;
+      color: $colorDarkGreen;
+      font-weight: 500;
+    }
+
+    &-logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 20px;
+
+      @include onTablet--m {
+        flex-direction: row;
+        justify-content: space-around;
+      }
     }
   }
 }

@@ -1,8 +1,7 @@
 import './ModuleItem.scss';
 import PropTypes from 'prop-types';
-import { useContext } from 'react';
 import { Col } from 'react-bootstrap';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const ModuleItem = ({
   id,

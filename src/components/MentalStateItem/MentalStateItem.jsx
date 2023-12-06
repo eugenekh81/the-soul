@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const MentalStateItem = ({ percent, description }) => {
   const lang = useLang();

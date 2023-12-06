@@ -1,8 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import PropTypes from 'prop-types';
 import sprite from '/images/results/results.svg';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const ResultsItem = ({ number, text, iconId }) => {
   const lang = useLang();

@@ -1,6 +1,6 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import './Hero.scss';
-import { LangContext } from '../../context/LangContextProvider';
+
 import cn from 'classnames';
 
 export const Hero = () => {

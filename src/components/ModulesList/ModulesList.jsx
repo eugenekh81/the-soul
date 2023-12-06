@@ -2,10 +2,8 @@ import Row from 'react-bootstrap/Row';
 import { modules } from '../../data/modules';
 
 import './ModulesList.scss';
-
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
 import { ModuleItem } from '../ModuleItem/';
+import { useLang } from '../../hooks/useLang';
 
 export const ModulesList = () => {
   const lang = useLang();

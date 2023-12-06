@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 import './AboutUC.scss';
 
 export const AboutUC = () => {

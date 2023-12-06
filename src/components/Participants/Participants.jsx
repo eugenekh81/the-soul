@@ -4,8 +4,7 @@ import Col from 'react-bootstrap/Col';
 import ageDiagram from '/images/about/about--age-graph.png';
 import ukraineMap from '/images/about/about--ukraine-map.png';
 import europeMap from '/images/about/about--europe-map.png';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const Participants = () => {
   const lang = useLang();

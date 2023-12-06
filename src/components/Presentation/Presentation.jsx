@@ -1,8 +1,7 @@
 import './Presentation.scss';
 import Ratio from 'react-bootstrap/Ratio';
 import detailedReport from '/pdf/project-report/final_report_Ukrainian_Circle_Program.pdf';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const Presentation = () => {
   const lang = useLang();

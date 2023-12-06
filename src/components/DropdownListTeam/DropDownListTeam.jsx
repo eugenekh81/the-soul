@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { useContext, useEffect } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
+import { useEffect } from 'react';
 
 export const DropDownListTeam = ({ isTeamOpen, clickCheck }) => {
   const lang = useLang();

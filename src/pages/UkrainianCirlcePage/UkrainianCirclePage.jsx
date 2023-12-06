@@ -12,8 +12,7 @@ import { Participants } from '/src/components/Participants';
 import { JoinTheProgram } from '/src/components/JoinProgram';
 import { SupportUs } from '/src/components/SupportUs';
 import { Helmet } from 'react-helmet';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const UkrainianCirclePage = () => {
   const lang = useLang();

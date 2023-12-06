@@ -7,12 +7,14 @@ export const Information = () => {
     <section className='yellow-blue__information page__section section reveal'>
       <div className='container'>
         <div className='yellow-blue__information-container'>
-          <p className='yellow-blue__text-item'>
-            {lang === 'en'
-              ? 'We are honored to invite you to an online event called Yellow Blue!'
-              : 'Маємо честь запросити вас на онлайн подію під назвою Yellow Blue!'}
+          <p className='yellow-blue__text-item yellow-blue__text-item--center'>
+            <strong>
+              {lang === 'en'
+                ? 'We are honored to invite you to an online event called Yellow Blue!'
+                : 'Маємо честь запросити вас на онлайн подію під назвою Yellow Blue!'}
+            </strong>
           </p>
-          <p className='yellow-blue__text-item'>
+          <p className='yellow-blue__text-item yellow-blue__text-item--center'>
             {lang === 'en' ? 'Why Yellow Blue?' : 'Чому Yellow Blue?'}
           </p>
           <p className='yellow-blue__text-item'>

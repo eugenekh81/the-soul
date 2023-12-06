@@ -2,8 +2,7 @@ import { Hero } from '../Hero/Hero';
 import { NavLink } from 'react-router-dom';
 
 import './Projects.scss';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const Projects = () => {
   const lang = useLang();

@@ -3,8 +3,7 @@ import { results } from '../../data/results';
 import { ResultsItem } from '../ResultsItem/ResultsItem';
 
 import Carousel from 'react-bootstrap/Carousel';
-import { useContext } from 'react';
-import { LangContext } from '../../context/LangContextProvider';
+import { useLang } from '../../hooks/useLang';
 
 export const Results = () => {
   const lang = useLang();

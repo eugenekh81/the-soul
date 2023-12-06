@@ -1,7 +1,6 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import './ReviewItem.scss';
 import PropTypes from 'prop-types';
-import { LangContext } from '../../context/LangContextProvider';
 
 export const ReviewItem = ({ name, imgSrc, location, review_text }) => {
   const lang = useLang();

@@ -1,7 +1,6 @@
-import { useContext } from 'react';
+import { useLang } from '../../hooks/useLang';
 import { Donate } from '../Donate/Donate';
 import './SupportUs.scss';
-import { LangContext } from '../../context/LangContextProvider';
 
 export const SupportUs = () => {
   const lang = useLang();
