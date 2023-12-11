@@ -12,9 +12,10 @@ export const Partners = () => {
             {lang === 'en' ? 'Supported by' : 'Партнери'}
           </h3>
 
-          <ul className='yellow-blue__partners-logos'>
-            <PartnersItem {...partners[4]} />
-            <PartnersItem {...partners[2]} />
+          <ul className='partners__list'>
+            {partners.map((partner) => (
+              <PartnersItem {...partner} key={partner.id} />
+            ))}
           </ul>
         </div>
       </div>
