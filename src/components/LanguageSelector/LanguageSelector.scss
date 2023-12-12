@@ -2,17 +2,15 @@
 @import '../../styles/utils/mixins';
 
 .language-selector {
-  display: none;
+  display: flex;
+  gap: 10px;
 
   &--burger {
-    display: flex;
-    gap: 10px;
     height: 60px;
     justify-content: center;
     align-items: center;
 
     & button {
-      // color: $colorDarkGreen;
       font-size: 20px;
       text-transform: uppercase;
     }
@@ -65,6 +63,12 @@
   }
 
   &__button {
+    display: none;
+
+    @include onTablet--s {
+      display: block;
+    }
+
     color: $colorGoldLight;
     font-size: 18px;
     font-weight: 400;

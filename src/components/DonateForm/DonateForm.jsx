@@ -70,7 +70,7 @@ export const DonateForm = () => {
               setMode('donate');
             }}
           >
-            {lang === 'en' ? '' : 'Разовий внесок'}
+            {lang === 'en' ? 'Donate' : 'Разовий внесок'}
           </button>
           <button
             type='button'
@@ -81,7 +81,7 @@ export const DonateForm = () => {
               setMode('subscribe');
             }}
           >
-            {lang === 'en' ? '' : 'Підписка'}
+            {lang === 'en' ? 'Subscribe' : 'Підписка'}
           </button>
           <div className='donate-form__marker'></div>
         </div>

@@ -7,9 +7,7 @@ export const DonatePage = () => {
   const lang = useLang();
   return (
     <>
-      <Helmet>
-
-      </Helmet>
+      <Helmet></Helmet>
       <div className='donate-page'>
         <section className='page__section section donate-page__hero'>
           <h1 className='donate-page__main-title'>
@@ -38,6 +36,8 @@ export const DonatePage = () => {
             </div>
 
             <DonateForm />
+
+            <div id='liqpay_checkout'></div>
 
             <div className='donate-page__text-container'>
               <p className='donate-page__text donate-page__text--tc'>
