@@ -1,6 +1,6 @@
-import { MeetingWithTheSoulGallery } from '../components/MeetingWithTheSoulGallery';
-import { MeetingWithTheSoulReviews } from '../components/MeetingWithTheSoulReviews';
-import { useLang } from '../hooks/useLang';
+import { MeetingWithTheSoulGallery } from '../MeetingWithTheSoulGallery';
+import { MeetingWithTheSoulReviews } from '../MeetingWithTheSoulReviews';
+import { useLang } from '../../hooks/useLang';
 
 export const MeetingWIthTheSoulContent = () => {
   const lang = useLang();

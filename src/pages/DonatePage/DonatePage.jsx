@@ -2,6 +2,7 @@ import './DonatePage.scss';
 import { DonateForm } from '../../components/DonateForm';
 import { useLang } from '../../hooks/useLang';
 import { Helmet } from 'react-helmet';
+import { PaymentBlock } from './PaymentBlock';
 
 export const DonatePage = () => {
   const lang = useLang();
@@ -17,6 +18,7 @@ export const DonatePage = () => {
 
         <section className='page__section section donate-page__content'>
           <div className='container'>
+            <PaymentBlock />
             <div className='donate-page__text-container'>
               <p className='donate-page__text'>
                 {lang === 'en'

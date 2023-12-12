@@ -1,9 +1,10 @@
 import './MeetingWithTheSoulPage.scss';
 import { MeetingWithTheSoulBanner } from '../../components/MeetingWithTheSoulBanner';
 import { Partners } from '../../components/Partners';
-import { MeetingWIthTheSoulContent } from '../../MeetingWithTheSoulContent';
+
 import { Helmet } from 'react-helmet';
 import { useLang } from '../../hooks/useLang';
+import { MeetingWIthTheSoulContent } from '../../components/MeetingWithTheSoulContent';
 
 export const MeetingWithTheSoulPage = () => {
   const lang = useLang();
