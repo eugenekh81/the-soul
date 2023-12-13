@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { useLang } from '../../hooks/useLang';
 
 export const CopyValue = ({ value }) => {
-  const [copied, setCopied] = useState();
+  const [copied, setCopied] = useState(false);
   const lang = useLang();
 
   const handleCopy = async () => {
@@ -44,7 +44,8 @@ export const CopyValue = ({ value }) => {
             viewBox='0 0 24 24'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
-            className='donation-field__icon-copied fs-0'
+            className='payment-block__copy-icon'
+            onClick={handleCopy}
           >
             <g
               clipPath='url(#copied_svg__clip0_1118_7115)'
@@ -69,6 +70,7 @@ export const CopyValue = ({ value }) => {
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
             className='payment-block__copy-icon'
+            onClick={handleCopy}
           >
             <path
               d='M18 5.086L12.914 0H5a3 3 0 00-3 3v17h16V5.086zM4 18V3a1 1 0 011-1h7v4h4v12H4zm18-9v15H7v-2h13V7l2 2z'

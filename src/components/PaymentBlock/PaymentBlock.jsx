@@ -12,7 +12,6 @@ export const PaymentBlock = () => {
   const [paymentMethod3Open, setPaymentMethod3Open] = useState(false);
   const [paymentMethod4Open, setPaymentMethod4Open] = useState(false);
   const [paymentMethod5Open, setPaymentMethod5Open] = useState(false);
-  const [paymentMethod6Open, setPaymentMethod6Open] = useState(false);
 
   const [banksList1Open, setBanksList1Open] = useState(false);
   const [banksList2Open, setBanksList2Open] = useState(false);
@@ -330,7 +329,7 @@ export const PaymentBlock = () => {
         </button>
 
         <div className='payment-block__content'>
-          <CopyValue value='innavolak@gmail.com' />
+          <CopyValue value='innavolvak@gmail.com' />
         </div>
       </article>
 

@@ -3,7 +3,6 @@ import './DonatePage.scss';
 import { useLang } from '../../hooks/useLang';
 import { Helmet } from 'react-helmet';
 import { PaymentBlock } from '../../components/PaymentBlock/PaymentBlock';
-import { NavLink } from 'react-router-dom';
 
 export const DonatePage = () => {
   const lang = useLang();
