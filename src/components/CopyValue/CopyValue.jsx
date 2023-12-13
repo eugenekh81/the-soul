@@ -10,17 +10,19 @@ export const CopyValue = ({ value }) => {
   const handleCopy = async () => {
     setCopied(true);
     await navigator.clipboard.writeText(value);
-
-    setTimeout(() => setCopied(false), 1500);
   };
+
+  if (setCopied) {
+    setTimeout(() => setCopied(false), 1500);
+  }
 
   return (
     <button
       type='button'
       className='payment-block__destination'
       onClick={handleCopy}
-      onTouchStart={handleCopy}
-      onTouchEnd={handleCopy}
+/*       onTouchStart={handleCopy}
+      onTouchEnd={handleCopy} */
     >
       <p className='payment-block__account-number'>{value}</p>
       <div className='payment-block__copy-block'>
