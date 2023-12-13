@@ -15,7 +15,7 @@ export const CopyValue = ({ value }) => {
   };
 
   return (
-    <div className='payment-block__destination' onClick={handleCopy}>
+    <div className='payment-block__destination' onClick={handleCopy} onTouchStart={handleCopy}>
       <p className='payment-block__account-number'>{value}</p>
       <div className='payment-block__copy-block'>
         {lang === 'en' ? (
