@@ -9,7 +9,7 @@ export const CopyValue = ({ value }) => {
 
   const handleCopy = async () => {
     setCopied(true);
-    await navigator.clipboard.writeText(value);
+    return await navigator.clipboard.writeText(value);
   };
 
   if (setCopied) {
@@ -21,7 +21,7 @@ export const CopyValue = ({ value }) => {
       type='button'
       className='payment-block__destination'
       onClick={handleCopy}
-/*       onTouchStart={handleCopy}
+      /*       onTouchStart={handleCopy}
       onTouchEnd={handleCopy} */
     >
       <p className='payment-block__account-number'>{value}</p>
