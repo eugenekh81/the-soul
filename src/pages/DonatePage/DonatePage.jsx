@@ -1,8 +1,9 @@
 import './DonatePage.scss';
-import { DonateForm } from '../../components/DonateForm';
+/* import { DonateForm } from '../../components/DonateForm'; */
 import { useLang } from '../../hooks/useLang';
 import { Helmet } from 'react-helmet';
-import { PaymentBlock } from './PaymentBlock';
+import { PaymentBlock } from '../../components/PaymentBlock/PaymentBlock';
+import { NavLink } from 'react-router-dom';
 
 export const DonatePage = () => {
   const lang = useLang();
@@ -18,7 +19,6 @@ export const DonatePage = () => {
 
         <section className='page__section section donate-page__content'>
           <div className='container'>
-            <PaymentBlock />
             <div className='donate-page__text-container'>
               <p className='donate-page__text'>
                 {lang === 'en'
@@ -36,11 +36,9 @@ export const DonatePage = () => {
                   : 'Ви можете переказати будь-яку комфортну вам суму в підтримку нашого Центру - вона буде направлена на реалізацію наших проектів та підтримку діяльності.'}
               </p>
             </div>
-
-            <DonateForm />
-
-            <div id='liqpay_checkout'></div>
-
+            <div className='donate-page__payments'>
+              <PaymentBlock />
+            </div>
             <div className='donate-page__text-container'>
               <p className='donate-page__text donate-page__text--tc'>
                 {lang === 'en'

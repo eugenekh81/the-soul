@@ -67,4 +67,34 @@
       line-height: 1.5;
     }
   }
+
+  &__payments {
+    margin: 0 0 20px;
+  }
+
+  &__liqpay {
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 18px;
+
+    background-color: $colorDarkGreen;
+    color: $colorBeige;
+
+    font-weight: 600;
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $colorDarkGreen;
+    border-radius: 100px;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $colorDarkGreen;
+      background-color: #fff;
+    }
+  }
 }
