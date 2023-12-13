@@ -180,7 +180,7 @@
 
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
 
     border: 1px solid $colorDarkGreen;
     border-radius: 100px;
@@ -189,6 +189,10 @@
       margin: 0;
       padding: 0;
       border: none;
+    }
+
+    @include onTablet--m {
+      gap: 8px;
     }
   }
 
