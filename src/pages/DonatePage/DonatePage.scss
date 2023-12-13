@@ -47,6 +47,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include onTablet--m {
+      margin: 0 0 40px;
+    }
   }
 
   &__text {
@@ -69,7 +73,11 @@
   }
 
   &__payments {
-    margin: 0 0 20px;
+    margin: 0 0 24px;
+
+    @include onTablet--m {
+      margin: 0 0 40px;
+    }
   }
 
   &__liqpay {
