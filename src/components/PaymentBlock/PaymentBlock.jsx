@@ -36,24 +36,42 @@ export const PaymentBlock = () => {
 
         <div className='payment-block__content'>
           <label className='payment-block__label'>
-            <span className='payment-block__label-text'>Назва компанії</span>
-            <CopyValue value='45120359' />
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Company name' : 'Назва компанії'}
+            </span>
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? "NGO UKRAINIAN PSYCHOLOGY CENTER 'THE SOUL'"
+                  : 'ГО УКРАЇНСЬКИЙ ПСИХОЛОГІЧНИЙ ЦЕНТР "ДУША"'
+              }
+            />
           </label>
 
           <label className='payment-block__label'>
-            <span className='payment-block__label-text'>ЄДРПОУ</span>
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'ID Code' : 'ЄДРПОУ'}
+            </span>
             <CopyValue value='45120359' />
           </label>
 
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>
-              Призначення платежу
+              {lang === 'en' ? 'Payment purpose' : 'Призначення платежу'}
             </span>
-            <CopyValue value='Безповоротній благодійний внесок' />
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? 'Charitable donation'
+                  : 'Безповоротній благодійний внесок'
+              }
+            />
           </label>
 
           <label className='payment-block__label'>
-            <span className='payment-block__label-text'>Номер рахунку</span>
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
+            </span>
             <CopyValue value='UA 16 305299 00000 26009040130741' />
           </label>
         </div>
@@ -69,24 +87,38 @@ export const PaymentBlock = () => {
           className='payment-block__title'
           onClick={() => setPaymentMethod2Open(!paymentMethod2Open)}
         >
-          {lang === 'en'
-            ? 'Bank transfer (USD)'
-            : 'Банківський переказ (Долар США)'}
+          {lang === 'en' ? 'Bank transfer (USD)' : 'Банківський переказ (USD)'}
         </button>
 
         <div className='payment-block__content'>
-          <p className='payment-block__company-name'>
-            ГО УКРАЇНСЬКИЙ ПСИХОЛОГІЧНИЙ ЦЕНТР &quot;ДУША&quot;
-          </p>
-
+          <label className='payment-block__label'>
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Company name' : 'Назва компанії'}
+            </span>
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? "NGO UKRAINIAN PSYCHOLOGY CENTER 'THE SOUL'"
+                  : 'ГО УКРАЇНСЬКИЙ ПСИХОЛОГІЧНИЙ ЦЕНТР "ДУША"'
+              }
+            />
+          </label>
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>IBAN</span>
             <CopyValue value='UA 04 305299 00000 26000000139424' />
           </label>
 
           <label className='payment-block__label'>
-            <span className='payment-block__label-text'>Назва банку</span>
-            <CopyValue value='JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE' />
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Bank name' : 'Назва банку'}
+            </span>
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? 'JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE'
+                  : 'АТ КБ "Приватбанк" , вул. Грушевського, 1д, м. Київ 01001, Україна'
+              }
+            />
           </label>
 
           <label className='payment-block__label'>
@@ -96,9 +128,15 @@ export const PaymentBlock = () => {
 
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>
-              Призначення платежу
+              {lang === 'en' ? 'Payment purpose' : 'Призначення платежу'}
             </span>
-            <CopyValue value='Безповоротній благодійний внесок' />
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? 'Charitable donation'
+                  : 'Безповоротній благодійний внесок'
+              }
+            />
           </label>
 
           <div
@@ -114,43 +152,47 @@ export const PaymentBlock = () => {
               }}
             >
               {' '}
-              Банки кореспонденти
+              {lang === 'en' ? 'Correspondent banks' : 'Банки кореспонденти'}
             </button>
 
             <ul className='payment-block__banks-list'>
               <li className='payment-block__bank-item'>
                 <p className='payment-block__bank-info'>
-                  Рахунок у банку-кореспонденті <span>001-1-000080</span>
+                  {lang === 'en' ? 'Account number ' : 'Номер рахунку '}{' '}
+                  <span>001-1-000080</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  SWIFT Code банку-кореспондента <span>CHASUS33</span>
+                  SWIFT <span>CHASUS33</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  Банк-кореспондент{' '}
+                  {lang === 'en' ? 'Correspondent bank ' : 'Банк кореспондент '}
                   <span>JP Morgan Chase Bank, New York, USA</span>
                 </p>
               </li>
               <li className='payment-block__bank-item'>
                 <p className='payment-block__bank-info'>
-                  Рахунок у банку-кореспонденті <span>890-0085-754</span>
+                  {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
+                  <span>890-0085-754</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  SWIFT Code банку-кореспондента <span>IRVT US 3N</span>
+                  SWIFT <span>IRVT US 3N</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  Банк-кореспондент{' '}
+                  {lang === 'en' ? 'Correspondent bank ' : 'Банк кореспондент '}
                   <span>The Bank of New York Mellon, New York, USA</span>
                 </p>
               </li>
               <li className='payment-block__bank-item'>
                 <p className='payment-block__bank-info'>
-                  Рахунок у банку-кореспонденті <span>36445343</span>
+                  {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
+                  <span>36445343</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  SWIFT Code банку-кореспондента <span>CITI US 33</span>
+                  SWIFT <span>CITI US 33</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  Банк-кореспондент <span>Citibank N.A., NEW YORK, USA</span>
+                  {lang === 'en' ? 'Correspondent bank ' : 'Банк кореспондент '}
+                  <span>Citibank N.A., NEW YORK, USA</span>
                 </p>
               </li>
             </ul>
@@ -168,13 +210,22 @@ export const PaymentBlock = () => {
           className='payment-block__title'
           onClick={() => setPaymentMethod3Open(!paymentMethod3Open)}
         >
-          {lang === 'en' ? 'Bank transfer (EUR)' : 'Банківський переказ (Євро)'}
+          {lang === 'en' ? 'Bank transfer (EUR)' : 'Банківський переказ (EUR)'}
         </button>
 
         <div className='payment-block__content'>
-          <p className='payment-block__company-name'>
-            ГО УКРАЇНСЬКИЙ ПСИХОЛОГІЧНИЙ ЦЕНТР &quot;ДУША&quot;
-          </p>
+          <label className='payment-block__label'>
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Company name' : 'Назва компанії'}
+            </span>
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? "NGO UKRAINIAN PSYCHOLOGY CENTER 'THE SOUL'"
+                  : 'ГО УКРАЇНСЬКИЙ ПСИХОЛОГІЧНИЙ ЦЕНТР "ДУША"'
+              }
+            />
+          </label>
 
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>IBAN</span>
@@ -182,8 +233,16 @@ export const PaymentBlock = () => {
           </label>
 
           <label className='payment-block__label'>
-            <span className='payment-block__label-text'>Назва банку</span>
-            <CopyValue value='JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE' />
+            <span className='payment-block__label-text'>
+              {lang === 'en' ? 'Bank name' : 'Назва банку'}
+            </span>
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? 'JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE'
+                  : 'АТ КБ "Приватбанк" , вул. Грушевського, 1д, м. Київ 01001, Україна'
+              }
+            />
           </label>
 
           <label className='payment-block__label'>
@@ -193,9 +252,15 @@ export const PaymentBlock = () => {
 
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>
-              Призначення платежу
+              {lang === 'en' ? 'Payment purpose' : 'Призначення платежу'}
             </span>
-            <CopyValue value='Безповоротній благодійний внесок' />
+            <CopyValue
+              value={
+                lang === 'en'
+                  ? 'Charitable donation'
+                  : 'Безповоротній благодійний внесок'
+              }
+            />
           </label>
 
           <div
@@ -210,32 +275,33 @@ export const PaymentBlock = () => {
                 setBanksList2Open(!banksList2Open);
               }}
             >
-              {' '}
-              Банки кореспонденти
+              {lang === 'en' ? 'Correspondent banks' : 'Банки кореспонденти'}
             </button>
 
             <ul className='payment-block__banks-list'>
               <li className='payment-block__bank-item'>
                 <p className='payment-block__bank-info'>
-                  Рахунок у банку-кореспонденті <span>400886700401</span>
+                  {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
+                  <span>400886700401</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  SWIFT Code банку-кореспондента <span>COBADEFF</span>
+                  SWIFT <span>COBADEFF</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  Банк-кореспондент{' '}
+                  {lang === 'en' ? 'Correspondent bank ' : 'Банк кореспондент '}
                   <span>Commerzbank AG, Frankfurt am Main, Germany</span>
                 </p>
               </li>
               <li className='payment-block__bank-item'>
                 <p className='payment-block__bank-info'>
-                  Рахунок у банку-кореспонденті <span>6231605145</span>
+                  {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
+                  <span>6231605145</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  SWIFT Code банку-кореспондента <span>CHASDEFX</span>
+                  SWIFT <span>CHASDEFX</span>
                 </p>
                 <p className='payment-block__bank-info'>
-                  Банк-кореспондент{' '}
+                  {lang === 'en' ? 'Correspondent bank ' : 'Банк кореспондент '}
                   <span>J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY</span>
                 </p>
               </li>
@@ -253,8 +319,14 @@ export const PaymentBlock = () => {
           type='button'
           className='payment-block__title payment-block__title--paypal'
           onClick={() => setPaymentMethod4Open(!paymentMethod4Open)}
-        > PAYPAL
-          <img className="payment-block__logo-image" src={payPalLogo} alt="PayPal" />
+        >
+          {' '}
+          PAYPAL
+          <img
+            className='payment-block__logo-image'
+            src={payPalLogo}
+            alt='PayPal'
+          />
         </button>
 
         <div className='payment-block__content'>
