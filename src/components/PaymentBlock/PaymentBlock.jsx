@@ -21,9 +21,48 @@ export const PaymentBlock = () => {
   return (
     <section className='payments'>
       <article
-        className={cn('payment-block', {
-          'payment-block--open': paymentMethod1Open,
-        })}
+        className={cn(
+          'payment-block',
+          'animation',
+          'animation__fade-up',
+          'animation__fade-up--fire'
+        )}
+      >
+        <NavLink
+          to={`https://www.liqpay.ua/${lang}/checkout/i59265553187`}
+          target='_blank'
+          type='button'
+          className='payment-block__title'
+        >
+          Credit / Debit Card
+          <svg
+            width='22'
+            height='22'
+            viewBox='0 0 32 32'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+            className='payment-block__liqpay-icon'
+          >
+            <path
+              d='M9.334 22.67L22.667 9.335M9.334 9.336h13.333v13.333'
+              stroke='currentColor'
+              strokeWidth='2'
+              strokeLinejoin='round'
+            ></path>
+          </svg>
+        </NavLink>
+      </article>
+
+      <article
+        className={cn(
+          'payment-block',
+          'animation',
+          'animation__fade-up',
+          'animation__fade-up--fire',
+          {
+            'payment-block--open': paymentMethod1Open,
+          }
+        )}
       >
         <button
           type='button'
@@ -71,15 +110,21 @@ export const PaymentBlock = () => {
             <span className='payment-block__label-text'>
               {lang === 'en' ? 'Account number ' : 'Номер рахунку '}
             </span>
-            <CopyValue value='UA 16 305299 00000 26009040130741' />
+            <CopyValue value='UA163052990000026009040130741' />
           </label>
         </div>
       </article>
 
       <article
-        className={cn('payment-block', {
-          'payment-block--open': paymentMethod2Open,
-        })}
+        className={cn(
+          'payment-block',
+          'animation',
+          'animation__fade-up',
+          'animation__fade-up--fire',
+          {
+            'payment-block--open': paymentMethod2Open,
+          }
+        )}
       >
         <button
           type='button'
@@ -104,7 +149,7 @@ export const PaymentBlock = () => {
           </label>
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>IBAN</span>
-            <CopyValue value='UA 04 305299 00000 26000000139424' />
+            <CopyValue value='UA043052990000026000000139424' />
           </label>
 
           <label className='payment-block__label'>
@@ -200,9 +245,15 @@ export const PaymentBlock = () => {
       </article>
 
       <article
-        className={cn('payment-block', {
-          'payment-block--open': paymentMethod3Open,
-        })}
+        className={cn(
+          'payment-block',
+          'animation',
+          'animation__fade-up',
+          'animation__fade-up--fire',
+          {
+            'payment-block--open': paymentMethod3Open,
+          }
+        )}
       >
         <button
           type='button'
@@ -228,7 +279,7 @@ export const PaymentBlock = () => {
 
           <label className='payment-block__label'>
             <span className='payment-block__label-text'>IBAN</span>
-            <CopyValue value='UA 04 305299 00000 26008030133492' />
+            <CopyValue value='UA043052990000026008030133492' />
           </label>
 
           <label className='payment-block__label'>
@@ -310,9 +361,15 @@ export const PaymentBlock = () => {
       </article>
 
       <article
-        className={cn('payment-block', {
-          'payment-block--open': paymentMethod4Open,
-        })}
+        className={cn(
+          'payment-block',
+          'animation',
+          'animation__fade-up',
+          'animation__fade-up--fire',
+          {
+            'payment-block--open': paymentMethod4Open,
+          }
+        )}
       >
         <button
           type='button'
@@ -330,30 +387,6 @@ export const PaymentBlock = () => {
 
         <div className='payment-block__content'>
           <CopyValue value='innavolvak@gmail.com' />
-        </div>
-      </article>
-
-      <article
-        className={cn('payment-block', {
-          'payment-block--open': paymentMethod5Open,
-        })}
-      >
-        <button
-          type='button'
-          className='payment-block__title'
-          onClick={() => setPaymentMethod5Open(!paymentMethod5Open)}
-        >
-          Credit / Debit Card
-        </button>
-
-        <div className='payment-block__content'>
-          <NavLink
-            to={`https://www.liqpay.ua/${lang}/checkout/i59265553187`}
-            target='_blank'
-            className='donate-page__liqpay'
-          >
-            {lang === 'en' ? 'Card transfer' : 'Переказ на картку'}
-          </NavLink>
         </div>
       </article>
     </section>

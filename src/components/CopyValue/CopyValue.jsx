@@ -21,8 +21,6 @@ export const CopyValue = ({ value }) => {
       type='button'
       className='payment-block__destination'
       onClick={handleCopy}
-      /*       onTouchStart={handleCopy}
-      onTouchEnd={handleCopy} */
     >
       <p className='payment-block__account-number'>{value}</p>
       <div className='payment-block__copy-block'>

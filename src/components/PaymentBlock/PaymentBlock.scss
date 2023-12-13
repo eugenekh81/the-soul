@@ -4,7 +4,12 @@
 .payments {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
+
+  @include onDesktop {
+    gap: 20px;
+  }
 }
 
 .payment-block {
@@ -13,6 +18,7 @@
 
   border: 1px solid $colorDarkGreen;
   border-radius: 24px;
+
   max-height: 12px * 2 + 21px;
   overflow: hidden;
 
@@ -20,15 +26,23 @@
 
   &--open {
     max-height: 1500px;
-  }
 
-  @include onTablet--s {
+    @include onTablet--s {
+      max-height: 1500px;
+    }
   }
 
   @include onTablet--m {
   }
 
   @include onDesktop {
+    width: calc(50% - 25px);
+  }
+
+  @for $child from 0 through 5 {
+    &:nth-child(#{$child}) {
+      animation-delay: calc(#{$child} * 100ms);
+    }
   }
 
   &__content {
@@ -68,7 +82,8 @@
     &--paypal {
       position: relative;
       height: 44px;
-      color: $colorDarkGreen;
+      color: $colorTelegramBackgroundBlue;
+      background-color: $colorTelegramBackgroundBlue;
 
       &:hover {
         color: #fff;
@@ -111,10 +126,8 @@
   }
 
   &__destination {
+    text-align: left;
     cursor: pointer;
-
-    padding: 10px 28px;
-    border: 1px solid #aab2ca;
     border-radius: 100px;
     color: $colorDarkGreen;
 
@@ -122,18 +135,26 @@
     font-weight: 600;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+
     justify-content: space-between;
 
-    &:hover {
-      background-color: $colorBeige;
+    @include onTablet--s {
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 28px;
+      border: 1px solid #aab2ca;
     }
 
-    @include onTablet--s {
+    &:hover {
+      @include onTablet--s {
+        background-color: $colorBeige;
+      }
     }
 
     @include onDesktop {
-      padding: 20px 32px;
+      padding: 10px 24px;
     }
   }
 
@@ -144,19 +165,39 @@
   }
 
   &__label-text {
-    padding: 0 0 0 24px;
     font-weight: 600;
     font-size: 16px;
+
+    @include onTablet--s {
+      padding: 0 0 0 24px;
+    }
   }
 
   &__copy-block {
+    margin: 0 0 12px;
+    padding: 5px 12px;
+
     display: flex;
     align-items: center;
     gap: 8px;
+
+    border: 1px solid $colorDarkGreen;
+    border-radius: 100px;
+
+    @include onTablet--s {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
   }
 
   &__copy-text {
-    display: none;
+    display: flex;
+    border-radius: 100px;
+
+    @include onTablet--s {
+      display: none;
+    }
 
     @include onTablet--m {
       display: flex;
@@ -174,14 +215,19 @@
   }
 
   &__banks {
-    padding: 0 0 0 24px;
+    padding: 0;
+
+    @include onTablet--s {
+      padding: 0 0 0 24px;
+    }
+
     max-height: 16px;
     overflow: hidden;
 
     transition: max-height 0.3s ease;
 
     &--open {
-      max-height: 400px;
+      max-height: 410px;
     }
   }
 
@@ -203,8 +249,16 @@
   }
 
   &__bank-info {
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet--m {
+      flex-direction: row;
+      gap: 8px;
+    }
     span {
       font-weight: 600;
+      text-transform: uppercase;
     }
   }
 

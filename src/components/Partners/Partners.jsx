@@ -2,8 +2,8 @@ import './Partners.scss';
 
 import { partners } from '../../data/partners';
 
-import { Donate } from '../Donate/Donate';
-import { PartnersItem } from '../PartnersItem/PartnersItem';
+import { Donate } from '../Donate';
+import { PartnersItem } from '../PartnersItem/';
 import { useLang } from '../../hooks/useLang';
 
 export const Partners = () => {
