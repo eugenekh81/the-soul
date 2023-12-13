@@ -8,8 +8,8 @@ export const CopyValue = ({ value }) => {
   const lang = useLang();
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(value);
     setCopied(true);
+    await navigator.clipboard.writeText(value);
 
     setTimeout(() => setCopied(false), 1500);
   };
@@ -20,6 +20,7 @@ export const CopyValue = ({ value }) => {
       className='payment-block__destination'
       onClick={handleCopy}
       onTouchStart={handleCopy}
+      onTouchEnd={handleCopy}
     >
       <p className='payment-block__account-number'>{value}</p>
       <div className='payment-block__copy-block'>
