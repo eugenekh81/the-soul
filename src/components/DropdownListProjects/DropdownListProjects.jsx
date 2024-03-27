@@ -38,6 +38,12 @@ export const DropDownListProjects = ({ isProjectsOpen, clickCheck }) => {
         >
           {lang === 'en' ? 'Meetings with The Soul' : 'Зустрічі з Душею'}
         </NavLink>
+        <NavLink
+          className='projects-list__link'
+          to={`/${lang}/projects/crisis-center`}
+        >
+          {lang === 'en' ? 'Crisis center' : 'Кризовий центр'}
+        </NavLink>
       </li>
     </ul>
   );

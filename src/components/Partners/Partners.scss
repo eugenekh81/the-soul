@@ -20,9 +20,13 @@
   &__list-item {
     flex-shrink: 0;
 
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @for $child from 0 through 5 {
       &:nth-child(#{$child}) {
-        animation-delay: calc(#{$child} * 100ms);
+        animation-delay: calc(#{$child} * 300ms);
       }
     }
   }

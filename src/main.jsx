@@ -15,6 +15,7 @@ import { MarynaYakhno } from './pages/TeamPages/MarynaYakhno';
 import { MeetingWithTheSoulPage } from './pages/MeetingWithTheSoulPage';
 import { DonatePage } from './pages/DonatePage';
 import { YellowBlue } from './pages/YellowBlue';
+import { CrisisCenterPage } from './pages/CrisisCenterPage';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
                 path: 'meetings-with-the-soul',
                 element: <MeetingWithTheSoulPage />,
               },
+              {
+                path: 'crisis-center',
+                element: <CrisisCenterPage />
+              }
             ],
           },
           {

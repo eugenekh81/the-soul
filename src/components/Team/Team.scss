@@ -56,7 +56,7 @@
 
     @for $child from 0 through 4 {
       &:nth-child(#{$child}) {
-        animation-delay: calc(#{$child} * 100ms);
+        animation-delay: calc(#{$child} * 300ms);
       }
     }
   }
