@@ -9,8 +9,13 @@ import { useLang } from '../../hooks/useLang';
 export const CrisisCenterDescription = () => {
   const lang = useLang();
   return (
-    <div className='crisis-center__description'>
+    <section className='section crisis-center__description'>
       <div className='container'>
+        <h2 className='crisis-center__title section__title'>
+          {lang === 'en'
+            ? 'Live therapeutic groups'
+            : 'Живі терапевтичні групи'}
+        </h2>
         <div className='crisis-center__description-content'>
           <div className='crisis-center__text-content'>
             <p className='crisis-center__text'>
@@ -37,25 +42,33 @@ export const CrisisCenterDescription = () => {
               src={psychologist2}
               alt='Psychologist photo'
             />
-            <p className='crisis-center__image-text'>Text 1</p>
+            <p className='crisis-center__image-text'>
+              {lang === 'en' ? 'Spain' : 'Іспанія'}
+            </p>
             <img
               className='crisis-center__image'
               src={psychologist5}
               alt='Psychologist photo'
             />
+            <p className='crisis-center__image-text'>
+              {lang === 'en' ? 'Germany' : 'Німеччина'}
+            </p>
             <img
               className='crisis-center__image'
               src={psychologist3}
               alt='Psychologist photo'
             />
-            <p className='crisis-center__image-text crisis-center__image-text--wide'>Живі терапевтичні групи</p>
-
+            <p className='crisis-center__image-text'>
+              {lang === 'en' ? 'Belguim' : 'Бельгія'}
+            </p>
             <img
               className='crisis-center__image'
               src={psychologist1}
               alt='Psychologist photo'
             />
-            <p className='crisis-center__image-text'>Text 1</p>
+            <p className='crisis-center__image-text'>
+              {lang === 'en' ? 'Ukraine' : 'Україна'}
+            </p>
             <img
               className='crisis-center__image'
               src={psychologist4}
@@ -64,6 +77,6 @@ export const CrisisCenterDescription = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
