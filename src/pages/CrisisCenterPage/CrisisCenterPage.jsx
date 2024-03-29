@@ -5,6 +5,7 @@ import { CrisisCenterDescription } from '../../components/CrisisCenterDescriptio
 import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 import { CrisisCenterConsultation } from '../../components/CrisisCenterConsultation/CrisisCenterConsultation';
+import { CrisisCenterSupportGroups } from '../../components/CrisisCenterSupportGroups';
 
 export const CrisisCenterPage = () => {
   const lang = useContext(LangContext);
@@ -32,6 +33,7 @@ export const CrisisCenterPage = () => {
         <CrisisCenterBanner />
         <CrisisCenterDescription />
         <CrisisCenterConsultation />
+        <CrisisCenterSupportGroups />
       </section>
     </>
   );
