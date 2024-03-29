@@ -9,9 +9,11 @@ export const CrisisCenterConsultation = () => {
   return (
     <section className='page__section section crisis-center__consultations consultations'>
       <div className='container'>
-        <div className='consultations__content'>
-          <h2 className='consultations__title'>{crisisCenter[lang]?.title}</h2>
+          <h2 className='consultations__title section__title'>{crisisCenter[lang]?.title}</h2>
           <p className='consultations__text'>{crisisCenter[lang]?.subtitle}</p>
+
+        
+        <div className='consultations__content'>
         </div>
 
         <CrisisCenterConsultationList items={crisisCenter[lang].topics} />

@@ -1,15 +1,46 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useRef } from 'react';
+import { useState } from 'react';
 
-export const CrisisCenterConsultationItem = ({ title, text }) => {
+export const CrisisCenterConsultationItem = ({
+  id,
+  title,
+  text,
+  selectedId,
+  setSelectedId,
+}) => {
+  const [height, setHeight] = useState('0');
+
+  const content = useRef(null);
+
+  useEffect(() => {
+    setHeight(selectedId === id ? `${content.current.scrollHeight}px` : '0');
+  }, [selectedId]);
+
   return (
-    <li className='consultations__item'>
-      <h3 className='consultations__title'>{title}</h3>
-      <p className='consultations__text'>{text}</p>
+    <li
+      className='consultations__item'
+      onClick={() => {
+        setSelectedId(id);
+      }}
+    >
+      <h3 className='consultations__topic'>{title}</h3>
+      <p
+        className='consultations__description'
+        style={{ height }}
+        ref={content}
+      >
+        {text}
+      </p>
     </li>
   );
 };
 
 CrisisCenterConsultationItem.propTypes = {
+  id: PropTypes.number,
   title: PropTypes.string,
   text: PropTypes.string,
+  selectedId: PropTypes.number,
+  setSelectedId: PropTypes.func,
 };

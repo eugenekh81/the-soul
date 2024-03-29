@@ -125,29 +125,6 @@
     }
   }
 
-  &__text-content {
-    /*     &:not(:last-child) {
-      margin: 0 0 24px;
-
-      @include onTablet--m {
-        margin: 0 0 40px;
-      }
-    }
-
-    padding: 24px 28px;
-
-    background-color: $colorBeige;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    border-radius: 24px;
-
-    &--dark-green {
-      background-color: $colorDarkGreen;
-      color: $colorBeige;
-    } */
-  }
-
   &__gallery {
     margin: 0 0 40px;
     display: none;
@@ -205,5 +182,32 @@
     object-fit: cover;
     object-position: center;
     border-radius: 24px;
+  }
+}
+
+.consultations {
+  &__text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 10px;
+    border: 1px solid red;
+
+    cursor: pointer;
+  }
+
+  &__topic {
+    font-weight: 700;
+  }
+
+  &__description {
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &--open {
+      height: 100%;
+    }
   }
 }
