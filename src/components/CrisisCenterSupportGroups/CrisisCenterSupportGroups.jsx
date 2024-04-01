@@ -16,6 +16,9 @@ export const CrisisCenterSupportGroups = () => {
         </p>
 
         <CrisisCenterSupportGroupsList />
+        <p
+          dangerouslySetInnerHTML={{ __html: crisisCenter.en.specialThanks.textContent[1]}}
+        ></p>
       </div>
     </section>
   );

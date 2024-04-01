@@ -220,6 +220,7 @@
   }
 
   &__topic {
+    position: relative;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
@@ -229,6 +230,48 @@
 
     padding: 20px;
     border-radius: 30px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 28px;
+      width: 28px;
+
+      background-image: url('/images/icons/plus.svg');
+      background-size: 18px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      color: #fff;
+      border: 2px solid $colorBeige;
+      border-radius: 50%;
+
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      transition: all 0.3s ease;
+    }
+
+    &::before {
+      left: 50px;
+    }
+
+    &::after {
+      right: 50px;
+    }
+
+    &--open::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &--open::after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
   }
 
   &__description {

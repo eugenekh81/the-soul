@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useRef } from 'react';
@@ -25,7 +26,13 @@ export const CrisisCenterConsultationItem = ({
         setSelectedId(selectedId === id ? null : id);
       }}
     >
-      <h3 className='consultations__topic'>{title}</h3>
+      <h3
+        className={classNames('consultations__topic', {
+          'consultations__topic--open': id === selectedId,
+        })}
+      >
+        {title}
+      </h3>
       <p
         className='consultations__description'
         style={{ height }}
