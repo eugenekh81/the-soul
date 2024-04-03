@@ -8,6 +8,7 @@ import { CrisisCenterConsultation } from '../../components/CrisisCenterConsultat
 import { CrisisCenterSupportGroups } from '../../components/CrisisCenterSupportGroups';
 import { CrisisCenterReviews } from '../../components/CrisisCenterReviews/CrisisCenterReviews';
 import { Partners } from '../../components/Partners';
+import { CrisisCenterSpecialThanks } from '../../components/CrisisCenterSpecialThanks/CrisisCenterSpecialThanks';
 
 export const CrisisCenterPage = () => {
   const lang = useContext(LangContext);
@@ -38,6 +39,7 @@ export const CrisisCenterPage = () => {
         <CrisisCenterSupportGroups />
         <CrisisCenterReviews />
         <Partners />
+        <CrisisCenterSpecialThanks />
       </section>
     </>
   );

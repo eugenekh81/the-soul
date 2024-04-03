@@ -399,3 +399,53 @@
     font-weight: 600;
   }
 }
+
+.special-thanks {
+  &__text {
+    margin: 0 0 20px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+
+    a {
+      color: $colorDarkGreen;
+      font-weight: bold;
+    }
+
+    b {
+      font-weight: 600;
+      color: $colorDarkGreen;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__item {
+    border-radius: 30px;
+    width: 100%;
+
+    filter: brightness(0.9);
+    overflow: hidden;
+
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transform: scale(1);
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
