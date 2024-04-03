@@ -183,6 +183,66 @@
     object-position: center;
     border-radius: 24px;
   }
+
+  &__reviews {
+  }
+
+  &__reviews-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+
+    @include onTablet--m {
+      flex-direction: row;
+    }
+  }
+
+  &__reviews-item {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+
+    @include onDesktop {
+      width: 48%;
+    }
+
+    padding: 20px 30px 40px;
+    border-radius: 12px;
+
+    &--blue {
+      background-color: $colorTelegramBackgroundBlue;
+    }
+
+    &--green {
+      background-color: $colorTelegramBackgroundGreen;
+    }
+  }
+
+  &__reviews-notification {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+    font-weight: 500;
+    line-height: 30px;
+
+    &--blue {
+      color: $colorTelegramPrimaryBlue;
+    }
+
+    &--green {
+      color: $colorTelegramPrimaryGreen;
+    }
+
+    &-icon {
+      height: 12px;
+      width: 20px;
+    }
+  }
 }
 
 .consultations {

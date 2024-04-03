@@ -6,6 +6,8 @@ import { useContext } from 'react';
 import { LangContext } from '../../context/LangContextProvider';
 import { CrisisCenterConsultation } from '../../components/CrisisCenterConsultation/CrisisCenterConsultation';
 import { CrisisCenterSupportGroups } from '../../components/CrisisCenterSupportGroups';
+import { CrisisCenterReviews } from '../../components/CrisisCenterReviews/CrisisCenterReviews';
+import { Partners } from '../../components/Partners';
 
 export const CrisisCenterPage = () => {
   const lang = useContext(LangContext);
@@ -34,6 +36,8 @@ export const CrisisCenterPage = () => {
         <CrisisCenterDescription />
         <CrisisCenterConsultation />
         <CrisisCenterSupportGroups />
+        <CrisisCenterReviews />
+        <Partners />
       </section>
     </>
   );
