@@ -253,21 +253,27 @@
     margin-bottom: 32px;
   }
 
+  &__lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
+
     gap: 20px;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    // padding: 20px;
 
     cursor: pointer;
 
     @include onDesktop {
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
 
       color: $colorDarkGreen;

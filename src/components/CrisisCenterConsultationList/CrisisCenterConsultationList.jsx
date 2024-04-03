@@ -7,8 +7,9 @@ export const CrisisCenterConsultationList = ({ items }) => {
   console.log(selectedId, 'selected ID');
 
   return (
+    <div className="consultations__lists">
     <ul className='consultations__list'>
-      {items.map((c) => (
+      {items.slice(0,4).map((c) => (
         <CrisisCenterConsultationItem
           {...c}
           key={c.id}
@@ -17,6 +18,18 @@ export const CrisisCenterConsultationList = ({ items }) => {
         />
       ))}
     </ul>
+    <ul className='consultations__list'>
+      {items.slice(4).map((c) => (
+        <CrisisCenterConsultationItem
+          {...c}
+          key={c.id}
+          selectedId={selectedId}
+          setSelectedId={setSelectedId}
+        />
+      ))}
+    </ul>
+
+    </div>
   );
 };
 
