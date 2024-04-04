@@ -1,8 +1,17 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-export const CrisisCenterReviewsItem = ({ text, time }) => {
+export const CrisisCenterReviewsItem = ({ id, text, time }) => {
   return (
-    <li className='crisis-center__reviews-item crisis-center__reviews-item--blue'>
+    <li
+      className={classNames(
+        'crisis-center__reviews-item',
+        'crisis-center__reviews-item--blue',
+        {
+          'crisis-center__reviews-item--vertical': id === 3,
+        }
+      )}
+    >
       {text}
 
       <div className='crisis-center__reviews-notification crisis-center__reviews-notification--blue'>
