@@ -36,6 +36,7 @@ export const CrisisCenterReviewsItem = ({ id, text, time }) => {
 };
 
 CrisisCenterReviewsItem.propTypes = {
+  id: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
 };

@@ -195,6 +195,7 @@
 
     @include onTablet--m {
       flex-direction: row;
+      flex-wrap: wrap;
     }
 
     @include onDesktop {
@@ -266,9 +267,15 @@
   }
 
   &__lists {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onDesktop {
+      gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__list {
@@ -284,23 +291,23 @@
 
     cursor: pointer;
 
+    border: 2px solid $colorDarkGreen;
+    border-top: none;
+    border-radius: 33px;
+    background-color: $colorBeige;
+
     @include onDesktop {
       width: 100%;
       margin: 0 auto;
 
       color: $colorDarkGreen;
-
-      border: 2px solid $colorDarkGreen;
-      border-top: none;
-      border-radius: 33px;
-      background-color: $colorBeige;
     }
   }
 
   &__topic {
     position: relative;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 
     color: $colorBeige;
@@ -308,6 +315,10 @@
 
     padding: 20px;
     border-radius: 30px;
+
+    @include onTablet--m {
+      font-size: 24px;
+    }
 
     &::before,
     &::after {
@@ -336,11 +347,11 @@
     }
 
     &::before {
-      left: 50px;
+      left: 20px;
     }
 
     &::after {
-      right: 50px;
+      right: 20px;
     }
 
     &--open::before {
@@ -368,6 +379,31 @@
 }
 
 .support-groups {
+  &__carousel {
+    padding: 0 36px;
+
+    @include onTablet--m {
+      display: none;
+    }
+
+    & .carousel-inner {
+      border-radius: 24px;
+    }
+
+    & .carousel-indicators {
+      background-color: red;
+      top: 100%;
+
+      & button {
+        background-color: $colorDarkGreen;
+      }
+    }
+  }
+
+  &__carousel-item {
+    width: 100%;
+  }
+
   &__subtitle {
     font-size: 20px;
     text-align: justify;
@@ -376,7 +412,20 @@
   }
 
   &__list {
-    display: flex;
+    &--mobile {
+      display: inline-block;
+      @include onTablet--m {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onTablet--m {
+        display: flex;
+      }
+    }
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -384,19 +433,26 @@
 
   &__item {
     width: 300px;
+    list-style: none;
 
     background-color: $colorDarkGreen;
     border-radius: 24px;
+
+    @include onTablet--m {
+      width: calc((100% - 20px * 2) / 3);
+    }
+
+    @include onDesktop--xl {
+      width: calc((100% - 20px * 3) / 4);
+    }
   }
 
   &__image-container {
-    height: 300px;
     display: flex;
   }
 
   &__image {
     display: flex;
-    height: 100%;
     width: 100%;
   }
 
@@ -438,6 +494,12 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
+
+    @include onTablet--m {
+      flex-direction: row;
+    }
+
     justify-content: center;
     gap: 40px;
   }
