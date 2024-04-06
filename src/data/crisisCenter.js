@@ -39,12 +39,12 @@ export const crisisCenter = {
       },
       {
         id: 5,
-        title: 'Challenges related to children',
+        title: 'Children issues',
         text: 'Insomnia, tantrums, difficulties in adapting to a new country, bullying at school, anger and depression, health issues.',
       },
       {
         id: 6,
-        title: 'Financial challenges',
+        title: 'Financial issues',
         text: 'Job loss and business failure, lack of income, inability to work and earn money due to injury and constant relocation.',
       },
       {

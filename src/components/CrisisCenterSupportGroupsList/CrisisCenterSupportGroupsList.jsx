@@ -9,9 +9,8 @@ export const CrisisCenterSupportGroupsList = () => {
   return (
     <>
       <Carousel className='support-groups__carousel carousel-dark'>
-
-        {crisisCenter[lang].supportGroups.gallery.slice(-2).map((g) => (
-          <Carousel.Item className="support-groups__carousel-item" key={g.id}>
+        {crisisCenter[lang].supportGroups.gallery.map((g) => (
+          <Carousel.Item className='support-groups__carousel-item' key={g.id}>
             <CrisisCenterSupportGroupsItem {...g} />
           </Carousel.Item>
         ))}

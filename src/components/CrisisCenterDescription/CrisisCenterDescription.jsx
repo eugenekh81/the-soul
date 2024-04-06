@@ -12,9 +12,7 @@ export const CrisisCenterDescription = () => {
     <section className='section crisis-center__description'>
       <div className='container'>
         <h2 className='crisis-center__title section__title'>
-          {lang === 'en'
-            ? 'Live therapeutic groups'
-            : 'Живі терапевтичні групи'}
+          {lang === 'en' ? 'Therapy sessions' : 'Живі терапевтичні групи'}
         </h2>
         <div className='crisis-center__description-content'>
           <div className='crisis-center__text-content'>
@@ -24,10 +22,14 @@ export const CrisisCenterDescription = () => {
                 : 'У лютому 2022 року ми відкрили Кризовий центр, який надавав безкоштовну психологічну допомогу людям, постраждалим від війни.'}
             </p>
             <p className='crisis-center__text'>
-              {lang === 'en' ? "We reoriented our work towards crisis activities. Any Ukrainian could contact us; all they needed to do was to write 'Need help,' and we would connect them with a psychologist, schedule a time and channel of communication. We worked online, so we could help both those who left and those who stayed in Ukraine." : 'Ми переформатували свою роботу на кризову діяльність. До нас міг звернутись кожен українець, йому потрібно було тільки написати “Потрібна допомога” і ми зконтактовували людину з психологом, призначали час та спосіб звʼязку. Працювали онлайн, тож мали змогу допомагати і тим, хто виїхав і тим, хто залишився в Україні.'}
+              {lang === 'en'
+                ? "We reoriented our work towards crisis activities. Any Ukrainian could contact us; all they needed to do was to write 'Need help,' and we would connect them with a psychologist, schedule a time and channel of communication. We worked online, so we could help both those who left and those who stayed in Ukraine."
+                : 'Ми переформатували свою роботу на кризову діяльність. До нас міг звернутись кожен українець, йому потрібно було тільки написати “Потрібна допомога” і ми зконтактовували людину з психологом, призначали час та спосіб звʼязку. Працювали онлайн, тож мали змогу допомагати і тим, хто виїхав і тим, хто залишився в Україні.'}
             </p>
             <p className='crisis-center__text'>
-              { lang === 'en' ? "In 2023, we resumed the work of the Crisis Center and added 5 more psychologists for online crisis counseling. In total, we conducted over 200 consultations and several dozen live group sessions in Ukraine and European countries." : 'У 2023 ми відновили роботу Кризового Центру та долучили ще 5 психологів до кризового консультування онлайн. Загалом було проведено більше 200 консультацій та декілька десятків живих груп в Україні та країнах Європи.'}
+              {lang === 'en'
+                ? 'In 2023, we resumed the work of the Crisis Center and added 5 more psychologists for online crisis counseling. In total, we conducted over 200 consultations and several dozen live group sessions in Ukraine and European countries.'
+                : 'У 2023 ми відновили роботу Кризового Центру та долучили ще 5 психологів до кризового консультування онлайн. Загалом було проведено більше 200 консультацій та декілька десятків живих груп в Україні та країнах Європи.'}
             </p>
           </div>
           <div className='crisis-center__image-container'>

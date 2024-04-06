@@ -24,9 +24,11 @@
       transform: scale(1.1);
     }
 
-    @for $child from 0 through 5 {
-      &:nth-child(#{$child}) {
-        animation-delay: calc(#{$child} * 300ms);
+    @include onTablet--m {
+      @for $child from 0 through 5 {
+        &:nth-child(#{$child}) {
+          animation-delay: calc(#{$child} * 300ms);
+        }
       }
     }
   }
