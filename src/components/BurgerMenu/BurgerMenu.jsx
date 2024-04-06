@@ -117,6 +117,20 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
                       : 'Зустрічі з Душею'}
                   </NavLink>
                 </li>
+                <li className='burger-menu__list-item'>
+                  <NavLink
+                    to={`/${lang}/projects/crisis-center`}
+                    onClick={() => onClose()}
+                    className={cn('burger-menu__nav-link', {
+                      'is-active':
+                        pathname === `/${lang}/projects/crisis-center`,
+                    })}
+                  >
+                    {lang === 'en'
+                      ? 'Crisis Center'
+                      : 'Кризовий центр'}
+                  </NavLink>
+                </li>
               </ul>
             </li>
             <li
