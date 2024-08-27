@@ -12,17 +12,17 @@ export const Footer = () => {
               {lang === 'en' ? 'Contact Us' : 'Контакти'}
             </div>
             <a
-              href='tel:+38(067)4451284'
+              href='tel:+380996696437'
               className='footer__contact footer__phone'
             >
-              +38 (067) 445 1284
+              +38 (099) 669 64 37
             </a>
 
             <a
-              href='mailto:contact@thesoul.com.ua'
+              href='mailto:psysoulcenter@gmail.com'
               className='footer__contact footer__email'
             >
-              contact@thesoul.com.ua
+              psysoulcenter@gmail.com
             </a>
 
             <address className='footer__address-container'>

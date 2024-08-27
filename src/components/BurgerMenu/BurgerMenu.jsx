@@ -31,7 +31,7 @@ export const BurgerMenu = ({ isOpen, onClose }) => {
               <LanguageSelector variant='burger' />
               <div className='top-actions__buttons'>
                 <a
-                  href='mailto:contact@thesoul.com.ua'
+                  href='mailto:psysoulcenter@gmail.com'
                   className='top-actions__button top-actions__button--mobile top-actions__button--email-icon'
                 ></a>
                 <button
