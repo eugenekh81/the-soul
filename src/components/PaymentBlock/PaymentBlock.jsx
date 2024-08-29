@@ -385,7 +385,7 @@ export const PaymentBlock = () => {
         </button>
 
         <div className='payment-block__content'>
-          <CopyValue value='psysoulcenter@gmail.com' />
+          <CopyValue value='mvynnytska@gmail.com' />
         </div>
       </article>
     </section>
