@@ -19,10 +19,11 @@ export const LangContextProvider = ({ children }) => {
   );
 
   const url = `/${lang}${pathname.slice(3)}`;
+console.log(url);
 
   useEffect(() => {
     navigate(url);
-  }, [pathname, lang]);
+  }, [lang]);
 
   return (
     <LangContext.Provider value={langValue}>{children}</LangContext.Provider>
