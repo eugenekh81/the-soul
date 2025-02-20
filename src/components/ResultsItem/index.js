@@ -1,1 +1,0 @@
-export * from './ResultsItem.jsx';
